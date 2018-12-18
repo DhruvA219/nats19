@@ -1660,3 +1660,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
+
+.faq-hyperlink{
+  display:inline !important;
+  padding-right:0px !important;
+}
