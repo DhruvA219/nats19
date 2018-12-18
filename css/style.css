@@ -256,7 +256,7 @@ h6 {
 
 #nav-menu-container {
   float: right;
-  margin: 0;
+  margin: 5;
 }
 
 /* Nav Meu Styling */
@@ -270,6 +270,7 @@ h6 {
   font-weight: 600;
   font-size: 14px;
   outline: none;
+
 }
 
 .nav-menu .menu-active a,
@@ -325,7 +326,7 @@ h6 {
 
 .nav-menu ul {
   margin: 4px 0 0 0;
-  padding: 10px;
+  padding: 50px;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   background: #fff;
   border-radius: 3px;
