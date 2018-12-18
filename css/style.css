@@ -1665,3 +1665,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   display:inline !important;
   padding-right:0px !important;
 }
+
+/*--------------------------------------------------------------
+# Added by Piyush
+--------------------------------------------------------------*/
+img {
+  height: 2em;
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img::after{
+  content: '\A';
+}
+.bldroom {
+  background-color: ffab91
+}
+.grey {
+  background-color: rgba(128,128,128,.25);
+}
+.red {
+  background-color: rgba(255,0,0,.25);
+}
+.yellow {
+  background-color: ffee58
+}
+.green {
+  background-color: 4caf50
+}
+.purple {
+  background-color: ab47bc
+}
