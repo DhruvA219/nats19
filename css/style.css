@@ -156,6 +156,11 @@ h6 {
   z-index: 997;
 }
 
+#header.other-pages{
+  background: rgba(6, 12, 34, 0.98);
+  height: 100px;
+}
+
 #header.header-scrolled,
 #header.header-fixed {
   background: rgba(6, 12, 34, 0.98);
