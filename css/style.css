@@ -1703,7 +1703,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   width: 46px;
   height: 46px;
-  padding-top: 9px;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 #competitors-details .details .social a:hover {
@@ -1722,6 +1723,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+.wrapper {
+        text-align: center;
+    }
+    .wrapper ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        /* For IE, the outcast */
+        zoom:1;
+        *display: inline;
+    }
+    .wrapper li {
+        float: left;
+        padding: 2px 5px;
+        border: 1px;
+    }
 
 img {
  height: 2em;
