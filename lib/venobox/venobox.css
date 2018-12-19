@@ -195,9 +195,12 @@ or at least read this note: http://i.imgur.com/7C0ws9e.gif
     height: auto;
 }
 .figlio{
+    display: block;
+    margin: auto;
     max-width: 100%;
     text-align: initial;
     border: 8px solid rgba(255, 255, 255, 0.4);
+
 }
 img.figlio{
     -webkit-user-select: none;
