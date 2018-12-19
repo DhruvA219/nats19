@@ -1679,6 +1679,50 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Added by Piyush
 --------------------------------------------------------------*/
+#competitors-details {
+  padding: 60px 0;
+}
+
+#competitors-details .details h2 {
+  color: #112363;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#competitors-details .details .social {
+  margin-bottom: 15px;
+}
+
+#competitors-details .details .social a {
+  background: #e9edfb;
+  color: #112363;
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  padding-top: 9px;
+}
+
+#competitors-details .details .social a:hover {
+  background: #d3dbf7;
+  color: #fff;
+}
+
+#competitors-details .details .social a i {
+  font-size: 18px;
+}
+
+#competitors-details .details p {
+  color: #112363;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+
 img {
  height: 2em;
  display: block;
