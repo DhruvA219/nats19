@@ -308,6 +308,8 @@ h6 {
 }
 
 .nav-menu li.buy-tickets a {
+  white-space: nowrap;
+  display: inline-block;
   color: #fff;
   background: #f82249;
   padding: 7px 22px;
@@ -1742,7 +1744,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 img {
  height: 2em;
- display: block;
+
+}
+
+.event{
+
+}
+
+.hostedphotos{
+  -webkit-transition: all 0.4s ease-in-out
+}
+
+.hostedphotos:hover{
+  filter: none;
+}
+
+.wcalogo {
+  height: 1.5em;
+  margin-right: 5px;
+}
+
+.signedin{
+  height: 1.5em;
+  margin-right: 5px;
+  border-radius: 50px;
+}
+
+.signedin:hover{
+  filter: none;
 }
 
 .scrollto img {
@@ -1779,7 +1808,7 @@ img::after{
  content: '\A';
 }
 
-img:hover {
+.center:hover {
    filter: none;
      -webkit-filter: grayscale(0) brightness(0) invert(100);
      -webkit-transform: scale(1.01);
