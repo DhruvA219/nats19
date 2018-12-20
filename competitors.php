@@ -186,7 +186,9 @@ foreach($result as $row){
 	$count=0;
 	echo "<tr>";
 	echo "<td>";
-	echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
+	if(!is_null($row['WCAID'])){
+        	echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
+	}
 	echo $row['name']."</a></td>";
 	echo "<td>".$row['country_iso2']."</td>";
 	echo "<td>"; if ($row['333'] =="Y"){echo "<img src='img/events/3x3.png' class='low'>"; $count+=1;} echo"</td>";

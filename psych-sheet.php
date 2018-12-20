@@ -268,8 +268,10 @@ foreach($result as $row){
 	echo "<tr>";
 	echo "<td>".$rank."</td>";
 	echo "<td>";
-        echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
-        echo $row['name']."</a></td>";
+        if(!is_null($row['WCAID'])) {
+          	echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
+        }       
+	echo $row['name']."</a></td>";
 	echo "<td>".$row['country']."</td>";
 	echo "<td>".convertResult($row['averageResult'],$eventId,0)."</td>";
 	echo "<td>".$row['averageRank']."</td>";
