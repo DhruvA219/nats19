@@ -54,7 +54,7 @@ elseif($_GET['code'] && !isset($_SESSION['email'])) {
    $_SESSION['email'] = $finalResponse->$me_key->$email;
     $_SESSION['avatar'] = $finalResponse->$me_key->$avatar->$thumb_url;
    // var_dump($_SESSION);
-
+   header('location:login.php');
 }
 ?>
 
