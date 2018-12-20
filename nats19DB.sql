@@ -49,12 +49,31 @@ drop table eligible_country_iso2s_for_championship;
 
 select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,Countries.name as country  FROM
 (select * from 
-(select * from (select name,WCAID,best as singleResult,444bf,worldRank as singleRank,country_iso2 from registrations 
-  LEFT JOIN (select * from RanksSingle where eventId='444bf') eventRank on WCAID=personId) singleRanks where 444bf='Y') eventSolvers
-LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage where eventId='444bf') averageRanks 
+(select * from (select name,WCAID,best as singleResult,`333`,worldRank as singleRank,country_iso2 from registrations 
+  LEFT JOIN (select * from RanksSingle2 where eventId='333') eventRank on WCAID=personId) singleRanks where `333`='Y') eventSolvers
+LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='333') averageRanks 
 ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
 inner join Countries on Countries.iso2= psychRanks.country_iso2 
 order by -averageRank desc, -singleRank desc, psychRanks.name asc;
 
 
+
+select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,Countries.name as country  FROM
+(select * from 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_iso2 from registrations 
+  LEFT JOIN (select * from RanksSingle where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
+LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage where eventId='%s') averageRanks 
+ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
+inner join Countries on Countries.iso2= psychRanks.country_iso2 
+order by -averageRank desc, -singleRank desc, psychRanks.name asc;
+
+create table RanksAverage2 as
+  select personId,eventId,best,worldRank from RanksAverage
+  inner join registrations
+  where personId=WCAID;
+
+create table RanksSingle2 as
+  select personId,eventId,best,worldRank from RanksSingle
+  inner join registrations
+  where personId=WCAID;
 

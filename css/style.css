@@ -1745,6 +1745,9 @@ img {
  display: block;
 }
 
+.scrollto img {
+  height:40px;
+}
 
 .low{
  height: 1em;
