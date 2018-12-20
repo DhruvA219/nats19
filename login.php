@@ -1,9 +1,6 @@
 <?php
 session_start();
-if($_POST['logout'] == 'true'){ 
-	session_destroy();
-}
-elseif($_GET['code'] && !isset($_SESSION['email'])) {
+if($_GET['code'] && !isset($_SESSION['email'])) {
     $post = [
     'grant_type' => 'authorization_code',
     'client_id' => 'c02ad8e3446378078c5cbb73874bac335f08d9cc36f57c74fd11f9aa6df23a7e',
@@ -78,20 +75,6 @@ elseif($_GET['code'] && !isset($_SESSION['email'])) {
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-  <script> 
-$( document ).ready(function() {
-    $("#logoutOfWebsite").click(function(){
-
-$.ajax({
-  type: 'post',
-  data: {logout: true},
-  success: function(response){
-    // Code
-  }
-});
-});
-});
-  </script> 
  <meta charset="utf-8">
   <title>Indian Nationals 2019</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -157,7 +140,7 @@ $.ajax({
 		   echo '<img src=';
 		   echo '"' . $_SESSION['avatar'] . '" class="signedin">';
 		   echo "Welcome " . strtok($_SESSION['name'], ' ') . "</a></li>";
-		   echo '<li id = "logoutOfWebsite"><a href="">Logout</a></li>';
+		   echo '<li id = "logoutOfWebsite"><a href="logout.php">Logout</a></li>';
 		 } else {
                    echo '<li class="buy-tickets">';
 		   echo '<a href="https://www.worldcubeassociation.org/oauth/authorize?client_id=c02ad8e3446378078c5cbb73874bac335f08d9cc36f57c74fd11f9aa6df23a7e&redirect_uri=https%3A%2F%2Fakashrupela.com%2Fnats19%2Flogin.php&response_type=code&scope=public+dob+email">';
