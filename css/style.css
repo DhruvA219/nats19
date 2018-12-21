@@ -1844,3 +1844,11 @@ img::after{
   height:auto;
   line-height:1.5;
 }
+
+.btn-disabled{
+  background-color:pink !important;
+}
+
+.bg-delete{
+  background-color: transparent;
+}
