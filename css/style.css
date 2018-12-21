@@ -1838,3 +1838,9 @@ img::after{
 .purple {
   background-color: ab47bc
 }
+
+.btn-passi{
+  text-transform: none;
+  height:auto;
+  line-height:1.5;
+}
