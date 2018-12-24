@@ -838,6 +838,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+#schedule .nav-tabs a.comingsoon {
+  background-color: #e1e1e1;
+  color: #fff;
+}
+
 #schedule .sub-heading {
   text-align: center;
   font-size: 18px;
@@ -896,6 +901,110 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item p {
+  font-style: italic;
+  color: #152b79;
+  margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Regforevent Section
+--------------------------------------------------------------*/
+
+#Regforevent {
+  padding: 0px 0 60px 0;
+}
+
+#Regforevent .nav-tabs {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+#Regforevent .nav-tabs li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#Regforevent .nav-tabs a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+}
+
+#Regforevent .nav-tabs a.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+#Regforevent .nav-tabs a.comingsoon {
+  background-color: #e1e1e1;
+  color: #fff;
+}
+
+#Regforevent .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+#Regforevent .tab-pane {
+  transition: ease-in-out .2s;
+}
+
+#Regforevent .schedule-item {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#Regforevent .schedule-item:hover {
+  background-color: #fff;
+}
+
+#Regforevent .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#Regforevent .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#Regforevent .schedule-item .speaker img {
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+#Regforevent .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#Regforevent .schedule-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#Regforevent .schedule-item p {
   font-style: italic;
   color: #152b79;
   margin-bottom: 0;
@@ -1752,6 +1861,72 @@ img {
  height: 2em;
 
 }
+
+input[type="checkbox"][id^="cb"] {
+  display: none;
+}
+
+label {
+  transition: all 0.5s;
+  -webkit-transition: all 1s ease-in-out
+  width: auto;
+  border: 1px solid #f6f7fd;
+  padding: 10px;
+  display: run-in;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+}
+
+label:hover{
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+label::before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label img {
+  -webkit-filter: grayscale(.9);
+  height: 30px;
+  width: 30px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + label {
+  border-color: #ddd;
+}
+
+:checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+:checked + label img {
+  -webkit-filter: grayscale(0);
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+
+
 
 .event{
 
