@@ -6895,7 +6895,7 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked + .lever {
-  background-color: #84c7c1;
+  background-color: #828590;
 }
 
 .switch label input[type=checkbox]:checked + .lever:before, .switch label input[type=checkbox]:checked + .lever:after {
@@ -6903,7 +6903,7 @@ textarea.materialize-textarea {
 }
 
 .switch label input[type=checkbox]:checked + .lever:after {
-  background-color: #26a69a;
+  background-color: #1d2338;
 }
 
 .switch label .lever {
@@ -6973,7 +6973,7 @@ input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
 /* Select Field
    ========================================================================== */
 select {
-  display: none;
+
 }
 
 select.browser-default {
@@ -6982,7 +6982,7 @@ select.browser-default {
 
 select {
   background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
+
   padding: 5px;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
