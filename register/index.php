@@ -506,7 +506,7 @@
             <!-- get this working-->
             <ul class="nav nav-tabs" role="tablist">
               <li>
-                <a class="nav-link" href="" >Checkout</a>
+                <a class="nav-link" href="" id = "register-checkout">Checkout</a>
               </li>
             </ul>
           </div>
@@ -630,6 +630,27 @@
 		 $(".travel-selector-class").change(function() {
 		   document.getElementById("cb" + this.id).value = "";
 		});
+
+                $("#register-checkout").click(function() {
+		        var travel = {};
+			for(var i = 19; i <= 26; i++){
+    				if(document.getElementById("cb" + i).checked){
+       					travel["cb" + i] = document.getElementById("cbcb" + i).value;
+   				 }
+			}
+                        
+                        var events = {};
+			for(var i = 1; i <= 18; i++) {
+    				events["cb" + i] = 0;
+    				if(document.getElementById("cb" + i).checked) {
+        				events["cb" + i] = 1;
+    				}
+			}
+
+			 $.post( "register.php",{travel: travel, events: events}, function( cost ) {
+ 			 alert( "Response: " + cost );
+			});
+                });
 	    </script>
 </body>
 
