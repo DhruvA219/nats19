@@ -340,7 +340,7 @@
             <a href="#a4" role="tab" data-toggle="tab">Skip</a>
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" href="#a4" role="tab" data-toggle="tab">Next</a>
+                <a class="nav-link" href="#a4" role="tab" data-toggle="tab" id="travel-next-button">Next</a>
               </li>
               <li>
                 <a class="nav-link" href="#a4" role="tab" data-toggle="tab">Skip</a>
@@ -496,7 +496,20 @@
   <script src="../contactform/contactform.js"></script>
 
   <!-- Template Main Javascript File -->
-  <script src="../js/main.js"></script>
+	    <script src="../js/main.js"></script>
+	    <script>
+		    $("#travel-next-button").click(function() {
+		  var flagAlert = true;
+		  for(var i = 19; i <= 26; i++) {
+		      if(document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "") {
+			flagAlert = false; break;
+		      }
+		  }
+		  if(flagAlert==false) {
+		  alert("Please select the number of people to proceed");
+		} return false;
+		});
+	    </script>
 </body>
 
 </html>
