@@ -219,7 +219,7 @@
                 <td class="tg-0lax">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb19">
+                      <input type="checkbox" id="cb19" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -248,7 +248,7 @@
                 <td class="tg-0lax">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb20">
+                      <input type="checkbox" id="cb20" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -277,7 +277,7 @@
                 <td class="tg-0lax">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb21">
+                      <input type="checkbox" id="cb21" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -306,7 +306,7 @@
                 <td class="tg-0lax">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb22">
+                      <input type="checkbox" id="cb22" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -335,7 +335,7 @@
                 <td class="tg-0pky">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb23">
+                      <input type="checkbox" id="cb23" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -365,7 +365,7 @@
 		<td class="tg-0pky">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb24">
+                      <input type="checkbox" id="cb24" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -394,7 +394,7 @@
                 <td class="tg-0pky">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb25">
+                      <input type="checkbox" id="cb25" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -422,7 +422,7 @@
                 <td class="tg-0pky">
                   <div class="switch">
                     <label>
-                      <input type="checkbox" id="cb26">
+                      <input type="checkbox" id="cb26" class="travel-selector-class">
                       <span class="lever"></span>
 
                     </label>
@@ -625,6 +625,10 @@
 	          alert("Please select the slot you want to travel in.");
                    return false;
 		}
+		});
+		    
+		 $(".travel-selector-class").change(function() {
+		   document.getElementById("cb" + this.id).value = "";
 		});
 	    </script>
 </body>
