@@ -506,7 +506,7 @@
             <!-- get this working-->
             <ul class="nav nav-tabs" role="tablist">
               <li>
-                <a class="nav-link" href="" id = "register-checkout">Checkout</a>
+                <a class="nav-link" id = "register-checkout">Checkout</a>
               </li>
             </ul>
           </div>
@@ -574,7 +574,7 @@
         </div>
       </div>
     </div>
-
+    <div id="test-div"> </div>
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
@@ -602,7 +602,8 @@
   <script src="../lib/wow/wow.min.js"></script>
   <script src="../lib/venobox/venobox.min.js"></script>
   <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-
+  <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    
   <!-- Contact Form JavaScript File -->
   <script src="../contactform/contactform.js"></script>
 
@@ -647,8 +648,9 @@
     				}
 			}
 
-			 $.post( "register.php",{travel: travel, events: events}, function( cost ) {
- 			 alert( "Response: " + cost );
+			 $.post( "register.php",{travel: travel, events: events}, function( script ) {
+			 var scriptTag = $(script).text();
+   				eval(scriptTag);
 			});
                 });
 	    </script>
