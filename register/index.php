@@ -618,7 +618,8 @@
 		  }
 		  if(flagAlert==false) {
 		  alert("Please select the number of people to proceed");
-		} return false;
+                   return false;
+		}
 		});
 	    </script>
 </body>
