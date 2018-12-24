@@ -610,14 +610,19 @@
   <script src="../js/main.js"></script>
 	    <script>
 		    $("#travel-next-button").click(function() {
-		  var flagAlert = true;
+		  var flagAlert1 = true, flagAlert2 = true;
 		  for(var i = 19; i <= 26; i++) {
-		      if(document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "") {
-			flagAlert = false; break;
+		      if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
+			flagAlert1 = false; break;
+		      } else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
+		        flagAlert2 = false; break;
 		      }
 		  }
-		  if(flagAlert==false) {
-		  alert("Please select the number of people to proceed");
+		  if(flagAlert1==false) {
+		  alert("You haven't selected the number of people.");
+                   return false;
+		} else if(flagAlert2 == false) {
+	          alert("Please select the slot you want to travel in.");
                    return false;
 		}
 		});
