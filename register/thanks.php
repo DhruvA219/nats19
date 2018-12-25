@@ -17,9 +17,6 @@ else{
 $repayment_verify_sql = "select * from `payment` where payment_id='".$_GET['payment_id']."'";
 $result=$conn->query($repayment_verify_sql);
 
-if(is_null($_SESSION['travel'])){
-  var_dump("nahi phata");
-}
 
 if(mysqli_num_rows($result)>0)
 {
@@ -131,6 +128,12 @@ $payment_sql="INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES 
 $conn->query($payment_sql);
 
 //update travel in DB
+if(!is_null($_SESSION['travel'])){
+  foreach ($_SESSION['travel'] as $key => $value) {
+    $travel_sql="INSERT into `user_travel` (`payment_id`, `email_id`, `item_id`, `number_of_people`) VALUES ('$payment_id','$email_id', '$key',$value )";
+    $conn->query($travel_sql);
+  }
+}
 
 
 
