@@ -6,10 +6,15 @@ include 'config.php';
 
 $api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
 
+var_dump($_GET);
 if (!isset($_GET["payment_request_id"]) || !isset($_GET["payment_id"]) || $api->paymentRequestStatus($_GET['payment_request_id'])['payments'][0]['payment_id']!=$_GET['payment_id']){
-  header('location:../');
+var_dump("reached here");      
+	echo '<script>window.location.href="https://nats19.in"  </script>';
 }
-//if($response['payments'][0]['payment_id'])
+//if($response['payments'][0]['payment_id']i
+//)
+//
+else{
 session_start();
 $payment_id=$_GET['payment_id'];
 $email_id=$_SESSION['email'];
@@ -95,7 +100,7 @@ $amount=$response['amount'];
 $payment_sql="INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES ('$payment_id','$email_id', $amount )";
 $conn->query($payment_sql);
 
-
+}
 ?>
 <div class="w3-container">
     <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
