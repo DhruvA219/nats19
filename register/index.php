@@ -42,12 +42,6 @@ include('../header.php');
                                                                         <p align="middle"> Step 1/5</p>
                                                                       </div>
                                                                     </div>
-							<div class="row justify-content-center">
-                                                                        <div class="col-11 col-lg-8">
-                                                                        <p align="middle">You have registered for the following events:</p>
-                                                                </div>
-                                                        </div>
-                                                        <ul class="nav nav-tabs" role="tablist">
 
 								<?php
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
@@ -56,6 +50,7 @@ $email=$_SESSION['email'];
 $sql = "SELECT * FROM registrations where email_id='$email'";
 $result = $conn->query($sql);
 foreach($result as $row){
+echo '<div class="row justify-content-center"><div class="col-11 col-lg-8"><p align="middle">You have registered for the following events:</p></div></div><ul class="nav nav-tabs" role="tablist">';
 	echo "<td>"; if ($row['333mbf'] =="Y"){echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
 	if ($row['222']=='Y'){
  echo '<li class="nav-item"><input type="checkbox" disabled id="cb1" /> <label for="cb1"><img src="../img/eventscolor/2x2.png" /></label></li>'
@@ -113,9 +108,9 @@ if ($row['333mbf']=='Y'){
       }
 
  }
+ echo '</ul>'
 ?>
 
-								</ul>
 							<div class="row justify-content-center">
                                                                         <div class="col-11 col-lg-8">
                                                                         <p align="middle">Select the events you want to add:</p>
