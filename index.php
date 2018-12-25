@@ -44,12 +44,18 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
     $email = "email";
     $avatar = "avatar";
     $thumb_url = "thumb_url";
+    $gender = "gender";
+    $country_iso2 = "country_iso2";
+    
     //echo $finalResponse->$me_key->$wca_id_key;
     $_SESSION['wcaId'] = $finalResponse->$me_key->$wca_id_key;
     $_SESSION['name'] = $finalResponse->$me_key->$name;
     $_SESSION['dob'] = $finalResponse->$me_key->$dob;
    $_SESSION['email'] = $finalResponse->$me_key->$email;
     $_SESSION['avatar'] = $finalResponse->$me_key->$avatar->$thumb_url;
+    $_SESSION['gender'] = $finalResponse->$me_key->$gender;
+    $_SESSION['country_iso2'] = $finalResponse->$me_key->$country_iso2;
+    
    // var_dump($_SESSION);
    header('location:/');
 }
