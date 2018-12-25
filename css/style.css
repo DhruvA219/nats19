@@ -1923,7 +1923,6 @@ label img {
   -webkit-filter: grayscale(0);
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
-  z-index: -1;
 }
 
 
@@ -2026,4 +2025,40 @@ img::after{
 
 .bg-delete{
   background-color: transparent;
+}
+
+
+.sub-nav {
+  float:left;
+  overflow: hidden;
+    display:none;
+    padding:0 !important;
+    background-color:#060c22 !important;
+}
+
+.sub-nav:hover {
+    display:block;
+}
+
+.sub-nav-item{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.sub-nav-link{
+  color:white !important;
+}
+
+.sub-nav-link2{
+    background-color:#060c22 !important;
+  border-style:none !important;  
+}
+
+@media screen and (max-width: 991px) {
+  .sub-nav {float: none;}
+  .sub-nav-item {position: relative;}
+  .sub-nav {
+    display: block !important; 
+    width: 100%;
+    text-align: left;
+  }
 }

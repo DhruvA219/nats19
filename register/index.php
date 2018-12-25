@@ -1,73 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Indian Nationals 2019</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="../img/favicon.png" rel="icon">
-  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../lib/animate/animate.min.css" rel="stylesheet">
-  <link href="../lib/venobox/venobox.css" rel="stylesheet">
-  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="../css/materialize.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
-
-
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
-
-<body>
-
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header" class="other-pages">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-        <!-- Uncomment below if you prefer to use a text logo -->
-          <!--<h1><a href="#main">Indian<span>Nationals</span></a></h1>-->
-  <a href="#intro" class="scrollto"><img src="../img/nats-logo.svg" height="40px" alt="" title=""></a>
-        </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="../">Home</a></li>
-          <li><a href="../venue">Venue</a></li>
-          <li><a href="../events">Events</a></li> <!-- events.html doesn't exist for now -->
-          <li><a href="../schedule">Schedule</a></li>
-          <li><a href="../competitors">Competitors</a></li>
-          <li><a href="../hotels">Hotels</a></li>
-          <li><a href="../faq">FAQ</a></li>
-          <li><a href="../contact">Contact Us</a></li>
-          <li ><a href="../sponsors">Sponsors</a></li>
-          <li><a href="../team">Team</a></li>
-          <li class="buy-tickets"><a href="#buy-tickets">Register</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
+<?php
+include('../header.php')
+?>
   <main id="main">
     <!--==========================
   ==========================
@@ -170,7 +103,7 @@
                   <label for="cb13"><img src="../img/eventscolor/pyra.png" /></label>
                 </li>
                 <li>
-      <input type="checkbox" id="cb14" />
+			<input type="checkbox" id="cb14" />
                   <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
                 </li>
                 <li>
@@ -206,15 +139,15 @@
                 <p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
               </div>
             </div>
-<table>
+<table style="margin-bottom:30px;">
               <tr>
                 <th class="tg-0lax">Select</th>
                 <th class="tg-s268">Date</th>
                 <th class="tg-s268">Time</th>
                 <th class="tg-s268">From </th>
                 <th class="tg-s268">To</th>
-        <th class="tg-s268"> Number of People </th>
-    </tr>
+	      <th class="tg-s268"> Number of People </th>
+		</tr>
               <tr>
                 <td class="tg-0lax">
                   <div class="switch">
@@ -228,21 +161,21 @@
                 <td class="tg-s268">11 April</td>
                 <td class="tg-s268">8:00 PM</td>
                 <td class="tg-s268">Metro</td>
-    <td class="tg-s268">SNU</td>
-    <td class="tg-s268"> <select id="cbcb19">
+		<td class="tg-s268">SNU</td>
+		<td class="tg-s268"> <select id="cbcb19">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-        <option value="4">4</option>
+		    <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
-        <option value="8">8</option>
+		    <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-      </select>
-    </td>
+		  </select>
+		</td>
               </tr>
               <tr>
                 <td class="tg-0lax">
@@ -286,7 +219,7 @@
                 <td class="tg-s268">12 April </td>
                 <td class="tg-s268">8:00 PM</td>
                 <td class="tg-s268">SNU</td>
-    <td class="tg-s268">Metro</td>
+		<td class="tg-s268">Metro</td>
                 <td class="tg-s268"> <select id="cbcb21">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
@@ -315,7 +248,7 @@
                 <td class="tg-s268">13 April</td>
                 <td class="tg-s268">8:00 AM</td>
                 <td class="tg-s268">Metro</td>
-    <td class="tg-s268">SNU</td>
+		<td class="tg-s268">SNU</td>
                 <td class="tg-s268"> <select id="cbcb22">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
@@ -362,7 +295,7 @@
 </tr>
 
 <tr>
-    <td class="tg-0pky">
+		<td class="tg-0pky">
                   <div class="switch">
                     <label>
                       <input type="checkbox" id="cb24" class="travel-selector-class">
@@ -431,9 +364,8 @@
                 <td class="tg-0pky">15 April</td>
                 <td class="tg-0pky">8:00 PM</td>
                 <td class="tg-0pky">SNU</td>
-                <td class="tg-0pky">Metro</td>   
-                <td class="tg-s268"> 
-                  <select id="cbcb26">
+ <td class="tg-0pky">Metro</td>   
+		  <td class="tg-s268"> <select id="cbcb26">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -446,10 +378,10 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
-                </td>/tr>
+                </td>
+              </tr>
             </table>
             <!-- get this working-->
-            <a href="#a4" role="tab" data-toggle="tab">Skip</a>
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
                 <a class="nav-link" href="#a4" role="tab" data-toggle="tab" id="travel-next-button">Next</a>
@@ -465,72 +397,19 @@
               <div class="col-11 col-lg-8">
                 <p align="middle"> Step 3/5</p>
                 <h3 align="middle"> Merchandise</h3>
-                <p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
+                <p align="middle">Make you Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
                 <input type="checkbox" id="cb27" />
-                  <label for="cb27"><img src="../img/merchandise/tshirt.png" alt="T shirt photo">
-                    <select id="cbcb27">
-                      <option value="" disabled selected>Choose your Size</option>
-                      <option value="1">M</option>
-                      <option value="2">L</option>
-                      <option value="3">XL</option>
-                      <option value="4">XXL</option>
-                    </select>
-                  </label>
+                <label for="cb27"><img src="" alt="T shirt photo">
+                  <select>
+                    <option value="" disabled selected>Choose your Size</option>
+                    <option value="1">M for small bois</option>
+                    <option value="2">L for big bois</option>
+                    <option value="3">XL for bigger bois</option>
+                    <option value="3">XXL for Golz</option>
+                  </select>
+                </label>
                 <input type="checkbox" id="cb28" />
-                  <label for="cb28"><img src="../img/merchandise/wristband.png" alt="Wrist Band photo">
-                    <select id="cbcb28">
-                      <option value="" disabled selected>Quantity</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </label>
-                <input type="checkbox" id="cb29" />
-                  <label for="cb29"><img src="../img/merchandise/mug.png" alt="Mug photo">
-                    <select id="cbcb29">
-                      <option value="" disabled selected>Quantity</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </label>
-                <input type="checkbox" id="cb30" />
-                  <label for="cb30"><img src="../img/merchandise/logo.png" alt="Logo photo">
-                    <select id="cbcb30">
-                      <option value="" disabled selected>Quantity</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </label>
-                <input type="checkbox" id="cb31" />
-                  <label for="cb31"><img src="../img/merchandise/badge.png" alt="Magnetic Badge photo">
-                    <select id="cbcb31">
-                      <option value="" disabled selected>Quantity</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </label>
-                <input type="checkbox" id="cb32" />
-                  <label for="cb32"><img src="../img/merchandise/writingpad.png" alt="Writing Pad photo">
-                    <select id="cbcb32">
-                      <option value="" disabled selected>Quantity</option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                    </select>
-                  </label>
+                  <label for="cb28"><img src="" alt="Some other merch photo"></label>
               </div>
             </div>
             <!-- get this working-->
@@ -560,7 +439,7 @@
             <!-- get this working-->
             <ul class="nav nav-tabs" role="tablist">
               <li>
-                <a class="nav-link" href="" >Checkout</a>
+                <a class="nav-link" id = "register-checkout">Checkout</a>
               </li>
             </ul>
           </div>
@@ -570,98 +449,7 @@
   </main>
 
 
-  <!--==========================
-    Footer
-  ============================-->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="../img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- #footer -->
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
-  <!-- JavaScript Libraries -->
-  <script src="../lib/jquery/jquery.min.js"></script>
-  <script src="../lib/jquery/jquery-migrate.min.js"></script>
-  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/easing/easing.min.js"></script>
-  <script src="../lib/superfish/hoverIntent.js"></script>
-  <script src="../lib/superfish/superfish.min.js"></script>
-  <script src="../lib/wow/wow.min.js"></script>
-  <script src="../lib/venobox/venobox.min.js"></script>
-  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="../contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="../js/main.js"></script>
       <script>
         $("#travel-next-button").click(function() {
       var flagAlert1 = true, flagAlert2 = true;
@@ -684,7 +472,30 @@
      $(".travel-selector-class").change(function() {
        document.getElementById("cb" + this.id).value = "";
     });
-      </script>
-</body>
 
-</html>
+                $("#register-checkout").click(function() {
+            var travel = {};
+      for(var i = 19; i <= 26; i++){
+            if(document.getElementById("cb" + i).checked){
+                travel["cb" + i] = document.getElementById("cbcb" + i).value;
+           }
+      }
+                        
+                        var events = {};
+      for(var i = 1; i <= 18; i++) {
+            events["cb" + i] = 0;
+            if(document.getElementById("cb" + i).checked) {
+                events["cb" + i] = 1;
+            }
+      }
+
+       $.post( "register.php",{travel: travel, events: events}, function( script ) {
+       var scriptTag = $(script).text();
+          eval(scriptTag);
+      });
+                });
+      </script>
+
+      <?php
+include('../footer.php')
+?>
