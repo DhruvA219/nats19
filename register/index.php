@@ -630,9 +630,9 @@ for(var i = 1; i <= 18; i++){
 }
 if(count_events == 0 || already_registered_flag == true){
 	baseFee = 0;
-} else {
-    event_total_reg_fee = baseFee + count_events*50;
 }
+event_total_reg_fee = baseFee + count_events*50;
+
 return event_total_reg_fee;
 }
 
