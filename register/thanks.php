@@ -31,8 +31,21 @@ $WCA_ID=$_SESSION['wcaId'];
 $country_iso2=$_SESSION['country_iso2'];
 $gender=$_SESSION['gender'];
 
+function checkEmpty($arr){
+$mycnt=0;
+foreach ($arr as $key => $value) {
+  if($value == 0) {
+    $mycnt+=1;
+  }
+}
+if($mycnt==18){
+  return false;
+}
+return true;
 
-if(!is_null($_SESSION['events'])){
+}
+
+if(checkEmpty($_SESSION['events'])){
 
 $event_mapping = array("cb1" => '222', "cb2" => '333', "cb3" => '444', "cb4" => '555', "cb5" => '666', "cb6" => '777', "cb7" => '333bf', "cb8" => '333fm', "cb9" => '333oh', "cb10" => '333ft', "cb11" => 'clock', "cb12" => 'minx', "cb13" => 'pyram', "cb14" => 'skewb', "cb15" => 'sq1', "cb16" => '444bf', "cb17" => '555bf', "cb18" => '333mbf' );
 $event_registration_mapping=array();
