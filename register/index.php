@@ -532,7 +532,7 @@ include('../header.php');
     $('#default'+tabName)[0].className+=" active";
   }
 
-    // $('#default'+].className+=" active";
+     $("#defaultEvents").className+=" active";
 
 
           $(".travel-selector-class").change(function() {
