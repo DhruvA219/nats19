@@ -1,3 +1,59 @@
+<?php
+session_start();
+if($_GET['code'] && !isset($_SESSION['email'])) {
+    $post = [
+    'grant_type' => 'authorization_code',
+    'client_id' => 'c02ad8e3446378078c5cbb73874bac335f08d9cc36f57c74fd11f9aa6df23a7e',
+    'client_secret' =>'0f1efea224774c1d461d49f1d25f02af1ab0a5ec523e851ad5f1ae86a96ab74a',
+    'code' => $_GET['code'],
+    'redirect_uri' => 'https://nats19.in/'
+        ];
+
+        $ch = curl_init('https://www.worldcubeassociation.org/oauth/token');
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+    
+        // execute!
+  $response = curl_exec($ch); 
+  
+
+  $jsonObj = json_decode($response);
+  
+  $key = "access_token";
+        
+     
+    $accessToken = $jsonObj->$key;
+
+
+    $accessToken = "Authorization: Bearer " . $accessToken;
+
+    $ch2 = curl_init('https://www.worldcubeassociation.org/api/v0/me');
+    curl_setopt($ch2, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch2,CURLOPT_HTTPHEADER,array($accessToken));
+
+    $cont = curl_exec($ch2);
+    // var_dump($content);
+    //session_start();
+    $finalResponse = json_decode($cont);
+   // var_dump($cont);
+  // echo "<br> <br> <br>";
+    $me_key = "me";
+    $wca_id_key = "wca_id";
+    $name = "name";
+    $dob = "dob";
+    $email = "email";
+    $avatar = "avatar";
+    $thumb_url = "thumb_url";
+    //echo $finalResponse->$me_key->$wca_id_key;
+    $_SESSION['wcaId'] = $finalResponse->$me_key->$wca_id_key;
+    $_SESSION['name'] = $finalResponse->$me_key->$name;
+    $_SESSION['dob'] = $finalResponse->$me_key->$dob;
+   $_SESSION['email'] = $finalResponse->$me_key->$email;
+    $_SESSION['avatar'] = $finalResponse->$me_key->$avatar->$thumb_url;
+   // var_dump($_SESSION);
+   header('location:/');
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
