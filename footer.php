@@ -17,8 +17,8 @@
           <div class="col-lg-4 col-md-6 footer-info">
             <div class="wrapper">
               <div class="social-links" style="margin-top: 20px;">
-                <a href="#"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
-                <a href="#" ><img class="footerimg" src="../img/events/facebook.svg"></a>
+                <a href="https://www.worldcubeassociation.org/competitions/IndianNationals2019"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
+                <a href="https://www.facebook.com/IndianNationals2019/" ><img class="footerimg" src="../img/events/facebook.svg"></a>
                 <a href="#" ><img class="footerimg" src="../img/events/twitter.svg"></a>
                 <a href="#" ><img class="footerimg" src="../img/events/instagram.svg"></a>
               </div>
