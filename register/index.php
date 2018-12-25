@@ -112,7 +112,7 @@ if ($row['333mbf']=='Y'){
 
 echo '<div class="row justify-content-center"> <div class="col-11 col-lg-8"> <p align="middle">Select the events you want to add:</p> </div></div><ul class="nav nav-tabs" role="tablist">';
 if (mysql_num_rows($result)==0){
-echo('	<li class="nav-item">
+echo '	<li class="nav-item">
 									<input type="checkbox" id="cb1" />
 									<label for="cb1"><img src="../img/eventscolor/2x2.png" /></label>
 								</li>
@@ -187,7 +187,7 @@ echo('	<li class="nav-item">
 									</li>
 								</ul>
 
-')
+';
 }
 
 else
