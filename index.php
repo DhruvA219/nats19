@@ -100,13 +100,6 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
   <!-- Main Stylesheet File -->
   <link href="css/materialize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
 <body>
@@ -178,7 +171,26 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
     <div class="intro-container wow fadeIn">
       <h1 class="mb-4 pb-0">Indian Nationals<br><span>2019</span> </h1>
       <p class="mb-4 pb-0">12-14 April, Shiv Nadar University</p>
-     <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
+      <div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+     
+<!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
         data-autoplay="true"></a>-->
      <!-- <a href="#about" class="about-btn scrollto">About The Event</a>-->
     </div>
@@ -1438,7 +1450,49 @@ No. All spectators are free to attend the competition at no cost. There is payme
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<script>
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
 
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(1555007400000);
+initializeClock('clockdiv', deadline);
+  </script>
 </body>
 
 </html>
