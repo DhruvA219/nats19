@@ -5,16 +5,22 @@ include 'src/instamojo.php';
 include 'config.php';
 
 $api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 
-var_dump($_GET);
 if (!isset($_GET["payment_request_id"]) || !isset($_GET["payment_id"]) || $api->paymentRequestStatus($_GET['payment_request_id'])['payments'][0]['payment_id']!=$_GET['payment_id']){
-var_dump("reached here");      
 	echo '<script>window.location.href="https://nats19.in"  </script>';
 }
 //if($response['payments'][0]['payment_id']i
 //)
 //
 else{
+$repayment_verify_sql = "select * from `payment` where payment_id=".$_GET['payment_id'];
+
+if($conn->query($repayment_verify_sql)===TRUE)
+{
+  echo '<script>window.location.href="https://nats19.in"  </script>';
+}
+
 session_start();
 $payment_id=$_GET['payment_id'];
 $email_id=$_SESSION['email'];
@@ -90,7 +96,6 @@ $values.="',";
 $values.="'";
 $values.=$event_registration_mapping['333fm'];
 $values.="'";
-$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $conn->query($sql);
 $api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
