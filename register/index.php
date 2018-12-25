@@ -532,8 +532,8 @@ include('../header.php');
     $('#default'+tabName)[0].className+=" active";
   }
 
-          // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultEvents").click();
+    // $('#default'+].className+=" active";
+
 
           $(".travel-selector-class").change(function() {
            document.getElementById("cb" + this.id).value = "";
