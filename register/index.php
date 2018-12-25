@@ -491,7 +491,7 @@ include('../header.php')
 
 
 
-
+ <script src="https://js.instamojo.com/v1/checkout.js"></script>
 
 <script>
   function openCity(evt, tabName) {
