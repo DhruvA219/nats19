@@ -29,6 +29,10 @@ $birth_date=$_SESSION['dob'];
 $WCA_ID=$_SESSION['wcaId'];
 $country_iso2=$_SESSION['country_iso2'];
 $gender=$_SESSION['gender'];
+
+
+if(!is_null($_SESSION['events'])){
+
 $event_mapping = array("cb1" => '222', "cb2" => '333', "cb3" => '444', "cb4" => '555', "cb5" => '666', "cb6" => '777', "cb7" => '333bf', "cb8" => '333fm', "cb9" => '333oh', "cb10" => '333ft', "cb11" => 'clock', "cb12" => 'minx', "cb13" => 'pyram', "cb14" => 'skewb', "cb15" => 'sq1', "cb16" => '444bf', "cb17" => '555bf', "cb18" => '333mbf' );
 $event_registration_mapping=array();
 
@@ -98,7 +102,8 @@ $values.=$event_registration_mapping['333fm'];
 $values.="'";
 $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $conn->query($sql);
-$api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
+}
+
 $payid = $_GET["payment_request_id"];
 $response = $api->paymentRequestStatus($payid);
 $amount=$response['amount'];
