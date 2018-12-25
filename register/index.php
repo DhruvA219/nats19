@@ -121,7 +121,7 @@ include('../header.php');
 							<div class="wrapper">
 								<div class="tab">
 									<a href="#Travel"><button class="tablinks" onclick="skipCity(event, 'Travel')">Skip</button></a>
-									<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Next</button></a>
+									<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Save and Proceed</button></a>
 								</div>
 
 							</div>
@@ -383,7 +383,7 @@ include('../header.php');
 	<div class="wrapper">
 		<a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events')">Previous</button></a>
 		<a href="#Merch"><button class="tablinks" onclick="skipCity(event, 'Merch')">Skip</button></a>
-		<a href="#Merch"><button class="tablinks" id="travel-next-button" onclick="openCity(event, 'Merch')">Next</button></a>
+		<a href="#Merch"><button class="tablinks" id="travel-Save and Proceed-button" onclick="openCity(event, 'Merch')">Save and Proceed</button></a>
 
 	</div>
 </div>
@@ -464,7 +464,7 @@ include('../header.php');
 				<div class="tab">
 					<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button></a>
 					<a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation')">Skip</button></a>
-					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Next</button></a>
+					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Save and Proceed</button></a>
 
 				</div>
 			</div>
@@ -487,7 +487,7 @@ include('../header.php');
 		<div class="tab">
 			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button></a>
 			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial')">Skip</button></a>
-			<a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Next</button></a>
+			<a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Save and Proceed</button></a>
 
 		</div>
 	</div>
