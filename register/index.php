@@ -505,7 +505,7 @@ include('../header.php');
 
 	<div class="wrapper">
 		<div class="tab">
-			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
+			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Previous</button></a>
 			<a href="#" id="register-checkout"><button class="tablinks">Checkout</button></a>
 		</div>
 	</div>
