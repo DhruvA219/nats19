@@ -149,28 +149,6 @@ foreach($result as $row){
                                    </tbody>
               </table>
           <!-- 3x3 Psych Sheet Table -->
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a3">
-            <table class = "striped">
-              <thead>
-                <tr>
-                  <th> Name </th>
-                  <th> Citizen of </th>
-                  <th> Average </th>
-                  <th> WR </th>
-                  <th> Single </th>
-                  <th> WR </th>
-                </tr>
-              </thead>
-              <tbody>
-                <td> Piyush </td>
-                <td> India </td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                </tbody>
-              </table>
-            </div>
         </div>
       </div>
     </section>
