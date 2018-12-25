@@ -15,6 +15,7 @@ if (!isset($_GET["payment_request_id"]) || !isset($_GET["payment_id"]) || $api->
 //
 else{
 $repayment_verify_sql = "select * from `payment` where payment_id=".$_GET['payment_id'];
+var_dump($repayment_verify_sql);
 
 if($conn->query($repayment_verify_sql)===TRUE)
 {
