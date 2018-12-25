@@ -1519,20 +1519,35 @@ iframe{
 # Footer
 --------------------------------------------------------------*/
 
+.footerimg {
+ height: 2.2em;
+ margin-left: auto;
+ margin-right: auto;
+ filter: gray; /* IE5+ */
+     -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+     -webkit-transition: all 1s ease-in-out;
+}
+
+.footerimg:hover {
+   filter: none;
+     -webkit-filter: grayscale(0) ;
+     -webkit-transform: scale(1.01);
+   }
+
 #footer {
   background: #101522;
-  padding: 0 0 25px 0;
+  padding: 0 0 0px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
   background: #040919;
-  padding: 60px 0 30px 0;
+  padding: 15px 0 1px 0;
 }
 
 #footer .footer-top .footer-info {
-  margin-bottom: 30px;
+
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1546,8 +1561,7 @@ iframe{
 }
 
 #footer .footer-top .footer-info img {
-  height: 40px;
-  margin-bottom: 10px;
+
 }
 
 #footer .footer-top .footer-info p {
@@ -1559,23 +1573,12 @@ iframe{
 }
 
 #footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #222636;
-  color: #eee;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+ margin: 5px;
+
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f82249;
-  color: #fff;
+
 }
 
 #footer .footer-top h4 {
@@ -2088,7 +2091,7 @@ img::after{
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
-  padding: 10px 50px;
+  padding: 10px 100px;
   transition: 1s;
 }
 
@@ -2139,11 +2142,4 @@ img::after{
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
-}
-
-.not-active {
-  pointer-events: none;
-  cursor: default;
-  text-decoration: none;
-  color: black;
 }
