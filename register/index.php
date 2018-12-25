@@ -26,11 +26,11 @@ include('../header.php');
         <section id="Regforevent" class="section-with-bg">
           <div class="wrapper">
             <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultOpen">Events</button>
-              <button class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
-              <button class="tablinks" onclick="openCity(event, 'Merch')">Merchandise</button>
-              <button class="tablinks" onclick="openCity(event, 'Accomodation')">Accomodation</button>
-              <button class="tablinks" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
+              <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultEvents">Events</button>
+              <button id="defaultTravel" class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
+              <button id="defaultMerch" class="tablinks" onclick="openCity(event, 'Merch')">Merchandise</button>
+              <button id="defaultAccommodation" class="tablinks" onclick="openCity(event, 'Accomodation')">Accomodation</button>
+              <button id="defaultUnofficial" class="tablinks" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
             </div>
           </div>
 
@@ -529,12 +529,11 @@ include('../header.php');
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-
+    $('#default'+tabName)[0].className+=" active";
   }
 
           // Get the element with id="defaultOpen" and click on it
-          document.getElementById("defaultOpen").click();
+          document.getElementById("defaultEvents").click();
 
           $(".travel-selector-class").change(function() {
            document.getElementById("cb" + this.id).value = "";
