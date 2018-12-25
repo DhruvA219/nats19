@@ -1,12 +1,10 @@
 <?php
+include '../header.php';
 include 'config.php';
+session_start();
+var_dump($_SESSION['events']);
+var_dump($_SESSION['travel']);
 ?>
-<!DOCTYPE html>
-<html>
-<title>Payment Details!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
 <div class="w3-container">
     <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
     <p class="w3-center">You can also save all these in Database using simple Insert Query. </p>
@@ -61,5 +59,6 @@ catch (Exception $e) {
 
   ?>
  </div>
- </body>
- </html>
+<?php
+include '../footer.php'
+?>

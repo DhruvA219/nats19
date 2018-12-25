@@ -61,12 +61,11 @@ curl_setopt($ch, CURLOPT_HTTPHEADER,
 $payload = Array(
     'purpose' => 'Indian Nationals 2019',
     'amount' => $amount,
-    'phone' => $number,
     'buyer_name' => $name,
     'redirect_url' => $redirect_url,
-    'send_email' => true,
+    'send_email' =>false,
     'webhook' => $webhook_url,
-    'send_sms' => true,
+    'send_sms' => false,
     'email' => $email,
     'allow_repeated_payments' => false
 );
