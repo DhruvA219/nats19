@@ -510,7 +510,7 @@ include('../header.php');
 		</div>
 	</div>
 </div>
-<div class="cart-total">
+<div id="cart-total">
 Cart Total : ₹0
 </div>
 
@@ -528,6 +528,57 @@ Cart Total : ₹0
 <script src="https://js.instamojo.com/v1/checkout.js"></script>
 
 <script>
+
+function updateFee(){
+var netFee=getEventFee()+getTravelFee()+getMerchFee()+getAccoFee();
+$('#cart-total')[0].innerHTML="Cart Total : ₹"+netFee;
+}
+
+function getEventFee(){
+var baseFee = 300;
+var current_time = Date.now();
+if(current_time > 1548959400000) {
+   if(current_time < 1551378600000) {
+    baseFee = 350;
+	} else {
+    baseFee = 400;
+    }
+}
+var count_events = 0; 
+var event_total_reg_fee = 0;
+for(var i = 1; i <= 18; i++){
+   if(document.getElementById("cb" + i).checked){
+      count_events++;
+   }
+}
+if(count_events == 0){
+	baseFee = 0;
+} else {
+    event_total_reg_fee = baseFee + count_events*50;
+}
+return event_total_reg_fee;
+}
+
+function getTravelFee(){
+var total_people = 0;
+for(var i = 19; i <= 26; i++) {
+   if(document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
+	total_people = total_people + parseInt(document.getElementById("cbcb" + i).value);
+   }
+}
+return total_people*100;
+}
+
+function getMerchFee(){
+	return 0;
+}
+
+function getAccoFee(){
+	return 0;
+}
+
+
+
 	function openCity(evt, tabName) {
 		if(tabName=='Merch'){
 			var flagAlert1 = true, flagAlert2 = true;
@@ -558,6 +609,7 @@ Cart Total : ₹0
 		}
 		document.getElementById(tabName).style.display = "block";
 		$('#default'+tabName)[0].className+=" active";
+	updateFee();
 	}
 
 	function skipCity(evt, tabName) {
@@ -570,13 +622,12 @@ Cart Total : ₹0
 		
 		if(tabName=='Merch'){
 
-	//For travel page
-	for(var i = 19; i <= 26; i++){
-		document.getElementById("cb" + i).checked = false;
-		document.getElementById("cbcb" + i).value = "";
+		//For travel page
+		for(var i = 19; i <= 26; i++){
+			document.getElementById("cb" + i).checked = false;
+			document.getElementById("cbcb" + i).value = "";
+		}
 	}
-
-}
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
@@ -588,6 +639,7 @@ for (i = 0; i < tablinks.length; i++) {
 }
 document.getElementById(tabName).style.display = "block";
 $('#default'+tabName)[0].className+=" active";
+updateFee();
 }
 
 document.getElementById('Events').style.display = "block";
@@ -599,6 +651,12 @@ $(".travel-selector-class").change(function() {
 });
 
 $("#register-checkout").click(function() {
+	
+	var cart_total=getEventFee()+getTravelFee()+getMerchFee()+getAccoFee();
+	if (cart_total==0){
+	alert("Please add something to your cart before checkout");	
+	return false;
+	}
 	var travel = {};
 	for(var i = 19; i <= 26; i++){
 		if(document.getElementById("cb" + i).checked){
