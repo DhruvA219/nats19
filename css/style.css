@@ -2050,15 +2050,62 @@ img::after{
 
 .sub-nav-link2{
     background-color:#060c22 !important;
-  border-style:none !important;  
+  border-style:none !important;
 }
 
 @media screen and (max-width: 991px) {
   .sub-nav {float: none;}
   .sub-nav-item {position: relative;}
   .sub-nav {
-    display: block !important; 
+    display: block !important;
     width: 100%;
     text-align: left;
   }
+}
+
+.tab {
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  margin: auto;
+  position: inherit;
+  transition: 1s;
+  margin-top: 30px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+  display: inline-block;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: #0e1b4d;
+  color: #fff;
+  padding: 10px 100px;
+  transition: 1s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  transition: 1s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #f82249;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
