@@ -21,15 +21,67 @@ foreach ($_SESSION['events'] as $key => $value) {
   }
 }
 
+$values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_iso2',";
+$values.="'";
+$values.=$event_registration_mapping['222'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['444'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['555'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['666'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['777'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333oh'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333ft'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333mbf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['444bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['555bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['skewb'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['sq1'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['minx'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['pyram'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['clock'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping['333fm'];
+$values.="'";
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES
-  ('$email_id', '$name','$WCA_ID','$birth_date','$gender','$country_iso2',`$event_mapping['222']`,`$event_mapping['333']`,`$event_mapping['444']`,`$event_mapping['555']`,`$event_mapping['666']`,`$event_mapping['777']`,`$event_mapping['333oh']`,`$event_mapping['333fm']`,`$event_mapping['333bf']`,`$event_mapping['333mbf']`,`$event_mapping['444bf']`,`$event_mapping['555bf']`,`$event_mapping['skewb']`,`$event_mapping['sq1']`,`$event_mapping['minx']`,`$event_mapping['pyram']`,`$event_mapping['clock']`,`$event_mapping['333fm']` )";
-
+$sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $result = $conn->query($sql);
 if ($result===TRUE){
   echo "successful";
 }
-//eventIDs
 ?>
 <div class="w3-container">
     <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
