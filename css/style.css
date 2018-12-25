@@ -2133,7 +2133,6 @@ img::after{
 #clockdiv div > span{
 	padding: 15px;
 	border-radius: 3px;
-	background: black;
 	display: inline-block;
 }
 
