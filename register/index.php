@@ -20,7 +20,7 @@ include('../header.php');
         <div class>
         </div>
 
-        <p>  <p>
+        <p> You can register for everything related to Indian Nationals here. All steps are optional. <p>
         </div>
 
         <section id="Regforevent" class="section-with-bg">
