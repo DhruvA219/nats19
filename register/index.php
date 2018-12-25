@@ -374,7 +374,7 @@ include('../header.php')
 <div class="tab">
   <div class="wrapper">
     <a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events')">Previous</button></a>
-    <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Next</button></a>
+    <a href="#Merch"><button class="tablinks" id="travel-next-button" onclick="openCity(event, 'Merch')">Next</button></a>
   </div>
 </div>
 </div>
@@ -477,7 +477,7 @@ include('../header.php')
     <p>Coming Soon</p>
     <div class="tab">
       <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
-      <a href="#"><button class="tablinks">Checkout</button></a>
+      <a href="#" id="register-checkout"><button class="tablinks">Checkout</button></a>
     </div>
   </div>
 </div>
@@ -495,6 +495,24 @@ include('../header.php')
 
 <script>
   function openCity(evt, tabName) {
+    if(tabName=='Merch'){
+ var flagAlert1 = true, flagAlert2 = true;
+            for(var i = 19; i <= 26; i++) {
+              if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
+                flagAlert1 = false; break;
+              } else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
+                flagAlert2 = false; break;
+              }
+            }
+            if(flagAlert1==false) {
+              alert("You haven't selected the number of people.");
+              return false;
+            } else if(flagAlert2 == false) {
+              alert("Please select the slot you want to travel in.");
+              return false;
+            }
+
+    }
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -511,25 +529,6 @@ include('../header.php')
 
           // Get the element with id="defaultOpen" and click on it
           document.getElementById("defaultOpen").click();
-
-
-          $("#travel-next-button").click(function() {
-            var flagAlert1 = true, flagAlert2 = true;
-            for(var i = 19; i <= 26; i++) {
-              if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
-                flagAlert1 = false; break;
-              } else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
-                flagAlert2 = false; break;
-              }
-            }
-            if(flagAlert1==false) {
-              alert("You haven't selected the number of people.");
-              return false;
-            } else if(flagAlert2 == false) {
-              alert("Please select the slot you want to travel in.");
-              return false;
-            }
-          });
 
           $(".travel-selector-class").change(function() {
            document.getElementById("cb" + this.id).value = "";
