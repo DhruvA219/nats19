@@ -1,45 +1,34 @@
 <?php
 include('../header.php')
 ?>
-  <main id="main">
+<main id="main">
     <!--==========================
   ==========================
 
-      <!-- Buy Ticket Section -->
+  <!-- Buy Ticket Section -->
 
-    <section id="buy-tickets" class="section-with-bg wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Registration</h2>
+  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2>Registration</h2>
         <div class>
         </div>
 
-          <p> Yo dawg, register af. <p>
+        <p> Yo dawg, register af. <p>
         </div>
 
         <section id="Regforevent" class="section-with-bg">
-          <div class="container wow fadeInUp">
+          <div class="wrapper">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultOpen">Events</button>
+              <button class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
+              <button class="tablinks" onclick="openCity(event, 'Merch')">Merchandise</button>
+              <button class="tablinks" onclick="openCity(event, 'Accomodation')">Accomodation</button>
+              <button class="tablinks" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
+            </div>
+          </div>
 
-        <ul class="nav nav-tabs" role="tablist">
-
-          <li class="nav-item">
-            <a class="nav-link active" href="#a2" role="tab" data-toggle="tab">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#a3" role="tab" data-toggle="tab">Travel</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#a4" role="tab" data-toggle="tab">Merchandise</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link comingsoon" href="#a5" role="tab" data-toggle="tab">Accomodation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link comingsoon" href="#a6" role="tab" data-toggle="tab">Unofficial Events</a>
-          </li>
-        </ul>
-    <div class="tab-content row justify-content-center">
-          <div role="tabpanel" class="col-lg-12  tab-pane fade show active" id="a2">
+          <div id="Events" class="tabcontent">
             <div class="col-lg-12 venue-info">
               <div class="row justify-content-center">
                 <div class="col-11 col-lg-8">
@@ -98,15 +87,15 @@ include('../header.php')
                   <label for="cb12"><img src="../img/eventscolor/MINX.png" /></label>
                 </li>
                 <li>
-                <li>
-                  <input type="checkbox" id="cb13" />
-                  <label for="cb13"><img src="../img/eventscolor/pyra.png" /></label>
-                </li>
-                <li>
-			<input type="checkbox" id="cb14" />
-                  <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
-                </li>
-                <li>
+                  <li>
+                    <input type="checkbox" id="cb13" />
+                    <label for="cb13"><img src="../img/eventscolor/pyra.png" /></label>
+                  </li>
+                  <li>
+                   <input type="checkbox" id="cb14" />
+                   <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
+                 </li>
+                 <li>
                   <input type="checkbox" id="cb15" />
                   <label for="cb15"><img src="../img/eventscolor/sq1.png" /></label>
                 </li>
@@ -123,15 +112,14 @@ include('../header.php')
                   <label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label>
                 </li>
               </ul>
-              <!-- get this working-->
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link" href="#a3" role="tab" data-toggle="tab">Next</a>
-                </li>
-              </ul>
+              <div class="wrapper">
+                <div class="tab">
+                  <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Next</button></a>
+                </div>
+              </div>
             </div>
           </div>
-          <div role="tabpanel" class="col-lg-12  tab-pane fade" id="a3">
+          <div id="Travel" class="tabcontent">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8">
                 <p align="middle"> Step 2/5</p>
@@ -139,44 +127,44 @@ include('../header.php')
                 <p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
               </div>
             </div>
-<div class="wrapper">
-<table style="margin-bottom:30px;">
-              <tr>
-                <th class="tg-0lax">Select</th>
-                <th class="tg-s268">Date</th>
-                <th class="tg-s268">Time</th>
-                <th class="tg-s268">From </th>
-                <th class="tg-s268">To</th>
-	      <th class="tg-s268"> Number of People </th>
-		</tr>
-              <tr>
-                <td class="tg-0lax">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb19" class="travel-selector-class">
-                      <span class="lever"></span>
+            <div class="wrapper">
+              <table>  
+                <tr>
+                  <th class="tg-0lax">Select</th>
+                  <th class="tg-s268">Date</th>
+                  <th class="tg-s268">Time</th>
+                  <th class="tg-s268">From </th>
+                  <th class="tg-s268">To</th>
+                  <th class="tg-s268"> Number of People </th>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">
+                    <div class="switch">
+                      <label>
+                        <input type="checkbox" id="cb19" class="travel-selector-class">
+                        <span class="lever"></span>
 
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-s268">11 April</td>
-                <td class="tg-s268">8:00 PM</td>
-                <td class="tg-s268">Metro</td>
-		<td class="tg-s268">SNU</td>
-		<td class="tg-s268"> <select id="cbcb19">
+                      </label>
+                    </div>
+                  </td>
+                  <td class="tg-s268">11 April</td>
+                  <td class="tg-s268">8:00 PM</td>
+                  <td class="tg-s268">Metro</td>
+                  <td class="tg-s268">SNU</td>
+                  <td class="tg-s268"> <select id="cbcb19">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-		    <option value="4">4</option>
+                    <option value="4">4</option>
                     <option value="5">5</option>
                     <option value="6">6</option>
                     <option value="7">7</option>
-		    <option value="8">8</option>
+                    <option value="8">8</option>
                     <option value="9">9</option>
                     <option value="10">10</option>
-		  </select>
-		</td>
+                  </select>
+                </td>
               </tr>
               <tr>
                 <td class="tg-0lax">
@@ -193,311 +181,389 @@ include('../header.php')
                 <td class="tg-s268">Metro</td>
                 <td class="tg-s268">SNU</td>
                 <td class="tg-s268"> <select id="cbcb20">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
- </tr>
-              <tr>
-                <td class="tg-0lax">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb21" class="travel-selector-class">
-                      <span class="lever"></span>
+                  <option value="" disabled="" selected="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td class="tg-0lax">
+                <div class="switch">
+                  <label>
+                    <input type="checkbox" id="cb21" class="travel-selector-class">
+                    <span class="lever"></span>
 
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-s268">12 April </td>
-                <td class="tg-s268">8:00 PM</td>
-                <td class="tg-s268">SNU</td>
-		<td class="tg-s268">Metro</td>
-                <td class="tg-s268"> <select id="cbcb21">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
-  </tr>
-              <tr>
-                <td class="tg-0lax">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb22" class="travel-selector-class">
-                      <span class="lever"></span>
+                  </label>
+                </div>
+              </td>
+              <td class="tg-s268">12 April </td>
+              <td class="tg-s268">8:00 PM</td>
+              <td class="tg-s268">SNU</td>
+              <td class="tg-s268">Metro</td>
+              <td class="tg-s268"> <select id="cbcb21">
+                <option value="" disabled="" selected="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="tg-0lax">
+              <div class="switch">
+                <label>
+                  <input type="checkbox" id="cb22" class="travel-selector-class">
+                  <span class="lever"></span>
 
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-s268">13 April</td>
-                <td class="tg-s268">8:00 AM</td>
-                <td class="tg-s268">Metro</td>
-		<td class="tg-s268">SNU</td>
-                <td class="tg-s268"> <select id="cbcb22">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
- </tr>
-<tr>
-                <td class="tg-0pky">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb23" class="travel-selector-class">
-                      <span class="lever"></span>
-
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-0pky">14 April</td>
-                <td class="tg-0pky">8:00 AM</td>
-                <td class="tg-0pky">Metro</td>
-                <td class="tg-0pky">SNU</td>
-                <td class="tg-s268"> <select id="cbcb23">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
-</tr>
-
-<tr>
-		<td class="tg-0pky">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb24" class="travel-selector-class">
-                      <span class="lever"></span>
-
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-0pky">14 April</td>
-                <td class="tg-0pky">8:00 AM</td>
-                <td class="tg-0pky">Metro</td>
-                <td class="tg-0pky">SNU</td>
-                <td class="tg-s268"> <select id="cbcb24">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
-</tr>
-              <tr>
-                <td class="tg-0pky">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb25" class="travel-selector-class">
-                      <span class="lever"></span>
-
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-0pky">14 April</td>
-                <td class="tg-0pky">8:00 PM</td>
-                <td class="tg-0pky">SNU</td>
-    <td class="tg-0pky">Metro</td>
-                      <td class="tg-s268"> <select id="cbcb25">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>        </tr>
-              <tr>
-                <td class="tg-0pky">
-                  <div class="switch">
-                    <label>
-                      <input type="checkbox" id="cb26" class="travel-selector-class">
-                      <span class="lever"></span>
-
-                    </label>
-                  </div>
-                </td>
-                <td class="tg-0pky">15 April</td>
-                <td class="tg-0pky">8:00 PM</td>
-                <td class="tg-0pky">SNU</td>
- <td class="tg-0pky">Metro</td>
-		  <td class="tg-s268"> <select id="cbcb26">
-                    <option value="" disabled="" selected="">Select</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                </td>
-              </tr>
-            </table>
-          </div>
-            <!-- get this working-->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link" href="#a4" role="tab" data-toggle="tab" id="travel-next-button">Next</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#a4" role="tab" data-toggle="tab">Skip</a>
-              </li>
-            </ul>
-          </div>
-
-          <div role="tabpanel" class="col-lg-12  tab-pane fade" id="a4">
-            <div class="row justify-content-center">
-              <div class="col-11 col-lg-8">
-                <p align="middle"> Step 3/5</p>
-                <h3 align="middle"> Merchandise</h3>
-                <p align="middle">Make you Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
-                <input type="checkbox" id="cb27" />
-                <label for="cb27"><img src="" alt="T shirt photo">
-                  <select>
-                    <option value="" disabled selected>Choose your Size</option>
-                    <option value="1">M for small bois</option>
-                    <option value="2">L for big bois</option>
-                    <option value="3">XL for bigger bois</option>
-                    <option value="3">XXL for Golz</option>
-                  </select>
                 </label>
-                <input type="checkbox" id="cb28" />
-                  <label for="cb28"><img src="" alt="Some other merch photo"></label>
               </div>
+            </td>
+            <td class="tg-s268">13 April</td>
+            <td class="tg-s268">8:00 AM</td>
+            <td class="tg-s268">Metro</td>
+            <td class="tg-s268">SNU</td>
+            <td class="tg-s268"> <select id="cbcb22">
+              <option value="" disabled="" selected="">Select</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">
+            <div class="switch">
+              <label>
+                <input type="checkbox" id="cb23" class="travel-selector-class">
+                <span class="lever"></span>
+
+              </label>
             </div>
-            <!-- get this working-->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link" href="#a5" role="tab" data-toggle="tab">Next</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#a5" role="tab" data-toggle="tab">Skip</a>
-              </li>
-            </ul>
+          </td>
+          <td class="tg-0pky">14 April</td>
+          <td class="tg-0pky">8:00 AM</td>
+          <td class="tg-0pky">Metro</td>
+          <td class="tg-0pky">SNU</td>
+          <td class="tg-s268"> <select id="cbcb23">
+            <option value="" disabled="" selected="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="tg-0pky">
+          <div class="switch">
+            <label>
+              <input type="checkbox" id="cb24" class="travel-selector-class">
+              <span class="lever"></span>
+
+            </label>
           </div>
-          <div role="tabpanel" class="col-lg-12  tab-pane fade" id="a5">
-            <p>Coming Soon</p>
-            <!-- get this working-->
-            <ul class="nav nav-tabs" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link" href="#a6" role="tab" data-toggle="tab">Next</a>
-              </li>
-              <li>
-                <a class="nav-link" href="#a6" role="tab" data-toggle="tab">Skip</a>
-              </li>
-            </ul>
-          </div>
-          <div role="tabpanel" class="col-lg-12  tab-pane fade" id="a6">
-            <p>Coming Soon</p>
-            <!-- get this working-->
-            <ul class="nav nav-tabs" role="tablist">
-              <li>
-                <a class="nav-link" id = "register-checkout">Checkout</a>
-              </li>
-            </ul>
-          </div>
+        </td>
+        <td class="tg-0pky">14 April</td>
+        <td class="tg-0pky">8:00 AM</td>
+        <td class="tg-0pky">Metro</td>
+        <td class="tg-0pky">SNU</td>
+        <td class="tg-s268"> <select id="cbcb24">
+          <option value="" disabled="" selected="">Select</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="tg-0pky">
+        <div class="switch">
+          <label>
+            <input type="checkbox" id="cb25" class="travel-selector-class">
+            <span class="lever"></span>
+
+          </label>
         </div>
+      </td>
+      <td class="tg-0pky">14 April</td>
+      <td class="tg-0pky">8:00 PM</td>
+      <td class="tg-0pky">SNU</td>
+      <td class="tg-0pky">Metro</td>
+      <td class="tg-s268"> <select id="cbcb25">
+        <option value="" disabled="" selected="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </td>        </tr>
+    <tr>
+      <td class="tg-0pky">
+        <div class="switch">
+          <label>
+            <input type="checkbox" id="cb26" class="travel-selector-class">
+            <span class="lever"></span>
+
+          </label>
+        </div>
+      </td>
+      <td class="tg-0pky">15 April</td>
+      <td class="tg-0pky">8:00 PM</td>
+      <td class="tg-0pky">SNU</td>
+      <td class="tg-0pky">Metro</td>
+      <td class="tg-s268"> <select id="cbcb26">
+        <option value="" disabled="" selected="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </td>
+  </tr>
+</table>
+</div>
+<div class="tab">
+  <div class="wrapper">
+    <a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events')">Previous</button></a>
+    <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Next</button></a>
+  </div>
+</div>
+</div>
+<div id="Merch" class="tabcontent">
+  <div class="row justify-content-center">
+    <div class="col-11 col-lg-8">
+      <p align="middle"> Step 3/5</p>
+      <h3 align="middle"> Merchandise</h3>
+      <p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
+      <div class="wrapper">
+        <input type="checkbox" id="cb27" />
+        <label for="cb27"><img src="" alt="T shirt photo">
+          <select>
+            <option value="" disabled selected>Choose your Size</option>
+            <option value="1">M for small bois</option>
+            <option value="2">L for big bois</option>
+            <option value="3">XL for bigger bois</option>
+            <option value="3">XXL for Golz</option>
+          </select>
+        </label>
+        <input type="checkbox" id="cb28" />
+        <label for="cb28"><img src="../img/merchandise/wristband.png" alt="Wrist Band photo">
+          <select id="cbcb28">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <input type="checkbox" id="cb29" />
+        <label for="cb29"><img src="../img/merchandise/mug.png" alt="Mug photo">
+          <select id="cbcb29">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <input type="checkbox" id="cb30" />
+        <label for="cb30"><img src="../img/merchandise/logo.png" alt="Logo photo">
+          <select id="cbcb30">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <input type="checkbox" id="cb31" />
+        <label for="cb31"><img src="../img/merchandise/badge.png" alt="Magnetic Badge photo">
+          <select id="cbcb31">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+        <input type="checkbox" id="cb32" />
+        <label for="cb32"><img src="../img/merchandise/writingpad.png" alt="Writing Pad photo">
+          <select id="cbcb32">
+            <option value="" disabled selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </label>
+
+        <div class="tab">
+          <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button></a>
+          <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Next</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- get this working-->
+<div id="Accomodation" class="tabcontent">
+
+  <div class="wrapper">
+    <p>Coming Soon</p>
+    <div class="tab">
+      <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button></a>
+      <a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Next</button></a>
+    </div>
+  </div>
+</div>
+
+<div id="Unofficial" class="tabcontent">
+
+  <div class="wrapper">
+    <p>Coming Soon</p>
+    <div class="tab">
+      <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
+      <a href=""><button class="tablinks">Checkout</button></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  function openCity(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+  }
+
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+
+
+          $("#travel-next-button").click(function() {
+            var flagAlert1 = true, flagAlert2 = true;
+            for(var i = 19; i <= 26; i++) {
+              if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
+                flagAlert1 = false; break;
+              } else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
+                flagAlert2 = false; break;
+              }
+            }
+            if(flagAlert1==false) {
+              alert("You haven't selected the number of people.");
+              return false;
+            } else if(flagAlert2 == false) {
+              alert("Please select the slot you want to travel in.");
+              return false;
+            }
+          });
+
+          $(".travel-selector-class").change(function() {
+           document.getElementById("cb" + this.id).value = "";
+         });
+
+          $("#register-checkout").click(function() {
+            var travel = {};
+            for(var i = 19; i <= 26; i++){
+              if(document.getElementById("cb" + i).checked){
+                travel["cb" + i] = document.getElementById("cbcb" + i).value;
+              }
+            }
+
+            var events = {};
+            for(var i = 1; i <= 18; i++) {
+              events["cb" + i] = 0;
+              if(document.getElementById("cb" + i).checked) {
+                events["cb" + i] = 1;
+              }
+            }
+
+            $.post( "register.php",{travel: travel, events: events}, function( script ) {
+             var scriptTag = $(script).text();
+             eval(scriptTag);
+           });
+          });
+        </script>
+
+
       </section>
     </section>
   </main>
 
 
-
-      <script>
-        $("#travel-next-button").click(function() {
-      var flagAlert1 = true, flagAlert2 = true;
-      for(var i = 19; i <= 26; i++) {
-          if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
-      flagAlert1 = false; break;
-          } else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
-            flagAlert2 = false; break;
-          }
-      }
-      if(flagAlert1==false) {
-      alert("You haven't selected the number of people.");
-                   return false;
-    } else if(flagAlert2 == false) {
-            alert("Please select the slot you want to travel in.");
-                   return false;
-    }
-    });
-
-     $(".travel-selector-class").change(function() {
-       document.getElementById("cb" + this.id).value = "";
-    });
-
-                $("#register-checkout").click(function() {
-            var travel = {};
-      for(var i = 19; i <= 26; i++){
-            if(document.getElementById("cb" + i).checked){
-                travel["cb" + i] = document.getElementById("cbcb" + i).value;
-           }
-      }
-
-                        var events = {};
-      for(var i = 1; i <= 18; i++) {
-            events["cb" + i] = 0;
-            if(document.getElementById("cb" + i).checked) {
-                events["cb" + i] = 1;
-            }
-      }
-
-       $.post( "register.php",{travel: travel, events: events}, function( script ) {
-       var scriptTag = $(script).text();
-          eval(scriptTag);
-      });
-                });
-      </script>
-
-      <?php
-include('../footer.php')
-?>
+  <?php
+  include('../footer.php')
+  ?>
