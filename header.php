@@ -100,11 +100,6 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
-<script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip({placement: "left"});   
-});
-</script>
 </head>
 
 <body>
@@ -132,14 +127,9 @@ $(document).ready(function(){
           <li class="<?php echo ($_SERVER['PHP_SELF'] == "/events/index.php" ? "menu-active" : "");?>"><a href="../events">Events</a></li> <!-- events.html doesn't exist for now -->
           <li class="<?php echo ($_SERVER['PHP_SELF'] == "/schedule/index.php" ? "menu-active" : "");?>"><a href="../schedule">Schedule</a></li>
             <li class="<?php echo (($_SERVER['PHP_SELF'] == "/competitors/index.php" || $_SERVER['PHP_SELF'] == "/competitors/psych-sheet.php" || $_SERVER['PHP_SELF'] == "/accommodation/register.php") ? "menu-active" : "");?>"><a href="#">Registration</a>
-	    <ul class="sub-nav">
-<?php 
-               if(isset($_SESSION['email'])) {
-		       echo ' <li class="sub-nav-item programs"><a class="sub-nav-link" href="../register">Register</a></li>';} else {
-	      echo ' <li class="sub-nav-item programs"><a class="sub-nav-link" href="#" data-toggle="tooltip" title="Please login via WCA to continue.">Register</a></li>';
-	       }
-?> 
-			<li class="sub-nav-item events"><a class="sub-nav-link" href="../competitors">Competitors</a></li>
+            <ul class="sub-nav">
+                <li class="sub-nav-item programs"><a class="sub-nav-link" href="../register">Register</a></li>
+                <li class="sub-nav-item events"><a class="sub-nav-link" href="../competitors">Competitors</a></li>
             </ul>
           </li>
 
