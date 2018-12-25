@@ -20,7 +20,7 @@ include('../header.php');
         <div class>
         </div>
 
-        <p> Yo dawg, register af. <p>
+        <p>  <p>
         </div>
 
         <section id="Regforevent" class="section-with-bg">
@@ -467,9 +467,17 @@ include('../header.php');
 </div>
 <!-- get this working-->
 <div id="Accomodation" class="tabcontent">
+          <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <p align="middle"> Step 4/5</p>
+                <h3 align="middle"> Accommodation</h3>
+                <p align="middle">Coming soon </p>
+                <p align="middle">You will be able to pre-book campus accommodation options on this page from 20 January onwards. You can do this later independent of your registration.</p>
+              </div>
+            </div>
+
 
   <div class="wrapper">
-    <p>Coming Soon</p>
     <div class="tab">
       <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button></a>
       <a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Next</button></a>
@@ -478,9 +486,16 @@ include('../header.php');
 </div>
 
 <div id="Unofficial" class="tabcontent">
+          <div class="row justify-content-center">
+              <div class="col-11 col-lg-8">
+                <p align="middle"> Step 5/5</p>
+                <h3 align="middle"> Unofficial Events</h3>
+                <p align="middle">Coming soon </p>
+                <p align="middle">You will be able to register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email when an event is available.</p>
+              </div>
+            </div>
 
   <div class="wrapper">
-    <p>Coming Soon</p>
     <div class="tab">
       <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
       <a href="#" id="register-checkout"><button class="tablinks">Checkout</button></a>
