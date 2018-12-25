@@ -17,6 +17,8 @@ else{
 $repayment_verify_sql = "select * from `payment` where payment_id='".$_GET['payment_id']."'";
 $result=$conn->query($repayment_verify_sql);
 
+var_dump($_SESSION['travel']);
+
 if(mysqli_num_rows($result)>0)
 {
   echo '<script>window.location.href="https://nats19.in"  </script>';
@@ -44,6 +46,7 @@ if($mycnt==18){
 return true;
 
 }
+
 
 if(checkEmpty($_SESSION['events'])){
 
@@ -118,11 +121,17 @@ $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`
 $conn->query($sql);
 }
 
+//update payment
 $payid = $_GET["payment_request_id"];
 $response = $api->paymentRequestStatus($payid);
 $amount=$response['amount'];
 $payment_sql="INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES ('$payment_id','$email_id', $amount )";
 $conn->query($payment_sql);
+
+//update travel in DB
+
+
+
 
 }
 ?>
