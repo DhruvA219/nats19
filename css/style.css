@@ -2125,8 +2125,8 @@ img::after{
 
 #clockdiv > div{
 	padding: 10px;
-	border-radius: 3px;
-	background: black;
+  border-radius: 15px;
+  background: #80808080;
 	display: inline-block;
 }
 
