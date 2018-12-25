@@ -82,7 +82,7 @@ include('../header.php')
           <div class="tab-content row justify-content-center">
             <!-- Competitors Table -->
             <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="comp">
-
+              <div class="wrapper">
               <table class = "striped">
                 <thead>
                   <tr>
@@ -233,6 +233,7 @@ foreach($result as $row){
               </table>
           <!-- 3x3 Psych Sheet Table -->
         </div>
+      </div>
       </div>
     </section>
 
