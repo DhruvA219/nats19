@@ -9,7 +9,26 @@ $birth_date=$_SESSION['dob'];
 $WCA_ID=$_SESSION['wcaId'];
 $country_iso2=$_SESSION['country_iso2'];
 $gender=$_SESSION['gender'];
+$event_mapping = array("cb1" => '222', "cb2" => '333', "cb3" => '444', "cb4" => '555', "cb5" => '666', "cb6" => '777', "cb7" => '333bf', "cb8" => '333fm', "cb9" => '333oh', "cb10" => '333ft', "cb11" => 'clock', "cb12" => 'minx', "cb13" => 'pyram', "cb14" => 'skewb', "cb15" => 'sq1', "cb16" => '444bf', "cb17" => '555bf', "cb18" => '333mbf' );
+$event_registration_mapping=array();
 
+foreach ($_SESSION['events'] as $key => $value) {
+  if($value == 1) {
+    $event_registration_mapping[$event_mapping[$key]]='Y';
+  }
+  else{
+    $event_registration_mapping[$event_mapping[$key]]='N';
+  }
+}
+
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+$sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES
+  ('$email_id', '$name','$WCA_ID','$birth_date','$gender','$country_iso2',`$event_mapping['222']`,`$event_mapping['333']`,`$event_mapping['444']`,`$event_mapping['555']`,`$event_mapping['666']`,`$event_mapping['777']`,`$event_mapping['333oh']`,`$event_mapping['333fm']`,`$event_mapping['333bf']`,`$event_mapping['333mbf']`,`$event_mapping['444bf']`,`$event_mapping['555bf']`,`$event_mapping['skewb']`,`$event_mapping['sq1']`,`$event_mapping['minx']`,`$event_mapping['pyram']`,`$event_mapping['clock']`,`$event_mapping['333fm']` )";
+
+$result = $conn->query($sql);
+if ($result===TRUE){
+  echo "successful";
+}
 //eventIDs
 ?>
 <div class="w3-container">
