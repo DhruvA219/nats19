@@ -16,14 +16,19 @@ if ($current_time>$basetime_1){
 	}
 
 }
-
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+session_start();
+$email=$_SESSION['email'];
+$sql = "SELECT * FROM registrations where email_id='$email'";
+$result = $conn->query($sql);
 $count_of_events = 0;
 foreach ($_POST['events'] as $key => $value) {
 	if($value == 1) {
 		$count_of_events++;
 	}
 }
-if($count_of_events == 0) $base_fee = 0;
+
+if($count_of_events == 0 || mysqli_num_rows($result)!=0) $base_fee = 0;
 
 $total_cost_of_event_reg = $base_fee + 50*$count_of_events;
 // echo $total_cost_of_events_reg;
