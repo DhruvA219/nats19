@@ -50,6 +50,95 @@ return true;
 if(checkEmpty($_SESSION['events'])){
 
 $event_mapping = array("cb1" => '222', "cb2" => '333', "cb3" => '444', "cb4" => '555', "cb5" => '666', "cb6" => '777', "cb7" => '333bf', "cb8" => '333fm', "cb9" => '333oh', "cb10" => '333ft', "cb11" => 'clock', "cb12" => 'minx', "cb13" => 'pyram', "cb14" => 'skewb', "cb15" => 'sq1', "cb16" => '444bf', "cb17" => '555bf', "cb18" => '333mbf' );
+
+
+
+$existing_reg_verify_sql = "select * from `registrations` where email_id='".$email_id."'";
+$reg_result=$conn->query($existing_reg_verify_sql);
+
+if(mysqli_num_rows($reg_result)>0)
+{
+  $event_registration_mapping2=array();
+    foreach ($_SESSION['events'] as $key => $value) {
+      if($value == 1) {
+        $event_registration_mapping2[$event_mapping[$key]]='Y';
+      }
+      else{
+        $event_registration_mapping2[$event_mapping[$key]]='N';
+        }
+    }
+
+  foreach($result as $row){
+    foreach($event_mapping as $key => $value){
+      if($row[$value]=='Y'){
+        $event_registration_mapping2[$value]='Y';    
+      }
+    }
+  }
+
+  $values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_iso2',";
+$values.="'";
+$values.=$event_registration_mapping2['222'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['444'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['555'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['666'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['777'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333oh'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333ft'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333mbf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['444bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['555bf'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['skewb'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['sq1'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['minx'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['pyram'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['clock'];
+$values.="',";
+$values.="'";
+$values.=$event_registration_mapping2['333fm'];
+$values.="'";
+$case1_sql = "delete from registrations where email_id='".$email_id."'";
+$conn->query($case1_sql);
+$case1_insert_sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
+$conn->query($case1_insert_sql);
+
+}
+
+else{
 $event_registration_mapping=array();
 
 foreach ($_SESSION['events'] as $key => $value) {
@@ -118,8 +207,13 @@ $values.=$event_registration_mapping['333fm'];
 $values.="'";
 $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $conn->query($sql);
-}
+$average_sql="insert into RanksAverage2 select personId,eventId,best,worldRank from RanksAverage inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
+$single_sql="insert into RanksSingle2 select personId,eventId,best,worldRank from RanksSingle inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
+$conn->query($average_sql);
+$conn->query($single_sql);
 
+}
+}
 //update payment
 $payid = $_GET["payment_request_id"];
 $response = $api->paymentRequestStatus($payid);
