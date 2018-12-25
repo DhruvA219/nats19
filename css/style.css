@@ -2049,6 +2049,11 @@ img::after{
   color:white !important;
 }
 
+.sub-nav-link2{
+    background-color:#060c22 !important;
+  border:none;  
+}
+
 @media screen and (max-width: 991px) {
   .sub-nav {float: none;}
   .sub-nav-item {position: relative;}
