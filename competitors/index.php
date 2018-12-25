@@ -82,6 +82,7 @@ include('../header.php')
 
           <div class="tab-content row justify-content-center">
             <!-- Competitors Table -->
+            <div class="wrapper">
 
               <table class = "striped">
                 <thead>
@@ -150,6 +151,7 @@ foreach($result as $row){
               </table>
           <!-- 3x3 Psych Sheet Table -->
         </div>
+      </div>
       </div>
     </section>
 
