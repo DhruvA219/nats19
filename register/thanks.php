@@ -67,8 +67,8 @@ if(mysqli_num_rows($reg_result)>0)
         $event_registration_mapping2[$event_mapping[$key]]='N';
         }
     }
-
-  foreach($result as $row){
+    var_dump(event_registration_mapping2);
+  foreach($reg_result as $row){
     foreach($event_mapping as $key => $value){
       if($row[$value]=='Y'){
         $event_registration_mapping2[$value]='Y';    
