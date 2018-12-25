@@ -98,68 +98,97 @@ include('../header.php');
 										<label for="cb13"><img src="../img/eventscolor/pyra.png" /></label>
 									</li>
 									<li>
-									 <input type="checkbox" id="cb14" />
-									 <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
-								 </li>
-								 <li>
-									<input type="checkbox" id="cb15" />
-									<label for="cb15"><img src="../img/eventscolor/sq1.png" /></label>
-								</li>
-								<li>
-									<input type="checkbox" id="cb16" />
-									<label for="cb16"><img src="../img/eventscolor/4BLD.png" /></label>
-								</li>
-								<li>
-									<input type="checkbox" id="cb17" />
-									<label for="cb17"><img src="../img/eventscolor/5BLD.png" /></label>
-								</li>
-								<li>
-									<input type="checkbox" id="cb18" />
-									<label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label>
-								</li>
-							</ul>
-							<div class="wrapper">
-								<div class="tab">
-									<a href="#Travel"><button class="tablinks" onclick="skipCity(event, 'Travel')">Skip</button></a>
-									<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Save and Proceed</button></a>
-								</div>
+										<input type="checkbox" id="cb14" />
+										<label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
+									</li>
+									<li>
+										<input type="checkbox" id="cb15" />
+										<label for="cb15"><img src="../img/eventscolor/sq1.png" /></label>
+									</li>
+									<li>
+										<input type="checkbox" id="cb16" />
+										<label for="cb16"><img src="../img/eventscolor/4BLD.png" /></label>
+									</li>
+									<li>
+										<input type="checkbox" id="cb17" />
+										<label for="cb17"><img src="../img/eventscolor/5BLD.png" /></label>
+									</li>
+									<li>
+										<input type="checkbox" id="cb18" />
+										<label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label>
+									</li>
+								</ul>
+								<div class="wrapper">
+									<div class="tab">
+										<a href="#Travel"><button class="tablinks" onclick="skipCity(event, 'Travel')">Skip</button></a>
+										<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Save and Proceed</button></a>
+									</div>
 
+								</div>
 							</div>
 						</div>
-					</div>
-					<div id="Travel" class="tabcontent">
-						<div class="row justify-content-center">
-							<div class="col-11 col-lg-8">
-								<p align="middle"> Step 2/5</p>
-								<h3 align="middle"> Bus Service</h3>
-								<p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
+						<div id="Travel" class="tabcontent">
+							<div class="row justify-content-center">
+								<div class="col-11 col-lg-8">
+									<p align="middle"> Step 2/5</p>
+									<h3 align="middle"> Bus Service</h3>
+									<p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
+								</div>
 							</div>
-						</div>
-						<div class="wrapper">
-							<table>  
-								<tr>
-									<th class="tg-0lax">Select</th>
-									<th class="tg-s268">Date</th>
-									<th class="tg-s268">Time</th>
-									<th class="tg-s268">From </th>
-									<th class="tg-s268">To</th>
-									<th class="tg-s268"> Number of People </th>
+							<div class="wrapper">
+								<table>  
+									<tr>
+										<th class="tg-0lax">Select</th>
+										<th class="tg-s268">Date</th>
+										<th class="tg-s268">Time</th>
+										<th class="tg-s268">From </th>
+										<th class="tg-s268">To</th>
+										<th class="tg-s268"> Number of People </th>
+									</tr>
+									<tr>
+										<td class="tg-0lax">
+											<div class="switch">
+												<label>
+													<input type="checkbox" id="cb19" class="travel-selector-class">
+													<span class="lever"></span>
+
+												</label>
+											</div>
+										</td>
+										<td class="tg-s268">11 April</td>
+										<td class="tg-s268">8:00 PM</td>
+										<td class="tg-s268">Metro</td>
+										<td class="tg-s268">SNU</td>
+										<td class="tg-s268"> <select id="cbcb19">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
 								</tr>
 								<tr>
 									<td class="tg-0lax">
 										<div class="switch">
 											<label>
-												<input type="checkbox" id="cb19" class="travel-selector-class">
+												<input type="checkbox" id="cb20" class="travel-selector-class">
 												<span class="lever"></span>
 
 											</label>
 										</div>
 									</td>
-									<td class="tg-s268">11 April</td>
-									<td class="tg-s268">8:00 PM</td>
+									<td class="tg-s268">12 April</td>
+									<td class="tg-s268">8:00 AM </td>
 									<td class="tg-s268">Metro</td>
 									<td class="tg-s268">SNU</td>
-									<td class="tg-s268"> <select id="cbcb19">
+									<td class="tg-s268"> <select id="cbcb20">
 										<option value="" disabled="" selected="">Select</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
@@ -178,17 +207,17 @@ include('../header.php');
 								<td class="tg-0lax">
 									<div class="switch">
 										<label>
-											<input type="checkbox" id="cb20" class="travel-selector-class">
+											<input type="checkbox" id="cb21" class="travel-selector-class">
 											<span class="lever"></span>
 
 										</label>
 									</div>
 								</td>
-								<td class="tg-s268">12 April</td>
-								<td class="tg-s268">8:00 AM </td>
-								<td class="tg-s268">Metro</td>
+								<td class="tg-s268">12 April </td>
+								<td class="tg-s268">8:00 PM</td>
 								<td class="tg-s268">SNU</td>
-								<td class="tg-s268"> <select id="cbcb20">
+								<td class="tg-s268">Metro</td>
+								<td class="tg-s268"> <select id="cbcb21">
 									<option value="" disabled="" selected="">Select</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -207,17 +236,17 @@ include('../header.php');
 							<td class="tg-0lax">
 								<div class="switch">
 									<label>
-										<input type="checkbox" id="cb21" class="travel-selector-class">
+										<input type="checkbox" id="cb22" class="travel-selector-class">
 										<span class="lever"></span>
 
 									</label>
 								</div>
 							</td>
-							<td class="tg-s268">12 April </td>
-							<td class="tg-s268">8:00 PM</td>
-							<td class="tg-s268">SNU</td>
+							<td class="tg-s268">13 April</td>
+							<td class="tg-s268">8:00 AM</td>
 							<td class="tg-s268">Metro</td>
-							<td class="tg-s268"> <select id="cbcb21">
+							<td class="tg-s268">SNU</td>
+							<td class="tg-s268"> <select id="cbcb22">
 								<option value="" disabled="" selected="">Select</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -233,20 +262,20 @@ include('../header.php');
 						</td>
 					</tr>
 					<tr>
-						<td class="tg-0lax">
+						<td class="tg-0pky">
 							<div class="switch">
 								<label>
-									<input type="checkbox" id="cb22" class="travel-selector-class">
+									<input type="checkbox" id="cb23" class="travel-selector-class">
 									<span class="lever"></span>
 
 								</label>
 							</div>
 						</td>
-						<td class="tg-s268">13 April</td>
-						<td class="tg-s268">8:00 AM</td>
-						<td class="tg-s268">Metro</td>
-						<td class="tg-s268">SNU</td>
-						<td class="tg-s268"> <select id="cbcb22">
+						<td class="tg-0pky">14 April</td>
+						<td class="tg-0pky">8:00 AM</td>
+						<td class="tg-0pky">Metro</td>
+						<td class="tg-0pky">SNU</td>
+						<td class="tg-s268"> <select id="cbcb23">
 							<option value="" disabled="" selected="">Select</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -261,11 +290,12 @@ include('../header.php');
 						</select>
 					</td>
 				</tr>
+
 				<tr>
 					<td class="tg-0pky">
 						<div class="switch">
 							<label>
-								<input type="checkbox" id="cb23" class="travel-selector-class">
+								<input type="checkbox" id="cb24" class="travel-selector-class">
 								<span class="lever"></span>
 
 							</label>
@@ -275,7 +305,7 @@ include('../header.php');
 					<td class="tg-0pky">8:00 AM</td>
 					<td class="tg-0pky">Metro</td>
 					<td class="tg-0pky">SNU</td>
-					<td class="tg-s268"> <select id="cbcb23">
+					<td class="tg-s268"> <select id="cbcb24">
 						<option value="" disabled="" selected="">Select</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -290,22 +320,49 @@ include('../header.php');
 					</select>
 				</td>
 			</tr>
-
 			<tr>
 				<td class="tg-0pky">
 					<div class="switch">
 						<label>
-							<input type="checkbox" id="cb24" class="travel-selector-class">
+							<input type="checkbox" id="cb25" class="travel-selector-class">
 							<span class="lever"></span>
 
 						</label>
 					</div>
 				</td>
 				<td class="tg-0pky">14 April</td>
-				<td class="tg-0pky">8:00 AM</td>
-				<td class="tg-0pky">Metro</td>
+				<td class="tg-0pky">8:00 PM</td>
 				<td class="tg-0pky">SNU</td>
-				<td class="tg-s268"> <select id="cbcb24">
+				<td class="tg-0pky">Metro</td>
+				<td class="tg-s268"> <select id="cbcb25">
+					<option value="" disabled="" selected="">Select</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</td>        </tr>
+			<tr>
+				<td class="tg-0pky">
+					<div class="switch">
+						<label>
+							<input type="checkbox" id="cb26" class="travel-selector-class">
+							<span class="lever"></span>
+
+						</label>
+					</div>
+				</td>
+				<td class="tg-0pky">15 April</td>
+				<td class="tg-0pky">8:00 PM</td>
+				<td class="tg-0pky">SNU</td>
+				<td class="tg-0pky">Metro</td>
+				<td class="tg-s268"> <select id="cbcb26">
 					<option value="" disabled="" selected="">Select</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -320,64 +377,7 @@ include('../header.php');
 				</select>
 			</td>
 		</tr>
-		<tr>
-			<td class="tg-0pky">
-				<div class="switch">
-					<label>
-						<input type="checkbox" id="cb25" class="travel-selector-class">
-						<span class="lever"></span>
-
-					</label>
-				</div>
-			</td>
-			<td class="tg-0pky">14 April</td>
-			<td class="tg-0pky">8:00 PM</td>
-			<td class="tg-0pky">SNU</td>
-			<td class="tg-0pky">Metro</td>
-			<td class="tg-s268"> <select id="cbcb25">
-				<option value="" disabled="" selected="">Select</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			</select>
-		</td>        </tr>
-		<tr>
-			<td class="tg-0pky">
-				<div class="switch">
-					<label>
-						<input type="checkbox" id="cb26" class="travel-selector-class">
-						<span class="lever"></span>
-
-					</label>
-				</div>
-			</td>
-			<td class="tg-0pky">15 April</td>
-			<td class="tg-0pky">8:00 PM</td>
-			<td class="tg-0pky">SNU</td>
-			<td class="tg-0pky">Metro</td>
-			<td class="tg-s268"> <select id="cbcb26">
-				<option value="" disabled="" selected="">Select</option>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			</select>
-		</td>
-	</tr>
-</table>
+	</table>
 </div>
 <div class="tab">
 	<div class="wrapper">
@@ -510,6 +510,11 @@ include('../header.php');
 		</div>
 	</div>
 </div>
+<div class="cart-total">
+Cart Total : ₹0
+</div>
+
+
 </div>
 </div>
 
@@ -525,64 +530,64 @@ include('../header.php');
 <script>
 	function openCity(evt, tabName) {
 		if(tabName=='Merch'){
-		 var flagAlert1 = true, flagAlert2 = true;
-		 for(var i = 19; i <= 26; i++) {
-			if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
-				flagAlert1 = false; break;
-			} else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
-				flagAlert2 = false; break;
+			var flagAlert1 = true, flagAlert2 = true;
+			for(var i = 19; i <= 26; i++) {
+				if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
+					flagAlert1 = false; break;
+				} else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
+					flagAlert2 = false; break;
+				}
 			}
-		}
-		if(flagAlert1==false) {
-			alert("You haven't selected the number of people.");
-			return false;
-		} else if(flagAlert2 == false) {
-			alert("Please select the slot you want to travel in.");
-			return false;
-		}
+			if(flagAlert1==false) {
+				alert("You haven't selected the number of people.");
+				return false;
+			} else if(flagAlert2 == false) {
+				alert("Please select the slot you want to travel in.");
+				return false;
+			}
 
+		}
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(tabName).style.display = "block";
+		$('#default'+tabName)[0].className+=" active";
 	}
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-	document.getElementById(tabName).style.display = "block";
-	$('#default'+tabName)[0].className+=" active";
-}
 
 	function skipCity(evt, tabName) {
 
 		if (tabName=="Travel"){
-for(var i = 1; i <= 18; i++) {
-   document.getElementById("cb" + i).checked = false;
-}
+			for(var i = 1; i <= 18; i++) {
+				document.getElementById("cb" + i).checked = false;
+			}
 		}
 		
 		if(tabName=='Merch'){
 
 	//For travel page
-	 for(var i = 19; i <= 26; i++){
-   document.getElementById("cb" + i).checked = false;
-   document.getElementById("cbcb" + i).value = "";
-}
+	for(var i = 19; i <= 26; i++){
+		document.getElementById("cb" + i).checked = false;
+		document.getElementById("cbcb" + i).value = "";
+	}
 
-	}
-	var i, tabcontent, tablinks;
-	tabcontent = document.getElementsByClassName("tabcontent");
-	for (i = 0; i < tabcontent.length; i++) {
-		tabcontent[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablinks");
-	for (i = 0; i < tablinks.length; i++) {
-		tablinks[i].className = tablinks[i].className.replace(" active", "");
-	}
-	document.getElementById(tabName).style.display = "block";
-	$('#default'+tabName)[0].className+=" active";
+}
+var i, tabcontent, tablinks;
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+	tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[i].className.replace(" active", "");
+}
+document.getElementById(tabName).style.display = "block";
+$('#default'+tabName)[0].className+=" active";
 }
 
 document.getElementById('Events').style.display = "block";
@@ -590,7 +595,7 @@ $("#defaultEvents")[0].className+=" active";
 
 
 $(".travel-selector-class").change(function() {
- document.getElementById("cb" + this.id).value = "";
+	document.getElementById("cb" + this.id).value = "";
 });
 
 $("#register-checkout").click(function() {
@@ -610,9 +615,9 @@ $("#register-checkout").click(function() {
 	}
 
 	$.post( "register.php",{travel: travel, events: events}, function( script ) {
-	 var scriptTag = $(script).text();
-	 eval(scriptTag);
- });
+		var scriptTag = $(script).text();
+		eval(scriptTag);
+	});
 });
 </script>
 
