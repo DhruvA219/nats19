@@ -1,5 +1,6 @@
 <?php
 include '../header.php';
+include 'src/instamojo.php';
 include 'config.php';
 session_start();
 $payment_id=$_GET['payment_id'];
@@ -78,10 +79,15 @@ $values.=$event_registration_mapping['333fm'];
 $values.="'";
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
-$result = $conn->query($sql);
-if ($result===TRUE){
-  echo "successful";
-}
+$conn->query($sql);
+$api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
+$payid = $_GET["payment_request_id"];
+$response = $api->paymentRequestStatus($payid);
+$amount=$response['amount'];
+$payment_sql="INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES ('$payment_id','$email_id', $amount )";
+$conn->query($payment_sql);
+
+
 ?>
 <div class="w3-container">
     <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
@@ -103,7 +109,6 @@ if ($result===TRUE){
     
  <?php
 
-include 'src/instamojo.php';
 
 $api = new Instamojo\Instamojo($api_key, $api_secret,'https://'.$mode.'.instamojo.com/api/1.1/');
 
