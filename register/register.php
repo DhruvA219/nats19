@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'config.php';
 //$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
 $base_fee=300;
@@ -39,7 +40,8 @@ foreach ($_POST['travel'] as $key => $value) {
                 $total_cost_of_travel_reg += $value*100;
         }
 }
-
+$_SESSION['events'] = $_POST['events'];
+$_SESSION['travel'] = $_POST['travel'];
 
 //echo "Event reg cost: " . $total_cost_of_event_reg . ". And cost of travel: " . $total_cost_of_travel_reg;
 $amount = $total_cost_of_event_reg+$total_cost_of_travel_reg;
