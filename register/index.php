@@ -603,6 +603,8 @@ Cart Total : ₹0
 
 function updateFee(){
 var netFee=getEventFee()+getTravelFee()+getMerchFee()+getAccoFee();
+
+
 $('#cart-total')[0].innerHTML="Cart Total : ₹"+netFee;
 }
 
@@ -618,12 +620,15 @@ if(current_time > 1548959400000) {
 }
 var count_events = 0; 
 var event_total_reg_fee = 0;
+var already_registered_flag = false;
 for(var i = 1; i <= 18; i++){
    if(document.getElementById("cb" + i).checked){
       count_events++;
-   }
+   } else if(document.getElementById("cb" + i).disabled){ 
+	  already_registered_flag = true;   
+	}
 }
-if(count_events == 0){
+if(count_events == 0 || already_registered_flag == true){
 	baseFee = 0;
 } else {
     event_total_reg_fee = baseFee + count_events*50;
