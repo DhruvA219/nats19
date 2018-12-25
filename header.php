@@ -141,7 +141,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
           </li>
                        <?php
                  if(isset($_SESSION['email'])) {
-                   echo '<li class="buy-tickets"><a href=" ">';
+                   echo '<li class="buy-tickets"><a href="#">';
        echo '<img src=';
        echo '"' . $_SESSION['avatar'] . '" class="signedin">';
        echo "Welcome " . strtok($_SESSION['name'], ' ') . "</a>";
