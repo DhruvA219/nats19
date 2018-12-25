@@ -26,11 +26,11 @@ include('../header.php');
         <section id="Regforevent" class="section-with-bg">
           <div class="wrapper">
             <div class="tab">
-              <button class="tablinks" onclick="openCity(event, 'Events')" id="defaultEvents">Events</button>
-              <button id="defaultTravel" class="tablinks" onclick="openCity(event, 'Travel')">Travel</button>
-              <button id="defaultMerch" class="tablinks" onclick="openCity(event, 'Merch')">Merchandise</button>
-              <button id="defaultAccommodation" class="tablinks" onclick="openCity(event, 'Accomodation')">Accomodation</button>
-              <button id="defaultUnofficial" class="tablinks" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
+              <button class="tablinks not-active" onclick="openCity(event, 'Events')" id="defaultEvents">Events</button>
+              <button id="defaultTravel" class="tablinks not-active" onclick="openCity(event, 'Travel')">Travel</button>
+              <button id="defaultMerch" class="tablinks not-active" onclick="openCity(event, 'Merch')">Merchandise</button>
+              <button id="defaultAccommodation" class="tablinks not-active" onclick="openCity(event, 'Accomodation')">Accomodation</button>
+              <button id="defaultUnofficial" class="tablinks not-active" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
             </div>
           </div>
 
@@ -533,7 +533,7 @@ include('../header.php');
   }
 
     document.getElementById('Events').style.display = "block";
-     $("#defaultEvents").className+=" active";
+     $("#defaultEvents")[0].className+=" active";
 
 
           $(".travel-selector-class").change(function() {

@@ -2140,3 +2140,10 @@ img::after{
 	padding-top: 5px;
 	font-size: 16px;
 }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
