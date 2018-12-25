@@ -477,7 +477,7 @@ include('../header.php')
     <p>Coming Soon</p>
     <div class="tab">
       <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
-      <a href=""><button class="tablinks">Checkout</button></a>
+      <a href="#"><button class="tablinks">Checkout</button></a>
     </div>
   </div>
 </div>
