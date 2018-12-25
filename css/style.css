@@ -13,6 +13,7 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  position: relative;
 }
 
 a {
@@ -2108,4 +2109,9 @@ img::after{
   display: none;
   padding: 6px 12px;
   border-top: none;
+}
+
+.Events{
+  color: #fff;
+
 }

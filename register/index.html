@@ -28,6 +28,8 @@
   <link href="../css/materialize.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- =======================================================
     Theme Name: TheEvent
@@ -37,7 +39,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
   <!--==========================
     Header
@@ -181,7 +183,7 @@
               </ul>
                 <div class="wrapper">
                   <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'Travel')">Next</button>
+                    <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Next</button></a>
                   </div>
                 </div>
             </div>
@@ -442,8 +444,8 @@
             </div>
               <div class="tab">
                 <div class="wrapper">
-                  <button class="tablinks" onclick="openCity(event, 'Events')">Previous</button>
-                  <button class="tablinks" onclick="openCity(event, 'Merch')">Next</button>
+                  <a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events')">Previous</button></a>
+                  <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Next</button></a>
                 </div>
             </div>
 
@@ -522,8 +524,8 @@
                       </select>
                     </label>
                     <div class="tab">
-                      <button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button>
-                      <button class="tablinks" onclick="openCity(event, 'Accomodation')">Next</button>
+                      <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button></a>
+                      <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Next</button></a>
                     </div>
                   </div>
               </div>
@@ -535,8 +537,8 @@
             <div class="wrapper">
               <p>Coming Soon</p>
               <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button>
-                <button class="tablinks" onclick="openCity(event, 'Unofficial')">Next</button>
+                <a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button></a>
+                <a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Next</button></a>
               </div>
             </div>
           </div>
@@ -546,8 +548,8 @@
             <div class="wrapper">
                 <p>Coming Soon</p>
               <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button>
-                <button class="tablinks">Checkout</button>
+                <a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accomodation')">Previous</button></a>
+                <a href=""><button class="tablinks">Checkout</button></a>
               </div>
             </div>
           </div>
