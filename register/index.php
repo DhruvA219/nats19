@@ -557,11 +557,12 @@ include('../header.php');
 
 	function skipCity(evt, tabName) {
 
-		if (tabName="Travel"){
+		if (tabName=="Travel"){
 for(var i = 1; i <= 18; i++) {
    document.getElementById("cb" + i).checked = false;
 }
 		}
+		
 		if(tabName=='Merch'){
 
 	//For travel page
