@@ -139,6 +139,7 @@ include('../header.php')
                 <p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
               </div>
             </div>
+<div class="wrapper">
 <table style="margin-bottom:30px;">
               <tr>
                 <th class="tg-0lax">Select</th>
@@ -291,7 +292,7 @@ include('../header.php')
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
-                </td> 
+                </td>
 </tr>
 
 <tr>
@@ -321,7 +322,7 @@ include('../header.php')
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
-                </td> 
+                </td>
 </tr>
               <tr>
                 <td class="tg-0pky">
@@ -336,7 +337,7 @@ include('../header.php')
                 <td class="tg-0pky">14 April</td>
                 <td class="tg-0pky">8:00 PM</td>
                 <td class="tg-0pky">SNU</td>
-    <td class="tg-0pky">Metro</td> 
+    <td class="tg-0pky">Metro</td>
                       <td class="tg-s268"> <select id="cbcb25">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
@@ -364,7 +365,7 @@ include('../header.php')
                 <td class="tg-0pky">15 April</td>
                 <td class="tg-0pky">8:00 PM</td>
                 <td class="tg-0pky">SNU</td>
- <td class="tg-0pky">Metro</td>   
+ <td class="tg-0pky">Metro</td>
 		  <td class="tg-s268"> <select id="cbcb26">
                     <option value="" disabled="" selected="">Select</option>
                     <option value="1">1</option>
@@ -381,6 +382,7 @@ include('../header.php')
                 </td>
               </tr>
             </table>
+          </div>
             <!-- get this working-->
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
@@ -468,7 +470,7 @@ include('../header.php')
                    return false;
     }
     });
-        
+
      $(".travel-selector-class").change(function() {
        document.getElementById("cb" + this.id).value = "";
     });
@@ -480,7 +482,7 @@ include('../header.php')
                 travel["cb" + i] = document.getElementById("cbcb" + i).value;
            }
       }
-                        
+
                         var events = {};
       for(var i = 1; i <= 18; i++) {
             events["cb" + i] = 0;
