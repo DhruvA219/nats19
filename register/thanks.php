@@ -2,8 +2,15 @@
 include '../header.php';
 include 'config.php';
 session_start();
-var_dump($_SESSION['events']);
-var_dump($_SESSION['travel']);
+$payment_id=$_GET['payment_id'];
+$email_id=$_SESSION['email'];
+$name=$_SESSION['name'];
+$birth_date=$_SESSION['dob'];
+$WCA_ID=$_SESSION['wcaId'];
+$country_iso2=$_SESSION['country_iso2'];
+$gender=$_SESSION['gender'];
+
+//eventIDs
 ?>
 <div class="w3-container">
     <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
