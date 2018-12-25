@@ -139,7 +139,7 @@ include('../header.php')
                 <p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
               </div>
             </div>
-<table>
+<table style="margin-bottom:30px;">
               <tr>
                 <th class="tg-0lax">Select</th>
                 <th class="tg-s268">Date</th>
@@ -378,10 +378,10 @@ include('../header.php')
                     <option value="9">9</option>
                     <option value="10">10</option>
                   </select>
-                </td>/tr>
+                </td>
+              </tr>
             </table>
             <!-- get this working-->
-            <a href="#a4" role="tab" data-toggle="tab">Skip</a>
             <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
                 <a class="nav-link" href="#a4" role="tab" data-toggle="tab" id="travel-next-button">Next</a>
