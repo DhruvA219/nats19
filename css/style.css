@@ -2051,7 +2051,7 @@ img::after{
 
 .sub-nav-link2{
     background-color:#060c22 !important;
-  border-style:none;  
+  border-style:none !important;  
 }
 
 @media screen and (max-width: 991px) {
