@@ -110,8 +110,8 @@ if ($row['333mbf']=='Y'){
  echo '</ul>';
 
 echo '<div class="row justify-content-center"> <div class="col-11 col-lg-8"> <p align="middle">Select the events you want to add:</p> </div></div><ul class="nav nav-tabs" role="tablist">';
-if (mysql_num_rows($result)==0){
-echo '<li class="nav-item">
+if (mysqli_num_rows($result)==0){
+			echo '<li class="nav-item">
 									<input type="checkbox" id="cb1" />
 									<label for="cb1"><img src="../img/eventscolor/2x2.png" /></label>
 								</li>
@@ -184,14 +184,13 @@ echo '<li class="nav-item">
 										<input type="checkbox" id="cb18" />
 										<label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label>
 									</li>
-								</ul>';
-}
+								';
 
+}
 else
 {
 
 foreach($result as $row){
-	echo "<td>"; if ($row['333mbf'] =="Y"){echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
 	if ($row['222']=='N'){
  echo '<li class="nav-item"><input type="checkbox" id="cb1" /> <label for="cb1"><img src="../img/eventscolor/2x2.png" /></label></li>'
 ;	}
