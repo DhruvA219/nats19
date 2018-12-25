@@ -15,8 +15,9 @@ if (!isset($_GET["payment_request_id"]) || !isset($_GET["payment_id"]) || $api->
 //
 else{
 $repayment_verify_sql = "select * from `payment` where payment_id='".$_GET['payment_id']."'";
+$result=$conn->query($repayment_verify_sql);
 
-if($conn->query($repayment_verify_sql)===TRUE)
+if(mysqli_num_rows($result)>0)
 {
   echo '<script>window.location.href="https://nats19.in"  </script>';
 }
