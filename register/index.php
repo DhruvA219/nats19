@@ -556,22 +556,19 @@ include('../header.php');
 }
 
 	function skipCity(evt, tabName) {
+
+		if (tabName="Travel"){
+for(var i = 1; i <= 18; i++) {
+   document.getElementById("cb" + i).checked = false;
+}
+		}
 		if(tabName=='Merch'){
-		 var flagAlert1 = true, flagAlert2 = true;
-		 for(var i = 19; i <= 26; i++) {
-			if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
-				flagAlert1 = false; break;
-			} else if(!document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value !== "") {
-				flagAlert2 = false; break;
-			}
-		}
-		if(flagAlert1==false) {
-			alert("You haven't selected the number of people.");
-			return false;
-		} else if(flagAlert2 == false) {
-			alert("Please select the slot you want to travel in.");
-			return false;
-		}
+
+	//For travel page
+	 for(var i = 19; i <= 26; i++){
+   document.getElementById("cb" + i).checked = false;
+   document.getElementById("cbcb" + i).value = "";
+}
 
 	}
 	var i, tabcontent, tablinks;
