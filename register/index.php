@@ -532,6 +532,7 @@ include('../header.php');
     $('#default'+tabName)[0].className+=" active";
   }
 
+    document.getElementById('Events').style.display = "block";
      $("#defaultEvents").className+=" active";
 
 
