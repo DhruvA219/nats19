@@ -68,16 +68,23 @@ include('../header.php')
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu4.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu4.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu5.png" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu5.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu5.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu5.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu4.png" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu4.png" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="../img/venue-gallery/snu7.png" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu7.png" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -90,13 +97,6 @@ include('../header.php')
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
-            <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu7.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu7.png" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
 
         </div>
       </div>
