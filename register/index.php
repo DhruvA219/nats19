@@ -1,5 +1,11 @@
 <?php
-include('../header.php')
+session_start();
+
+if(!isset($_SESSION['email'])) {
+        header('location:login-to-continue.php');
+}
+
+include('../header.php');
 ?>
 <main id="main">
     <!--==========================
