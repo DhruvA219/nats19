@@ -11,7 +11,7 @@ include('../header.php')
 
         <div class="section-header">
           <h2>Event Venue</h2>
-          <p>Event venue location info and gallery</p>
+          <p>Event venue information and gallery</p>
         </div>
 
         <div class="row no-gutters">

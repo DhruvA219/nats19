@@ -144,12 +144,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
             </ul>
           </li>
           <li class="<?php echo ($_SERVER['PHP_SELF'] == "/sponsors/index.php" ? "menu-active" : "");?>"><a href="sponsors">Sponsors</a></li>
-          <li class="<?php echo (($_SERVER['PHP_SELF'] == "/faq/index.php" || $_SERVER['PHP_SELF'] == "/contact/index.php") ? "menu-active" : "");?>"><a href="#">Help</a>
-            <ul class="sub-nav">
-                <li class="sub-nav-item programs"><a class="sub-nav-link" href="faq">FAQ</a></li>
-                <li class="sub-nav-item events"><a class="sub-nav-link" href="contact">Contact</a></li>
-            </ul>
-          </li>
+            <li class="<?php echo ($_SERVER['PHP_SELF'] == "/faq/index.php" ? "menu-active" : "");?>"><a href="faq">FAQ</a></li>
                        <?php
                  if(isset($_SESSION['email'])) {
                    echo '<li class="buy-tickets"><a href="#">';
