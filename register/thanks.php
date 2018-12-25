@@ -17,7 +17,9 @@ else{
 $repayment_verify_sql = "select * from `payment` where payment_id='".$_GET['payment_id']."'";
 $result=$conn->query($repayment_verify_sql);
 
-var_dump($_SESSION['travel']);
+if(is_null($_SESSION['travel'])){
+  var_dump("nahi phata");
+}
 
 if(mysqli_num_rows($result)>0)
 {
