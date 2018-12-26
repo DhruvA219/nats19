@@ -2196,3 +2196,7 @@ img::after{
 .leftcolumn1table td:first-child {
     text-align: left;
 }​
+
+.leftcolumn2table td:nth-child(2) {
+    text-align: left;
+}​
