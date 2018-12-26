@@ -1375,80 +1375,70 @@ No. All spectators are free to attend the competition at no cost. There is payme
   </main>
 
 
-  <!--==========================
-    Footer
-  ============================-->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 footer-info">
-            <img src="img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
-          </div>
+          <div class="col-lg-4 col-md-6 footer-info">
+            <div class="wrapper">
+              <img src="../img/logo.png" alt="TheEvenet">
+              <p>
+                © Indian Nationals 2019 Official Website
+              </p>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
-
           </div>
+          <div class="col-lg-4 col-md-6 footer-info">
+            <div class="wrapper">
+              <div class="social-links" style="margin-top: 20px;">
+                <a href="https://www.worldcubeassociation.org/competitions/IndianNationals2019" target="about_blank"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
+                <a href="https://www.facebook.com/IndianNationals2019/" target="about_blank"><img class="footerimg" src="../img/events/facebook.svg"></a>
+                <a href="#" target="about_blank"><img class="footerimg" src="../img/events/twitter.svg"></a>
+                <a href="https://www.instagram.com/indiannationals19/" target="about_blank"><img class="footerimg" src="../img/events/instagram.svg"></a>
+              </div>
+          </div>
+        </div>
 
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <div class="wrapper">
+              <h4>Contact Us</h4>
+
+            <div class="row">
+
+              <div class="col-lg-6 col-md-6 footer-info">
+
+              <p>
+
+                <strong>Akash Rupela</strong> <br>
+
+                  <a href="tel:+918447852838"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="mailto:arupela@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a>
+
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 footer-info">
+
+              <p>
+
+                <strong>Ujjawal Pabreja</strong> <br>
+
+                  <a href="tel:9818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="mailto:upabreja@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a>
+
+              </p>
+            </div>
+          </div>
+</div>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>TheEvent</strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
-        -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- #footer -->
+
+  </footer>
+
+  <!-- #footer 
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <script>

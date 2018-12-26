@@ -17,10 +17,10 @@
           <div class="col-lg-4 col-md-6 footer-info">
             <div class="wrapper">
               <div class="social-links" style="margin-top: 20px;">
-                <a href="https://www.worldcubeassociation.org/competitions/IndianNationals2019"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
-                <a href="https://www.facebook.com/IndianNationals2019/" ><img class="footerimg" src="../img/events/facebook.svg"></a>
-                <a href="#" ><img class="footerimg" src="../img/events/twitter.svg"></a>
-                <a href="#" ><img class="footerimg" src="../img/events/instagram.svg"></a>
+                <a href="https://www.worldcubeassociation.org/competitions/IndianNationals2019" target="about_blank"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
+                <a href="https://www.facebook.com/IndianNationals2019/" target="about_blank"><img class="footerimg" src="../img/events/facebook.svg"></a>
+                <a href="#" target="about_blank"><img class="footerimg" src="../img/events/twitter.svg"></a>
+                <a href="https://www.instagram.com/indiannationals19/" target="about_blank"><img class="footerimg" src="../img/events/instagram.svg"></a>
               </div>
           </div>
         </div>
@@ -38,8 +38,8 @@
 
                 <strong>Akash Rupela</strong> <br>
 
-                  <a href=""><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
-                  <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                  <a href="tel:+918447852838"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="mailto:arupela@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a>
 
               </p>
             </div>
@@ -47,10 +47,10 @@
 
               <p>
 
-                <strong>Akash Rupela</strong> <br>
+                <strong>Ujjawal Pabreja</strong> <br>
 
-                  <a href=""><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
-                  <a href=""><i class="fas fa-envelope-square fa-2x"></i></a>
+                  <a href="tel:9818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="mailto:upabreja@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a>
 
               </p>
             </div>
