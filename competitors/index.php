@@ -151,7 +151,7 @@ foreach($result as $row){
 ?>
                                    </tbody>
               </table>
-        <p class="middle"> <?php echo 'Total '.$result.' competitors' ?> </p>
+        <p class="middle"> <?php echo 'Total '.$result.' competitors'; ?> </p>
           <!-- 3x3 Psych Sheet Table -->
         </div>
       </div>
