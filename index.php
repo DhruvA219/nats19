@@ -1400,7 +1400,7 @@ No. All spectators are free to attend the competition at no cost. There is payme
               <div class="social-links" style="margin-top: 20px;">
                 <a href="https://www.worldcubeassociation.org/competitions/IndianNationals2019" target="about_blank"> <img class="footerimg" src="../img/events/wca-logo.svg"></a>
                 <a href="https://www.facebook.com/IndianNationals2019/" target="about_blank"><img class="footerimg" src="../img/events/facebook.svg"></a>
-                <a href="#" target="about_blank"><img class="footerimg" src="../img/events/twitter.svg"></a>
+               
                 <a href="https://www.instagram.com/indiannationals19/" target="about_blank"><img class="footerimg" src="../img/events/instagram.svg"></a>
               </div>
           </div>
