@@ -246,7 +246,7 @@ else{
 }
 ?>
   <main id="main">
-    <section id="thanks" class="section-with-bg wow fadeInUp">
+    <section id="sponsors" class="section-with-bg wow fadeInUp">
          <div class="container">
         <div class="section-header">
           <h2>Registration</h2>
@@ -268,7 +268,7 @@ else{
       $status=$response['status'];
       $amount=$response['amount'];
       if ($status=='Completed'){
-        echo 'Your payment of '.$amount.' is complete. You can return to the <a href="http://nats19.in">Home page</a> or go to <a href="#">My Nats</a> to view your registration.';         
+        echo 'Your payment of '.$amount.' is complete. You can return to the <a href="http://nats19.in">Home page</a> or go to <a href="../myNats">My Nats</a> to view your registration.';         
       }
       else{
         echo 'Your payment is not complete. Return to the <a href="http://nats19.in">Home page</a> and try again';         
@@ -280,7 +280,23 @@ else{
 
     ?>
  </p> 
-</div></section></main>
+</div>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+</section></main>
 
   <?php
   include '../footer.php'
