@@ -669,7 +669,7 @@ echo '</ul>';
 						<li>
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
 							<h3>Nats Logo Sticker</h3>
-							<p> ₹29</p>
+							<p> ₹19</p>
 						<select id="cbcb37">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
@@ -682,7 +682,7 @@ echo '</ul>';
 						<li>
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
 							<h3>Cuber Soul Sticker</h3>
-							<p> ₹29</p>
+							<p> ₹19</p>
 						<select id="cbcb38">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
