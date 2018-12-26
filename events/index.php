@@ -18,6 +18,7 @@ include('../header.php')
 </div>
 
 
+<div class="wrapper">
 <table  class="table table-condensed show-events-table floatThead table-hover table-striped table-greedy-last-column" data-locale="en" style="table-layout: fixed; min-width: 983px;">
 <colgroup><col style="width: 144px;"><col style="width: 148px;"><col style="width: 75px;"><col style="width: 226px;"><col style="width: 181px;"><col style="width: 209px;"></colgroup>
 <thead>
@@ -569,7 +570,7 @@ include('../header.php')
   </tbody>
 
 </table>
-
+</div>
   <h4 id="time-limit" class="active">Time limit</h4>
   <p>
     If you reach the time limit during your solve, the judge will stop you and your result will be DNF (see <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#A1a4">Regulation A1a4</a>).
