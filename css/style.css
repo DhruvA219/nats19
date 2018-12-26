@@ -1689,7 +1689,6 @@ iframe{
  overflow: hidden;
  display: block;
  position: relative;
- padding-bottom: 193.9px; /* height of your footer */
 }
 
 footer {
