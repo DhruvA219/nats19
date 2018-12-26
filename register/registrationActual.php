@@ -519,7 +519,7 @@ echo '</ul>';
 </div>
 <div id="Merch" class="tabcontent">
 	<div class="row justify-content-center">
-		<div class="col-11 col-lg-8">
+		<div class="col-11 col-lg-11">
 			<p align="middle"> Step 3/5</p>
 			<h3 align="middle"> Merchandise</h3>
 			<p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
