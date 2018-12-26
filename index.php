@@ -1438,8 +1438,7 @@ No. All spectators are free to attend the competition at no cost. There is payme
 
   </footer>
 
-  <!-- #footer 
-
+  
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <script>
 function getTimeRemaining(endtime) {
