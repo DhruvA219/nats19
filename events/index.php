@@ -14,9 +14,6 @@ include('../header.php')
 
 <table  class="table table-condensed show-events-table floatThead table-hover table-striped table-greedy-last-column" data-locale="en" style="table-layout: fixed; min-width: 983px;">
 <colgroup><col style="width: 144px;"><col style="width: 148px;"><col style="width: 75px;"><col style="width: 226px;"><col style="width: 181px;"><col style="width: 209px;"></colgroup>
-  <thead>
-
-  </thead><thead><tr class="size-row" style="height: 30.5px;"><th class="floatThead-col" style="height: 30.5px;"></th><th class="floatThead-col" style="height: 30.5px;"></th><th class="floatThead-col" style="height: 30.5px;"></th><th class="floatThead-col" style="height: 30.5px;"></th><th class="floatThead-col" style="height: 30.5px;"></th><th class="floatThead-col" style="height: 30.5px;"></th></tr></thead><tbody>
 <thead>
     <tr>
       <th>Event</th>
