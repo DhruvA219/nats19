@@ -141,7 +141,7 @@ include('../header.php')
           <td>
             3:20.00
           </td>
-            <td>2 attempts to get &lt; 1:20.00</td>
+            <td>1:20</td>
           <td>Top 20</td>
         </tr>
         <tr class="last-round">
@@ -169,7 +169,7 @@ include('../header.php')
           <td>
             5:45.00
           </td>
-            <td>2 attempts to get &lt; 2:15.00</td>
+            <td>2:15</td>
           <td>Top 14</td>
         </tr>
         <tr class="last-round">
@@ -197,7 +197,7 @@ include('../header.php')
           <td>
             10:00.00
           </td>
-            <td>1 attempt to get &lt; 4:45.00</td>
+            <td>4:45</td>
           <td>Top 10</td>
         </tr>
         <tr class="last-round">
@@ -225,7 +225,7 @@ include('../header.php')
           <td>
             10:00.00
           </td>
-            <td>1 attempt to get &lt; 6:30.00</td>
+            <td>6:30</td>
           <td>Top 10</td>
         </tr>
         <tr class="last-round">
@@ -296,7 +296,7 @@ include('../header.php')
           <td>
             2:30.00
           </td>
-            <td>2 attempts to get &lt; 1:00.00</td>
+            <td>1:00</td>
           <td>Top 40</td>
         </tr>
         <tr class="">
@@ -338,7 +338,7 @@ include('../header.php')
           <td>
             6:45.00
           </td>
-            <td>2 attempts to get &lt; 2:45.00</td>
+            <td>2:45</td>
           <td>Top 12</td>
         </tr>
         <tr class="last-round">
@@ -366,7 +366,7 @@ include('../header.php')
           <td>
             1:15.00
           </td>
-            <td>2 attempts to get &lt; 30.00</td>
+            <td>30.00</td>
           <td>Top 10</td>
         </tr>
         <tr class="last-round">
@@ -394,7 +394,7 @@ include('../header.php')
           <td>
             5:45.00
           </td>
-            <td>2 attempts to get &lt; 2:15.00</td>
+            <td>2:15</td>
           <td>Top 14</td>
         </tr>
         <tr class="last-round">
@@ -506,7 +506,7 @@ include('../header.php')
           <td>
             2:00.00
           </td>
-            <td>2 attempts to get &lt; 45.00</td>
+            <td>45.00</td>
           <td>Top 12</td>
         </tr>
         <tr class="last-round">
