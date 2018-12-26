@@ -36,63 +36,63 @@ include('../header.php')
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu8.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu8.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu8.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu8.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu9.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu9.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu9.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu9.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu2.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu2.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu2.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu3.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu3.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu3.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu3.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu5.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu5.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu5.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu5.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu4.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu4.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu4.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu7.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu7.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu7.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu7.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="../img/venue-gallery/snu6.png" class="venobox" data-gall="venue-gallery">
-                <img src="../img/venue-gallery/snu6.png" alt="" class="img-fluid">
+              <a href="../img/venue-gallery/snu6.jpg" class="venobox" data-gall="venue-gallery">
+                <img src="../img/venue-gallery/snu6.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
