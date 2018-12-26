@@ -2133,7 +2133,7 @@ img::after{
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
-  padding: 10px 100px;
+  padding: 10px 50px;
   transition: 1s;
 }
 
@@ -2184,4 +2184,11 @@ img::after{
 .smalltext{
 	padding-top: 5px;
 	font-size: 16px;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
 }

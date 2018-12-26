@@ -270,7 +270,7 @@ echo '</ul>';
 									<p align="middle"> Step 2/5</p>
 									<h3 align="middle"> Bus Service</h3>
 									<p align="middle">A prepaid bus service to commute between the nearest Metro Station and the Venue will be available at ₹100 per person per trip. Please select when will you be needing this bus service. </p>
-									<p align="middle">The nearest metro station is Pari Chowk and scheduled to be inaugrated by February. If there are delays, the bus service will be available for Noida Sector 16 Metro Station instead. </p>
+									<p align="middle"><b> Note: </b>The nearest metro station is Pari Chowk and scheduled to be inaugrated by February. If there are delays, the bus service will be available for Noida Sector 16 Metro Station instead. </p>
 								</div>
 							</div>
 							<div class="wrapper">
