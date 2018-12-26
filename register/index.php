@@ -668,7 +668,6 @@ Cart Total : ₹0
 
 
 </div>
-</div>
 
 
 
