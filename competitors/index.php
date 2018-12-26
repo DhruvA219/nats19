@@ -159,7 +159,7 @@ foreach($result as $row){
               </table>
         <br> <p align="middle"> <b>
           <?php 
-          echo $newcomer_count.' first-timer +'.$oldcomer_count.' returns = '.$competitor_count.' people'; ?> </b> </p>
+          echo $newcomer_count.' first-timers +'.$oldcomer_count.' returners = '.$competitor_count.' people'; ?> </b> </p>
           <!-- 3x3 Psych Sheet Table -->
         </div>
       </div>
