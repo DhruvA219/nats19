@@ -531,11 +531,12 @@ echo '</ul>';
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
 						<select id="cbcb27">
-							<option value="" disabled selected>Choose your Size</option>
-							<option value="1">M</option>
-							<option value="2">L</option>
-							<option value="3">XL</option>
-							<option value="4">XXL</option>
+							<option value="" disabled selected>Size</option>
+							<option value="1">S</option>
+							<option value="2">M</option>
+							<option value="3">L</option>
+							<option value="4">XL</option>
+							<option value="5">XXL</option>
 						</select>
 
 
@@ -549,19 +550,7 @@ echo '</ul>';
 						</select>
 						</li>
 
-						<li>
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
-							<h3>Wrist Band</h3>
-							<p> ₹99</p>
-						<select id="cbcb29">
-							<option value="" disabled selected>Quantity</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-						</select>
-						</li>
+
 						<li>
 							<img src="http://www.pngmart.com/files/7/Mug-PNG-Pic.png" alt="shirt image">
 							<h3>Mug</h3>
@@ -575,11 +564,59 @@ echo '</ul>';
 							<option value="5">5</option>
 						</select>
 						</li>
+
+						<li>
+
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<h3>Nats Wrist Band (Grey)</h3>
+							<p> ₹99</p>
+						<select id="cbcb30">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+
+						<li>
+
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<h3>Nats Wrist Band (Black)</h3>
+							<p> ₹99</p>
+						<select id="cbcb31">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+
+						<li>
+
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<h3>Cuber Soul Wrist Band</h3>
+							<p> ₹99</p>
+						<select id="cbcb32">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+
+
+
 						<li>
 							<img src="../img/merchandise/badge.png" alt="shirt image">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
-						<select id="cbcb29">
+						<select id="cbcb33">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -588,11 +625,12 @@ echo '</ul>';
 							<option value="5">5</option>
 						</select>
 						</li>
+
 						<li>
 							<img src="../img/merchandise/magnetbadge.png" alt="shirt image">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
-						<select id="cbcb29">
+						<select id="cbcb34">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -601,11 +639,12 @@ echo '</ul>';
 							<option value="5">5</option>
 						</select>
 						</li>
+
 						<li>
 							<img src="../img/merchandise/notebook.jpg" alt="shirt image">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
-						<select id="cbcb29">
+						<select id="cbcb35">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -618,7 +657,33 @@ echo '</ul>';
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
-						<select id="cbcb29">
+						<select id="cbcb36">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<h3>Nats Logo Sticker</h3>
+							<p> ₹29</p>
+						<select id="cbcb37">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<h3>Cuber Soul Sticker</h3>
+							<p> ₹29</p>
+						<select id="cbcb38">
 							<option value="" disabled selected>Quantity</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
