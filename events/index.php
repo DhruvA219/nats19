@@ -20,7 +20,7 @@ include('../header.php')
 
 <div class="wrapper">
 <table  class="table table-condensed show-events-table floatThead table-hover table-striped table-greedy-last-column" data-locale="en" style="table-layout: fixed; min-width: 983px;">
-<colgroup><col style="width: 144px;"><col style="width: 148px;"><col style="width: 75px;"><col style="width: 226px;"><col style="width: 181px;"><col style="width: 209px;"></colgroup>
+<colgroup><col style="width: 80px;"><col style="width: 100px;"><col style="width: 40px;"><col style="width: 80px;"><col style="width: 50px;"><col style="width: 60px;"></colgroup>
 <thead>
     <tr>
       <th>Event</th>
