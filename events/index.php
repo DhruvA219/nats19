@@ -44,7 +44,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 120 advance to next round</td>
+          <td>Top 120</td>
         </tr>
         <tr class="">
           <td>
@@ -58,7 +58,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 60 advance to next round</td>
+          <td>Top 60</td>
         </tr>
         <tr class="">
           <td>
@@ -72,7 +72,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 16 advance to next round</td>
+          <td>Top 16</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -100,7 +100,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 90 advance to next round</td>
+          <td>Top 90</td>
         </tr>
         <tr class="">
           <td>
@@ -114,7 +114,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 20 advance to next round</td>
+          <td>Top 20</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -142,7 +142,7 @@ include('../header.php')
             3:20.00
           </td>
             <td>2 attempts to get &lt; 1:20.00</td>
-          <td>Top 20 advance to next round</td>
+          <td>Top 20</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -170,7 +170,7 @@ include('../header.php')
             5:45.00
           </td>
             <td>2 attempts to get &lt; 2:15.00</td>
-          <td>Top 14 advance to next round</td>
+          <td>Top 14</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -198,7 +198,7 @@ include('../header.php')
             10:00.00
           </td>
             <td>1 attempt to get &lt; 4:45.00</td>
-          <td>Top 10 advance to next round</td>
+          <td>Top 10</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -226,7 +226,7 @@ include('../header.php')
             10:00.00
           </td>
             <td>1 attempt to get &lt; 6:30.00</td>
-          <td>Top 10 advance to next round</td>
+          <td>Top 10</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -255,7 +255,7 @@ include('../header.php')
                 <a href="#cumulative-time-limit">*</a>
           </td>
             <td></td>
-          <td>Top 12 advance to next round</td>
+          <td>Top 12</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -297,7 +297,7 @@ include('../header.php')
             2:30.00
           </td>
             <td>2 attempts to get &lt; 1:00.00</td>
-          <td>Top 40 advance to next round</td>
+          <td>Top 40</td>
         </tr>
         <tr class="">
           <td>
@@ -311,7 +311,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 14 advance to next round</td>
+          <td>Top 14</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -339,7 +339,7 @@ include('../header.php')
             6:45.00
           </td>
             <td>2 attempts to get &lt; 2:45.00</td>
-          <td>Top 12 advance to next round</td>
+          <td>Top 12</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -367,7 +367,7 @@ include('../header.php')
             1:15.00
           </td>
             <td>2 attempts to get &lt; 30.00</td>
-          <td>Top 10 advance to next round</td>
+          <td>Top 10</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -395,7 +395,7 @@ include('../header.php')
             5:45.00
           </td>
             <td>2 attempts to get &lt; 2:15.00</td>
-          <td>Top 14 advance to next round</td>
+          <td>Top 14</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -423,7 +423,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 80 advance to next round</td>
+          <td>Top 80</td>
         </tr>
         <tr class="">
           <td>
@@ -437,7 +437,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 20 advance to next round</td>
+          <td>Top 20</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -465,7 +465,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 40 advance to next round</td>
+          <td>Top 40</td>
         </tr>
         <tr class="">
           <td>
@@ -479,7 +479,7 @@ include('../header.php')
             10:00.00
           </td>
             <td></td>
-          <td>Top 14 advance to next round</td>
+          <td>Top 14</td>
         </tr>
         <tr class="last-round">
           <td>
@@ -507,7 +507,7 @@ include('../header.php')
             2:00.00
           </td>
             <td>2 attempts to get &lt; 45.00</td>
-          <td>Top 12 advance to next round</td>
+          <td>Top 12</td>
         </tr>
         <tr class="last-round">
           <td>
