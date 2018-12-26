@@ -269,7 +269,8 @@ echo '</ul>';
 								<div class="col-11 col-lg-8">
 									<p align="middle"> Step 2/5</p>
 									<h3 align="middle"> Bus Service</h3>
-									<p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
+									<p align="middle">A prepaid bus service to commute between the nearest Metro Station and the Venue will be available at ₹100 per person per trip. Please select when will you be needing this bus service. </p>
+									<p align="middle">The nearest metro station is Pari Chowk and scheduled to be inaugrated by February. If there are delays, the bus service will be available for Noida Sector 16 Metro Station instead. </p>
 								</div>
 							</div>
 							<div class="wrapper">
@@ -280,7 +281,7 @@ echo '</ul>';
 										<th class="tg-s268">Time</th>
 										<th class="tg-s268">From </th>
 										<th class="tg-s268">To</th>
-										<th class="tg-s268"> Number of People </th>
+										<th class="tg-s268">Number of People</th>
 									</tr>
 									<tr>
 										<td class="tg-0lax">
@@ -635,8 +636,22 @@ echo '</ul>';
 		<div class="col-11 col-lg-8">
 			<p align="middle"> Step 5/5</p>
 			<h3 align="middle"> Unofficial Events</h3>
-			<p align="middle">Coming soon </p>
-			<p align="middle">You will be able to register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email when an event is available.</p>
+			<p align="middle">You can register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email whenever a new event is available. The following events are available right now:</p>
+			<div class="wrapper">
+			<table>
+				<tr>
+					<th class="tg-s268"> Event </th>
+					<th class="tg-s268"> Description </th>
+					<th class="tg-s268"> Register Link </th>
+				</tr>
+				<tr>
+					<td class="tg-s268"> Worlds of Wonder water park trip </td>
+					<td class="tg-s268"> To unwind after the competition, we are organizing an official trip on Monday, 15th April after the competition to Worlds of Wonder water park. </td>
+					<td class="tg-s268"> <a href="https://goo.gl/forms/E5NBXfad4BnO9H262" target="about_blank"> Link </a> </td>
+				</tr>
+			</table>
+		</div>
+
 		</div>
 	</div>
 

@@ -188,22 +188,20 @@ $eventId=$_GET['eventId'];
 
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,Countries.name as country  FROM
+$sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,country_name as country  FROM
 (select * from 
-(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_iso2 from registrations 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_name from registrations 
   LEFT JOIN (select * from RanksSingle2 where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
 LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='%s') averageRanks 
 ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
-inner join Countries on Countries.iso2= psychRanks.country_iso2 
 order by -averageRank desc, -singleRank desc, psychRanks.name asc;"; 
 if ($eventId=='333bf'){
-  $sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,Countries.name as country  FROM
+  $sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,country_name as country  FROM
 (select * from 
-(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_iso2 from registrations 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_name from registrations 
   LEFT JOIN (select * from RanksSingle2 where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
 LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='%s') averageRanks 
 ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
-inner join Countries on Countries.iso2= psychRanks.country_iso2 
 order by -singleRank desc, -averageRank desc, psychRanks.name asc;";
 }
 
