@@ -117,7 +117,7 @@ echo' <div class="col-lg-12 venue-info">
 $travel_sql = "select sum(number_of_people) as total_people,source,destination,`time` from 
 (select number_of_people,source,destination,`time` from user_travel usertravel inner join
 travel_catalog ON travel_catalog.item_id=usertravel.item_id where email_id='$email') userdetails group by source,destination,`time`";
-$travel_result = $conn->query($sql);
+$travel_result = $conn->query($travel_sql);
 if (mysqli_num_rows($travel_result)==0){
 echo '<p align="middle"> You have not reserved any travel. </p>';
 }
