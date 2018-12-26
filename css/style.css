@@ -2273,3 +2273,12 @@ img::after{
   font-size:1.5em;
   font-weight:bold;
 }
+
+.center-icon{
+  margin-left:-3px;
+  margin-right:2px;
+}
+
+.nav-padding{
+  padding-top:11px !important;
+}
