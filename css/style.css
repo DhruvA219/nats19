@@ -495,7 +495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(nats19/img/image.png) top center;
+  background: url(../img/image.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
