@@ -45,7 +45,7 @@ foreach($result as $row){
 echo '<div class="row justify-content-center"><div class="col-11 col-lg-8"><p align="middle">You have registered for the following events:</p></div></div><ul class="nav nav-tabs" role="tablist">';
 	if ($row['222']=='Y'){
  echo '<li class="nav-item"><input type="checkbox" disabled id="cb1" /> <label for="cb1"><img style="-webkit-filter:none; filter:none;" src="../img/eventscolor/2x2.png" /></label></li>'
-;	
+;
 $regd_events+=1;}
 if ($row['333']=='Y'){
  echo '<li class="nav-item"><input type="checkbox" disabled id="cb2" /> <label for="cb2"><img style="-webkit-filter:none; filter:none;" src="../img/eventscolor/3x3.png" /></label></li>'
@@ -265,7 +265,7 @@ echo '</ul>';
 								</div>
 							</div>
 							<div class="wrapper">
-								<table>  
+								<table>
 									<tr>
 										<th class="tg-0lax">Select</th>
 										<th class="tg-s268">Date</th>
@@ -524,77 +524,117 @@ echo '</ul>';
 			<h3 align="middle"> Merchandise</h3>
 			<p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
 			<div class="wrapper">
-				<input type="checkbox" id="cb27" />
-				<label for="cb27"><img src="" alt="T shirt photo">
-					<select>
-						<option value="" disabled selected>Choose your Size</option>
-						<option value="1">M for small bois</option>
-						<option value="2">L for big bois</option>
-						<option value="3">XL for bigger bois</option>
-						<option value="3">XXL for Golz</option>
-					</select>
-				</label>
-				<input type="checkbox" id="cb28" />
-				<label for="cb28"><img src="../img/merchandise/wristband.png" alt="Wrist Band photo">
-					<select id="cbcb28">
-						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</label>
-				<input type="checkbox" id="cb29" />
-				<label for="cb29"><img src="../img/merchandise/mug.png" alt="Mug photo">
-					<select id="cbcb29">
-						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</label>
-				<input type="checkbox" id="cb30" />
-				<label for="cb30"><img src="../img/merchandise/logo.png" alt="Logo photo">
-					<select id="cbcb30">
-						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</label>
-				<input type="checkbox" id="cb31" />
-				<label for="cb31"><img src="../img/merchandise/badge.png" alt="Magnetic Badge photo">
-					<select id="cbcb31">
-						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</label>
-				<input type="checkbox" id="cb32" />
-				<label for="cb32"><img src="../img/merchandise/writingpad.png" alt="Writing Pad photo">
-					<select id="cbcb32">
-						<option value="" disabled selected>Quantity</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</label>
+				<div class="uldiv">
+					<ul>
+						<li>
+							<img src="http://pngimg.com/uploads/tshirt/tshirt_PNG5448.png" alt="shirt image">
+							<h3>T-shirt</h3>
+							<p> ₹499</p>
+						<select id="cbcb27">
+							<option value="" disabled selected>Choose your Size</option>
+							<option value="1">M</option>
+							<option value="2">L</option>
+							<option value="3">XL</option>
+							<option value="4">XXL</option>
+						</select>
 
+
+						<select id="cbcb28">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+
+						<li>
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<h3>Wrist Band</h3>
+							<p> ₹99</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="http://www.pngmart.com/files/7/Mug-PNG-Pic.png" alt="shirt image">
+							<h3>Mug</h3>
+							<p> ₹299</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="https://cdn.shopify.com/s/files/1/0623/5741/products/pin-thrash_2048x2048.png?v=1487270593" alt="shirt image">
+							<h3>Wrist Band</h3>
+							<p> ₹49</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="https://ilovemstudio.com/wp-content/uploads/2017/07/56-MM-Badges-Mock-Up_DO-WHAT-YOU-LOVE.png" alt="shirt image">
+							<h3>Magnetic Badge</h3>
+							<p> ₹99</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-41/43/Asset_8-2-512.png" alt="shirt image">
+							<h3>Writing Pad</h3>
+							<p> ₹49</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+						<li>
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<h3>Keychain</h3>
+							<p> ₹199</p>
+						<select id="cbcb29">
+							<option value="" disabled selected>Quantity</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
 				<div class="tab">
 					<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button></a>
 					<a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation')">Skip</button></a>
 					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Save and Proceed</button></a>
-
 				</div>
 			</div>
 		</div>
@@ -688,14 +728,14 @@ if(current_time > 1548959400000) {
     baseFee = 400;
     }
 }
-var count_events = 0; 
+var count_events = 0;
 var event_total_reg_fee = 0;
 var already_registered_flag = false;
 for(var i = 1; i <= 18; i++){
    if(document.getElementById("cb" + i).checked){
       count_events++;
-   } else if(document.getElementById("cb" + i).disabled){ 
-	  already_registered_flag = true;   
+   } else if(document.getElementById("cb" + i).disabled){
+	  already_registered_flag = true;
 	}
 }
 if(count_events == 0 || already_registered_flag == true){
@@ -766,7 +806,7 @@ function getAccoFee(){
 				document.getElementById("cb" + i).checked = false;
 			}
 		}
-		
+
 		if(tabName=='Merch'){
 
 		//For travel page
@@ -798,10 +838,10 @@ $(".travel-selector-class").change(function() {
 });
 
 $("#register-checkout").click(function() {
-	
+
 	var cart_total=getEventFee()+getTravelFee()+getMerchFee()+getAccoFee();
 	if (cart_total==0){
-	alert("Please add something to your cart before checkout");	
+	alert("Please add something to your cart before checkout");
 	return false;
 	}
 	var travel = {};
