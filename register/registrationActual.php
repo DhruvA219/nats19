@@ -576,7 +576,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="../img/merchandise/badge.jpg" alt="shirt image">
+							<img src="../img/merchandise/badge.png" alt="shirt image">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
 						<select id="cbcb29">
@@ -589,7 +589,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="../img/merchandise/magnetbadge.jpg" alt="shirt image">
+							<img src="../img/merchandise/magnetbadge.png" alt="shirt image">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
 						<select id="cbcb29">
