@@ -637,7 +637,7 @@ echo '</ul>';
 			<h3 align="middle"> Unofficial Events</h3>
 			<p align="middle">You can register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email whenever a new event is available. The following events are available right now:</p>
 			<div class="wrapper">
-			<table class="striped">
+			<table>
 				<tr>
 					<th class="tg-s268"> Event </th>
 					<th class="tg-s268"> Description </th>
