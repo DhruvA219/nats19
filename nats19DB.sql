@@ -164,5 +164,17 @@ CREATE TABLE IF NOT EXISTS `merch_catalog` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
 INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
-('cb19','Metro','SNU','11 April, 6:00 P.M.' ),
-('cb20','Metro','SNU','12 April, 8:00 A.M.' ),
+('cbcb28-S','T-Shirt',499 ),
+('cbcb28-M','T-Shirt',499 ),
+('cbcb28-L','T-Shirt',499 ),
+('cbcb28-XL','T-Shirt',499 ),
+('cbcb29','Mug',299 ),
+('cbcb30','Wrist Band (Grey)',99 ),
+('cbcb31','Wrist Band (Black)',99 ),
+('cbcb32','Cuber Soul Wrist Band',99 ),
+('cbcb33','Pin Badge',49 ),
+('cbcb34','Magnetic Badge',99 ),
+('cbcb35','Writing Pad',49 ),
+('cbcb36','Keychain',199 ),
+('cbcb37','Nats Logo Sticker',19 ),
+('cbcb38','Cuber Soul Sticker',19 );
