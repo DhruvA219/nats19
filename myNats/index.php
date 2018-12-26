@@ -33,6 +33,7 @@ You can see all your registration and accessories details here. Your groups will
                                                          <h3 align="middle"> Events</h3>
                                                      </div>
                                                    </div>
+                                               </div>
 
 <?php
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
@@ -40,9 +41,13 @@ session_start();
 $email=$_SESSION['email'];
 $sql = "SELECT * FROM registrations where email_id='$email'";
 $result = $conn->query($sql);
+if (mysqli_num_rows($result)==0){
+	echo '<p align="middle"> You have not registered for any event </p>';
+}
+
 $regd_events=0;
 foreach($result as $row){
-echo '</div><ul class="nav nav-tabs" role="tablist">';
+echo '<ul class="nav nav-tabs" role="tablist">';
 	if ($row['222']=='Y'){
  echo '<li class="nav-item"><input type="checkbox" disabled id="cb1" /> <label for="cb1"><img style="-webkit-filter:none; filter:none;" src="../img/eventscolor/2x2.png" /></label></li>'
 ;	
