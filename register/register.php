@@ -19,6 +19,7 @@ if ($current_time>$basetime_1){
 }
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 session_start();
+$name=$_SESSION['name'];
 $email=$_SESSION['email'];
 $sql = "SELECT * FROM registrations where email_id='$email'";
 $result = $conn->query($sql);
@@ -45,9 +46,6 @@ $_SESSION['travel'] = $_POST['travel'];
 
 //echo "Event reg cost: " . $total_cost_of_event_reg . ". And cost of travel: " . $total_cost_of_travel_reg;
 $amount = $total_cost_of_event_reg+$total_cost_of_travel_reg;
-$name = 'aryan chhebre';
-$number = '9818616737' ;
-$email = 'scoobydoobydoo93@gmail.com';
 
 $ch = curl_init();
 
