@@ -116,8 +116,10 @@ include('../header.php')
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $sql = "SELECT * FROM registrations";
 $result = $conn->query($sql);
+$competitor_count=0;
 foreach($result as $row){
     $count=0;
+    $competitor_count+=1;
     echo "<tr>";
     echo "<td>";
     if(!is_null($row['WCAID'])){
@@ -149,6 +151,7 @@ foreach($result as $row){
 ?>
                                    </tbody>
               </table>
+        <p class="middle"> <?php echo 'Total '.$result.' competitors' ?> </p>
           <!-- 3x3 Psych Sheet Table -->
         </div>
       </div>

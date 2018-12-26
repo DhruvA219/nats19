@@ -259,7 +259,7 @@ else{
     <div class="section-header">
       <h2>Registration</h2>
     </div>
-    <p class="middle"> 
+    <p align="middle"> 
 
 
 
