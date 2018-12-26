@@ -8,8 +8,16 @@ if(!isset($_SESSION['email'])) {
 
 include('../header.php');
 
-include('registrationDisabled.php');
+$current_time=time();
+$regOpenTime0=1545748037;
+$regOpenTime=1546194599;
 
+if ($current_time>$regOpenTime0){
+include('registrationActual.php');
+}
+else{
+	include('registrationDisabled.php');
+}
 
 include('../footer.php')
 ?>
