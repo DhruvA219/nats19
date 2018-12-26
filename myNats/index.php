@@ -130,9 +130,7 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Number of People</th>
 									</tr>';
 
-for
 echo '</table>';
-}
 		foreach($travel_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268">'.$row['time'].'<td>';	
@@ -141,6 +139,7 @@ echo '</table>';
 			echo '<td class="tg-s268">'.$row['total_people'].'<td>';	
 			echo '</tr>';
 		}
+}
 
 ?>
 
