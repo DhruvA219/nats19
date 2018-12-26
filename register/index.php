@@ -293,7 +293,7 @@ echo '</ul>';
 											</div>
 										</td>
 										<td class="tg-s268">11 April</td>
-										<td class="tg-s268">8:00 PM</td>
+										<td class="tg-s268">6:00 PM</td>
 										<td class="tg-s268">Metro</td>
 										<td class="tg-s268">SNU</td>
 										<td class="tg-s268"> <select id="cbcb19">
@@ -408,10 +408,10 @@ echo '</ul>';
 								</label>
 							</div>
 						</td>
-						<td class="tg-0pky">14 April</td>
-						<td class="tg-0pky">8:00 AM</td>
-						<td class="tg-0pky">Metro</td>
+						<td class="tg-0pky">13 April</td>
+						<td class="tg-0pky">8:00 PM</td>
 						<td class="tg-0pky">SNU</td>
+						<td class="tg-0pky">Metro</td>
 						<td class="tg-s268"> <select id="cbcb23">
 							<option value="" disabled="" selected="">Select</option>
 							<option value="1">1</option>
@@ -496,7 +496,7 @@ echo '</ul>';
 					</div>
 				</td>
 				<td class="tg-0pky">15 April</td>
-				<td class="tg-0pky">8:00 PM</td>
+				<td class="tg-0pky">9:00 AM</td>
 				<td class="tg-0pky">SNU</td>
 				<td class="tg-0pky">Metro</td>
 				<td class="tg-s268"> <select id="cbcb26">
