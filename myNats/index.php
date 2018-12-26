@@ -132,10 +132,10 @@ else{ echo'<div class="wrapper">
 
 		foreach($travel_result as $row){
 			echo '<tr>';
-			echo '<td class="tg-s268">'.$row['time'].'<td>';	
-			echo '<td class="tg-s268">'.$row['source'].'<td>';	
-			echo '<td class="tg-s268">'.$row['destination'].'<td>';	
-			echo '<td class="tg-s268">'.$row['total_people'].'<td>';	
+			echo '<td class="tg-s268">'.$row['time'].'</td>';	
+			echo '<td class="tg-s268">'.$row['source'].'</td>';	
+			echo '<td class="tg-s268">'.$row['destination'].'</td>';	
+			echo '<td class="tg-s268">'.$row['total_people'].'</td>';	
 			echo '</tr>';
 		}
 echo '</table>';
