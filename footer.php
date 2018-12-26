@@ -49,7 +49,7 @@
 
                 <strong>Ujjawal Pabreja</strong> <br>
 
-                  <a href="tel:9818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
+                  <a href="tel:+919818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a>
                   <a href="mailto:upabreja@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a>
 
               </p>
