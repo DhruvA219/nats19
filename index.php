@@ -110,6 +110,8 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
 
 <body>
 
+<div class="main-container">
+
   ============================-->
   <header id="header" class="other-pages">
     <div class="container">
@@ -1437,7 +1439,7 @@ No. All spectators are free to attend the competition at no cost. There is payme
 
 
   </footer>
-
+</div>
   
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <script>

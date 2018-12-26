@@ -62,6 +62,7 @@
 
 
   </footer><!-- #footer -->
+</div>
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <!-- JavaScript Libraries -->

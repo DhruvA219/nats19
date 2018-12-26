@@ -104,6 +104,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
 
 <body>
 
+<div class="main-container">
   <!--==========================
     Header
   ============================-->

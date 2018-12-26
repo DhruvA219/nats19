@@ -9,11 +9,27 @@
 # General
 --------------------------------------------------------------*/
 
+* {
+ box-sizing: border-box;
+}
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+
 body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
   position: relative;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
 }
 
 a {
@@ -1668,6 +1684,20 @@ iframe{
   color: #ddd;
 }
 
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 193.9px; /* height of your footer */
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -1675,6 +1705,9 @@ iframe{
 @media (min-width: 767px) {
   #subscribe input {
     min-width: 400px;
+  }
+  .main-container{
+    padding-bottom:355.2px;
   }
 }
 
@@ -1689,12 +1722,19 @@ iframe{
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
+  .main-container{
+    padding-bottom:245.9px;
+  }
 }
 
 @media (min-width: 991px) {
   #schedule .sub-heading {
     width: 75%;
   }
+    .main-container{
+    padding-bottom:193.9px;
+  }
+
 }
 
 @media (min-width: 1024px) {
