@@ -234,6 +234,7 @@ foreach($result as $row){
         </div>
       </div>
       </div>
+    </div>
     </section>
 
   </main>
