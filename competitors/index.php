@@ -117,6 +117,8 @@ $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $sql = "SELECT * FROM registrations";
 $result = $conn->query($sql);
 $competitor_count=0;
+$newcomer_count=0;
+$oldcomer_count=0;
 foreach($result as $row){
     $count=0;
     $competitor_count+=1;
@@ -124,6 +126,10 @@ foreach($result as $row){
     echo "<td>";
     if(!is_null($row['WCAID'])){
             echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
+            $oldcomer_count+=1;
+    }
+    else{
+      $newcomer_count+=1;
     }
     echo $row['name']."</a></td>";
     echo "<td>".$row['country_iso2']."</td>";
@@ -151,9 +157,9 @@ foreach($result as $row){
 ?>
                                    </tbody>
               </table>
-        <p class="middle"> 
+        <br> <p align="middle"> <b>
           <?php 
-          echo 'Total '.$competitor_count.' competitors'; ?> </p>
+          echo $newcomer_count.' first-timer +'.$oldcomer_count.' returns = '.$competitor_count.' people'; ?> </b> </p>
           <!-- 3x3 Psych Sheet Table -->
         </div>
       </div>
