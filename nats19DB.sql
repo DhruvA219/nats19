@@ -71,7 +71,6 @@ select sum(number_of_people),source,destination,`time` from
 (select number_of_people,source,destination,`time` from user_travel usertravel inner join
 travel_catalog ON travel_catalog.item_id=usertravel.item_id where email_id='arupela@worldcubeassociation.org') userdetails group by source,destination,`time`;
 
-      ";
 
 
 create table RanksAverage2 as
@@ -147,3 +146,23 @@ CREATE TABLE IF NOT EXISTS `payment` (
   PRIMARY KEY(`payment_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
+
+
+
+CREATE TABLE IF NOT EXISTS `user_merch` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `email_id` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `quantity` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  `payment_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+CREATE TABLE IF NOT EXISTS `merch_catalog` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `price` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`item_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
+('cb19','Metro','SNU','11 April, 6:00 P.M.' ),
+('cb20','Metro','SNU','12 April, 8:00 A.M.' ),

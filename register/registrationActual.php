@@ -532,11 +532,10 @@ echo '</ul>';
 							<p> ₹499</p>
 						<select id="cbcb27">
 							<option value="" disabled selected>Size</option>
-							<option value="1">S</option>
-							<option value="2">M</option>
-							<option value="3">L</option>
-							<option value="4">XL</option>
-							<option value="5">XXL</option>
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
 						</select>
 
 
