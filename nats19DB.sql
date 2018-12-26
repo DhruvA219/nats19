@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS `registrations` (
   `WCAID` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
   `gender` enum('m','f') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'M',
   `birth_date` date NOT NULL DEFAULT '1000-01-01',
-  `country_iso2` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `country_name` varchar(35) COLLATE utf8_unicode_ci DEFAULT NULL,
   `222` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
   `333` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
   `444` enum('Y','N') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'N',
@@ -76,4 +76,67 @@ create table RanksSingle2 as
   select personId,eventId,best,worldRank from RanksSingle
   inner join registrations
   where personId=WCAID;
+
+  insert into RanksAverage2 
+  select personId,eventId,best,worldRank from RanksAverage
+  inner join 
+  (select * from registrations where email_id='arupela@worldcubeassociation.org' ) registration1
+  where personId=WCAID;
+
+  insert into RanksSingle2 
+  select personId,eventId,best,worldRank from RanksSingle
+  inner join 
+  (select * from registrations where email_id='arupela@worldcubeassociation.org' ) registration1
+  where personId=WCAID;
+
+
+
+
+insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES
+  ("arupela@worldcubeassociation.org", "Akash Rupela","2012RUPE01",'1993-06-25','m','IN','N','Y','N','N','Y','N','N','N','N','N','N','Y','N','N','N','N','N','N');
+
+
+
+
+
+
+CREATE TABLE IF NOT EXISTS `travel_catalog` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `source` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `destination` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `time` varchar(35) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`item_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+INSERT into `travel_catalog` (`item_id`, `source`, `destination`, `time`) VALUES
+('cb19','Metro','SNU','11 April, 6:00 P.M.' ),
+('cb20','Metro','SNU','12 April, 8:00 A.M.' ),
+('cb21','SNU','Metro','12 April, 8:00 P.M.' ),
+('cb22','Metro','SNU','13 April, 8:00 A.M.' ),
+('cb23','SNU','Metro','13 April, 8:00 P.M.' ),
+('cb24','Metro','SNU','14 April, 8:00 A.M.' ),
+('cb25','SNU','Metro','14 April, 8:00 P.M.' ),
+('cb26','SNU','Metro','15 April, 9:00 A.M.' );
+
+INSERT into `user_travel` (`item_id`, `email_id`, `number_of_people`) VALUES
+('cb21','434@gmail.com', 3 );
+
+INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
+('cb21','434@gmail.com', 3 );
+
+CREATE TABLE IF NOT EXISTS `user_travel` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `email_id` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `number_of_people` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  `payment_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+
+
+CREATE TABLE IF NOT EXISTS `payment` (
+  `payment_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `email_id` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `amount` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY(`payment_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 

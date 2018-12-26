@@ -56,6 +56,14 @@ $event_mapping = array("cb1" => '222', "cb2" => '333', "cb3" => '444', "cb4" => 
 $existing_reg_verify_sql = "select * from `registrations` where email_id='".$email_id."'";
 $reg_result=$conn->query($existing_reg_verify_sql);
 
+$iso_sql = "select name from countries where iso2='".$country_iso2."'";
+$iso_result=$conn->query($case1_sql);
+$country_id='India'
+foreach($iso_result as $row){
+  $country_id=$row['name'];
+}
+
+
 if(mysqli_num_rows($reg_result)>0)
 {
   $event_registration_mapping2=array();
@@ -76,7 +84,7 @@ if(mysqli_num_rows($reg_result)>0)
     }
   }
 
-  $values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_iso2',";
+  $values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_id',";
 $values.="'";
 $values.=$event_registration_mapping2['222'];
 $values.="',";
@@ -133,7 +141,7 @@ $values.=$event_registration_mapping2['333fm'];
 $values.="'";
 $case1_sql = "delete from registrations where email_id='".$email_id."'";
 $conn->query($case1_sql);
-$case1_insert_sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
+$case1_insert_sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_name`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $conn->query($case1_insert_sql);
 
 }
@@ -150,7 +158,7 @@ foreach ($_SESSION['events'] as $key => $value) {
   }
 }
 
-$values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_iso2',";
+$values="'$email_id','$name','$WCA_ID','$birth_date','$gender','$country_id',";
 $values.="'";
 $values.=$event_registration_mapping['222'];
 $values.="',";
@@ -205,7 +213,7 @@ $values.="',";
 $values.="'";
 $values.=$event_registration_mapping['333fm'];
 $values.="'";
-$sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
+$sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_name`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
 $conn->query($sql);
 $average_sql="insert into RanksAverage2 select personId,eventId,best,worldRank from RanksAverage inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
 $single_sql="insert into RanksSingle2 select personId,eventId,best,worldRank from RanksSingle inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
