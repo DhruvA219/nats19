@@ -107,16 +107,56 @@ include('../header.php');
 																			}
 																			echo '</ul>';
 
-																			?>
+echo' <div class="col-lg-12 venue-info">
+							<div class="row justify-content-center">
+								<div class="col-11 col-lg-8">
+									<h4 align="middle"> Travel</h4>
+								</div>
+							</div>
+						</div>';
+$travel_sql = "select sum(number_of_people) as total_people,source,destination,`time` from 
+(select number_of_people,source,destination,`time` from user_travel usertravel inner join
+travel_catalog ON travel_catalog.item_id=usertravel.item_id where email_id='$email') userdetails group by source,destination,`time`";
+$travel_result = $conn->query($sql);
+if (mysqli_num_rows($travel_result)==0){
+echo '<p align="middle"> You have not reserved any travel. </p>';
+}
+else{ echo'<div class="wrapper">
+								<table>
+									<tr>
+										<th class="tg-s268">Timing</th>
+										<th class="tg-s268">From </th>
+										<th class="tg-s268">To</th>
+										<th class="tg-s268">Number of People</th>
+									</tr>';
 
-																		</section>
-																</div>
-															</section>
-														</main>
+for
+echo '</table>';
+}
+		foreach($travel_result as $row){
+			echo '<tr>';
+			echo '<td class="tg-s268">'.$row['time'].'<td>';	
+			echo '<td class="tg-s268">'.$row['source'].'<td>';	
+			echo '<td class="tg-s268">'.$row['destination'].'<td>';	
+			echo '<td class="tg-s268">'.$row['total_people'].'<td>';	
+			echo '</tr>';
+		}
+
+?>
+
+
+							</div>
+
+
+
+							</section>
+		</div>
+</section>
+</main>
 
 
 
 
-														<?php
-														include('../footer.php');
-														?>
+<?php
+include('../footer.php');
+?>

@@ -67,6 +67,13 @@ ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
 inner join Countries on Countries.iso2= psychRanks.country_iso2 
 order by -averageRank desc, -singleRank desc, psychRanks.name asc;
 
+select sum(number_of_people),source,destination,`time` from 
+(select number_of_people,source,destination,`time` from user_travel usertravel inner join
+travel_catalog ON travel_catalog.item_id=usertravel.item_id where email_id='arupela@worldcubeassociation.org') userdetails group by source,destination,`time`;
+
+      ";
+
+
 create table RanksAverage2 as
   select personId,eventId,best,worldRank from RanksAverage
   inner join registrations
