@@ -245,6 +245,15 @@ else{
 
 }
 ?>
+<main>
+    <section id="thanks" class="section-with-bg wow fadeInUp">
+         <div class="container">
+        <div class="section-header">
+          <h2>Registration</h2>
+        </div>
+             <p class="middle"> 
+
+
     
     <?php
 
@@ -256,30 +265,23 @@ else{
 
     try {
       $response = $api->paymentRequestStatus($payid);
-
-
-      echo "<h4>Payment ID: " . $response['payments'][0]['payment_id'] . "</h4>" ;
-      echo "<h4>Payment Name: " . $response['payments'][0]['buyer_name'] . "</h4>" ;
-      echo "<h4>Payment Email: " . $response['payments'][0]['buyer_email'] . "</h4>" ;
-      echo "<h4>Purpose: " . $response['purpose'] . "</h4>" ;
-      echo "<h4>Payment Status: " . $response['status'] . "</h4>" ;
-      echo "<h4>Payment Amount: " . $response['amount'] . " ".$response['payments'][0]['currency']."</h4>" ;
-
-      echo "<hr><pre>";
-      print_r($response);
-      echo "</pre>";
-      ?>
-
-
-      <?php
+      $status=$response['status'];
+      $amount=$response['amount'];
+      if ($status=='Completed'){
+        echo 'Your payment of '.$amount.' is complete. You can return to the <a href="http://nats19.in">Home page</a> or go to <a href="#">My Nats</a> to view your registration.';         
+      }
+      else{
+        echo 'Your payment is not complete. Return to the <a href="http://nats19.in">Home page</a> and try again';         
+      }
     }
     catch (Exception $e) {
       print('Error: ' . $e->getMessage());
     }
 
-
-
     ?>
+ </p> 
+</div></section></main>
+
   <?php
   include '../footer.php'
   ?>
