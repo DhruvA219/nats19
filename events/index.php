@@ -1,7 +1,13 @@
 <?php
 include('../header.php')
 ?>
-
+<head>
+<style>
+.last-round > td {
+      border-bottom: 4px solid #ccc;
+    }
+</style>
+</head>
  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
 		<div class="container">
 			<div class="section-header">
@@ -20,7 +26,7 @@ include('../header.php')
       <th>Round</th>
       <th>Format</th>
       <th>Time limit</th>
-        <th>Cutoff</th>
+       <th>Cutoff</th>
       <th>Proceed</th>
     </tr>
   </thead>
@@ -563,6 +569,23 @@ include('../header.php')
   </tbody>
 
 </table>
+
+  <h4 id="time-limit" class="active">Time limit</h4>
+  <p>
+    If you reach the time limit during your solve, the judge will stop you and your result will be DNF (see <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#A1a4">Regulation A1a4</a>).
+      <br>
+      A <strong id="cumulative-time-limit">cumulative time limit</strong> may be enforced (see <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#A1a2">Regulation A1a2</a>).
+  </p>
+
+    <h4 id="cutoff">Cutoff</h4>
+    <p>
+      The result to beat to proceed to the second phase of a combined round (see <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#9g">Regulation 9g</a>).
+    </p>
+  <h4 id="format">Format</h4>
+  <p>
+    The format describes how to determine the ranking of competitors based on their results. The list of allowed formats per event is described in <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#9b">Regulation 9b</a>. See <a target="_blank" href="https://www.worldcubeassociation.org/regulations/#9f">Regulation 9f</a> for a description of each format.
+  </p>
+
 </div>
 </section>
 
