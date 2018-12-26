@@ -153,8 +153,8 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
        echo '<img src=';
        echo '"' . $_SESSION['avatar'] . '" class="signedin">';
        echo "Hi " . strtok($_SESSION['name'], ' ') . "</a>";
-       echo '<ul class="sub-nav"> <li class="sub-nav-item" ><a class="sub-nav-link2" href="logout.php">Logout</a></li></ul>';
-         echo '<ul class="sub-nav"> <li class="sub-nav-item" ><a class="sub-nav-link2" href="myNats">My Nats</a></li></ul></li>';
+       echo '<ul class="sub-nav"> <li class="sub-nav-item" ><a class="sub-nav-link2" href="logout.php">Logout</a></li>';
+         echo '<li class="sub-nav-item" ><a class="sub-nav-link2" href="myNats">My Nats</a></li></ul></li>';
 
      } else {
                    echo '<li class="buy-tickets">';
