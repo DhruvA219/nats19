@@ -2266,3 +2266,10 @@ img::after{
   background: #f5f5f5;
   border-radius: 30px;
 }
+
+#cart-total{
+  text-align:center;
+  color:red;
+  font-size:1.5em;
+  font-weight:bold;
+}
