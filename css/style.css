@@ -2193,7 +2193,7 @@ img::after{
   color: black;
 }
 
-.leftcolumn1table td:first-child {
-    text-align: left;
+.left-td {
+    text-align: left !important;
 }​
 

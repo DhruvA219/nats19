@@ -83,7 +83,7 @@ include('../header.php')
             <!-- Competitors Table -->
             <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="comp">
               <div class="wrapper">
-              <table class = "striped leftcolumn2table">
+              <table class = "striped">
                 <thead>
                   <tr>
     <th> # </th>    
@@ -214,12 +214,12 @@ foreach($result as $row){
   $rank+=1;
   echo "<tr>";
   echo "<td>".$rank."</td>";
-  echo "<td align='left'>";
+  echo "<td class='lefttd'>";
         if(!is_null($row['WCAID'])) {
             echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
         }       
   echo $row['name']."</a></td>";
-  echo "<td align='left'>".$row['country']."</td>";
+  echo "<td class='lefttd'>".$row['country']."</td>";
   echo "<td>".convertResult($row['averageResult'],$eventId,0)."</td>";
   echo "<td>".$row['averageRank']."</td>";
   echo "<td>".convertResult($row['singleResult'],$eventId,1)."</td>";
