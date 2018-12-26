@@ -30,7 +30,7 @@ You can see all your registration and accessories details here. Your groups will
 					<div class="col-lg-12 venue-info">
 						<div class="row justify-content-center">
                                                          <div class="col-11 col-lg-8">
-                                                         <h3 align="middle"> Events</h3>
+                                                         <h4 align="middle"> Events</h4>
                                                      </div>
                                                    </div>
                                                </div>
@@ -42,7 +42,7 @@ $email=$_SESSION['email'];
 $sql = "SELECT * FROM registrations where email_id='$email'";
 $result = $conn->query($sql);
 if (mysqli_num_rows($result)==0){
-	echo '<p align="middle"> You have not registered for any event </p>';
+	echo '<p align="middle"> You have not registered for any event. </p>';
 }
 
 $regd_events=0;
