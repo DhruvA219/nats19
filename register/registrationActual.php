@@ -542,11 +542,17 @@ echo '</ul>';
 
 						<select id="cbcb28">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -557,11 +563,17 @@ echo '</ul>';
 							<p> ₹299</p>
 						<select id="cbcb29">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -572,11 +584,17 @@ echo '</ul>';
 							<p> ₹99</p>
 						<select id="cbcb30">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -587,11 +605,17 @@ echo '</ul>';
 							<p> ₹99</p>
 						<select id="cbcb31">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -602,11 +626,17 @@ echo '</ul>';
 							<p> ₹99</p>
 						<select id="cbcb32">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -618,11 +648,17 @@ echo '</ul>';
 							<p> ₹49</p>
 						<select id="cbcb33">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -632,11 +668,17 @@ echo '</ul>';
 							<p> ₹99</p>
 						<select id="cbcb34">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 
@@ -646,11 +688,17 @@ echo '</ul>';
 							<p> ₹49</p>
 						<select id="cbcb35">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 						<li>
@@ -659,11 +707,17 @@ echo '</ul>';
 							<p> ₹199</p>
 						<select id="cbcb36">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 						<li>
@@ -672,11 +726,17 @@ echo '</ul>';
 							<p> ₹19</p>
 						<select id="cbcb37">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 						<li>
@@ -685,11 +745,17 @@ echo '</ul>';
 							<p> ₹19</p>
 						<select id="cbcb38">
 							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
 							<option value="4">4</option>
 							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
 						</select>
 						</li>
 					</ul>
