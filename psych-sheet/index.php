@@ -10,6 +10,8 @@ include('../header.php')
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h2>Psych Sheet</h2>
+         <p>Go back to <a href="../competitors">competitors page</a>.</p>
+
                   </div>
 
 
