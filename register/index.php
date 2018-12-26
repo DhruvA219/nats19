@@ -635,8 +635,20 @@ echo '</ul>';
 		<div class="col-11 col-lg-8">
 			<p align="middle"> Step 5/5</p>
 			<h3 align="middle"> Unofficial Events</h3>
-			<p align="middle">Coming soon </p>
-			<p align="middle">You will be able to register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email when an event is available.</p>
+			<p align="middle">You can register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email whenever a new event is available. The following events are available right now:</p>
+			<table class="striped">
+				<tr>
+					<th> Event </th>
+					<th> Description </th>
+					<th> Register Link </th>
+				</tr>
+				<tr>
+					<td> Worlds of Wonder water park trip </td>
+					<td> To unwind after the competition, we are organizing an official trip on Monday, 15th April after the competition to Worlds of Wonder water park. </td>
+					<td> <a href="https://goo.gl/forms/E5NBXfad4BnO9H262"> Link </a> </td>
+				</tr>
+			</table>
+
 		</div>
 	</div>
 
