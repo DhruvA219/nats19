@@ -245,7 +245,7 @@ else{
 
 }
 ?>
-<main>
+  <main id="main">
     <section id="thanks" class="section-with-bg wow fadeInUp">
          <div class="container">
         <div class="section-header">
