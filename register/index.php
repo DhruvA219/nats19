@@ -269,7 +269,8 @@ echo '</ul>';
 								<div class="col-11 col-lg-8">
 									<p align="middle"> Step 2/5</p>
 									<h3 align="middle"> Bus Service</h3>
-									<p align="middle">A prepaid bus service to commute between Pari Chowk Metro Station and the Venue will be available. Please select when you will be needing this bus serivce. (Selecting this is optional)</p>
+									<p align="middle">A prepaid bus service to commute between the nearest Metro Station and the Venue will be available at ₹100 per person per trip. Please select when will you be needing this bus service. </p>
+									<p align="middle">The nearest metro station is Pari Chowk and scheduled to be inaugrated by February. If there are delays, the bus service will be available for Noida Sector 16 Metro Station instead. </p>
 								</div>
 							</div>
 							<div class="wrapper">
@@ -280,7 +281,7 @@ echo '</ul>';
 										<th class="tg-s268">Time</th>
 										<th class="tg-s268">From </th>
 										<th class="tg-s268">To</th>
-										<th class="tg-s268"> Number of People </th>
+										<th class="tg-s268">Number of People</th>
 									</tr>
 									<tr>
 										<td class="tg-0lax">
