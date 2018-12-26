@@ -245,23 +245,6 @@ else{
 
 }
 ?>
-<div class="w3-container">
-  <h1 class='w3-center'>Your Payment Details! <a href='index.php'>Go back Home</a></h1>
-  <p class="w3-center">You can also save all these in Database using simple Insert Query. </p>
-  <div class="w3-container w3-center">
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue w3-hover-blue">
-    Click to see the insert Script.</button>
-
-    <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4">
-        <header class="w3-container w3-margin w3-padding"> 
-          <span onclick="document.getElementById('id01').style.display='none'" 
-          class="w3-button w3-blue w3-display-topright">&times;</span>
-          <h1 class='w3-center'>Simple Insert Script!</h1>
-          <script src="https://gist.github.com/hackerrahul/159a02782fece68b31e6177055a30033.js"></script>
-        </div>
-      </div>
-    </div>
     
     <?php
 
@@ -297,7 +280,6 @@ else{
 
 
     ?>
-  </div>
   <?php
   include '../footer.php'
   ?>
