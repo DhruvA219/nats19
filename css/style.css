@@ -2197,3 +2197,48 @@ img::after{
     text-align: left !important;
 }​
 
+.uldiv{
+  margin: auto;
+  display: inline;
+}
+
+.uldiv li{
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  float: inherit;
+  display: inline-block;
+}
+
+.uldiv li:hover {
+  background: #eee;
+  cursor: pointer;
+  transition: 1s;
+
+}
+
+.ulstyle{
+  list-style-type: none;
+  width: 500px;
+}
+
+.uldiv ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+.uldiv img{
+  margin: 0 15px 0 0;
+  width: 200px;
+  height: 200px;
+}
+
+.uldiv h3{
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.uldiv p{
+  font: italic 15px;
+  background: #f5f5f5;
+  border-radius: 30px;
+}
