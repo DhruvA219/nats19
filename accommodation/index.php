@@ -52,7 +52,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/140/140060104.jpg" alt="Hotel 1" class="img-fluid">
+                <img src="../img/hotels/hotel1.jpg" alt="Hotel 1" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/radisson-blu-greater-noida.html">Radisson Blu Hotel, Greater Noida</a></h3>
               <div class="stars">
@@ -69,7 +69,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/129/129447790.jpg" alt="Hotel 2" class="img-fluid">
+                <img src="../img/hotels/hotel2.jpg" alt="Hotel 2" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/crowne-plaza-greater-noida.en-gb.html">Crowne Plaza Greater Noida</a></h3>
               <div class="stars">
@@ -86,7 +86,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/142/14248071.jpg" alt="Hotel 3" class="img-fluid">
+                <img src="../img/hotels/hotel3.jpg" alt="Hotel 3" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/jaypee-greens-golf-and-spa-resort.en-gb.html">Jaypee Greens Golf and Spa Resort</a></h3>
               <div class="stars">
@@ -103,7 +103,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/102/102761903.jpg" alt="Hotel 4" class="img-fluid">
+                <img src="../img/hotels/hotel4.jpg" alt="Hotel 4" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/savoy-suites-greater-noida.html">Savoy Suites Greater Noida</a></h3>
               <div class="stars">
@@ -120,7 +120,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/160/160501072.jpg" alt="Hotel 5" class="img-fluid">
+                <img src="../img/hotels/hotel5.jpg" alt="Hotel 5" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/the-nest-corporate-greater-noida.html">Treebo The Nest Corporate</a></h3>
               <div class="stars">
@@ -135,7 +135,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/928/92800643.jpg" alt="Hotel 6" class="img-fluid">
+                <img src="../img/hotels/hotel6.jpg" alt="Hotel 6" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/oyo-rooms-greater-noida-pari-chowk.en-gb.html">OYO 8430 Absin Hospitality</a></h3>
               <div class="stars">
@@ -150,7 +150,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://t-ec.bstatic.com/images/hotel/max1280x900/134/134165711.jpg" alt="Hotel 7" class="img-fluid">
+                <img src="../img/hotels/hotel7.jpg" alt="Hotel 7" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/oyo-rooms-251-greater-noida-c-block-gamma-1.en-gb.html?aid=356980;label=gog235jc-1DCAsobEIrb3lvLXJvb21zLTI1MS1ncmVhdGVyLW5vaWRhLWMtYmxvY2stZ2FtbWEtMUgzWANobIgBAZgBCbgBF8gBDNgBA-gBAYgCAagCAw;sid=1af6a57cfe71097a7d6641f1c7575dda;dist=0&keep_landing=1&sb_price_type=total&type=total&">OYO 9076 Absin Hospitality 2</a></h3>
               <div class="stars">
@@ -165,7 +165,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://s-ec.bstatic.com/images/hotel/max1280x900/112/112684528.jpg" alt="Hotel 8" class="img-fluid">
+                <img src="../img/hotels/hotel8.jpg" alt="Hotel 8" class="img-fluid">
               </div>
               <h3><a href="https://www.booking.com/hotel/in/angel-inn.en-gb.html?aid=356980;label=gog235jc-1DCAsobEIJYW5nZWwtaW5uSDNYA2hsiAEBmAEJuAEXyAEM2AED6AEBiAIBqAID;sid=1af6a57cfe71097a7d6641f1c7575dda;dist=0&keep_landing=1&sb_price_type=total&type=total&">Angel NRI B&B</a></h3>
               <div class="stars">
@@ -180,7 +180,7 @@ include('../header.php')
           <div class="col-lg-4 col-md-6">
             <div class="hotel">
               <div class="hotel-img">
-                <img src="https://images.oyoroomscdn.com/uploads/hotel_image/9070/657081ddb5120c07.jpg" alt="Hotel 9" class="img-fluid">
+                <img src="../img/hotels/hotel9.jpg" alt="Hotel 9" class="img-fluid">
               </div>
               <h3><a href="https://www.oyorooms.com/9070-budget-oyo-5470-khushi-residence-noida">OYO 5470 Khushi Residence</a></h3>
               <div class="stars">
