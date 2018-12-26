@@ -84,7 +84,7 @@ include('../header.php')
             <!-- Competitors Table -->
             <div class="wrapper">
 
-              <table class = "striped">
+              <table class = "striped leftcolumn1table">
                 <thead>
                   <tr>
                     <th> Name </th>
@@ -132,7 +132,7 @@ foreach($result as $row){
       $newcomer_count+=1;
     }
     echo $row['name']."</a></td>";
-    echo "<td>".$row['country_iso2']."</td>";
+    echo "<td>".$row['country_name']."</td>";
     echo "<td>"; if ($row['333'] =="Y"){echo "<img src='../img/events/3x3.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['222'] =="Y"){echo "<img src='../img/events/2x2.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['444'] =="Y"){echo "<img src='../img/events/4x4.svg' class='low'>"; $count+=1; } echo"</td>";

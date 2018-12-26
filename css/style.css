@@ -2192,3 +2192,7 @@ img::after{
   text-decoration: none;
   color: black;
 }
+
+.leftcolumn1table td:first-child {
+    text-align: left;
+}​

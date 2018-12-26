@@ -83,7 +83,7 @@ include('../header.php')
             <!-- Competitors Table -->
             <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="comp">
               <div class="wrapper">
-              <table class = "striped">
+              <table class = "striped leftcolumn1table">
                 <thead>
                   <tr>
     <th> # </th>    
