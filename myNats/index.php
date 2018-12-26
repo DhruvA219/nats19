@@ -131,7 +131,6 @@ else{ echo'<div class="wrapper">
 									</tr>';
 
 		foreach($travel_result as $row){
-			var_dump($row);
 			echo '<tr>';
 			echo '<td class="tg-s268">'.$row['time'].'</td>';	
 			echo '<td class="tg-s268">'.$row['source'].'</td>';	
