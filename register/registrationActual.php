@@ -527,7 +527,7 @@ echo '</ul>';
 				<div class="uldiv">
 					<ul>
 						<li>
-							<img src="http://pngimg.com/uploads/tshirt/tshirt_PNG5448.png" alt="shirt image">
+							<img src="../img/merchandise/tshirt.jpg" alt="shirt image">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
 						<select id="cbcb27">
@@ -576,8 +576,8 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="https://cdn.shopify.com/s/files/1/0623/5741/products/pin-thrash_2048x2048.png?v=1487270593" alt="shirt image">
-							<h3>Wrist Band</h3>
+							<img src="../img/merchandise/badge.jpg" alt="shirt image">
+							<h3>Pin Badge</h3>
 							<p> ₹49</p>
 						<select id="cbcb29">
 							<option value="" disabled selected>Quantity</option>
@@ -589,7 +589,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="https://ilovemstudio.com/wp-content/uploads/2017/07/56-MM-Badges-Mock-Up_DO-WHAT-YOU-LOVE.png" alt="shirt image">
+							<img src="../img/merchandise/magnetbadge.jpg" alt="shirt image">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
 						<select id="cbcb29">
@@ -602,7 +602,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="https://cdn2.iconfinder.com/data/icons/miscellaneous-41/43/Asset_8-2-512.png" alt="shirt image">
+							<img src="../img/merchandise/notebook.jpg" alt="shirt image">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
 						<select id="cbcb29">
