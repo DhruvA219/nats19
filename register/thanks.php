@@ -261,7 +261,7 @@ else{
     <p class="middle"> 
 
 
-      
+
       <?php
 
 
@@ -278,7 +278,7 @@ else{
           echo 'Your payment of '.$amount.' is complete. You can return to the <a href="http://nats19.in">Home page</a> or go to <a href="../myNats">My Nats</a> to view your registration.';         
         }
         else{
-          echo 'Your payment is not complete. Return to the <a href="http://nats19.in">Home page</a> and try again';         
+          echo 'Your payment is not complete. Return to the <a href="http://nats19.in">Home page</a> and try again. If you believe this is an error, please contact us.';         
         }
       }
       catch (Exception $e) {
