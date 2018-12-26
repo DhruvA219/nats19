@@ -527,7 +527,7 @@ echo '</ul>';
 				<div class="uldiv">
 					<ul>
 						<li>
-							<img src="../img/merchandise/tshirt.jpg" alt="shirt image">
+							<img src="../img/merchandise/tshirt.png" alt="shirt image">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
 						<select id="cbcb27">
