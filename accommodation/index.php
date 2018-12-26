@@ -8,63 +8,39 @@ include('../header.php')
     <section id="hotels" class="section-with-bg wow fadeInUp">
 
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-header-narrow">
           <h2>Options Inside Campus</h2>
-          <p>There are multiple stay options inside the campus, and will be available for pre-booking once registration opens on a first-come first-serve basis.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/2bhk.PNG" alt="Hotel 1" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/radisson-blu-greater-noida.html">2BHK Apartment</a></h3>
-
-              <p>₹3600 (per Night)</p>
-            </div>
+          <p>There are multiple stay options inside the campus, and will be available for pre-booking on a first-come first-serve basis from 20th January, 2019. Please refer to our <b><a href="../uploads/Accommodation_Campus.pdf" target="about_blank">Campus accommodation prospectus </a></b> for facility details and pictures.</p>
           </div>
+                <table class="fit-width">  
+                  <tr>
+                    <th class="tg-s268">Name</th>
+                    <th class="tg-s268">Charges per Night</th>
+                  </tr>
+                <tr>   
+                    <td class="tg-s268">2BHK Apartment</td>
+                    <td class="tg-s268">₹ 3600</td> 
+                 </tr>
+                <tr>   
+                    <td class="tg-s268">1BHK Apartment</td>
+                    <td class="tg-s268">₹ 2700</td> 
+                 </tr>
+                <tr>   
+                    <td class="tg-s268">Studio Apartment</td>
+                    <td class="tg-s268">₹ 2000</td> 
+                 </tr>
+                <tr>   
+                    <td class="tg-s268">Common Room (Shared)</td>
+                    <td class="tg-s268">₹ 500</td> 
+                 </tr>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/1bhk.PNG" alt="Hotel 2" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/crowne-plaza-greater-noida.en-gb.html">1BHK Apartment</a></h3>
+  </table>
 
-              <p>₹2700 (per Night)</p>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/studio.PNG" alt="Hotel 3" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/jaypee-greens-golf-and-spa-resort.en-gb.html">Studio Apartment</a></h3>
-
-              <p>₹2000 (per Night)</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                  <!-- need photo here-->
-                <img src="" alt="Hotel 4" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/savoy-suites-greater-noida.html">Common Room (shared accommodation)</a></h3>
-
-              <p>₹500 (per Night)</p>
-            </div>
-          </div>
-
-        </div>
       </div>
 
       <div class="container">
-        <div class="section-header">
+        <div class="section-header section-header-narrow">
           <h2>Hotels</h2>
           <p>There are many hotels in Greater Noida, suitable for all types of travellers.
             Our prepaid bus service from Greater Noida (Pari Chowk) to the venue ensures seamless connectivity
@@ -86,7 +62,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>15km from the Venue</p>
+              <!-- <p>15km from the Venue</p> -->
             </div>
           </div>
 
@@ -103,7 +79,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>17km from the Venue</p>
+              <!-- <p>17km from the Venue</p> -->
             </div>
           </div>
 
@@ -120,7 +96,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>13km from the Venue</p>
+              <!-- <p>13km from the Venue</p> -->
             </div>
           </div>
 
@@ -136,7 +112,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>15km from the Venue</p>
+              <!-- <p>15km from the Venue</p> -->
             </div>
           </div>
 
@@ -152,7 +128,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>13km from the Venue</p>
+              <!-- <p>13km from the Venue</p> -->
             </div>
           </div>
 
@@ -167,7 +143,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>14km from the Venue</p>
+              <!-- <p>14km from the Venue</p> -->
             </div>
           </div>
 
@@ -182,7 +158,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>15km from the Venue</p>
+              <!-- <p>15km from the Venue</p> -->
             </div>
           </div>
 
@@ -197,7 +173,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>15km from the Venue</p>
+              <!-- <p>15km from the Venue</p> -->
             </div>
           </div>
 
@@ -212,7 +188,7 @@ include('../header.php')
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
               </div>
-              <p>15km from the Venue</p>
+              <!-- <p>15km from the Venue</p> -->
             </div>
           </div>
 
