@@ -1701,12 +1701,15 @@ footer {
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
+@media (max-width: 767px) {
+  .main-container{
+    padding-bottom:355.2px;
+  }
+}
+
 @media (min-width: 767px) {
   #subscribe input {
     min-width: 400px;
-  }
-  .main-container{
-    padding-bottom:355.2px;
   }
 }
 
