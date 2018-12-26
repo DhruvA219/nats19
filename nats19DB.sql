@@ -27,14 +27,14 @@ CREATE TABLE IF NOT EXISTS `registrations` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
 
-insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_iso2`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES
-  ("bansal@gmail.com", "Shivam Bansal","2011BANS02",'1999-12-12','m','IN','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
-  ("kunal@gmail.com", "Kunal Oak","2015OAKK01",'1989-11-21','m','IN','Y','Y','Y','N','N','Y','Y','Y','Y','N','Y','Y','Y','Y','Y','Y','Y','Y'),
-  ("passi@gmail.com", "Piyush Passi","2013PASS01",'1999-03-02','m','IN','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N'),
-  ("hemang@gmail.com", "Hemang Sarkar","2014SARK01",'1995-03-02','m','IN','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
-  ("feliks@gmail.com", "Feliks Zemdegs","2009ZEMD01",'1995-12-21','m','AU','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
-  ("sukant.snake@gmail.com", "Sukant Koul","2014KOUL01",'1997-02-25','m','IN','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
-  ("sukant.cake@gmail.com", "Newkant Koul",NULL,'1997-02-25','m','IN','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');
+insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_name`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES
+  ("bansal@gmail.com", "Shivam Bansal","2011BANS02",'1999-12-12','m','India','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
+  ("kunal@gmail.com", "Kunal Oak","2015OAKK01",'1989-11-21','m','IndiaN','Y','Y','Y','N','N','Y','Y','Y','Y','N','Y','Y','Y','Y','Y','Y','Y','Y'),
+  ("passi@gmail.com", "Piyush Passi","2013PASS01",'1999-03-02','m','India','Y','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N','N'),
+  ("hemang@gmail.com", "Hemang Sarkar","2014SARK01",'1995-03-02','m','India','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
+  ("feliks@gmail.com", "Feliks Zemdegs","2009ZEMD01",'1995-12-21','m','Australia','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
+  ("sukant.snake@gmail.com", "Sukant Koul","2014KOUL01",'1997-02-25','m','India','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),
+  ("sukant.cake@gmail.com", "Newkant Koul",NULL,'1997-02-25','m','India','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');
 
 drop table Competitions;
 drop table Continents;
