@@ -114,7 +114,7 @@ include('../header.php')
   
 <?php
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sql = "SELECT * FROM registrations";
+$sql = "SELECT * FROM registrations order by name";
 $result = $conn->query($sql);
 $competitor_count=0;
 $newcomer_count=0;
