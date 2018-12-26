@@ -24,6 +24,7 @@ else{
   }
 
   else{
+      $payid = $_GET["payment_request_id"];
     $response = $api->paymentRequestStatus($payid);
     $status=$response['status'];
 
