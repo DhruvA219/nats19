@@ -112,7 +112,6 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
 
   <div class="main-container">
 
-    ============================-->
     <header id="header" class="other-pages">
       <div class="container">
 
