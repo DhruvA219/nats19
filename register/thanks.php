@@ -66,7 +66,7 @@ else{
         $reg_result=$conn->query($existing_reg_verify_sql);
 
         $iso_sql = "select name from countries where iso2='".$country_iso2."'";
-        $iso_result=$conn->query($case1_sql);
+        $iso_result=$conn->query($iso_sql);
         $country_id='India';
         foreach($iso_result as $row){
           $country_id=$row['name'];

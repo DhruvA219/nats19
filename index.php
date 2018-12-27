@@ -368,7 +368,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
       var timeinterval = setInterval(updateClock, 1000);
     }
 
-    var deadline = new Date(1555007400000);
+    var deadline = new Date(1545942400000);
     initializeClock('clockdiv', deadline);
   </script>
 </body>
