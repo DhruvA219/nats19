@@ -65,7 +65,7 @@ else{
         $existing_reg_verify_sql = "select * from `registrations` where email_id='".$email_id."'";
         $reg_result=$conn->query($existing_reg_verify_sql);
 
-        $iso_sql = "select name from countries where iso2='".$country_iso2."'";
+        $iso_sql = "select name from Countries where iso2='".$country_iso2."'";
         $iso_result=$conn->query($iso_sql);
         $country_id='Angola';
         foreach($iso_result as $row){
