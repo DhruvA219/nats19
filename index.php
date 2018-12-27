@@ -305,7 +305,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
 
 
                     <div class="contact-info">
-                      <a href="mailto:arupela@worldcubeassociation.org"><i class="fas fa-envelope-square fa-2x"></i></a> contact@nats19.in 
+                      <a href="mailto:contact@nats19.in"><i class="fas fa-envelope-square fa-2x"></i></a> contact@nats19.in 
                     </div>
                     <div class="contact-info">
                       <a href="tel:+918447852838"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a> (+91) 8447852838
