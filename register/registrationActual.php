@@ -742,7 +742,7 @@ echo '</ul>';
 							<img src="../img/merchandise/logo1.png" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb37">
+						<select id="cbcb37" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -1017,6 +1017,7 @@ $("#defaultEvents")[0].className+=" active";
 $(".travel-selector-class").change(function() {
 	document.getElementById("cb" + this.id).value = "";
 });
+
 
 $("#register-checkout").click(function() {
 

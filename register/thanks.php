@@ -67,7 +67,7 @@ else{
 
         $iso_sql = "select name from Countries where iso2='".$country_iso2."'";
         $iso_result=$conn->query($iso_sql);
-        $country_id='Angola';
+        $country_id='India';
         foreach($iso_result as $row){
           $country_id=$row['name'];
         }
