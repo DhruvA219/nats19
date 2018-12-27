@@ -41,11 +41,63 @@ foreach ($_POST['travel'] as $key => $value) {
                 $total_cost_of_travel_reg += $value*100;
         }
 }
+
+$total_cost_of_merch_reg=0;
+foreach ($_POST['merch'] as $key => $value) {
+        if($value <= 10 && $value >= 1) {
+                if ($key=="cbcb28-S"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb28-M"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb28-L"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb28-XL"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb29"){
+                $total_cost_of_merch_reg += $value*299;
+              }
+                if ($key=="cbcb30"){
+                $total_cost_of_merch_reg += $value*99;
+              }
+                if ($key=="cbcb31"){
+                $total_cost_of_merch_reg += $value*99;
+              }
+                if ($key=="cbcb32"){
+                $total_cost_of_merch_reg += $value*99;
+              }
+                if ($key=="cbcb33"){
+                $total_cost_of_merch_reg += $value*49;
+              }
+                if ($key=="cbcb34"){
+                $total_cost_of_merch_reg += $value*99;
+              }
+                if ($key=="cbcb35"){
+                $total_cost_of_merch_reg += $value*49;
+              }
+                if ($key=="cbcb36"){
+                $total_cost_of_merch_reg += $value*199;
+              }
+                if ($key=="cbcb37"){
+                $total_cost_of_merch_reg += $value*19;
+              }
+                if ($key=="cbcb38"){
+                $total_cost_of_merch_reg += $value*19;
+              }
+        }
+}
+
+
+
 $_SESSION['events'] = $_POST['events'];
 $_SESSION['travel'] = $_POST['travel'];
+$_SESSION['merch'] = $_POST['merch'];
 
 //echo "Event reg cost: " . $total_cost_of_event_reg . ". And cost of travel: " . $total_cost_of_travel_reg;
-$amount = $total_cost_of_event_reg+$total_cost_of_travel_reg;
+$amount = $total_cost_of_event_reg+$total_cost_of_travel_reg+$total_cost_of_merch_reg;
 
 $ch = curl_init();
 

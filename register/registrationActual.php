@@ -888,7 +888,7 @@ return total_people*100;
 
 function getMerchFee(){
 	var merch_fee=0;
-	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "") {
+	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 		merch_fee = merch_fee + 499*parseInt(document.getElementById("cbcb28").value);
 	}
 	if(document.getElementById("cbcb29").value!=="" && document.getElementById("cbcb29").value!=="0"){
@@ -1023,7 +1023,19 @@ $("#register-checkout").click(function() {
 		}
 	}
 
-	$.post( "register.php",{travel: travel, events: events}, function( script ) {
+	var merch = {};
+	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
+		merch['cbcb28-'+document.getElementById("cbcb27").value]=parseInt(document.getElementById("cbcb28").value);
+	}
+	for (var i=29;i<=38;i++){
+		if(document.getElementById("cbcb"+i).value!=="" && document.getElementById("cbcb"+i).value!=="0"){
+			merch['cbcb'+i]= parseInt(document.getElementById("cbcb"+i).value);
+		}
+
+	}
+
+
+	$.post( "register.php",{travel: travel, events: events, merch: merch}, function( script ) {
 		var scriptTag = $(script).text();
 		eval(scriptTag);
 	});
