@@ -2,199 +2,291 @@
 include('../header.php')
 ?>
 
-<?php
-include('../header.php')
-?>
-  <main id="main">
+<!-- Latest compiled and minified CSS -->
+
+<style>
+
+
+.label {
+  border: 1px solid #000;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 85%;
+  font-weight: bold;
+  line-height: 1;
+  color:#fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.btn .label {
+  position: relative;
+  top: 5px;
+}
+.label-default {
+  background-color: #777;
+}
+
+.label-aqua {
+  background-color: #5bc0de;
+}
+.label-blue {
+  background-color: #337ab7;
+}
+.label-pink {
+  background-color: pink;
+  color:black;
+}
+.label-magenta {
+  background-color: #cc00cc;
+}
+.label-yellow {
+  background-color: #ffff00;
+  color:black;
+}
+.label-orange {
+  background-color: orange;
+  color:black;
+}
+
+
+
+.label-default[href]:hover,
+.label-default[href]:focus {
+  background-color: #5e5e5e;
+}
+.label-primary {
+  background-color: #337ab7;
+}
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  background-color: #286090;
+}
+.label-success {
+  background-color: #5cb85c;
+}
+.label-success[href]:hover,
+.label-success[href]:focus {
+  background-color: #449d44;
+}
+.label-info {
+  background-color: #5bc0de;
+}
+.label-info[href]:hover,
+.label-info[href]:focus {
+  background-color: #31b0d5;
+}
+.label-warning {
+  background-color: #f0ad4e;
+}
+.label-warning[href]:hover,
+.label-warning[href]:focus {
+  background-color: #ec971f;
+}
+.label-danger {
+  background-color: #d9534f;
+}
+.label-danger[href]:hover,
+.label-danger[href]:focus {
+  background-color: #c9302c;
+}
+
+</style>
+<main id="main">
     <!--==========================
       Hotels Section
-    ============================-->
-    <section id="hotels" class="section-with-bg wow fadeInUp">
+      ============================-->
+      <section id="hotels" class="section-with-bg wow fadeInUp">
 
-      <div class="container">
+        <div class="container">
 
-        <div class="section-header section-header-narrow">
-          <h2>Reaching the City</h2>
-          <h3 align="center"> by Air </h3>
-          <p style="margin-bottom:2px">The nearest airport is Indira Gandhi International Airport (DEL). </p>
-          <p> The nearest railway stations are New Delhi (NDLS), Nizamuddin (NZM) and Dadri (DDR). </p>
+          <div class="section-header section-header-narrow">
+
+
+            <h2>Reaching the City</h2>
+            <p style="margin-bottom:2px">The nearest airport is Indira Gandhi International Airport (DEL). </p>
+            <p> The nearest railway stations are New Delhi (NDLS), Nizamuddin (NZM) and Dadri (DDR). </p>
           </div>
 
+          <div class="section-header section-header-narrow" style="margin-top:0px;">
+            <h2>Reaching the Venue</h2>
+            <h3 align="center"> By Car </h3>
+            <p style="margin-bottom:2px">You can drive to the venue from Delhi NCR or book a cab (Ola recommended). </p>
+            <p> A video with driving directions will be added here by February.</p>
 
-              <div class="section-header section-header-narrow" style="margin-top:0px;">
-          <h2>Reaching the Venue</h2>
-          <p style="margin-bottom:2px">The nearest airport is Indira Gandhi International Airport (DEL). </p>
-          <p> The nearest railway stations are New Delhi (NDLS), Nizamuddin (NZM) and Dadri (DDR). </p>
-          </div>
+            <h3 align="center"> By Public Transport </h3>
+            <p style="margin-bottom:2px">Metro Train is available from all popular places till Pari Chowk Metro Station. </p>
+            <p> Use the below chart for reference. Our bus service can be availed from metro station. </p>
+            <div class="wrapper" style="margin-bottom:30px; margin-top:0px;">
+              <table>  
+                <tr>
+                  <th class="tg-s268">Source</th>
+                  <th class="tg-s268">Metro Station</th>
+                  <th class="tg-s268">Interchange</th>
+                </tr>
+                <tr>   
+                  <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 1)</th>
+                  <td class="tg-s268 lefttd"> <span class="label label-magenta">T-1 IGI Airport</span></td> 
+                  <td class="tg-s268 lefttd"><span class="label label-blue">Botanical Garden</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span></td> 
+                </tr>
+                <tr>   
+                  <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 2/3)</th>
+                  <td class="tg-s268 lefttd"> <span class="label label-orange">IGI Airport</span> </td> 
+                  <td class="tg-s268 lefttd"> <span class="label label-yellow">New Delhi </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-blue">Rajiv Chowk </span><i class="fa fa-arrow-right" aria-hidden="true"></i>   <span class="label label-aqua">Noida Sector 52</span></td> 
+                </tr>
+                <tr>   
+                  <th class="tg-s268 lefttd"><i class="fa fa-train" aria-hidden="true"></i> NZM</th>
+                  <td class="tg-s268 lefttd"> <span class="label label-pink">Hazrat Nizamuddin</span></td>
+                  <td class="tg-s268 lefttd"> <span class="label label-blue">Mayur Vihar 1 </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span></td> 
+                </tr>
+                <tr>   
+                  <th class="tg-s268 lefttd"><i class="fa fa-train" aria-hidden="true"></i> NDLS</th>
+                  <td class="tg-s268 lefttd"> <span class="label label-yellow">New Delhi</span></td>
+                  <td class="tg-s268 lefttd"> <span class="label label-blue">Rajiv Chowk</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span></td> 
+                </tr>
 
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1518.8747758055918!2d-3.738874187829253!3d40.41439868855838!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422806d7bed9f9%3A0x44968d8075b5957b!2sGlass+Pavilion!5e0!3m2!1sen!2ses!4v1518718184489" style="border:0" allowfullscreen="" width="100%" height="280" frameborder="0"></iframe>
-
-
-      </div>
-
-      <div class="container">
-        <div class="section-header section-header-narrow">
-          <h2>Hotels</h2>
-          <p>There are many hotels in Greater Noida, suitable for all types of travellers.
-            Our prepaid bus service from Greater Noida (Pari Chowk) to the venue ensures seamless connectivity
-            if you are not booking a private cab/ Ola/ Uber. Some of these are mentioned below for ease in your travel planning.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel1.jpg" alt="Hotel 1" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/radisson-blu-greater-noida.html">Radisson Blu Hotel, Greater Noida</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>15km from the Venue</p> -->
+              </table>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel2.jpg" alt="Hotel 2" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/crowne-plaza-greater-noida.en-gb.html">Crowne Plaza Greater Noida</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>17km from the Venue</p> -->
+          <div class="section-header section-header-narrow" style="margin-top:0px;">
+            <h2>Bus Service</h2>
+
+            <p style="margin-bottom:2px">A bus service for Pari Chowk metro station will be available on each day. You can pre-book this in <b><a href="../register">register tab </a></b>. </p>
+            <p style="margin-bottom:0px;"> The price will be ₹100 per trip. The bus timings are as follows: </p>
+            <div class="wrapper">
+              <table class="fit-width" style="border-collapse:separate; border-spacing: 6px;">  
+                <tr>
+                  <th class="tg-s268">Date</th>
+                  <th class="tg-s268">Time</th>
+                  <th class="tg-s268">Source</th>
+                  <th class="tg-s268">Destination</th>
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">11 April</td> 
+                  <td class="tg-s268 lefttd">6:00 P.M.</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">12 April</td> 
+                  <td class="tg-s268 lefttd">8:00 A.M.</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">12 April</td> 
+                  <td class="tg-s268 lefttd">8:00 P.M.</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">13 April</td> 
+                  <td class="tg-s268 lefttd">8:00 A.M.</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">13 April</td> 
+                  <td class="tg-s268 lefttd">8:00 P.M.</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">14 April</td> 
+                  <td class="tg-s268 lefttd">8:00 A.M.</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">14 April</td> 
+                  <td class="tg-s268 lefttd">8:00 P.M.</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">15 April</td> 
+                  <td class="tg-s268 lefttd">9:00 A.M.</td> 
+                  <td class="tg-s268 lefttd">SNU</td> 
+                  <td class="tg-s268 lefttd">Metro</td> 
+                </tr>
+
+              </table>
             </div>
           </div>
+          <div class="section-header section-header-narrow" style="margin-top:0px;">
+            <h2>Visa Helpline</h2>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel3.jpg" alt="Hotel 3" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/jaypee-greens-golf-and-spa-resort.en-gb.html">Jaypee Greens Golf and Spa Resort</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>13km from the Venue</p> -->
-            </div>
+            <p style="margin-bottom:2px">We are here to assist you with all your planning. For any questions or help with an invitation, please write to us at <b><a href="mailto:visa@nats19.in">visa@nats19.in</a></b>. </p>
           </div>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel4.jpg" alt="Hotel 4" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/savoy-suites-greater-noida.html">Savoy Suites Greater Noida</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>15km from the Venue</p> -->
-            </div>
-          </div>
+          <div class="section-header section-header-narrow" style="margin-top:0px;">
+            <h2>Map</h2>
+
+            <div >
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.6102714797476!2d77.57096897542934!3d28.521367994650817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c94d7a94b99e3%3A0x43336882518f9b3c!2sSNU+Indoor+Sports+Complex!5e0!3m2!1sen!2sin!4v1545058172813" style="border:0" allowfullscreen="" width="600" height="450" frameborder="0"></iframe>
+</div>
+</div>
 
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel5.jpg" alt="Hotel 5" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/the-nest-corporate-greater-noida.html">Treebo The Nest Corporate</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>13km from the Venue</p> -->
-            </div>
-          </div>
+                   <div class="section-header section-header-narrow" style="margin-top:0px;">
+            <h2>Cab Transit Details</h2>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel6.jpg" alt="Hotel 6" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/oyo-rooms-greater-noida-pari-chowk.en-gb.html">OYO 8430 Absin Hospitality</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>14km from the Venue</p> -->
-            </div>
-          </div>
+            <p style="margin-bottom:0px;">You can find the tentative Ola fares and time to travel from popular locations below:</p>
+ 
+             <div class="wrapper">
+              <table class="fit-width" style="border-collapse:separate; border-spacing: 6px; margin-top:0px; padding-top:0px;">  
+                <tr>
+                  <th class="tg-s268">Source</th>
+                  <th class="tg-s268">Cost</th>
+                  <th class="tg-s268">Transit Time (Minutes)</th>
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">Pari Chowk</td> 
+                  <td class="tg-s268 ">₹250</td> 
+                  <td class="tg-s268 ">25</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">NZM</td> 
+                  <td class="tg-s268 ">₹700</td> 
+                  <td class="tg-s268 ">60</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">NDLS</td> 
+                  <td class="tg-s268 ">₹800</td> 
+                  <td class="tg-s268 ">80</td> 
+                </tr>
+                <tr>   
+                  <td class="tg-s268 lefttd">DEL</td> 
+                  <td class="tg-s268 ">₹1150</td> 
+                  <td class="tg-s268 ">100</td> 
+                </tr>
 
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel7.jpg" alt="Hotel 7" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/oyo-rooms-251-greater-noida-c-block-gamma-1.en-gb.html?aid=356980;label=gog235jc-1DCAsobEIrb3lvLXJvb21zLTI1MS1ncmVhdGVyLW5vaWRhLWMtYmxvY2stZ2FtbWEtMUgzWANobIgBAZgBCbgBF8gBDNgBA-gBAYgCAagCAw;sid=1af6a57cfe71097a7d6641f1c7575dda;dist=0&keep_landing=1&sb_price_type=total&type=total&">OYO 9076 Absin Hospitality 2</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>15km from the Venue</p> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel8.jpg" alt="Hotel 8" class="img-fluid">
-              </div>
-              <h3><a href="https://www.booking.com/hotel/in/angel-inn.en-gb.html?aid=356980;label=gog235jc-1DCAsobEIJYW5nZWwtaW5uSDNYA2hsiAEBmAEJuAEXyAEM2AED6AEBiAIBqAID;sid=1af6a57cfe71097a7d6641f1c7575dda;dist=0&keep_landing=1&sb_price_type=total&type=total&">Angel NRI B&B</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>15km from the Venue</p> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="hotel">
-              <div class="hotel-img">
-                <img src="../img/hotels/hotel9.jpg" alt="Hotel 9" class="img-fluid">
-              </div>
-              <h3><a href="https://www.oyorooms.com/9070-budget-oyo-5470-khushi-residence-noida">OYO 5470 Khushi Residence</a></h3>
-              <div class="stars">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-              </div>
-              <!-- <p>15km from the Venue</p> -->
+              </table>
             </div>
           </div>
 
         </div>
-      </div>
-
-    </section>
-  </main>
 
 
 
 
 
+      </section>
+    </main>
 
 
 
@@ -202,101 +294,11 @@ include('../header.php')
 
 
 
-<!-- 
-<main id="main">
-      <section id="schedule" class="section-with-bg">
-        <div class="container wow fadeInUp">
-          <div class="section-header">
-            <h2>Transport</h2>
-            <p>Please select a starting point to find out transport options.</p>
-          </div>
-
-          <ul class="nav nav-tabs" role="tablist">
-
-            <li class="nav-item">
-              <a class="nav-link active" href="#a2" role="tab" data-toggle="tab">Airport Terminal 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#a3" role="tab" data-toggle="tab">Airport Terminal 2/3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#a4" role="tab" data-toggle="tab">Hazrat Nizamuddin Railway Station</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#a5" role="tab" data-toggle="tab">New Delhi Railway Station</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#a6" role="tab" data-toggle="tab">Dadri Railway Station</a>
-            </li>
-            <li clas="nav-item">
-              <a class="nav-link" href="#a7" role="tab" data-toggle="tab">Legend</a>
-            </ul>
-
-            <div role="tabpanel" class="col-lg-12  tab-pane fade show active" id="a2">
-              <div class="row no-gutters">
-                <div class="col-lg-12 venue-info">
-                  <div class="row justify-content-center">
-                    <div class="col-11 col-lg-8">
-                      <h3 align="middle">Metro and Bus Shuttle</h3>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-lg-12 venue-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!4v1545398527734!6m8!1m7!1sCAoSLEFGMVFpcE5rTGZVcGVBcko4Q2xQbGFieWtleTQ4WTFweHNzbDl3SDJXTjgx!2m2!1d28.5267298!2d77.575363!3f0!4f0!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen align="middle"></iframe>
-                 <img src="http://capitalcubing.com/Nats2019/T1Metro.jpg">
-               </div>
-             </div>
-           </div>
-           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a3">
-            <p>Airport Temnial 2/3</p>
-            <img src="http://capitalcubing.com/Nats2019/T23Metro.jpg">
-          </div>
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a4">
-            <p>Nizamudin Railway Station</p>
-            <img src="http://capitalcubing.com/Nats2019/NZMMetro.jpg">
-          </div>
-          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a5">
-            <p>New Delhi Railway Station</p>
-           <img src="http://capitalcubing.com/Nats2019/NDLSMetro.jpg">
-         </div>
-         <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a6">
-          <p>Dadri Railway Station</p>
-          <img src"http://capitalcubing.com/Nats2019/TrainCab.jpg">
-        </div>
-        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="a7">
-          <img src="http://capitalcubing.com/Nats2019/MetroLegend.jpg">
-        </div>
-      </div>
 
 
-  </section>
- </main>
--->
-                <table class="fit-width">  
-                  <tr>
-                    <th class="tg-s268">Name</th>
-                    <th class="tg-s268">Charges per Night</th>
-                  </tr>
-                <tr>   
-                    <td class="tg-s268">2BHK Apartment</td>
-                    <td class="tg-s268">₹ 3600</td> 
-                 </tr>
-                <tr>   
-                    <td class="tg-s268">1BHK Apartment</td>
-                    <td class="tg-s268">₹ 2700</td> 
-                 </tr>
-                <tr>   
-                    <td class="tg-s268">Studio Apartment</td>
-                    <td class="tg-s268">₹ 2000</td> 
-                 </tr>
-                <tr>   
-                    <td class="tg-s268">Common Room (Shared)</td>
-                    <td class="tg-s268">₹ 500</td> 
-                 </tr>
-
-  </table>
 
 
-<?php
-include('../footer.php')
-?>
+
+    <?php
+    include('../footer.php')
+    ?>
