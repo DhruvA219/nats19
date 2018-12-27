@@ -579,7 +579,7 @@ echo '</ul>';
 
 
 						<li>
-							<img src="http://www.pngmart.com/files/7/Mug-PNG-Pic.png" alt="">
+							<img src="../img/merchandise/mug.png" alt="">
 							<h3>Mug</h3>
 							<p> ₹299</p>
 						<select id="cbcb29">
@@ -700,7 +700,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
+							<img src="../img/merchandise/keychain.png" alt="">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
 						<select id="cbcb35">
