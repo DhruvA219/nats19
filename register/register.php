@@ -132,8 +132,12 @@ $data = json_decode($response, true);
 if($data['success'] == 1){
     // for on page payment, use this.
    $payment_id = $data['payment_request']['id'];
+   // echo '<script>
+   //      Instamojo.open("https://'.$mode.'.instamojo.com/@scoobydoobydoo93/'.$payment_id.'"); 
+   //  </script>
+   //  ';
    echo '<script>
-        Instamojo.open("https://'.$mode.'.instamojo.com/@scoobydoobydoo93/'.$payment_id.'"); 
+        Instamojo.open("https://'.$mode.'.instamojo.com/@capitalcubing/'.$payment_id.'"); 
     </script>
     ';
    
