@@ -681,7 +681,7 @@ echo '</ul>';
 						</li>
 
 						<li>
-							<img src="../img/merchandise/notebook.jpg" alt="">
+							<img src="../img/merchandise/notebook.png" alt="">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
 						<select id="cbcb34">
