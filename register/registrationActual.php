@@ -949,6 +949,19 @@ function getAccoFee(){
 			}
 
 		}
+		if(tabName=='Accommodation'){
+			var flagAlert= true;
+				if(document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
+					if(document.getElementById("cbcb27").value === ""){
+						flagAlert=false;	
+					}
+				} 
+			if(flagAlert==false) {
+				alert("You haven't selected T-shirt size");
+				return false;
+			} 
+
+		}
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent");
 		for (i = 0; i < tabcontent.length; i++) {
