@@ -214,52 +214,52 @@ if ($row['333']=='N'){
  echo '<li class="nav-item"><input type="checkbox" id="cb2" onchange="updateFee()"/> <label for="cb2"><img src="../img/eventscolor/3x3.png" /></label></li>'
 ;}
 if ($row['444']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb3" /> <label for="cb3"><img src="../img/eventscolor/4x4.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb3" onchange="updateFee()"/> <label for="cb3"><img src="../img/eventscolor/4x4.png" /></label></li>'
 ;}
 if ($row['555']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb4" /> <label for="cb4"><img src="../img/eventscolor/5x5.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb4" onchange="updateFee()"/> <label for="cb4"><img src="../img/eventscolor/5x5.png" /></label></li>'
  ;       }
 if ($row['666']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb5" /> <label for="cb5"><img src="../img/eventscolor/6x6.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb5" onchange="updateFee()"/> <label for="cb5"><img src="../img/eventscolor/6x6.png" /></label></li>'
 ;        }
 if ($row['777']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb6" /> <label for="cb6"><img src="../img/eventscolor/7x7.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb6" onchange="updateFee()"/> <label for="cb6"><img src="../img/eventscolor/7x7.png" /></label></li>'
 ;        }
 if ($row['333bf']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb7" /> <label for="cb7"><img src="../img/eventscolor/3BLD.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb7" onchange="updateFee()"/> <label for="cb7"><img src="../img/eventscolor/3BLD.png" /></label></li>'
 ;}
 if ($row['333fm']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb8" /> <label for="cb8"><img src="../img/eventscolor/FMC.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb8" onchange="updateFee()"/> <label for="cb8"><img src="../img/eventscolor/FMC.png" /></label></li>'
 ;        }
 if ($row['333oh']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb9" /> <label for="cb9"><img src="../img/eventscolor/3OH.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb9" onchange="updateFee()"/> <label for="cb9"><img src="../img/eventscolor/3OH.png" /></label></li>'
 ;        }
 if ($row['333ft']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb10" /> <label for="cb10"><img src="../img/eventscolor/FEET.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb10" onchange="updateFee()"/> <label for="cb10"><img src="../img/eventscolor/FEET.png" /></label></li>'
 ;}
 if ($row['clock']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb11" /> <label for="cb11"><img src="../img/eventscolor/CLOCK.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb11" onchange="updateFee()"/> <label for="cb11"><img src="../img/eventscolor/CLOCK.png" /></label></li>'
 ;}
 if ($row['minx']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb12" /> <label for="cb12"><img src="../img/eventscolor/MINX.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb12" onchange="updateFee()"/> <label for="cb12"><img src="../img/eventscolor/MINX.png" /></label></li>'
 ;        }
 if ($row['pyram']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb13" /> <label for="cb13"><img src="../img/eventscolor/pyra.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb13" onchange="updateFee()"/> <label for="cb13"><img src="../img/eventscolor/pyra.png" /></label></li>';
 }
 if ($row['skewb']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb14" /> <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb14" onchange="updateFee()"/> <label for="cb14"><img src="../img/eventscolor/skewb.png" /></label></li>';
       }
 if ($row['sq1']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb15" /> <label for="cb15"><img src="../img/eventscolor/sq1.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb15" onchange="updateFee()"/> <label for="cb15"><img src="../img/eventscolor/sq1.png" /></label></li>';
       }
 if ($row['444bf']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb16" /> <label for="cb16"><img src="../img/eventscolor/4BLD.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb16" onchange="updateFee()"/> <label for="cb16"><img src="../img/eventscolor/4BLD.png" /></label></li>';
 }
 if ($row['555bf']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb17" /> <label for="cb17"><img src="../img/eventscolor/5BLD.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb17" onchange="updateFee()"/> <label for="cb17"><img src="../img/eventscolor/5BLD.png" /></label></li>';
       }
 if ($row['333mbf']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb18" /> <label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label></li>';
+ echo '<li class="nav-item"><input type="checkbox" id="cb18" onchange="updateFee()"/> <label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label></li>';
       }
  }
 }
