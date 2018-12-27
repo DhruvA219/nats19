@@ -138,7 +138,7 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['total_people'].'</td>';	
 			echo '</tr>';
 		}
-echo '</table>';
+echo '</table> </div>';
 
 }
 
@@ -171,15 +171,13 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['total_quantity'].'</td>';	
 			echo '</tr>';
 		}
-echo '</table>';
+echo '</table> </div' ;
 
 }
 
 
 ?>
 
-
-							</div>
 
 
 
