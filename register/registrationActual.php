@@ -601,7 +601,7 @@ echo '</ul>';
 						<li>
 
 							<img src="https://thekreativezone.com/liberia/wp-content/uploads/2018/02/wristband.png" alt="">
-							<h3>Nats Wrist Band (Grey)</h3>
+							<h3>Wrist Band</h3>
 							<p> ₹99</p>
 						<select id="cbcb30">
 							<option value="" disabled selected>Quantity</option>
@@ -622,7 +622,7 @@ echo '</ul>';
 						<li>
 
 							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
-							<h3>Nats Wrist Band (Black)</h3>
+							<h3>Cap</h3>
 							<p> ₹99</p>
 						<select id="cbcb31">
 							<option value="" disabled selected>Quantity</option>
@@ -641,33 +641,10 @@ echo '</ul>';
 						</li>
 
 						<li>
-
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
-							<h3>Cuber Soul Wrist Band</h3>
-							<p> ₹99</p>
-						<select id="cbcb32">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
-						</li>
-
-
-
-						<li>
 							<img src="../img/merchandise/badge.png" alt="">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
-						<select id="cbcb33">
+						<select id="cbcb32">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -687,7 +664,7 @@ echo '</ul>';
 							<img src="../img/merchandise/magnetbadge.png" alt="">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
-						<select id="cbcb34">
+						<select id="cbcb33">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -707,7 +684,7 @@ echo '</ul>';
 							<img src="../img/merchandise/notebook.jpg" alt="">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
-						<select id="cbcb35">
+						<select id="cbcb34">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -726,7 +703,7 @@ echo '</ul>';
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
-						<select id="cbcb36">
+						<select id="cbcb35">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -745,7 +722,7 @@ echo '</ul>';
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Nats Logo Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb37">
+						<select id="cbcb36">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -764,7 +741,7 @@ echo '</ul>';
 							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb38">
+						<select id="cbcb37">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -920,28 +897,25 @@ function getMerchFee(){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb30").value);
 	}
 	if(document.getElementById("cbcb31").value!=="" && document.getElementById("cbcb31").value!=="0"){
-		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb31").value);
+		merch_fee = merch_fee + 249*parseInt(document.getElementById("cbcb31").value);
 	}
 	if(document.getElementById("cbcb32").value!=="" && document.getElementById("cbcb32").value!=="0"){
-		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb32").value);
+		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb32").value);
 	}
-	if(document.getElementById("cbcb33").value!=="" && document.getElementById("cbcb33").value!=="0"){
-		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb33").value);
+	if(document.getElementById("cbcb33").value!=="" && document.getElementById("cbcb32").value!=="0"){
+		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb33").value);
 	}
 	if(document.getElementById("cbcb34").value!=="" && document.getElementById("cbcb34").value!=="0"){
-		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb34").value);
+		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb34").value);
 	}
 	if(document.getElementById("cbcb35").value!=="" && document.getElementById("cbcb35").value!=="0"){
-		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb35").value);
+		merch_fee = merch_fee + 199*parseInt(document.getElementById("cbcb35").value);
 	}
 	if(document.getElementById("cbcb36").value!=="" && document.getElementById("cbcb36").value!=="0"){
-		merch_fee = merch_fee + 199*parseInt(document.getElementById("cbcb36").value);
+		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb36").value);
 	}
 	if(document.getElementById("cbcb37").value!=="" && document.getElementById("cbcb37").value!=="0"){
 		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb37").value);
-	}
-	if(document.getElementById("cbcb38").value!=="" && document.getElementById("cbcb38").value!=="0"){
-		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb38").value);
 	}
 	return merch_fee;
 }
@@ -1017,7 +991,7 @@ function getAccoFee(){
 		if(tabName=='Accommodation'){
 
 		//For travel page
-		for(var i = 27; i <= 38; i++){
+		for(var i = 27; i <=37; i++){
 			document.getElementById("cbcb" + i).value = "";
 		}
 }
@@ -1069,7 +1043,7 @@ $("#register-checkout").click(function() {
 	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 		merch['cbcb28-'+document.getElementById("cbcb27").value]=parseInt(document.getElementById("cbcb28").value);
 	}
-	for (var i=29;i<=38;i++){
+	for (var i=29;i<=37;i++){
 		if(document.getElementById("cbcb"+i).value!=="" && document.getElementById("cbcb"+i).value!=="0"){
 			merch['cbcb'+i]= parseInt(document.getElementById("cbcb"+i).value);
 		}

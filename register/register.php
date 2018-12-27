@@ -64,27 +64,24 @@ foreach ($_POST['merch'] as $key => $value) {
                 $total_cost_of_merch_reg += $value*99;
               }
                 if ($key=="cbcb31"){
-                $total_cost_of_merch_reg += $value*99;
+                $total_cost_of_merch_reg += $value*249;
               }
                 if ($key=="cbcb32"){
-                $total_cost_of_merch_reg += $value*99;
+                $total_cost_of_merch_reg += $value*49;
               }
                 if ($key=="cbcb33"){
-                $total_cost_of_merch_reg += $value*49;
-              }
-                if ($key=="cbcb34"){
                 $total_cost_of_merch_reg += $value*99;
               }
-                if ($key=="cbcb35"){
+                if ($key=="cbcb34"){
                 $total_cost_of_merch_reg += $value*49;
               }
-                if ($key=="cbcb36"){
+                if ($key=="cbcb35"){
                 $total_cost_of_merch_reg += $value*199;
               }
-                if ($key=="cbcb37"){
+                if ($key=="cbcb36"){
                 $total_cost_of_merch_reg += $value*19;
               }
-                if ($key=="cbcb38"){
+                if ($key=="cbcb37"){
                 $total_cost_of_merch_reg += $value*19;
               }
         }
