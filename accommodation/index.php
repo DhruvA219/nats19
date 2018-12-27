@@ -9,7 +9,10 @@ include('../header.php')
 
       <div class="container">
         <div class="section-header section-header-narrow">
-          <h2>Options Inside Campus</h2>
+            <div class="section-header">
+          <h2>Transport</h2>
+        </div>
+          <h2 class="smallhead">Options Inside Campus</h2>
           <p>There are multiple stay options inside the campus, and will be available for pre-booking on a first-come first-serve basis from 20th January, 2019. Please refer to our <b><a href="../uploads/Accommodation_Campus.pdf" target="about_blank">Campus accommodation prospectus </a></b> for facility details and pictures.</p>
           </div>
                 <table class="fit-width">  
@@ -41,7 +44,7 @@ include('../header.php')
 
       <div class="container">
         <div class="section-header section-header-narrow">
-          <h2>Hotels</h2>
+          <h2 class="smallhead">Hotels</h2>
           <p>There are many hotels in Greater Noida, suitable for all types of travellers.
             Our prepaid bus service from Greater Noida (Pari Chowk) to the venue ensures seamless connectivity
             if you are not booking a private cab/ Ola/ Uber. Some of these are mentioned below for ease in your travel planning.</p>

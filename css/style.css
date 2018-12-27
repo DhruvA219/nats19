@@ -2286,3 +2286,7 @@ img::after{
 .contact-info{
   margin-bottom:5px;
 }
+
+.smallhead{
+  font-size:1.7em !important;
+}

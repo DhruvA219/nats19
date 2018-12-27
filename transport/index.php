@@ -118,13 +118,13 @@ a.label:focus {
           <h2>Transport</h2>
         </div>
 
-            <h2>Reaching the City</h2>
+            <h2 class="smallhead">Reaching the City</h2>
             <p style="margin-bottom:2px">The nearest airport is Indira Gandhi International Airport (DEL). </p>
             <p> The nearest railway stations are New Delhi (NDLS), Nizamuddin (NZM) and Dadri (DDR). </p>
           </div>
 
           <div class="section-header section-header-narrow" style="margin-top:0px;">
-            <h2>Reaching the Venue</h2>
+            <h2 class="smallhead">Reaching the Venue</h2>
             <h3 align="center"> By Car </h3>
             <p style="margin-bottom:2px">You can drive to the venue from Delhi NCR or book a cab (Ola recommended). </p>
             <p> A video with driving directions will be added here by February.</p>
@@ -165,7 +165,7 @@ a.label:focus {
           </div>
 
           <div class="section-header section-header-narrow" style="margin-top:0px;">
-            <h2>Bus Service</h2>
+            <h2 class="smallhead">Bus Service</h2>
 
             <p style="margin-bottom:2px">A bus service for Pari Chowk metro station will be available on each day. You can pre-book this in <b><a href="../register">register tab </a></b>. </p>
             <p style="margin-bottom:0px;"> The price will be ₹100 per trip. The bus timings are as follows: </p>
@@ -230,13 +230,13 @@ a.label:focus {
             </div>
           </div>
           <div class="section-header section-header-narrow" style="margin-top:0px;">
-            <h2>Visa Helpline</h2>
+            <h2 class="smallhead">Visa Helpline</h2>
 
             <p style="margin-bottom:2px">We are here to assist you with all your planning. For any questions or help with an invitation, please write to us at <b><a href="mailto:visa@nats19.in">visa@nats19.in</a></b>. </p>
           </div>
 
           <div class="section-header section-header-narrow" style="margin-top:0px;">
-            <h2>Map</h2>
+            <h2 class="smallhead">Map</h2>
 
             <div >
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.6102714797476!2d77.57096897542934!3d28.521367994650817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c94d7a94b99e3%3A0x43336882518f9b3c!2sSNU+Indoor+Sports+Complex!5e0!3m2!1sen!2sin!4v1545058172813" style="border:0" allowfullscreen="" width="600" height="450" frameborder="0"></iframe>
@@ -245,7 +245,7 @@ a.label:focus {
 
 
                    <div class="section-header section-header-narrow" style="margin-top:0px;">
-            <h2>Cab Transit Details</h2>
+            <h2 class="smallhead">Cab Transit Details</h2>
 
             <p style="margin-bottom:0px;">You can find the tentative Ola fares and time to travel from popular locations below:</p>
  
