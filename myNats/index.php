@@ -166,7 +166,7 @@ else{ echo'<div class="wrapper">
 
 		foreach($merch_result as $row){
 			echo '<tr>';
-			echo '<td class="tg-s268">'.$row['name'].'</td>';	
+			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
 			echo '<td class="tg-s268">₹'.$row['price'].'</td>';	
 			echo '<td class="tg-s268">'.$row['total_quantity'].'</td>';	
 			echo '</tr>';
