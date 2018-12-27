@@ -245,6 +245,16 @@ else{
           $conn->query($travel_sql);
         }
       }
+
+//update merch in DB
+      if(!is_null($_SESSION['merch'])){
+        foreach ($_SESSION['merch'] as $key => $value) {
+          $merch_sql="INSERT into `user_merch` (`payment_id`, `email_id`, `item_id`, `quantity`) VALUES ('$payment_id','$email_id', '$key',$value )";
+          $conn->query($travel_sql);
+        }
+      }
+
+
     }
   }
 
