@@ -143,7 +143,7 @@ echo '</table> </div>';
 }
 
 echo' <div class="col-lg-12 venue-info">
-							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;>
+							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
 								<div class="col-11 col-lg-8">
 									<h4 align="middle"> Merchandise</h4>
 								</div>
