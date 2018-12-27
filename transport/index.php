@@ -114,7 +114,9 @@ a.label:focus {
         <div class="container">
 
           <div class="section-header section-header-narrow">
-
+            <div class="section-header">
+          <h2>Transport</h2>
+        </div>
 
             <h2>Reaching the City</h2>
             <p style="margin-bottom:2px">The nearest airport is Indira Gandhi International Airport (DEL). </p>
