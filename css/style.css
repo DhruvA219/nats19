@@ -1834,6 +1834,7 @@ footer {
 }
 
 .faq-hyperlink{
+  font-size: 1rem !important;
   display:inline !important;
   padding-right:0px !important;
 }
