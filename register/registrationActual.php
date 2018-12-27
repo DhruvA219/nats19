@@ -103,7 +103,29 @@ if ($row['333mbf']=='Y'){
  echo '</ul>';
 if ($regd_events<18){
 
-echo '<div class="row justify-content-center"> <div class="col-11 col-lg-8"> <p align="middle">Select the events you want to add:</p> </div></div><ul class="nav nav-tabs" role="tablist">';
+echo '<div class="row justify-content-center"> <div class="col-11 col-lg-8"> <p align="middle">';
+if ($regd_events==0){
+	$base_fee=300;
+	$current_time=time();
+	$basetime_1=1548959400;
+	$basetime_2=1551378600;
+	$basetime_3=1554057000;
+
+	if ($current_time>$basetime_1){
+		if ($current_time<$basetime_2){
+		$base_fee=350;
+		}
+		else{
+		$base_fee=400;
+		}
+
+	}
+	echo 'Select the events you want to add. A base fee of ₹'.$base_fee.' and a per event fee of ₹50 is applicable.';
+}
+else{
+	echo 'Select the events you want to add. A per event fee of ₹50 is applicable.'	;
+}
+echo '</p> </div></div><ul class="nav nav-tabs" role="tablist">';
 if (mysqli_num_rows($result)==0){
 			echo '<li class="nav-item">
 									<input type="checkbox" id="cb1" />
