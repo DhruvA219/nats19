@@ -1985,7 +1985,7 @@ label img {
 }
 
 .wcalogo {
-  height: 1.5em;
+  height: 1.8em;
   margin-right: 5px;
 }
 
@@ -2289,4 +2289,8 @@ img::after{
 
 .smallhead{
   font-size:1.7em !important;
+}
+
+.wcalogobd{
+  padding:4 px 22px;
 }
