@@ -719,7 +719,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
+							<img src="../img/merchandise/logo2.png" alt="">
 							<h3>Nats Logo Sticker</h3>
 							<p> ₹19</p>
 						<select id="cbcb36">
