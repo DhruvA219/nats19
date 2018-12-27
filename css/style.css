@@ -1702,7 +1702,7 @@ footer {
 
 @media (max-width: 767px) {
   .main-container{
-    padding-bottom:355.2px;
+    padding-bottom:302.3px;
   }
 }
 
@@ -1724,7 +1724,7 @@ footer {
     border-right: 1px solid #ddd;
   }
   .main-container{
-    padding-bottom:245.9px;
+    padding-bottom:178.9px;
   }
 }
 
@@ -1733,7 +1733,7 @@ footer {
     width: 75%;
   }
     .main-container{
-    padding-bottom:193.9px;
+    padding-bottom:178.9px;
   }
 
 }
@@ -2281,4 +2281,8 @@ img::after{
 
 .nav-padding{
   padding-top:11px !important;
+}
+
+.contact-info{
+  margin-bottom:5px;
 }
