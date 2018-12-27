@@ -42,7 +42,7 @@ NOTE - Addition of events facility is available only before the registration per
                   <a data-toggle="collapse" href="#faq2" class="collapsed"> Can I change/remove the events I've registered for? <i class="fa fa-minus-circle"></i></a>
                   <div id="faq2" class="collapse" data-parent="#faq-list">
                     <p>
-                      No, changing/removing existing events is not allowed. Only new events can be added, before registration ends
+                      No, changing/removing existing events is not allowed. Only new events can be added, before registration ends.
 
 
                     </p>
@@ -80,7 +80,7 @@ NOTE - Addition of events facility is available only before the registration per
                   <a data-toggle="collapse" href="#faq6" class="collapsed">How do I find the results? <i class="fa fa-minus-circle"></i></a>
                   <div id="faq6" class="collapse" data-parent="#faq-list">
                     <p>
-                    All results are posted on the WCA website within a week after the competition finishes. However, for the day of competing, go to <a href="https://www.cubecomps.com">Cubecomps</a> to find information about current events. This is also where you will find information about upcoming rounds of events. Remember, the results are entered by a human so please be patient if you do not see your results immediately.
+                    All results are posted on the WCA website within a week after the competition finishes. However, for the day of competing, go to <a href="https://www.cubecomps.com" class="faq-hyperlink">Cubecomps</a> to find information about current events. This is also where you will find information about upcoming rounds of events. Remember, the results are entered by a human so please be patient if you do not see your results immediately.
                     </p>
                   </div>
                 </li>
@@ -90,7 +90,7 @@ NOTE - Addition of events facility is available only before the registration per
                   <div id="faq7" class="collapse" data-parent="#faq-list">
                     <p>
                     Yes, you can attend the competition as a spectator. <br>
-No. All spectators are free to attend the competition at no cost. There is payment only to compete. However, if you require any other facilities such as travel and accommodation, that will be paid for.
+All spectators are free to attend the competition at no cost. There is payment only to compete. However, if you require any other facilities such as travel and accommodation, that will be paid for.
                     </p>
                   </div>
                 </li>
