@@ -99,7 +99,7 @@ include('../header.php')
                     <th> <img src="../img/events/FMC.svg" class="low"> </th>
                     <th> <img src="../img/events/3OH.svg" class="low"> </th>
                     <th> <img src="../img/events/FEET.svg" class="low"> </th>
-                    <th> <img src="../img/events/CLOCK.svg" class="low"> </th>
+                    <th> <img src="../img/events/CLOCK.png" class="low"> </th>
                     <th> <img src="../img/events/MINX.svg" class="low"> </th>
                     <th> <img src="../img/events/pyra.svg" class="low"> </th>
                     <th> <img src="../img/events/skewb.svg" class="low"> </th>
