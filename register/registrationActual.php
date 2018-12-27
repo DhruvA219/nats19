@@ -990,6 +990,7 @@ function getAccoFee(){
 		for(var i = 19; i <= 26; i++){
 			document.getElementById("cb" + i).checked = false;
 			document.getElementById("cbcb" + i).value = "";
+			}
 		}
 		if(tabName=='Accommodation'){
 
@@ -997,7 +998,7 @@ function getAccoFee(){
 		for(var i = 27; i <= 38; i++){
 			document.getElementById("cbcb" + i).value = "";
 		}
-	}
+}
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
