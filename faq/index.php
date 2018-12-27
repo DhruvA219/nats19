@@ -10,7 +10,7 @@ include('../header.php')
       <div class="container">
 
         <div class="section-header">
-          <h2>F.A.Q </h2>
+          <h2>Frequently Asked Questions </h2>
         </div>
 
         <div class="row justify-content-center">
