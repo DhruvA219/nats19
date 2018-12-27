@@ -527,7 +527,7 @@ echo '</ul>';
 				<div class="uldiv">
 					<ul>
 						<li>
-							<img src="../img/merchandise/tshirt.png" alt="shirt image">
+							<img src="../img/merchandise/tshirt.png" alt="">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
 						<select id="cbcb27">
@@ -557,7 +557,7 @@ echo '</ul>';
 
 
 						<li>
-							<img src="http://www.pngmart.com/files/7/Mug-PNG-Pic.png" alt="shirt image">
+							<img src="http://www.pngmart.com/files/7/Mug-PNG-Pic.png" alt="">
 							<h3>Mug</h3>
 							<p> ₹299</p>
 						<select id="cbcb29">
@@ -578,7 +578,7 @@ echo '</ul>';
 
 						<li>
 
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<img src="https://thekreativezone.com/liberia/wp-content/uploads/2018/02/wristband.png" alt="">
 							<h3>Nats Wrist Band (Grey)</h3>
 							<p> ₹99</p>
 						<select id="cbcb30">
@@ -599,7 +599,7 @@ echo '</ul>';
 
 						<li>
 
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
 							<h3>Nats Wrist Band (Black)</h3>
 							<p> ₹99</p>
 						<select id="cbcb31">
@@ -620,7 +620,7 @@ echo '</ul>';
 
 						<li>
 
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="shirt image">
+							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
 							<h3>Cuber Soul Wrist Band</h3>
 							<p> ₹99</p>
 						<select id="cbcb32">
@@ -642,7 +642,7 @@ echo '</ul>';
 
 
 						<li>
-							<img src="../img/merchandise/badge.png" alt="shirt image">
+							<img src="../img/merchandise/badge.png" alt="">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
 						<select id="cbcb33">
@@ -662,7 +662,7 @@ echo '</ul>';
 						</li>
 
 						<li>
-							<img src="../img/merchandise/magnetbadge.png" alt="shirt image">
+							<img src="../img/merchandise/magnetbadge.png" alt="">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
 						<select id="cbcb34">
@@ -682,7 +682,7 @@ echo '</ul>';
 						</li>
 
 						<li>
-							<img src="../img/merchandise/notebook.jpg" alt="shirt image">
+							<img src="../img/merchandise/notebook.jpg" alt="">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
 						<select id="cbcb35">
@@ -701,7 +701,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
 						<select id="cbcb36">
@@ -720,7 +720,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Nats Logo Sticker</h3>
 							<p> ₹19</p>
 						<select id="cbcb37">
@@ -739,7 +739,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="shirt image">
+							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
 						<select id="cbcb38">
@@ -941,7 +941,7 @@ function getAccoFee(){
 				}
 			}
 			if(flagAlert1==false) {
-				alert("You haven't selected the number of people.");
+				alert("You haven not selected the number of people.");
 				return false;
 			} else if(flagAlert2 == false) {
 				alert("Please select the slot you want to travel in.");
@@ -957,7 +957,7 @@ function getAccoFee(){
 					}
 				} 
 			if(flagAlert==false) {
-				alert("You haven't selected T-shirt size");
+				alert("You haven not selected your T-shirt size");
 				return false;
 			} 
 
