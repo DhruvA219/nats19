@@ -991,6 +991,12 @@ function getAccoFee(){
 			document.getElementById("cb" + i).checked = false;
 			document.getElementById("cbcb" + i).value = "";
 		}
+		if(tabName=='Accommodation'){
+
+		//For travel page
+		for(var i = 27; i <= 38; i++){
+			document.getElementById("cbcb" + i).value = "";
+		}
 	}
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
