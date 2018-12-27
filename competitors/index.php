@@ -143,7 +143,7 @@ foreach($result as $row){
     echo "<td>"; if ($row['333fm'] =="Y"){echo "<img src='../img/events/FMC.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['333oh'] =="Y"){echo "<img src='../img/events/3OH.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['333ft'] =="Y"){echo "<img src='../img/events/FEET.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['clock'] =="Y"){echo "<img src='../img/events/CLOCK.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['clock'] =="Y"){echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['minx'] =="Y"){echo "<img src='../img/events/MINX.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['pyram'] =="Y"){echo "<img src='../img/events/pyra.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['skewb'] =="Y"){echo "<img src='../img/events/skewb.svg' class='low'>"; $count+=1;} echo"</td>";
