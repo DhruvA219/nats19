@@ -213,7 +213,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
           <div class="row">
             <div class="col-lg-6">
               <h2>About The Event</h2>
-              <p>This is the 6th edition of Indian National Championship - a platform to bring together all the puzzle enthusiasts from all over the world. </p>
+              <p>This is the 6th edition of Indian National Championship - a platform to bring together puzzle enthusiasts from all over the world. </p>
             </div>
             <div class="col-lg-3">
               <h3>Where</h3>
