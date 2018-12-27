@@ -208,10 +208,10 @@ else
 
 foreach($result as $row){
 	if ($row['222']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb1" /> <label for="cb1"><img src="../img/eventscolor/2x2.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb1" onchange="updateFee()"/> <label for="cb1"><img src="../img/eventscolor/2x2.png" /></label></li>'
 ;	}
 if ($row['333']=='N'){
- echo '<li class="nav-item"><input type="checkbox" id="cb2" /> <label for="cb2"><img src="../img/eventscolor/3x3.png" /></label></li>'
+ echo '<li class="nav-item"><input type="checkbox" id="cb2" onchange="updateFee()"/> <label for="cb2"><img src="../img/eventscolor/3x3.png" /></label></li>'
 ;}
 if ($row['444']=='N'){
  echo '<li class="nav-item"><input type="checkbox" id="cb3" /> <label for="cb3"><img src="../img/eventscolor/4x4.png" /></label></li>'
@@ -553,7 +553,7 @@ echo '</ul>';
 							<img src="../img/merchandise/tshirt.png" alt="">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
-						<select id="cbcb27">
+						<select id="cbcb27" onchange="updateFee()">
 							<option value="" disabled selected>Size</option>
 							<option value="S">S</option>
 							<option value="M">M</option>
