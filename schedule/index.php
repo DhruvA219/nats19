@@ -329,7 +329,8 @@ include('../header.php')
 
           <!-- Schdule Day 2 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-              <table class = "schdule-table-striped">
+            <div class="wrapper">  
+            <table class = "schdule-table-striped">
                 <colgroup>
                   <col class="grey" />
                   <col class="red" />
@@ -563,9 +564,11 @@ include('../header.php')
               </tbody>
             </table>
           </div>
+    </div>
 
           <!-- Schdule Day 3 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+            <div class="wrapper">
             <table class = "schdule-table-striped">
               <colgroup>
                 <col class="grey" />
@@ -881,6 +884,7 @@ include('../header.php')
         </div>
 
       </div>
+</div>
 
     </section>
   </main>
