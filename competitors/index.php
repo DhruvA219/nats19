@@ -124,7 +124,7 @@ foreach($result as $row){
     $competitor_count+=1;
     echo "<tr>";
     echo "<td class='lefttd'>";
-    if(!is_null($row['WCAID'])){
+    if(!is_null($row['WCAID']) && $row['WCAID']!=""){
             echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
             $oldcomer_count+=1;
     }

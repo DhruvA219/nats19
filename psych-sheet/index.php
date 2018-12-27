@@ -216,7 +216,7 @@ foreach($result as $row){
   echo "<tr>";
   echo "<td>".$rank."</td>";
   echo "<td class='lefttd'>";
-        if(!is_null($row['WCAID'])) {
+    if(!is_null($row['WCAID']) && $row['WCAID']!=""){
             echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
         }       
   echo $row['name']."</a></td>";
