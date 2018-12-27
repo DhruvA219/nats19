@@ -177,7 +177,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
       <div class="intro-container wow fadeIn">
         <h1 class="mb-4 pb-0">Indian Nationals <br><span>2019</span> </h1>
         <!-- <h1 class="mb-4 pb-0">Indian Nationals 2019<br><span style="font-size:0.6em; text-transform: none;">The ultimate cubing experience</span> </h1> -->
-        <h3 class="mb-4 pb-0" style="color:#f82249; font-size:1.75em;">The ultimate cubing experience </h1>
+        <h3 class="mb-4 pb-0" style="color:#f82249; font-size:2em;">The ultimate cubing experience </h1>
         <p class="mb-4 pb-0">12-14 April, Shiv Nadar University</p>
         <div id="clockdiv">
           <div>
