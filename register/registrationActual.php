@@ -738,7 +738,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="../img/merchandise/logo.jpeg" alt="">
+							<img src="../img/merchandise/logo1.png" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
 						<select id="cbcb37">
