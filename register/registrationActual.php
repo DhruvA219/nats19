@@ -310,7 +310,7 @@ echo '</ul>';
 										<td class="tg-s268">6:00 PM</td>
 										<td class="tg-s268">Metro</td>
 										<td class="tg-s268">SNU</td>
-										<td class="tg-s268"> <select id="cbcb19">
+										<td class="tg-s268"> <select id="cbcb19" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="1">1</option>
 											<option value="2">2</option>
@@ -339,7 +339,7 @@ echo '</ul>';
 									<td class="tg-s268">8:00 AM </td>
 									<td class="tg-s268">Metro</td>
 									<td class="tg-s268">SNU</td>
-									<td class="tg-s268"> <select id="cbcb20">
+									<td class="tg-s268"> <select id="cbcb20" onchange="updateFee()">
 										<option value="" disabled="" selected="">Select</option>
 										<option value="1">1</option>
 										<option value="2">2</option>
@@ -368,7 +368,7 @@ echo '</ul>';
 								<td class="tg-s268">8:00 PM</td>
 								<td class="tg-s268">SNU</td>
 								<td class="tg-s268">Metro</td>
-								<td class="tg-s268"> <select id="cbcb21">
+								<td class="tg-s268"> <select id="cbcb21" onchange="updateFee()">
 									<option value="" disabled="" selected="">Select</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
@@ -397,7 +397,7 @@ echo '</ul>';
 							<td class="tg-s268">8:00 AM</td>
 							<td class="tg-s268">Metro</td>
 							<td class="tg-s268">SNU</td>
-							<td class="tg-s268"> <select id="cbcb22">
+							<td class="tg-s268"> <select id="cbcb22" onchange="updateFee()">
 								<option value="" disabled="" selected="">Select</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -426,7 +426,7 @@ echo '</ul>';
 						<td class="tg-0pky">8:00 PM</td>
 						<td class="tg-0pky">SNU</td>
 						<td class="tg-0pky">Metro</td>
-						<td class="tg-s268"> <select id="cbcb23">
+						<td class="tg-s268"> <select id="cbcb23" onchange="updateFee()">
 							<option value="" disabled="" selected="">Select</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -456,7 +456,7 @@ echo '</ul>';
 					<td class="tg-0pky">8:00 AM</td>
 					<td class="tg-0pky">Metro</td>
 					<td class="tg-0pky">SNU</td>
-					<td class="tg-s268"> <select id="cbcb24">
+					<td class="tg-s268"> <select id="cbcb24" onchange="updateFee()">
 						<option value="" disabled="" selected="">Select</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
@@ -485,7 +485,7 @@ echo '</ul>';
 				<td class="tg-0pky">8:00 PM</td>
 				<td class="tg-0pky">SNU</td>
 				<td class="tg-0pky">Metro</td>
-				<td class="tg-s268"> <select id="cbcb25">
+				<td class="tg-s268"> <select id="cbcb25" onchange="updateFee()">
 					<option value="" disabled="" selected="">Select</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -513,7 +513,7 @@ echo '</ul>';
 				<td class="tg-0pky">9:00 AM</td>
 				<td class="tg-0pky">SNU</td>
 				<td class="tg-0pky">Metro</td>
-				<td class="tg-s268"> <select id="cbcb26">
+				<td class="tg-s268"> <select id="cbcb26" onchange="updateFee()">
 					<option value="" disabled="" selected="">Select</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -562,7 +562,7 @@ echo '</ul>';
 						</select>
 
 
-						<select id="cbcb28">
+						<select id="cbcb28" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -583,7 +583,7 @@ echo '</ul>';
 							<img src="../img/merchandise/mug.png" alt="">
 							<h3>Mug</h3>
 							<p> ₹299</p>
-						<select id="cbcb29">
+						<select id="cbcb29" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -604,7 +604,7 @@ echo '</ul>';
 							<img src="../img/merchandise/wristband.png" alt="">
 							<h3>Wrist Band</h3>
 							<p> ₹99</p>
-						<select id="cbcb30">
+						<select id="cbcb30" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -625,7 +625,7 @@ echo '</ul>';
 							<img src="../img/merchandise/caps.png" alt="">
 							<h3>Cap</h3>
 							<p> ₹249</p>
-						<select id="cbcb31">
+						<select id="cbcb31" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -645,7 +645,7 @@ echo '</ul>';
 							<img src="../img/merchandise/badge.png" alt="">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
-						<select id="cbcb32">
+						<select id="cbcb32" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -665,7 +665,7 @@ echo '</ul>';
 							<img src="../img/merchandise/magnetbadge.png" alt="">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
-						<select id="cbcb33">
+						<select id="cbcb33" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -685,7 +685,7 @@ echo '</ul>';
 							<img src="../img/merchandise/notebook.png" alt="">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
-						<select id="cbcb34">
+						<select id="cbcb34" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -704,7 +704,7 @@ echo '</ul>';
 							<img src="../img/merchandise/keychain.png" alt="">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
-						<select id="cbcb35">
+						<select id="cbcb35" onchange="updateFee()" >
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -723,7 +723,7 @@ echo '</ul>';
 							<img src="../img/merchandise/logo2.png" alt="">
 							<h3>Nats Logo Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb36">
+						<select id="cbcb36" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
