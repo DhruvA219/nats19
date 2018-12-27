@@ -32,7 +32,7 @@ include('../header.php')
                       <i class="fa fa-minus-circle"></i></a>
                   <div id="faq1" class="collapse" data-parent="#faq-list">
                     <p>
-                      Yes, one can add more events after completing the registration and payment process. Please write to us giving details of the same and we'll be glad to assist you.<br>
+                      Yes, one can add more events after completing the registration and payment process. Just visit the register page and add more events.<br>
 NOTE - Addition of events facility is available only before the registration period ends, no requests will be entertained under any circumstance after 31st March 2019.
                     </p>
                   </div>
@@ -42,7 +42,7 @@ NOTE - Addition of events facility is available only before the registration per
                   <a data-toggle="collapse" href="#faq2" class="collapsed"> Can I change/remove the events I've registered for? <i class="fa fa-minus-circle"></i></a>
                   <div id="faq2" class="collapse" data-parent="#faq-list">
                     <p>
-                      No, changing/removing events after your registration is approved is not allowed.
+                      No, changing/removing existing events is not allowed. Only new events can be added, before registration ends
 
 
                     </p>
@@ -80,7 +80,7 @@ NOTE - Addition of events facility is available only before the registration per
                   <a data-toggle="collapse" href="#faq6" class="collapsed">How do I find the results? <i class="fa fa-minus-circle"></i></a>
                   <div id="faq6" class="collapse" data-parent="#faq-list">
                     <p>
-                    All results are posted on the WCA website within a week after the competition finishes. However, for the day of competing, go to <a href="www.cubecomps.com">Cubecomps</a> to find information about current events. This is also where you will find information about upcoming rounds of events. Remember, the results are entered by a human so please be patient if you do not see your results immediately.
+                    All results are posted on the WCA website within a week after the competition finishes. However, for the day of competing, go to <a href="https://www.cubecomps.com">Cubecomps</a> to find information about current events. This is also where you will find information about upcoming rounds of events. Remember, the results are entered by a human so please be patient if you do not see your results immediately.
                     </p>
                   </div>
                 </li>
