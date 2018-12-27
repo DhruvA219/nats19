@@ -128,76 +128,76 @@ else{
 echo '</p> </div></div><ul class="nav nav-tabs" role="tablist">';
 if (mysqli_num_rows($result)==0){
 			echo '<li class="nav-item">
-									<input type="checkbox" id="cb1" />
+									<input type="checkbox" id="cb1" onchange="updateFee()" />
 									<label for="cb1"><img src="../img/eventscolor/2x2.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb2" />
+									<input type="checkbox" id="cb2" onchange="updateFee()" />
 									<label for="cb2"><img src="../img/eventscolor/3x3.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb3" />
+									<input type="checkbox" id="cb3" onchange="updateFee()" />
 									<label for="cb3"><img src="../img/eventscolor/4x4.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb4" />
+									<input type="checkbox" id="cb4" onchange="updateFee()" />
 									<label for="cb4"><img src="../img/eventscolor/5x5.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb5" />
+									<input type="checkbox" id="cb5" onchange="updateFee()" />
 									<label for="cb5"><img src="../img/eventscolor/6x6.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb6" />
+									<input type="checkbox" id="cb6" onchange="updateFee()" />
 									<label for="cb6"><img src="../img/eventscolor/7x7.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb7" />
+									<input type="checkbox" id="cb7" onchange="updateFee()" />
 									<label for="cb7"><img src="../img/eventscolor/3BLD.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb8" />
+									<input type="checkbox" id="cb8" onchange="updateFee()" />
 									<label for="cb8"><img src="../img/eventscolor/FMC.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb9" />
+									<input type="checkbox" id="cb9" onchange="updateFee()" />
 									<label for="cb9"><img src="../img/eventscolor/3OH.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb10" />
+									<input type="checkbox" id="cb10" onchange="updateFee()" />
 									<label for="cb10"><img src="../img/eventscolor/FEET.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb11" />
+									<input type="checkbox" id="cb11" onchange="updateFee()" />
 									<label for="cb11"><img src="../img/eventscolor/CLOCK.png" /></label>
 								</li>
 								<li>
-									<input type="checkbox" id="cb12" />
+									<input type="checkbox" id="cb12" onchange="updateFee()" />
 									<label for="cb12"><img src="../img/eventscolor/MINX.png" /></label>
 								</li>
 								<li>
 									<li>
-										<input type="checkbox" id="cb13" />
+										<input type="checkbox" id="cb13" onchange="updateFee()" />
 										<label for="cb13"><img src="../img/eventscolor/pyra.png" /></label>
 									</li>
 									<li>
-										<input type="checkbox" id="cb14" />
+										<input type="checkbox" id="cb14" onchange="updateFee()" />
 										<label for="cb14"><img src="../img/eventscolor/skewb.png" /></label>
 									</li>
 									<li>
-										<input type="checkbox" id="cb15" />
+										<input type="checkbox" id="cb15" onchange="updateFee()" />
 										<label for="cb15"><img src="../img/eventscolor/sq1.png" /></label>
 									</li>
 									<li>
-										<input type="checkbox" id="cb16" />
+										<input type="checkbox" id="cb16" onchange="updateFee()" />
 										<label for="cb16"><img src="../img/eventscolor/4BLD.png" /></label>
 									</li>
 									<li>
-										<input type="checkbox" id="cb17" />
+										<input type="checkbox" id="cb17" onchange="updateFee()"/>
 										<label for="cb17"><img src="../img/eventscolor/5BLD.png" /></label>
 									</li>
 									<li>
-										<input type="checkbox" id="cb18" />
+										<input type="checkbox" id="cb18" onchange="updateFee()" />
 										<label for="cb18"><img src="../img/eventscolor/MBLD.png" /></label>
 									</li>
 								';
