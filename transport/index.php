@@ -145,19 +145,19 @@ a.label:focus {
                 </tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 1)</th>
-                  <td class="tg-s268 lefttd"> <span class="label label-magenta">T-1 IGI Airport</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Botanical Garden</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
+                  <td class="tg-s268 lefttd bigtd"> <span class="label label-magenta">T-1 IGI Airport</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Botanical Garden</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
                 </tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 2/3)</th>
-                  <td class="tg-s268 lefttd"> <span class="label label-orange">IGI Airport</span> <i class="fa fa-arrow-right" aria-hidden="true"></i> <span class="label label-yellow">New Delhi </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-blue">Rajiv Chowk </span><i class="fa fa-arrow-right" aria-hidden="true"></i>   <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
+                  <td class="tg-s268 lefttd bigtd"> <span class="label label-orange">IGI Airport</span> <i class="fa fa-arrow-right" aria-hidden="true"></i> <span class="label label-yellow">New Delhi </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-blue">Rajiv Chowk </span><i class="fa fa-arrow-right" aria-hidden="true"></i>   <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
                 </tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-train" aria-hidden="true"></i> NZM</th>
-                  <td class="tg-s268 lefttd"> <span class="label label-pink">Hazrat Nizamuddin</span> <i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Mayur Vihar 1 </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
+                  <td class="tg-s268 lefttd bigtd"> <span class="label label-pink">Hazrat Nizamuddin</span> <i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Mayur Vihar 1 </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
                 </tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-train" aria-hidden="true"></i> NDLS</th>
-                  <td class="tg-s268 lefttd"> <span class="label label-yellow">New Delhi</span> <i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Rajiv Chowk</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
+                  <td class="tg-s268 lefttd bigtd"> <span class="label label-yellow">New Delhi</span> <i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Rajiv Chowk</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
                 </tr>
 
               </table>

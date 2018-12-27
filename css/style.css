@@ -2295,4 +2295,7 @@ img::after{
   padding:4 px 22px;
 }
 
+.bigtd{
+  line-height:2.3;
+}
 
