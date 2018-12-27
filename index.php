@@ -213,7 +213,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
           <div class="row">
             <div class="col-lg-6">
               <h2>About The Event</h2>
-              <p>This is the 6th edition of Indian Nationals. The event will be held at Shiv Nadar University, Greater Noida, Uttar Pradesh.  Competitors of all countries can receive prizes. However, only Indians can win titles and medals. <br>You can register on this website and explore more information about the competition.</p>
+              <p>This is the 6th edition of Indian Nationals. Competitors of all countries can receive prizes. However, only Indians can win titles and medals. </p>
             </div>
             <div class="col-lg-3">
               <h3>Where</h3>
