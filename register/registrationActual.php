@@ -623,7 +623,7 @@ echo '</ul>';
 
 							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
 							<h3>Cap</h3>
-							<p> ₹99</p>
+							<p> ₹249</p>
 						<select id="cbcb31">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
