@@ -897,7 +897,7 @@ function getMerchFee(){
 	if(document.getElementById("cbcb30").value!=="" && document.getElementById("cbcb30").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb30").value);
 	}
-	if(document.getElementById("cbcb31").value!=="" &&% document.getElementById("cbcb31").value!=="0"){
+	if(document.getElementById("cbcb31").value!=="" && document.getElementById("cbcb31").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb31").value);
 	}
 	if(document.getElementById("cbcb32").value!=="" && document.getElementById("cbcb32").value!=="0"){
