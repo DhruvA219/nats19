@@ -545,6 +545,7 @@ echo '</ul>';
 			<p align="middle"> Step 3/5</p>
 			<h3 align="middle"> Merchandise</h3>
 			<p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
+			<p align="middle"><b>Note : </b>All pictures shown are for illustration purpose only. Actual product may vary slightly.</p>
 			<div class="wrapper">
 				<div class="uldiv">
 					<ul>
