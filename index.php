@@ -332,6 +332,9 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
       var minutes = Math.floor((t / 1000 / 60) % 60);
       var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
       var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      if(t <= 0){
+	      t = seconds = minutes = hours = days = 0;
+      }
       return {
         'total': t,
         'days': days,
