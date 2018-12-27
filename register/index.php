@@ -12,7 +12,7 @@ $current_time=time();
 $regOpenTime0=1545748037;
 $regOpenTime=1546194599;
 
-if ($current_time>$regOpenTime0){
+if ($current_time>$regOpenTime){
 include('registrationActual.php');
 }
 else{
