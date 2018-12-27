@@ -164,10 +164,10 @@ CREATE TABLE IF NOT EXISTS `merch_catalog` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
 INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
-('cbcb28-S','T-Shirt',499 ),
-('cbcb28-M','T-Shirt',499 ),
-('cbcb28-L','T-Shirt',499 ),
-('cbcb28-XL','T-Shirt',499 ),
+('cbcb28-S','T-Shirt (S)',499 ),
+('cbcb28-M','T-Shirt (M)',499 ),
+('cbcb28-L','T-Shirt (L)',499 ),
+('cbcb28-XL','T-Shirt (XL)',499 ),
 ('cbcb29','Mug',299 ),
 ('cbcb30','Wrist Band (Grey)',99 ),
 ('cbcb31','Wrist Band (Black)',99 ),
