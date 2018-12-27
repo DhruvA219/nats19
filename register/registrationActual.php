@@ -600,7 +600,7 @@ echo '</ul>';
 
 						<li>
 
-							<img src="https://thekreativezone.com/liberia/wp-content/uploads/2018/02/wristband.png" alt="">
+							<img src="../img/merchandise/wristband.png" alt="">
 							<h3>Wrist Band</h3>
 							<p> ₹99</p>
 						<select id="cbcb30">
@@ -621,7 +621,7 @@ echo '</ul>';
 
 						<li>
 
-							<img src="http://www.medtechgroup.com/media/customoptions/options/1269/3937/Silicone-Solid-Red.png" alt="">
+							<img src="../img/merchandise/caps.png" alt="">
 							<h3>Cap</h3>
 							<p> ₹249</p>
 						<select id="cbcb31">
@@ -738,7 +738,7 @@ echo '</ul>';
 						</select>
 						</li>
 						<li>
-							<img src="http://www.pngmart.com/files/7/Keychain-PNG-Background-Image.png" alt="">
+							<img src="../img/merchandise/logo.jpeg" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
 						<select id="cbcb37">
