@@ -96,7 +96,7 @@ include('../header.php')
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="speaker">
-              <img src="../img/speakers/Sanjana Srinivasan.jpg" alt="Speaker 3" class="img-fluid">
+              <img src="../img/speakers/Sanjana Srinivasan.gif" alt="Speaker 3" class="img-fluid">
               <div class="details">
                 <h3><a>Sanjana Srinivasan</a></h3>
                 <p>She is a student of the mathematics department. She loves taking up responsibilities and participating in any event she can. Sanjana is also known to be a wonderful singer and enjoys writing poems too. She is part of the Finance and Sponsorship department of the OC.</p>
