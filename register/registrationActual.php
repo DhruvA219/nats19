@@ -891,34 +891,34 @@ function getMerchFee(){
 	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "") {
 		merch_fee = merch_fee + 499*parseInt(document.getElementById("cbcb28").value);
 	}
-	if(document.getElementById("cbcb29").value!=="" %% document.getElementById("cbcb29").value!=="0"){
+	if(document.getElementById("cbcb29").value!=="" && document.getElementById("cbcb29").value!=="0"){
 		merch_fee = merch_fee + 299*parseInt(document.getElementById("cbcb29").value);
 	}
-	if(document.getElementById("cbcb30").value!=="" %% document.getElementById("cbcb30").value!=="0"){
+	if(document.getElementById("cbcb30").value!=="" && document.getElementById("cbcb30").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb30").value);
 	}
-	if(document.getElementById("cbcb31").value!=="" %% document.getElementById("cbcb31").value!=="0"){
+	if(document.getElementById("cbcb31").value!=="" &&% document.getElementById("cbcb31").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb31").value);
 	}
-	if(document.getElementById("cbcb32").value!=="" %% document.getElementById("cbcb32").value!=="0"){
+	if(document.getElementById("cbcb32").value!=="" && document.getElementById("cbcb32").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb32").value);
 	}
-	if(document.getElementById("cbcb33").value!=="" %% document.getElementById("cbcb33").value!=="0"){
+	if(document.getElementById("cbcb33").value!=="" && document.getElementById("cbcb33").value!=="0"){
 		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb33").value);
 	}
-	if(document.getElementById("cbcb34").value!=="" %% document.getElementById("cbcb34").value!=="0"){
+	if(document.getElementById("cbcb34").value!=="" && document.getElementById("cbcb34").value!=="0"){
 		merch_fee = merch_fee + 99*parseInt(document.getElementById("cbcb34").value);
 	}
-	if(document.getElementById("cbcb35").value!=="" %% document.getElementById("cbcb35").value!=="0"){
+	if(document.getElementById("cbcb35").value!=="" && document.getElementById("cbcb35").value!=="0"){
 		merch_fee = merch_fee + 49*parseInt(document.getElementById("cbcb35").value);
 	}
-	if(document.getElementById("cbcb36").value!=="" %% document.getElementById("cbcb36").value!=="0"){
+	if(document.getElementById("cbcb36").value!=="" && document.getElementById("cbcb36").value!=="0"){
 		merch_fee = merch_fee + 199*parseInt(document.getElementById("cbcb36").value);
 	}
-	if(document.getElementById("cbcb37").value!=="" %% document.getElementById("cbcb37").value!=="0"){
+	if(document.getElementById("cbcb37").value!=="" && document.getElementById("cbcb37").value!=="0"){
 		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb37").value);
 	}
-	if(document.getElementById("cbcb38").value!=="" %% document.getElementById("cbcb38").value!=="0"){
+	if(document.getElementById("cbcb38").value!=="" && document.getElementById("cbcb38").value!=="0"){
 		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb38").value);
 	}
 	return merch_fee;
