@@ -2300,3 +2300,13 @@ img::after{
   line-height:2.3;
 }
 
+.custom-intrp{
+  padding:0;
+}
+
+
+@media screen and (max-width: 409px) and (max-height:600px) {
+  #clockdiv{
+    display:none;
+  }
+}
