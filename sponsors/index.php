@@ -1,24 +1,5 @@
 <?php
-$start = microtime(true);
 include('../header.php');
-$page_url=$_SERVER['PHP_SELF'];
-$now = new DateTime();
-$date=$now->format('Y-m-d');
-$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$get_page_visit_sql = "select * from `pageviews` where page='".$page_url."' and view_date='".$date."'";
-$page_result=$conn->query($get_page_visit_sql);
-if(mysqli_num_rows($page_result)>0){
-            $pageview_update_sql = "update `pageviews` SET count=count+1 where page='".$page_url."' and view_date='".$date."'";
-          $conn->query($pageview_update_sql);
-
-}
-else{
-            $pageview_insert_sql = "insert into `pageviews` (`page`,`view_date`,`count` ) VALUES ('".$page_url."','".$date."',1)";
-          $conn->query($pageview_insert_sql);
-}
-
-$time_elapsed_secs = microtime(true) - $start;
-echo $time_elapsed_secs."secs";
 
 ?>
 
