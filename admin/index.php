@@ -142,6 +142,37 @@ echo' <div class="col-lg-12 venue-info">
 echo '</table> <div align="center"><b>Total Page views today: '.$views_sum.'</b></div> </div>' ;
                 
 
+
+echo' <div class="col-lg-12 venue-info">
+							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
+								<div class="col-11 col-lg-8">
+									<h4 align="middle"> Page Views (Lifetime)</h4>
+								</div>
+							</div>
+						</div>';
+   	  $now = new DateTime();
+      $date=$now->format('Y-m-d');
+      $get_page_visit_sql = "select * from `pageviews` order by date desc, count desc";
+      $page_result=$conn->query($get_page_visit_sql);
+ 	echo'<div class="wrapper">
+								<table>
+									<tr>
+										<th class="tg-s268">Page</th>
+										<th class="tg-s268">Date </th>
+										<th class="tg-s268">Views</th>
+									</tr>';
+		$views_sum=0;
+		foreach($page_result as $row){
+			echo '<tr>';
+			echo '<td class="tg-s268 lefttd">'.$row['page'].'</td>';	
+			echo '<td class="tg-s268">₹'.$row['view_date'].'</td>';	
+			echo '<td class="tg-s268">'.$row['count'].'</td>';	
+			echo '</tr>';
+			$views_sum=$views_sum+$row['count'];
+		}
+echo '</table> <div align="center"><b>Total Page views today: '.$views_sum.'</b></div> </div>' ;
+                
+
 ?>
 
 
