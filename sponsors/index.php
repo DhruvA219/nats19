@@ -31,8 +31,6 @@ else{
          <div class="container">
         <div class="section-header">
           <h2>Sponsors</h2>
-<?php
-?>
         </div>
              <center><p> Coming soon! </p> </center>
     <!--
