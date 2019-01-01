@@ -130,7 +130,7 @@ echo' <div class="col-lg-12 venue-info">
 										<th class="tg-s268">Date </th>
 										<th class="tg-s268">Views</th>
 									</tr>';
-		$views_sum=0
+		$views_sum=0;
 		foreach($page_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['page'].'</td>';	
