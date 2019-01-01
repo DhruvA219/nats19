@@ -37,7 +37,7 @@ include('../header.php');
 						<div class="col-lg-12 venue-info">
 							<div class="row justify-content-center">
 								<div class="col-11 col-lg-8">
-									<h4 align="middle"> Events</h4>
+									<h4 align="middle"> Travel</h4>
 								</div>
 							</div>
 						</div>
@@ -152,7 +152,7 @@ echo' <div class="col-lg-12 venue-info">
 						</div>';
    	  $now = new DateTime();
       $date=$now->format('Y-m-d');
-      $get_page_visit_sql = "select * from `pageviews` order by date desc, count desc";
+      $get_page_visit_sql = "select * from `pageviews` order by view_date desc, count desc";
       $page_result=$conn->query($get_page_visit_sql);
  	echo'<div class="wrapper">
 								<table>
