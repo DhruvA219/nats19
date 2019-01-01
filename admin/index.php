@@ -152,7 +152,7 @@ echo' <div class="col-lg-12 venue-info">
 						</div>';
    	  $now = new DateTime();
       $date=$now->format('Y-m-d');
-      $get_page_visit_sql = "select page,sum(count) as total_cnt from `pageviews` order by total_cnt desc,";
+      $get_page_visit_sql = "select page,sum(count) as total_cnt from `pageviews` group by page order by total_cnt desc,";
       $page_result=$conn->query($get_page_visit_sql);
  	echo'<div class="wrapper">
 								<table>
@@ -173,13 +173,13 @@ echo '</table> <div align="center"><b>Total Page views (Lifetime): '.$views_sum.
 echo' <div class="col-lg-12 venue-info">
 							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
 								<div class="col-11 col-lg-8">
-									<h4 align="middle"> Page Views (Lifetime)</h4>
+									<h4 align="middle"> Page Views (By Date)</h4>
 								</div>
 							</div>
 						</div>';
    	  $now = new DateTime();
       $date=$now->format('Y-m-d');
-      $get_page_visit_sql = "select view_date,sum(count) as total_cnt from `pageviews` order by view_date desc,";
+      $get_page_visit_sql = "select view_date,sum(count) as total_cnt from `pageviews` group by view_date order by view_date desc,";
       $page_result=$conn->query($get_page_visit_sql);
  	echo'<div class="wrapper">
 								<table>
