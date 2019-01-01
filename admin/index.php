@@ -29,7 +29,7 @@ include('../header.php');
 
 				<p>       
 					<?php echo "Welcome ". strtok($_SESSION['name'], ' '); ?>! 
-					You can see item counts and page view details here <p> 
+					You can see sales and page view information here <p> 
 					</div>
 
 					<section id="Regforevent">	
@@ -62,7 +62,7 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">To</th>
 										<th class="tg-s268">Number of Tickets</th>
 									</tr>';
-		$sum=0;
+		$travel_sum=0;
 		foreach($travel_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268">'.$row['time'].'</td>';	
@@ -70,9 +70,9 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['destination'].'</td>';	
 			echo '<td class="tg-s268">'.$row['total_people'].'</td>';	
 			echo '</tr>';
-			$sum=$sum+(100*$row['total_people']);
+			$travel_sum=$travel_sum+(100*$row['total_people']);
 		}
-echo '</table> <div align="center">Total amount (before gateway fee): ₹'.$sum.'</div></div>';
+echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$travel_sum.'</b></div></div>';
 
 }
 
@@ -85,10 +85,10 @@ echo' <div class="col-lg-12 venue-info">
 						</div>';
 $merch_sql = "select sum(quantity) as total_quantity,name,price from 
 (select quantity,name,price from user_merch usermerch inner join
-merch_catalog ON merch_catalog.item_id=usermerch.item_id where email_id='$email') userdetails group by name,price";
+merch_catalog ON merch_catalog.item_id=usermerch.item_id) userdetails group by name,price";
 $merch_result = $conn->query($merch_sql);
 if (mysqli_num_rows($merch_result)==0){
-echo '<p align="middle"> You have not purchased any merchandise. </p>';
+echo '<p align="middle"> Nobody has purchased any merchandise. </p>';
 }
 else{ echo'<div class="wrapper">
 								<table>
@@ -97,15 +97,16 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Price </th>
 										<th class="tg-s268">Quantity</th>
 									</tr>';
-
+		$merch_sum=0;
 		foreach($merch_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
 			echo '<td class="tg-s268">₹'.$row['price'].'</td>';	
 			echo '<td class="tg-s268">'.$row['total_quantity'].'</td>';	
 			echo '</tr>';
+			$merch_sum=$sum+($row['price']*$row['total_quantity']);
 		}
-echo '</table> </div>' ;
+echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$merch_sum.'</b></div> </div>' ;
 
 }
 
