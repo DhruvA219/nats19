@@ -70,7 +70,7 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['destination'].'</td>';	
 			echo '<td class="tg-s268">'.$row['total_people'].'</td>';	
 			echo '</tr>';
-			$sum=$sum+(100*$row['total_people'])
+			$sum=$sum+(100*$row['total_people']);
 		}
 echo '</table> <div align="center">Total amount (before gateway fee): ₹'.$sum.'</div></div>';
 
