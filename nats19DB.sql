@@ -177,3 +177,14 @@ INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb35','Keychain',199 ),
 ('cbcb36','Nats Logo Sticker',19 ),
 ('cbcb37','Cuber Soul Sticker',19 );
+
+
+
+CREATE TABLE IF NOT EXISTS `pageviews` (
+  `page` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `view_date` date NOT NULL DEFAULT '1000-01-01',
+  `count` int COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+insert into `pageviews` (`page`,`view_date`,`count`) VALUES
+  ('haha','2019-02-01',12);
