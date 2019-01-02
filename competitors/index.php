@@ -174,7 +174,7 @@ foreach($result as $row){
     echo "</tr>";
 }
 
-    echo "<tr>";
+    echo "<b><tr>";
     echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
     echo "<td>".$comp_333."</td>";
@@ -196,7 +196,7 @@ foreach($result as $row){
     echo "<td>".$comp_555bf."</td>";
     echo "<td>".$comp_333mbf."</td>";
     echo "<td></td>";
-    echo "</tr>";
+    echo "</tr></b>";
 
 ?>
                                    </tbody>
