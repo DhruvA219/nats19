@@ -174,29 +174,29 @@ foreach($result as $row){
     echo "</tr>";
 }
 
-    echo "<b><tr>";
+    echo "<tr>";
     echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
-    echo "<td>".$comp_333."</td>";
-    echo "<td>".$comp_222."</td>";
-    echo "<td>".$comp_444."</td>";
-    echo "<td>".$comp_555."</td>";
-    echo "<td>".$comp_666."</td>";
-    echo "<td>".$comp_777."</td>";
-    echo "<td>".$comp_333bf."</td>";
-    echo "<td>".$comp_333fm."</td>";
-    echo "<td>".$comp_333oh."</td>";
-    echo "<td>".$comp_333ft."</td>";
-    echo "<td>".$comp_clock."</td>";
-    echo "<td>".$comp_minx."</td>";
-    echo "<td>".$comp_pyram."</td>";
-    echo "<td>".$comp_skewb."</td>";
-    echo "<td>".$comp_sq1."</td>";
-    echo "<td>".$comp_444bf."</td>";
-    echo "<td>".$comp_555bf."</td>";
-    echo "<td>".$comp_333mbf."</td>";
+    echo "<td><b>".$comp_333."</b</td>";
+    echo "<td><b>".$comp_222."</b</td>";
+    echo "<td><b>".$comp_444."</b</td>";
+    echo "<td><b>".$comp_555."</b</td>";
+    echo "<td><b>".$comp_666."</b</td>";
+    echo "<td><b>".$comp_777."</b</td>";
+    echo "<td><b>".$comp_333bf."</b</td>";
+    echo "<td><b>".$comp_333fm."</b</td>";
+    echo "<td><b>".$comp_333oh."</b</td>";
+    echo "<td><b>".$comp_333ft."</b</td>";
+    echo "<td><b>".$comp_clock."</b</td>";
+    echo "<td><b>".$comp_minx."</b</td>";
+    echo "<td><b>".$comp_pyram."</b</td>";
+    echo "<td><b>".$comp_skewb."</b</td>";
+    echo "<td><b>".$comp_sq1."</b</td>";
+    echo "<td><b>".$comp_444bf."</b</td>";
+    echo "<td><b>".$comp_555bf."</b</td>";
+    echo "<td><b>".$comp_333mbf."</b></td>";
     echo "<td></td>";
-    echo "</tr></b>";
+    echo "</tr>";
 
 ?>
                                    </tbody>
