@@ -119,6 +119,25 @@ $result = $conn->query($sql);
 $competitor_count=0;
 $newcomer_count=0;
 $oldcomer_count=0;
+$comp_222=0;
+$comp_333=0;
+$comp_444=0;
+$comp_555=0;
+$comp_666=0;
+$comp_777=0;
+$comp_333oh=0;
+$comp_333bf=0;
+$comp_333ft=0;
+$comp_333fm=0;
+$comp_444bf=0;
+$comp_555bf=0;
+$comp_minx=0;
+$comp_pyram=0;
+$comp_skewb=0;
+$comp_clock=0;
+$comp_sq1=0;
+$comp_333mbf=0;
+
 foreach($result as $row){
     $count=0;
     $competitor_count+=1;
@@ -133,27 +152,52 @@ foreach($result as $row){
     }
     echo $row['name']."</a></td>";
     echo "<td class='lefttd'>".$row['country_name']."</td>";
-    echo "<td>"; if ($row['333'] =="Y"){echo "<img src='../img/events/3x3.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['222'] =="Y"){echo "<img src='../img/events/2x2.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['444'] =="Y"){echo "<img src='../img/events/4x4.svg' class='low'>"; $count+=1; } echo"</td>";
-    echo "<td>"; if ($row['555'] =="Y"){echo "<img src='../img/events/5x5.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['666'] =="Y"){echo "<img src='../img/events/6x6.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['777'] =="Y"){echo "<img src='../img/events/7x7.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333bf'] =="Y"){echo "<img src='../img/events/3BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333fm'] =="Y"){echo "<img src='../img/events/FMC.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333oh'] =="Y"){echo "<img src='../img/events/3OH.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333ft'] =="Y"){echo "<img src='../img/events/FEET.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['clock'] =="Y"){echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['minx'] =="Y"){echo "<img src='../img/events/MINX.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['pyram'] =="Y"){echo "<img src='../img/events/pyra.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['skewb'] =="Y"){echo "<img src='../img/events/skewb.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['sq1'] =="Y"){echo "<img src='../img/events/sq1.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['444bf'] =="Y"){echo "<img src='../img/events/4BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['555bf'] =="Y"){echo "<img src='../img/events/5BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333mbf'] =="Y"){echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333'] =="Y"){$comp_333+=1;echo "<img src='../img/events/3x3.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['222'] =="Y"){$comp_222+=1;echo "<img src='../img/events/2x2.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['444'] =="Y"){$comp_444+=1;echo "<img src='../img/events/4x4.svg' class='low'>"; $count+=1; } echo"</td>";
+    echo "<td>"; if ($row['555'] =="Y"){$comp_555+=1;echo "<img src='../img/events/5x5.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['666'] =="Y"){$comp_666+=1;echo "<img src='../img/events/6x6.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['777'] =="Y"){$comp_777+=1;echo "<img src='../img/events/7x7.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333bf'] =="Y"){$comp_333bf+=1;echo "<img src='../img/events/3BLD.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333fm'] =="Y"){$comp_333fm+=1;echo "<img src='../img/events/FMC.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333oh'] =="Y"){$comp_333oh+=1;echo "<img src='../img/events/3OH.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333ft'] =="Y"){$comp_333ft+=1;echo "<img src='../img/events/FEET.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['clock'] =="Y"){$clock+=1;echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['minx'] =="Y"){$comp_minx+=1;echo "<img src='../img/events/MINX.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['pyram'] =="Y"){$comp_pyram+=1;echo "<img src='../img/events/pyra.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['skewb'] =="Y"){$comp_skewb+=1;echo "<img src='../img/events/skewb.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['sq1'] =="Y"){$comp_sq1+=1;echo "<img src='../img/events/sq1.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['444bf'] =="Y"){$comp_444bf+=1;echo "<img src='../img/events/4BLD.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['555bf'] =="Y"){$comp_55bf+=1;echo "<img src='../img/events/5BLD.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['333mbf'] =="Y"){$comp_333mbf+=1;echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>".$count."</td>";
     echo "</tr>";
 }
+
+    echo "<tr>";
+    echo "<td class='lefttd'></td>";
+    echo "<td class='lefttd'></td>";
+    echo "<td>".$comp_333."</td>";
+    echo "<td>".$comp_222."</td>";
+    echo "<td>".$comp_444."</td>";
+    echo "<td>".$comp_555."</td>";
+    echo "<td>".$comp_666."</td>";
+    echo "<td>".$comp_777."</td>";
+    echo "<td>".$comp_333bf."</td>";
+    echo "<td>".$comp_333fm."</td>";
+    echo "<td>".$comp_333oh."</td>";
+    echo "<td>".$comp_333ft."</td>";
+    echo "<td>".$comp_clock."</td>";
+    echo "<td>".$comp_minx."</td>";
+    echo "<td>".$comp_pyram."</td>";
+    echo "<td>".$comp_skewb."</td>";
+    echo "<td>".$comp_sq1."</td>";
+    echo "<td>".$comp_444bf."</td>";
+    echo "<td>".$comp_555bf."</td>";
+    echo "<td>".$comp_333mbf."</td>";
+    echo "<td></td>";
+    echo "</tr>";
+
 ?>
                                    </tbody>
               </table>
