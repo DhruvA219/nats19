@@ -162,13 +162,13 @@ foreach($result as $row){
     echo "<td>"; if ($row['333fm'] =="Y"){$comp_333fm+=1;echo "<img src='../img/events/FMC.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['333oh'] =="Y"){$comp_333oh+=1;echo "<img src='../img/events/3OH.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['333ft'] =="Y"){$comp_333ft+=1;echo "<img src='../img/events/FEET.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['clock'] =="Y"){$clock+=1;echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['clock'] =="Y"){$comp_clock+=1;echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['minx'] =="Y"){$comp_minx+=1;echo "<img src='../img/events/MINX.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['pyram'] =="Y"){$comp_pyram+=1;echo "<img src='../img/events/pyra.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['skewb'] =="Y"){$comp_skewb+=1;echo "<img src='../img/events/skewb.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['sq1'] =="Y"){$comp_sq1+=1;echo "<img src='../img/events/sq1.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['444bf'] =="Y"){$comp_444bf+=1;echo "<img src='../img/events/4BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['555bf'] =="Y"){$comp_55bf+=1;echo "<img src='../img/events/5BLD.svg' class='low'>"; $count+=1;} echo"</td>";
+    echo "<td>"; if ($row['555bf'] =="Y"){$comp_555bf+=1;echo "<img src='../img/events/5BLD.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['333mbf'] =="Y"){$comp_333mbf+=1;echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>".$count."</td>";
     echo "</tr>";
