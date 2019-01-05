@@ -119,14 +119,14 @@ foreach($result as $row){
                     <th class="tg-s268">Email</th>
                     <th class="tg-s268">Page Views</th>
                   </tr>';
-    $views_sum=0;
+    foreach($page_result as $row){
       echo '<tr>';
       echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>'; 
       echo '<td class="tg-s268 lefttd">'.$row['email'].'</td>'; 
       echo '<td class="tg-s268">'.$row['count'].'</td>';  
       echo '</tr>';
     }
-echo '</table> </div>' ;
+echo '</table>  </div>' ;
   ?>
     </section>
 
