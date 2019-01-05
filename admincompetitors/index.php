@@ -103,25 +103,6 @@ include('../header.php')
                     <th> Name </th>
                     <th> Email </th>
                     <th> Citizen of </th>
-                    <th> <img src="../img/events/3x3.svg" class="low"> </th>
-                    <th> <img src="../img/events/2x2.svg" class="low">  </th>
-                    <th> <img src="../img/events/4x4.svg" class="low">  </th>
-                    <th> <img src="../img/events/5x5.svg" class="low"> </th>
-                    <th> <img src="../img/events/6x6.svg" class="low"> </th>
-                    <th> <img src="../img/events/7x7.svg" class="low"> </th>
-                    <th> <img src="../img/events/3BLD.svg" class="low"> </th>
-                    <th> <img src="../img/events/FMC.svg" class="low"> </th>
-                    <th> <img src="../img/events/3OH.svg" class="low"> </th>
-                    <th> <img src="../img/events/FEET.svg" class="low"> </th>
-                    <th> <img src="../img/events/CLOCK.png" class="low"> </th>
-                    <th> <img src="../img/events/MINX.svg" class="low"> </th>
-                    <th> <img src="../img/events/pyra.svg" class="low"> </th>
-                    <th> <img src="../img/events/skewb.svg" class="low"> </th>
-                    <th> <img src="../img/events/sq1.svg" class="low"> </th>
-                    <th> <img src="../img/events/4BLD.svg" class="low"> </th>
-                    <th> <img src="../img/events/5BLD.svg" class="low"> </th>
-                    <th> <img src="../img/events/MBLD.svg" class="low"> </th>
-                    <th> Total </th>
                   </tr>
                 </thead>
                 <tbody>
@@ -167,25 +148,6 @@ foreach($result as $row){
     echo $row['name']."</a></td>";
     echo "<td class='lefttd'>".$row['email_id']."</td>";
     echo "<td class='lefttd'>".$row['country_name']."</td>";
-    echo "<td>"; if ($row['333'] =="Y"){$comp_333+=1;echo "<img src='../img/events/3x3.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['222'] =="Y"){$comp_222+=1;echo "<img src='../img/events/2x2.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['444'] =="Y"){$comp_444+=1;echo "<img src='../img/events/4x4.svg' class='low'>"; $count+=1; } echo"</td>";
-    echo "<td>"; if ($row['555'] =="Y"){$comp_555+=1;echo "<img src='../img/events/5x5.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['666'] =="Y"){$comp_666+=1;echo "<img src='../img/events/6x6.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['777'] =="Y"){$comp_777+=1;echo "<img src='../img/events/7x7.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333bf'] =="Y"){$comp_333bf+=1;echo "<img src='../img/events/3BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333fm'] =="Y"){$comp_333fm+=1;echo "<img src='../img/events/FMC.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333oh'] =="Y"){$comp_333oh+=1;echo "<img src='../img/events/3OH.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333ft'] =="Y"){$comp_333ft+=1;echo "<img src='../img/events/FEET.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['clock'] =="Y"){$comp_clock+=1;echo "<img src='../img/events/CLOCK.png' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['minx'] =="Y"){$comp_minx+=1;echo "<img src='../img/events/MINX.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['pyram'] =="Y"){$comp_pyram+=1;echo "<img src='../img/events/pyra.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['skewb'] =="Y"){$comp_skewb+=1;echo "<img src='../img/events/skewb.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['sq1'] =="Y"){$comp_sq1+=1;echo "<img src='../img/events/sq1.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['444bf'] =="Y"){$comp_444bf+=1;echo "<img src='../img/events/4BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['555bf'] =="Y"){$comp_555bf+=1;echo "<img src='../img/events/5BLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>"; if ($row['333mbf'] =="Y"){$comp_333mbf+=1;echo "<img src='../img/events/MBLD.svg' class='low'>"; $count+=1;} echo"</td>";
-    echo "<td>".$count."</td>";
     echo "</tr>";
 }
 
@@ -193,25 +155,6 @@ foreach($result as $row){
     echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
-    echo "<td>".$comp_333."</td>";
-    echo "<td>".$comp_222."</td>";
-    echo "<td>".$comp_444."</td>";
-    echo "<td>".$comp_555."</td>";
-    echo "<td>".$comp_666."</td>";
-    echo "<td>".$comp_777."</td>";
-    echo "<td>".$comp_333bf."</td>";
-    echo "<td>".$comp_333fm."</td>";
-    echo "<td>".$comp_333oh."</td>";
-    echo "<td>".$comp_333ft."</td>";
-    echo "<td>".$comp_clock."</td>";
-    echo "<td>".$comp_minx."</td>";
-    echo "<td>".$comp_pyram."</td>";
-    echo "<td>".$comp_skewb."</td>";
-    echo "<td>".$comp_sq1."</td>";
-    echo "<td>".$comp_444bf."</td>";
-    echo "<td>".$comp_555bf."</td>";
-    echo "<td>".$comp_333mbf."</td>";
-    echo "<td></td>";
     echo "</tr>";
 
 ?>
@@ -224,6 +167,34 @@ foreach($result as $row){
         </div>
       </div>
       </div>
+   <?php
+      echo' <div class="col-lg-12 venue-info">
+              <div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
+                <div class="col-11 col-lg-8">
+                  <h4 align="middle"> Page Views (By Date)</h4>
+                </div>
+              </div>
+            </div>';
+      $now = new DateTime();
+      $date=$now->format('Y-m-d');
+      $get_page_visit_sql = "select view_date,sum(count) as total_cnt from `pageviews` group by view_date order by view_date desc";
+      $page_result=$conn->query($get_page_visit_sql);
+  echo'<div class="wrapper">
+                <table>
+                  <tr>
+                    <th class="tg-s268">Date</th>
+                    <th class="tg-s268">Views</th>
+                  </tr>';
+    $views_sum=0;
+    foreach($page_result as $row){
+      echo '<tr>';
+      echo '<td class="tg-s268 lefttd">'.$row['view_date'].'</td>'; 
+      echo '<td class="tg-s268">'.$row['total_cnt'].'</td>';  
+      echo '</tr>';
+      $views_sum=$views_sum+$row['total_cnt'];
+    }
+echo '</table> <div align="center"><b>Total Page views (Lifetime): '.$views_sum.'</b></div> </div>' ;
+  ?>
     </section>
 
   </main>

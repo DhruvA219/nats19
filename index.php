@@ -3,6 +3,19 @@ $page_url=$_SERVER['PHP_SELF'];
       $now = new DateTime();
       $date=$now->format('Y-m-d');
       $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+      if(isset($_SESSION['email']) ) {
+      $login_track_sql = "select * from `logins` where email='".$_SESSION['email']."'";
+      $login_result=$conn->query($login_track_sql);
+        if(mysqli_num_rows($login_result)>0){
+                  $login_update_sql = "update `logins` SET count=count+1 where email='".$_SESSION['email']."'";
+                  $conn->query($login_update_sql);
+        }
+        else{
+                  $login_insert_sql = "insert into `logins` (`name`,`email`,`count`) VALUES ('".$_SESSION['name']."','".$_SESSION['email']."',1)";
+                  $conn->query($login_insert_sql);         
+        }
+      }
+
       $get_page_visit_sql = "select * from `pageviews` where page='".$page_url."' and view_date='".$date."'";
       $page_result=$conn->query($get_page_visit_sql);
       if(mysqli_num_rows($page_result)>0){
@@ -14,7 +27,7 @@ $page_url=$_SERVER['PHP_SELF'];
                   $pageview_insert_sql = "insert into `pageviews` (`page`,`view_date`,`count` ) VALUES ('".$page_url."','".$date."',1)";
                 $conn->query($pageview_insert_sql);
       }
-     
+
 session_start();
 if($_GET['code'] && !isset($_SESSION['email'])) {
   $post = [
