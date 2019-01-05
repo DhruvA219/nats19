@@ -119,7 +119,7 @@ foreach($result as $row){
                     <th class="tg-s268">Email</th>
                     <th class="tg-s268">Page Views</th>
                   </tr>';
-    foreach($page_result as $row){
+    foreach($login_result as $row){
       echo '<tr>';
       echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>'; 
       echo '<td class="tg-s268 lefttd">'.$row['email'].'</td>'; 
