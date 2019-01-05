@@ -101,6 +101,7 @@ include('../header.php')
                 <thead>
                   <tr>
                     <th> Name </th>
+                    <th> Email </th>
                     <th> Citizen of </th>
                     <th> <img src="../img/events/3x3.svg" class="low"> </th>
                     <th> <img src="../img/events/2x2.svg" class="low">  </th>
@@ -164,6 +165,7 @@ foreach($result as $row){
       $newcomer_count+=1;
     }
     echo $row['name']."</a></td>";
+    echo "<td class='lefttd'>".$row['email_id']."</td>";
     echo "<td class='lefttd'>".$row['country_name']."</td>";
     echo "<td>"; if ($row['333'] =="Y"){$comp_333+=1;echo "<img src='../img/events/3x3.svg' class='low'>"; $count+=1;} echo"</td>";
     echo "<td>"; if ($row['222'] =="Y"){$comp_222+=1;echo "<img src='../img/events/2x2.svg' class='low'>"; $count+=1;} echo"</td>";
@@ -188,6 +190,7 @@ foreach($result as $row){
 }
 
     echo "<tr>";
+    echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
     echo "<td class='lefttd'></td>";
     echo "<td>".$comp_333."</td>";
