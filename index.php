@@ -1,5 +1,6 @@
 <?php
 $page_url=$_SERVER['PHP_SELF'];
+session_start();
       $now = new DateTime();
       $date=$now->format('Y-m-d');
       $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
@@ -28,7 +29,6 @@ $page_url=$_SERVER['PHP_SELF'];
                 $conn->query($pageview_insert_sql);
       }
 
-session_start();
 if($_GET['code'] && !isset($_SESSION['email'])) {
   $post = [
     'grant_type' => 'authorization_code',

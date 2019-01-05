@@ -23,75 +23,10 @@ include('../header.php')
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h2>Competitors</h2>
-          <p>Click on events to access psych sheet.</p>
+          <p>Emails of all competitors below</p>
         </div>
 
 
-
-          <div align="center">
-            <div class="details">
-              <div class="social">
-              <div class="wrapper">
-                <ul class="nav nav-tabs" role="tablist" >
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333" ><img src="../img/events/3x3.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=222"><img src="../img/events/2x2.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=444"><img src="../img/events/4x4.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=555"><img src="../img/events/5x5.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=666"><img src="../img/events/6x6.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=777"><img src="../img/events/7x7.png" class="center center-icon"></a>
-</li>
-  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333bf"><img src="../img/events/3BLD.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333fm"><img src="../img/events/FMC.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333oh"><img src="../img/events/3OH.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333ft"><img src="../img/events/FEET.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=clock"><img src="../img/events/CLOCK.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=minx" ><img src="../img/events/MINX.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=pyram"><img src="../img/events/pyra.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=skewb"><img src="../img/events/skewb.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=sq1"><img src="../img/events/sq1.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=444bf"><img src="../img/events/4BLD.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=555bf"><img src="../img/events/5BLD.png" class="center center-icon"></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-padding" href="../psych-sheet?eventId=333mbf"><img src="../img/events/MBLD.png" class="center center-icon"></a>
-                  </li>
-                </ul>
-              </div>
-              </div>
-            </div>
-          </div>
 
           <div class="tab-content row justify-content-center">
             <!-- Competitors Table -->
@@ -171,29 +106,27 @@ foreach($result as $row){
       echo' <div class="col-lg-12 venue-info">
               <div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
                 <div class="col-11 col-lg-8">
-                  <h4 align="middle"> Page Views (By Date)</h4>
+                  <h4 align="middle"> User Login Count</h4>
                 </div>
               </div>
             </div>';
-      $now = new DateTime();
-      $date=$now->format('Y-m-d');
-      $get_page_visit_sql = "select view_date,sum(count) as total_cnt from `pageviews` group by view_date order by view_date desc";
-      $page_result=$conn->query($get_page_visit_sql);
+      $login_count_sql = "select * from `logins`";
+      $login_result=$conn->query($login_count_sql);
   echo'<div class="wrapper">
                 <table>
                   <tr>
-                    <th class="tg-s268">Date</th>
-                    <th class="tg-s268">Views</th>
+                    <th class="tg-s268">Name</th>
+                    <th class="tg-s268">Email</th>
+                    <th class="tg-s268">Page Views</th>
                   </tr>';
     $views_sum=0;
-    foreach($page_result as $row){
       echo '<tr>';
-      echo '<td class="tg-s268 lefttd">'.$row['view_date'].'</td>'; 
-      echo '<td class="tg-s268">'.$row['total_cnt'].'</td>';  
+      echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>'; 
+      echo '<td class="tg-s268 lefttd">'.$row['email'].'</td>'; 
+      echo '<td class="tg-s268">'.$row['count'].'</td>';  
       echo '</tr>';
-      $views_sum=$views_sum+$row['total_cnt'];
     }
-echo '</table> <div align="center"><b>Total Page views (Lifetime): '.$views_sum.'</b></div> </div>' ;
+echo '</table> </div>' ;
   ?>
     </section>
 
