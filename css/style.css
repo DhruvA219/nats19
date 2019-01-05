@@ -2215,7 +2215,7 @@ img::after{
 }
 }
 .section-header-narrow{
-  margin-bottom: 0px !important; 
+  margin-bottom: 0px !important;
 }
 
 .section-header-narrow::before{
@@ -2302,6 +2302,58 @@ img::after{
 
 .custom-intrp{
   padding:0;
+}
+
+.regprogressbar{
+
+}
+
+.regprogressbar tr{
+  border-bottom: none;
+}
+
+.regprogressbar td{
+  padding: 0px 0px;
+  width: 33%;
+}
+
+.rotateimg{
+  width: 10px;left:
+  calc(100% - 1%); height: 10px;
+  transform: rotate(180deg);
+}
+
+.regprogressbar table{
+  display: table;
+  width: 100%;
+  margin: -5px;
+}
+
+.progressbarimg{
+  margin: -12px;
+  width: 20px;
+  height: 20px;
+}
+
+.progressbarimgend{
+  width: 20px;
+  height: 20px;
+  position: sticky;
+  left: calc(100% - 0px);
+}
+
+.bottompointer{
+  width: 10px;
+  left: calc(100% - 1%);
+  height: 10px;
+}
+
+.progressouter{
+  display: flex;
+  align-items: center;
+  border: .6px solid #007bff;
+  border-radius: 20px;
+  padding: 7px;
 }
 
 
