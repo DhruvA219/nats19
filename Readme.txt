@@ -1,6 +1,1 @@
-Thanks for downloading this theme!
-
-Theme Name: TheEvent
-Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+This hosts the code for the official website of Indian Nationals 2019: https://nats19.in
