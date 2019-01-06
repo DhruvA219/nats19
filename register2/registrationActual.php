@@ -848,7 +848,7 @@ echo '</ul>';
 	<div class="wrapper">
 		<div class="tab">
 			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '80%')">Previous</button></a>
-			<a href="#" id="register-checkout"><button class="tablinks">Checkout</button></a>
+			<a id="register-checkout"><button class="tablinks">Checkout</button></a>
 		</div>
 	</div>
 </div>
@@ -1000,12 +1000,12 @@ function getAccoFee(){
 		for (i = 0; i < tabcontent.length; i++) {
 			tabcontent[i].style.display = "none";
 		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
+		//tablinks = document.getElementsByClassName("tablinks");
+		//for (i = 0; i < tablinks.length; i++) {
+		//	tablinks[i].className = tablinks[i].className.replace(" active", "");
+		//}
 		document.getElementById(tabName).style.display = "block";
-		$('#default'+tabName)[0].className+=" active";
+	//	$('#default'+tabName)[0].className+=" active";
 	updateFee();
 	}
 
@@ -1038,17 +1038,17 @@ tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
 	tabcontent[i].style.display = "none";
 }
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-	tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
+//tablinks = document.getElementsByClassName("tablinks");
+//for (i = 0; i < tablinks.length; i++) {
+//	tablinks[i].className = tablinks[i].className.replace(" active", "");
+//}
 document.getElementById(tabName).style.display = "block";
-$('#default'+tabName)[0].className+=" active";
+//$('#default'+tabName)[0].className+=" active";
 updateFee();
 }
 
 document.getElementById('Events').style.display = "block";
-$("#defaultEvents")[0].className+=" active";
+//$("#defaultEvents")[0].className+=" active";
 
 
 $(".travel-selector-class").change(function() {
@@ -1057,7 +1057,7 @@ $(".travel-selector-class").change(function() {
 
 
 $("#register-checkout").click(function() {
-
+ //       alert("hello");
 	var cart_total=getEventFee()+getTravelFee()+getMerchFee()+getAccoFee();
 	if (cart_total==0){
 	alert("Please add something to your cart before checkout");
