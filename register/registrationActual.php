@@ -1,8 +1,3 @@
-<head>
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<link rel="stylesheet" type="text/css" href="../css/materialize.css">
-</head>
-
 <main id="main">
 		<!--==========================
 	==========================
@@ -20,40 +15,16 @@
 				</div>
 
 				<section id="Regforevent" class="section-with-bg">
-                                                <div class="regprogressbar">
-            <table >
-              <tr >
-                <td >Events</td>
-                <td >Merchandise</td>
-                <td >Unofficial Events</td>
-              </tr>
-              <tr >
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-              </tr>
-            </table>
-            <div class="progressouter">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:16%">
-                </div>
-                <img src="../img/progress.svg" alt="" class="progressbarimg">
-                <img src="../img/progress-done.svg" alt="" class="progressbarimgend" >
-              </div>
-            </div>
+					<div class="wrapper">
+						<div class="tab">
+							<button class="tablinks not-active" onclick="openCity(event, 'Events')" id="defaultEvents">Events</button>
+							<button id="defaultTravel" class="tablinks not-active" onclick="openCity(event, 'Travel')">Travel</button>
+							<button id="defaultMerch" class="tablinks not-active" onclick="openCity(event, 'Merch')">Merchandise</button>
+							<button id="defaultAccommodation" class="tablinks not-active" onclick="openCity(event, 'Accommodation')">Accommodation</button>
+							<button id="defaultUnofficial" class="tablinks not-active" onclick="openCity(event, 'Unofficial')">Unofficial Events</button>
+						</div>
+					</div>
 
-              <table style="display: table; width: 100%; margin: -8px;">
-                <tr >
-                  <td ><img src="../img/progress-marker.svg" alt="" class="bottompointer"></td>
-                  <td ><img src="../img/progress-marker.svg" alt="" class="bottompointer"></td>
-                </tr>
-                <tr >
-                  <td >Travel</td>
-                  <td >Accomodation</td>
-                </tr>
-              </table>
-            </div>
 					<div id="Events" class="tabcontent">
 						<div class="col-lg-12 venue-info">
 							<div class="row justify-content-center">
@@ -299,8 +270,8 @@ echo '</ul>';
 
 								<div class="wrapper">
 									<div class="tab">
-										<a href="#Travel"><button class="tablinks" onclick="skipCity(event, 'Travel', '24%')">Skip</button></a>
-										<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel', '24%')">Save and Proceed</button></a>
+										<a href="#Travel"><button class="tablinks" onclick="skipCity(event, 'Travel')">Skip</button></a>
+										<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Save and Proceed</button></a>
 									</div>
 
 								</div>
@@ -561,9 +532,9 @@ echo '</ul>';
 </div>
 <div class="tab">
 	<div class="wrapper">
-		<a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events', '16%')">Previous</button></a>
-		<a href="#Merch"><button class="tablinks" onclick="skipCity(event, 'Merch', '50%')">Skip</button></a>
-		<a href="#Merch"><button class="tablinks" id="travel-Save and Proceed-button" onclick="openCity(event, 'Merch', '50%')">Save and Proceed</button></a>
+		<a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events')">Previous</button></a>
+		<a href="#Merch"><button class="tablinks" onclick="skipCity(event, 'Merch')">Skip</button></a>
+		<a href="#Merch"><button class="tablinks" id="travel-Save and Proceed-button" onclick="openCity(event, 'Merch')">Save and Proceed</button></a>
 
 	</div>
 </div>
@@ -791,9 +762,9 @@ echo '</ul>';
 			</div>
 			<div class="wrapper">
 				<div class="tab">
-					<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel', '24%')">Previous</button></a>
-					<a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation', '75%')">Skip</button></a>
-					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '75%')">Save and Proceed</button></a>
+					<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel')">Previous</button></a>
+					<a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation')">Skip</button></a>
+					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Save and Proceed</button></a>
 				</div>
 			</div>
 		</div>
@@ -813,9 +784,9 @@ echo '</ul>';
 
 	<div class="wrapper">
 		<div class="tab">
-			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch', '50%')">Previous</button></a>
-			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial', '84%')">Skip</button></a>
-			<a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial', '84%')">Save and Proceed</button></a>
+			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch')">Previous</button></a>
+			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial')">Skip</button></a>
+			<a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial')">Save and Proceed</button></a>
 
 		</div>
 	</div>
@@ -847,7 +818,7 @@ echo '</ul>';
 
 	<div class="wrapper">
 		<div class="tab">
-			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '80%')">Previous</button></a>
+			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation')">Previous</button></a>
 			<a href="#" id="register-checkout"><button class="tablinks">Checkout</button></a>
 		</div>
 	</div>
@@ -956,8 +927,7 @@ function getAccoFee(){
 
 
 
-	function openCity(evt, tabName, progress) {
-               
+	function openCity(evt, tabName) {
 		if(tabName=='Merch'){
 			var flagAlert1 = true, flagAlert2 = true;
 			for(var i = 19; i <= 26; i++) {
@@ -973,9 +943,7 @@ function getAccoFee(){
 			} else if(flagAlert2 == false) {
 				alert("Please select the slot you want to travel in.");
 				return false;
-			} else {
-                               document.getElementsByClassName("progress-bar")[0].style.width = progress;
-                        }
+			}
 
 		}
 		if(tabName=='Accommodation'){
@@ -988,13 +956,9 @@ function getAccoFee(){
 			if(flagAlert==false) {
 				alert("You haven not selected your T-shirt size");
 				return false;
-			} else {
-                           document.getElementsByClassName("progress-bar")[0].style.width = progress;
-                        } 
+			} 
 
-		} else {
-               		 document.getElementsByClassName("progress-bar")[0].style.width = progress;
-                }
+		}
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent");
 		for (i = 0; i < tabcontent.length; i++) {
@@ -1009,8 +973,7 @@ function getAccoFee(){
 	updateFee();
 	}
 
-	function skipCity(evt, tabName, progress) {
-document.getElementsByClassName("progress-bar")[0].style.width = progress;
+	function skipCity(evt, tabName) {
 
 		if (tabName=="Travel"){
 			for(var i = 1; i <= 18; i++) {
