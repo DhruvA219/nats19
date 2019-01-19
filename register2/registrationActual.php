@@ -810,6 +810,196 @@ echo '</ul>';
 		</div>
 	</div>
 
+							<div class="wrapper">
+								<table>
+									<tr>
+										<th class="tg-s268">Room Type</th>
+										<th class="tg-s268">Price</th>
+										<th class="tg-s268">Check-In </th>
+										<th class="tg-s268">Check-Out</th>
+										<th class="tg-s268">Quantity</th>
+									</tr>
+									<tr>
+										<td class="tg-s268">2BHK</td>
+										<td class="tg-s268">3600</td>
+										<td class="tg-s268"> <select id="cb40a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="11 April">1</option>
+											<option value="12 April">2</option>
+											<option value="13 April">3</option>
+											<option value="14 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb40b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="12 April">1</option>
+											<option value="13 April">2</option>
+											<option value="14 April">3</option>
+											<option value="15 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb40" onchange="updateFee()">
+											<option value="" disabled="" selected="">Number of Rooms</option>
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+										</select>
+									</td>
+								</tr>
+									<tr>
+										<td class="tg-s268">1BHK</td>
+										<td class="tg-s268">2700</td>
+										<td class="tg-s268"> <select id="cb41a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="11 April">1</option>
+											<option value="12 April">2</option>
+											<option value="13 April">3</option>
+											<option value="14 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb41b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="12 April">1</option>
+											<option value="13 April">2</option>
+											<option value="14 April">3</option>
+											<option value="15 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb41" onchange="updateFee()">
+											<option value="" disabled="" selected="">Number of Rooms</option>
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Studio</td>
+										<td class="tg-s268">2000</td>
+										<td class="tg-s268"> <select id="cb42a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="11 April">1</option>
+											<option value="12 April">2</option>
+											<option value="13 April">3</option>
+											<option value="14 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb42b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="12 April">1</option>
+											<option value="13 April">2</option>
+											<option value="14 April">3</option>
+											<option value="15 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb42" onchange="updateFee()">
+											<option value="" disabled="" selected="">Number of Rooms</option>
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Common Room (Male)</td>
+										<td class="tg-s268">500</td>
+										<td class="tg-s268"> <select id="cb43a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="11 April">1</option>
+											<option value="12 April">2</option>
+											<option value="13 April">3</option>
+											<option value="14 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb43b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="12 April">1</option>
+											<option value="13 April">2</option>
+											<option value="14 April">3</option>
+											<option value="15 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb43" onchange="updateFee()">
+											<option value="" disabled="" selected="">Number of People</option>
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Common Room (Female)</td>
+										<td class="tg-s268">500</td>
+										<td class="tg-s268"> <select id="cb44a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="11 April">1</option>
+											<option value="12 April">2</option>
+											<option value="13 April">3</option>
+											<option value="14 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb44b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="12 April">1</option>
+											<option value="13 April">2</option>
+											<option value="14 April">3</option>
+											<option value="15 April">4</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb44" onchange="updateFee()">
+											<option value="" disabled="" selected="">Number of People</option>
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+										</select>
+									</td>
+								</tr>
+									<tr>
+										<td class="tg-s268">Hostel Room</td>
+										<td class="tg-s268" colspan="4">Coming Soon</td>
+								</tr>
+
+
+	</table>
+</div>
+
 
 	<div class="wrapper">
 		<div class="tab">
