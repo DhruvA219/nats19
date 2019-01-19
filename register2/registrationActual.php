@@ -1251,6 +1251,19 @@ document.getElementsByClassName("progress-bar")[0].style.width = progress;
 			document.getElementById("cbcb" + i).value = "";
 		}
 }
+
+		if(tabName=='Unofficial'){
+
+		//For acco page
+		for(var i = 40; i <=44; i++){
+			document.getElementById("cbcb" + i).value = "";
+			document.getElementById("cb" + i + "a").value = "";
+			document.getElementById("cb" + i + "b").value = "";
+		}
+}
+
+
+
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
@@ -1307,8 +1320,17 @@ $("#register-checkout").click(function() {
 
 	}
 
+	var acco = {};
+	for (var i=40;i<=44;i++){
+	if(document.getElementById("cbcb" +i).value!=="" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "") {
+		acco['cbcb'+i]=array("checkin"=>parseInt(document.getElementById("cb"+i+"a").value),
+		"checkout"=>parseInt(document.getElementById("cb"+i+"b").value),
+		"quantity"=>parseInt(document.getElementById("cbcb"+i).value));
+	}
+	}
 
-	$.post( "register.php",{travel: travel, events: events, merch: merch}, function( script ) {
+
+	$.post( "register.php",{travel: travel, events: events, merch: merch, acco : acco}, function( script ) {
 		var scriptTag = $(script).text();
 		eval(scriptTag);
 	});

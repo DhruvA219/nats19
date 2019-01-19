@@ -87,14 +87,38 @@ foreach ($_POST['merch'] as $key => $value) {
         }
 }
 
+$total_cost_of_acco_reg=0;
+foreach ($_POST['acco'] as $key => $value) {
+        if($value["quantity"] <= 10 && $value["quantity"] >= 1) {
+                if ($key=="cbcb40"){
+                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*3600;
+              }
+                if ($key=="cbcb41"){
+                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*2700;
+              }
+                if ($key=="cbcb42"){
+                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*2000;
+              }
+                if ($key=="cbcb43"){
+                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*500;
+              }
+                if ($key=="cbcb44"){
+                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*500;
+              }
+        }
+}
+
+
+
 
 
 $_SESSION['events'] = $_POST['events'];
 $_SESSION['travel'] = $_POST['travel'];
 $_SESSION['merch'] = $_POST['merch'];
+$_SESSION['acco'] = $_POST['acco'];
 
 //echo "Event reg cost: " . $total_cost_of_event_reg . ". And cost of travel: " . $total_cost_of_travel_reg;
-$amount = $total_cost_of_event_reg+$total_cost_of_travel_reg+$total_cost_of_merch_reg;
+$amount = $total_cost_of_event_reg+$total_cost_of_travel_reg+$total_cost_of_merch_reg+$total_cost_of_acco_reg;
 
 $ch = curl_init();
 
