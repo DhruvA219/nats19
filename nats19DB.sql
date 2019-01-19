@@ -188,3 +188,38 @@ CREATE TABLE IF NOT EXISTS `pageviews` (
 
 insert into `pageviews` (`page`,`view_date`,`count`) VALUES
   ('haha','2019-02-01',12);
+
+
+CREATE TABLE IF NOT EXISTS `logins` (
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `count` int COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+
+mysql -u root -p nats19 < WCA_export.sql
+drop table Competitions;
+drop table Continents;
+drop table Events;
+drop table Formats;
+drop table Persons;
+drop table Results;
+drop table RoundTypes;
+drop table Rounds;
+drop table Scrambles;
+drop table championships;
+drop table eligible_country_iso2s_for_championship;
+
+drop table RanksAverage2;
+create table RanksAverage2 as
+  select personId,eventId,best,worldRank from RanksAverage
+  inner join registrations
+  where personId=WCAID;
+
+drop table RanksSingle2;
+create table RanksSingle2 as
+  select personId,eventId,best,worldRank from RanksSingle
+  inner join registrations
+  where personId=WCAID;
+
+
