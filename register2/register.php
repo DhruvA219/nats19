@@ -89,28 +89,24 @@ foreach ($_POST['merch'] as $key => $value) {
 
 $total_cost_of_acco_reg=0;
 foreach ($_POST['acco'] as $key => $value) {
-        if($value["quantity"] <= 10 && $value["quantity"] >= 1) {
+        if($value[2] <= 10 && $value[2] >= 1) {
                 if ($key=="cbcb40"){
-                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*3600;
+                $total_cost_of_acco_reg += $value[2]*($value[1]-$value[0])*3600;
               }
                 if ($key=="cbcb41"){
-                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*2700;
+                $total_cost_of_acco_reg += $value[2]*($value[1]-$value[0])*2700;
               }
                 if ($key=="cbcb42"){
-                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*2000;
-              }
+                 $total_cost_of_acco_reg += $value[2]*($value[1]-$value[0])*2000;
+             }
                 if ($key=="cbcb43"){
-                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*500;
-              }
+                  $total_cost_of_acco_reg += $value[2]*($value[1]-$value[0])*500;
+            }
                 if ($key=="cbcb44"){
-                $total_cost_of_acco_reg += $value["quantity"]*($value["checkout"]-$value["checkin"])*500;
+                $total_cost_of_acco_reg += $value[2]*($value[1]-$value[0])*500;
               }
         }
 }
-
-
-
-
 
 $_SESSION['events'] = $_POST['events'];
 $_SESSION['travel'] = $_POST['travel'];
