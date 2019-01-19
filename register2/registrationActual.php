@@ -1140,23 +1140,36 @@ function getMerchFee(){
 function getAccoFee(){
 	var acco_fee=0;
 	if(document.getElementById("cb40a").value!=="" && document.getElementById("cb40b").value !== "" && document.getElementById("cbcb40").value !== "") {
+		var diff=parseInt(document.getElementById("cb40b").value)-parseInt(document.getElementById("cb40a").value);
+		if (diff>0){
 		acco_fee = acco_fee + 3600*parseInt(document.getElementById("cbcb40").value)*(parseInt(document.getElementById("cb40b").value)-parseInt(document.getElementById("cb40a").value));
 	}
+	}
 	if(document.getElementById("cb41a").value!=="" && document.getElementById("cb41b").value !== "" && document.getElementById("cbcb41").value !== "") {
+			var diff=parseInt(document.getElementById("cb41b").value)-parseInt(document.getElementById("cb41a").value);
+		if (diff>0){
 		acco_fee = acco_fee + 2700*parseInt(document.getElementById("cbcb41").value)*(parseInt(document.getElementById("cb41b").value)-parseInt(document.getElementById("cb41a").value));
 	}
+	}
 	if(document.getElementById("cb42a").value!=="" && document.getElementById("cb42b").value !== "" && document.getElementById("cbcb42").value !== "") {
+		var diff=parseInt(document.getElementById("cb42b").value)-parseInt(document.getElementById("cb42a").value);
+		if (diff>0){
 		acco_fee = acco_fee + 2000*parseInt(document.getElementById("cbcb42").value)*(parseInt(document.getElementById("cb42b").value)-parseInt(document.getElementById("cb42a").value));
 	}
+	}
 	if(document.getElementById("cb43a").value!=="" && document.getElementById("cb43b").value !== "" && document.getElementById("cbcb43").value !== "") {
+			var diff=parseInt(document.getElementById("cb43b").value)-parseInt(document.getElementById("cb43a").value);
+		if (diff>0){
 		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb43").value)*(parseInt(document.getElementById("cb403").value)-parseInt(document.getElementById("cb43a").value));
 	}
+	}
 	if(document.getElementById("cb44a").value!=="" && document.getElementById("cb44b").value !== "" && document.getElementById("cbcb44").value !== "") {
+			var diff=parseInt(document.getElementById("cb44b").value)-parseInt(document.getElementById("cb44a").value);
+		if (diff>0){
 		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb44").value)*(parseInt(document.getElementById("cb44b").value)-parseInt(document.getElementById("cb44a").value));
 	}
-
-
-	return merch_fee;
+}
+	return acco_fee;
 }
 
 
