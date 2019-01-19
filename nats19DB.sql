@@ -223,3 +223,26 @@ create table RanksSingle2 as
   where personId=WCAID;
 
 
+CREATE TABLE IF NOT EXISTS `user_acco` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `email_id` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
+  `quantity` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  `check_in` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `check_out` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `payment_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+
+CREATE TABLE IF NOT EXISTS `acco_catalog` (
+  `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+  `price` int COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`item_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+INSERT into `acco_catalog` (`item_id`, `name`, `price`) VALUES
+('cbcb40','2BHK',3600 ),
+('cbcb41','1BHK',2700 ),
+('cbcb42','Studio',2000 ),
+('cbcb43','Common Room',500 );
+
