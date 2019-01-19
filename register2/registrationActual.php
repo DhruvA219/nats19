@@ -1323,10 +1323,7 @@ $("#register-checkout").click(function() {
 	var acco = {};
 	for (var i=40;i<=44;i++){
 	if(document.getElementById("cbcb" +i).value!=="" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "") {
-		acco['cbcb'+i]=array(
-			"checkin" => parseInt(document.getElementById("cb"+i+"a").value),
-		"checkout" => parseInt(document.getElementById("cb"+i+"b").value),
-		"quantity" => parseInt(document.getElementById("cbcb"+i).value)
+		acco['cbcb'+i]=array(parseInt(document.getElementById("cb"+i+"a").value),parseInt(document.getElementById("cb"+i+"b").value),parseInt(document.getElementById("cbcb"+i).value)
 		);
 	}
 	}
