@@ -821,21 +821,21 @@ echo '</ul>';
 									</tr>
 									<tr>
 										<td class="tg-s268">2BHK</td>
-										<td class="tg-s268">3600</td>
+										<td class="tg-s268">₹3600</td>
 										<td class="tg-s268"> <select id="cb40a" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-											<option value="11 April">11 April</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cb40b" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-											<option value="15 April">15 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cbcb40" onchange="updateFee()">
@@ -853,21 +853,21 @@ echo '</ul>';
 								</tr>
 									<tr>
 										<td class="tg-s268">1BHK</td>
-										<td class="tg-s268">2700</td>
-										<td class="tg-s268"> <select id="cb41a" onchange="updateFee()">
+										<td class="tg-s268">₹2700</td>
+											<td class="tg-s268"> <select id="cb41a" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-											<option value="11 April">11 April</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cb41b" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-												<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-											<option value="15 April">15 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cbcb41" onchange="updateFee()">
@@ -888,25 +888,23 @@ echo '</ul>';
 								</tr>
 	<tr>
 										<td class="tg-s268">Studio</td>
-										<td class="tg-s268">2000</td>
-										<td class="tg-s268"> <select id="cb42a" onchange="updateFee()">
+										<td class="tg-s268">₹2000</td>
+		<td class="tg-s268"> <select id="cb42a" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-																		<option value="11 April">11 April</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cb42b" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-													<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-											<option value="15 April">15 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
 										</select>
-									</td>
-										<td class="tg-s268"> <select id="cbcb42" onchange="updateFee()">
+									</td>										<td class="tg-s268"> <select id="cbcb42" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 Rooms</option>
 											<option value="1">1 Rooms</option>
@@ -924,25 +922,23 @@ echo '</ul>';
 								</tr>
 	<tr>
 										<td class="tg-s268">Common Room (Male)</td>
-										<td class="tg-s268">500</td>
-										<td class="tg-s268"> <select id="cb43a" onchange="updateFee()">
+										<td class="tg-s268">₹500</td>
+		<td class="tg-s268"> <select id="cb43a" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-																	<option value="11 April">11 April</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cb43b" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-								<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-											<option value="15 April">15 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
 										</select>
-									</td>
-										<td class="tg-s268"> <select id="cbcb43" onchange="updateFee()">
+									</td>										<td class="tg-s268"> <select id="cbcb43" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 People</option>
 											<option value="1">1 People</option>
@@ -960,25 +956,23 @@ echo '</ul>';
 								</tr>
 	<tr>
 										<td class="tg-s268">Common Room (Female)</td>
-										<td class="tg-s268">500</td>
-										<td class="tg-s268"> <select id="cb44a" onchange="updateFee()">
+										<td class="tg-s268">₹500</td>
+		<td class="tg-s268"> <select id="cb44a" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-																<option value="11 April">11 April</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
 										</select>
 									</td>
 										<td class="tg-s268"> <select id="cb44b" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
-											<option value="12 April">12 April</option>
-											<option value="13 April">13 April</option>
-											<option value="14 April">14 April</option>
-											<option value="15 April">15 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
 										</select>
-									</td>
-										<td class="tg-s268"> <select id="cbcb44" onchange="updateFee()">
+									</td>										<td class="tg-s268"> <select id="cbcb44" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 People</option>
 											<option value="1">1 People</option>
@@ -1144,7 +1138,25 @@ function getMerchFee(){
 }
 
 function getAccoFee(){
-	return 0;
+	var acco_fee=0;
+	if(document.getElementById("cb40a").value!=="" && document.getElementById("cb40b").value !== "" && document.getElementById("cbcb40").value !== "") {
+		acco_fee = acco_fee + 3600*parseInt(document.getElementById("cbcb40").value)*(parseInt(document.getElementById("cb40b").value)-parseInt(document.getElementById("cb40a").value));
+	}
+	if(document.getElementById("cb41a").value!=="" && document.getElementById("cb41b").value !== "" && document.getElementById("cbcb41").value !== "") {
+		acco_fee = acco_fee + 2700*parseInt(document.getElementById("cbcb41").value)*(parseInt(document.getElementById("cb41b").value)-parseInt(document.getElementById("cb41a").value));
+	}
+	if(document.getElementById("cb42a").value!=="" && document.getElementById("cb42b").value !== "" && document.getElementById("cbcb42").value !== "") {
+		acco_fee = acco_fee + 2000*parseInt(document.getElementById("cbcb42").value)*(parseInt(document.getElementById("cb42b").value)-parseInt(document.getElementById("cb42a").value));
+	}
+	if(document.getElementById("cb43a").value!=="" && document.getElementById("cb43b").value !== "" && document.getElementById("cbcb43").value !== "") {
+		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb43").value)*(parseInt(document.getElementById("cb403").value)-parseInt(document.getElementById("cb43a").value));
+	}
+	if(document.getElementById("cb44a").value!=="" && document.getElementById("cb44b").value !== "" && document.getElementById("cbcb44").value !== "") {
+		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb44").value)*(parseInt(document.getElementById("cb44b").value)-parseInt(document.getElementById("cb44a").value));
+	}
+
+
+	return merch_fee;
 }
 
 

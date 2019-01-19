@@ -244,5 +244,6 @@ INSERT into `acco_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb40','2BHK',3600 ),
 ('cbcb41','1BHK',2700 ),
 ('cbcb42','Studio',2000 ),
-('cbcb43','Common Room',500 );
+('cbcb43','Common Room (Male)',500 );
+('cbcb44','Common Room (Female)',500 );
 
