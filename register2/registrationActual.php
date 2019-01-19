@@ -1160,7 +1160,7 @@ function getAccoFee(){
 	if(document.getElementById("cb43a").value!=="" && document.getElementById("cb43b").value !== "" && document.getElementById("cbcb43").value !== "") {
 			var diff=parseInt(document.getElementById("cb43b").value)-parseInt(document.getElementById("cb43a").value);
 		if (diff>0){
-		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb43").value)*(parseInt(document.getElementById("cb403").value)-parseInt(document.getElementById("cb43a").value));
+		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb43").value)*(parseInt(document.getElementById("cb43b").value)-parseInt(document.getElementById("cb43a").value));
 	}
 	}
 	if(document.getElementById("cb44a").value!=="" && document.getElementById("cb44b").value !== "" && document.getElementById("cbcb44").value !== "") {
