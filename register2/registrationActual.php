@@ -810,6 +810,7 @@ echo '</ul>';
 			<ul style="list-style-type:disc !important;">
 			<li style="list-style-type:disc !important;">For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. Parents of other competitors of any age can also stay here.</li>
 			<li style="list-style-type:disc !important;">For common rooms and hostel rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
+			<li style="list-style-type:disc !important;">All residents must carry an ID proof. <b>No refunds will be issued.</b></li>
 		</ul>
 		</div>
 	</div>
@@ -845,7 +846,7 @@ echo '</ul>';
 										<td class="tg-s268"> <select id="cbcb40" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 Rooms</option>
-											<option value="1">1 Rooms</option>
+											<option value="1">1 Room</option>
 											<option value="2">2 Rooms</option>
 											<option value="3">3 Rooms</option>
 											<option value="4">4 Rooms</option>
@@ -877,7 +878,7 @@ echo '</ul>';
 										<td class="tg-s268"> <select id="cbcb41" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 Rooms</option>
-											<option value="1">1 Rooms</option>
+											<option value="1">1 Room</option>
 											<option value="2">2 Rooms</option>
 											<option value="3">3 Rooms</option>
 											<option value="4">4 Rooms</option>
@@ -911,7 +912,7 @@ echo '</ul>';
 									</td>										<td class="tg-s268"> <select id="cbcb42" onchange="updateFee()">
 											<option value="" disabled="" selected="">Select</option>
 											<option value="0">0 Rooms</option>
-											<option value="1">1 Rooms</option>
+											<option value="1">1 Room</option>
 											<option value="2">2 Rooms</option>
 											<option value="3">3 Rooms</option>
 											<option value="4">4 Rooms</option>
@@ -992,17 +993,21 @@ echo '</ul>';
 										</select>
 									</td>
 								</tr>
-									<tr>
-										<td class="tg-s268">Hostel Room</td>
-										<td class="tg-s268" colspan="4">Coming Soon</td>
-								</tr>
-
 
 	</table>
 </div>
 
 
 	<div class="wrapper">
+		<div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input id="check1" type="checkbox" name="agree" value="agree" /> I agree with the terms and conditions above.
+                </label>
+            </div>
+        </div>
+    </div>
 		<div class="tab">
 			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch', '50%')">Previous</button></a>
 			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial', '84%')">Skip</button></a>
