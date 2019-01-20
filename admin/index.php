@@ -119,7 +119,7 @@ echo' <div class="col-lg-12 venue-info">
 						</div>';
 $acco_sql = "select name,price,quantity,check_in,check_out from 
 (select quantity,name,price,check_in,check_out from user_acco useracco inner join
-acco_catalog ON acco_catalog.item_id=useracco.item_id where email_id='$email') userdetails ";
+acco_catalog ON acco_catalog.item_id=useracco.item_id) userdetails ";
 $acco_result = $conn->query($acco_sql);
 if (mysqli_num_rows($acco_result)==0){
 echo '<p align="middle"> Nobody has purchased any accommodation. </p>';
