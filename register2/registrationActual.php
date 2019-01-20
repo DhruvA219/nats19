@@ -1210,7 +1210,34 @@ function getAccoFee(){
                            document.getElementsByClassName("progress-bar")[0].style.width = progress;
                         } 
 
-		} else {
+		}
+		if(tabName=='Unofficial'){
+			var flagAlert1= true;
+				if(document.getElementById("cbcb40").value !== "" && document.getElementById("cbcb40").value !== "0" && document.getElementById("cb40a").value !== "" && document.getElementById("cb40b").value !== "" ) {
+						if (document.getElementById("cb40a").value>=document.getElementById("cb40b").value){
+						flagAlert1=false;								
+					}
+				} 
+				if(document.getElementById("cbcb40").value !== "" && document.getElementById("cbcb40").value !== "0"){
+						if (document.getElementById("cb40a").value=="" || document.getElementById("cb40a").value==""){
+						flagAlert2=false;								
+					}
+				} 
+
+
+			if(flagAlert1==false) {
+				alert("Check-out date must be after Check-in date");
+				return false;
+			} 
+			else if(flagAlert2==false) {
+				alert("Please select a valid check-in and check-out date");
+				return false;
+			} else {
+                           document.getElementsByClassName("progress-bar")[0].style.width = progress;
+                        } 
+
+		}
+		 else {
                		 document.getElementsByClassName("progress-bar")[0].style.width = progress;
                 }
 		var i, tabcontent, tablinks;

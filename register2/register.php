@@ -154,7 +154,7 @@ if($data['success'] == 1){
    //  </script>
    //  ';
    echo '<script>
-        Instamojo.open("https://'.$mode.'.instamojo.com/@capitalcubing/'.$payment_id.'"); 
+        Instamojo.open("https://'.$mode.'.instamojo.com/@scoobydoobydoo93/'.$payment_id.'"); 
     </script>
     ';
    
