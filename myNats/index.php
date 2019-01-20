@@ -198,7 +198,7 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Quantity</th>
 									</tr>';
 
-		foreach($merch_result as $row){
+		foreach($acco_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
 			echo '<td class="tg-s268">₹'.$row['price'].'</td>';	
