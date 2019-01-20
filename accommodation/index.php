@@ -13,7 +13,7 @@ include('../header.php')
           <h2>Accommodation</h2>
         </div>
           <h2 class="smallhead">Options Inside Campus</h2>
-          <p>There are multiple stay options inside the campus, is available for pre-booking on a first-come first-serve basis on the registration page. Please refer to our <b><a href="../uploads/Accommodation_Campus.pdf" target="about_blank">Campus accommodation prospectus </a></b> for facility details and pictures.</p>
+          <p>There are multiple stay options inside the campus, and are available for pre-booking on a first-come first-serve basis on the registration page. Please refer to our <b><a href="../uploads/Accommodation_Campus.pdf" target="about_blank">Campus accommodation prospectus </a></b> for facility details and pictures.</p>
           </div>
                 <table class="fit-width">  
                   <tr>
