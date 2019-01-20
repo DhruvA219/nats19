@@ -247,3 +247,12 @@ INSERT into `acco_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb43','Common Room (Male)',500 ),
 ('cbcb44','Common Room (Female)',500 );
 
+
+INSERT into `user_acco` (`payment_id`, `email_id`, `item_id`, `quantity`,`check_in`,`check_out`) VALUES 
+('111','a2@3.com', 'cbcb40',3,'11 April','13 April');
+
+INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
+('MOJO9119805W64409004','raosahibji@gmail.com', 500 );
+
+MOJO9119805W64409004 | raosahibji@gmail.com                 |    500
+
