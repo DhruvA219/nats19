@@ -805,11 +805,11 @@ echo '</ul>';
 		<div class="col-11 col-lg-8">
 			<p align="middle"> Step 4/5</p>
 			<h3 align="middle"> Accommodation</h3>
-			<p align="middle">You can pre-book on-campus accommodation options here. You can do this later independent of your registration too if you like. For facility details, please refer to our <a href="https://nats19.in/uploads/Accommodation_Campus.pdf" target="about_blank">Campus Accommodation Prospectus</a></p>
+			<p align="middle">You can pre-book on-campus accommodation options here. For facility details, please refer to our <a href="https://nats19.in/uploads/Accommodation_Campus.pdf" target="about_blank">Campus Accommodation Prospectus</a>.</p>
 			<h3 align="middle" style="font-size:1.6rem;font-weight:bold;"> Please Read before Selecting</h3>
-			<ul style="list-style-type:disc !important";>
-			<li>For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. </li>
-			<li>For common rooms and hostel rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
+			<ul style="list-style-type:disc !important;">
+			<li style="list-style-type:disc !important;">For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. </li>
+			<li style="list-style-type:disc !important;">For common rooms and hostel rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
 		</ul>
 		</div>
 	</div>
