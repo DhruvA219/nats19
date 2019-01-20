@@ -204,7 +204,7 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">₹'.$row['price'].'</td>';	
 			echo '<td class="tg-s268">'.$row['check_in'].'</td>';	
 			echo '<td class="tg-s268">'.$row['check_out'].'</td>';	
-			echo '<td class="tg-s268">'.$row['total_quantity'].'</td>';	
+			echo '<td class="tg-s268">'.$row['quantity'].'</td>';	
 			echo '</tr>';
 		}
 echo '</table> </div>' ;
