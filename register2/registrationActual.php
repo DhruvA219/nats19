@@ -1240,7 +1240,7 @@ function getAccoFee(){
 				} 
 				}
 			if(flagAlert3==false) {
-				alert("You must agree to terms and conditions to select accommodation. Otherwise click on skip.");
+				alert("You must agree to terms and conditions to select accommodation.");
 				return false;
 			} 
 			if(flagAlert1==false) {
