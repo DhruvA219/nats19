@@ -145,7 +145,7 @@ else{ echo'<div class="wrapper">
 			echo '</tr>';
 			$check1=(int) explode(" ",$row['check_in'])[0];
 			$check2=(int) explode(" ",$row['check_out'])[0];
-			$acco_sum=$acco_sum+($row['price']*$row['_quantity']*($check2-$check1));
+			$acco_sum=$acco_sum+($row['price']*$row['quantity']*($check2-$check1));
 		}
 echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$acco_sum.'</b></div> </div>' ;
 }
