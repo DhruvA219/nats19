@@ -110,6 +110,46 @@ echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$m
 
 }
 
+echo' <div class="col-lg-12 venue-info">
+							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
+								<div class="col-11 col-lg-8">
+									<h4 align="middle"> Accommodation</h4>
+								</div>
+							</div>
+						</div>';
+$acco_sql = "select name,price,quantity,check_in,check_out from 
+(select quantity,name,price,check_in,check_out from user_acco useracco inner join
+acco_catalog ON acco_catalog.item_id=useracco.item_id where email_id='$email') userdetails ";
+$acco_result = $conn->query($acco_sql);
+if (mysqli_num_rows($acco_result)==0){
+echo '<p align="middle"> Nobody has purchased any accommodation. </p>';
+}
+else{ echo'<div class="wrapper">
+								<table>
+									<tr>
+										<th class="tg-s268">Item</th>
+										<th class="tg-s268">Price </th>
+										<th class="tg-s268">Check-In </th>
+										<th class="tg-s268">Check-Out </th>
+										<th class="tg-s268">Quantity</th>
+									</tr>';
+
+		$acco_sum=0;
+		foreach($acco_result as $row){
+			echo '<tr>';
+			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
+			echo '<td class="tg-s268">₹'.$row['price'].'</td>';	
+			echo '<td class="tg-s268">'.$row['check_in'].'</td>';	
+			echo '<td class="tg-s268">'.$row['check_out'].'</td>';	
+			echo '<td class="tg-s268">'.$row['quantity'].'</td>';	
+			echo '</tr>';
+			$check1=(int) explode(" ",$row['check_in'])[0]
+			$check2=(int) explode(" ",$row['check_in'])[0]
+			$acco_sum=$acco_sum+($row['price']*$row['_quantity']*($check2-$check1));
+		}
+echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$acco_sum.'</b></div> </div>' ;
+}
+
 
 
 echo' <div class="col-lg-12 venue-info">
