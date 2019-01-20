@@ -805,13 +805,209 @@ echo '</ul>';
 		<div class="col-11 col-lg-8">
 			<p align="middle"> Step 4/5</p>
 			<h3 align="middle"> Accommodation</h3>
-			<p align="middle">Coming soon </p>
-			<p align="middle">You will be able to pre-book campus accommodation options on this page from 20 January onwards. You can do this later independent of your registration.</p>
+			<p align="middle">You can pre-book on-campus accommodation options here. For facility details, please refer to our <a href="https://nats19.in/uploads/Accommodation_Campus.pdf" target="about_blank">Campus Accommodation Prospectus</a>.</p>
+			<h3 align="middle" style="font-size:1.6rem;font-weight:bold;">Terms and Conditions</h3>
+			<ul style="list-style-type:disc !important;">
+			<li style="list-style-type:disc !important;">For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. Parents of other competitors of any age can also stay here.</li>
+			<li style="list-style-type:disc !important;">For common rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
+			<li style="list-style-type:disc !important;">All residents must carry an ID proof. <b>No refunds will be issued.</b></li>
+		</ul>
 		</div>
 	</div>
 
+							<div class="wrapper">
+								<table>
+									<tr>
+										<th class="tg-s268">Room Type</th>
+										<th class="tg-s268">Price</th>
+										<th class="tg-s268">Check-In </th>
+										<th class="tg-s268">Check-Out</th>
+										<th class="tg-s268">Quantity</th>
+									</tr>
+									<tr>
+										<td class="tg-s268">2BHK</td>
+										<td class="tg-s268">₹3600</td>
+										<td class="tg-s268"> <select id="cb40a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb40b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb40" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="0">0 Rooms</option>
+											<option value="1">1 Room</option>
+											<option value="2">2 Rooms</option>
+											<option value="3">3 Rooms</option>
+											<option value="4">4 Rooms</option>
+											<option value="5">5 Rooms</option>
+											<option value="6">6 Rooms</option>
+											<option value="7">7 Rooms</option>
+										</select>
+									</td>
+								</tr>
+									<tr>
+										<td class="tg-s268">1BHK</td>
+										<td class="tg-s268">₹2700</td>
+											<td class="tg-s268"> <select id="cb41a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb41b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cbcb41" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="0">0 Rooms</option>
+											<option value="1">1 Room</option>
+											<option value="2">2 Rooms</option>
+											<option value="3">3 Rooms</option>
+											<option value="4">4 Rooms</option>
+											<option value="5">5 Rooms</option>
+											<option value="6">6 Rooms</option>
+											<option value="7">7 Rooms</option>
+											<option value="8">8 Rooms</option>
+											<option value="9">9 Rooms</option>
+											<option value="10">10 Rooms</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Studio</td>
+										<td class="tg-s268">₹2000</td>
+		<td class="tg-s268"> <select id="cb42a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb42b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
+										</select>
+									</td>										<td class="tg-s268"> <select id="cbcb42" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="0">0 Rooms</option>
+											<option value="1">1 Room</option>
+											<option value="2">2 Rooms</option>
+											<option value="3">3 Rooms</option>
+											<option value="4">4 Rooms</option>
+											<option value="5">5 Rooms</option>
+											<option value="6">6 Rooms</option>
+											<option value="7">7 Rooms</option>
+											<option value="8">8 Rooms</option>
+											<option value="9">9 Rooms</option>
+											<option value="10">10 Rooms</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Common Room (Male)</td>
+										<td class="tg-s268">₹500</td>
+		<td class="tg-s268"> <select id="cb43a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb43b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
+										</select>
+									</td>										<td class="tg-s268"> <select id="cbcb43" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="0">0 People</option>
+											<option value="1">1 People</option>
+											<option value="2">2 People</option>
+											<option value="3">3 People</option>
+											<option value="4">4 People</option>
+											<option value="5">5 People</option>
+											<option value="6">6 People</option>
+											<option value="7">7 People</option>
+											<option value="8">8 People</option>
+											<option value="9">9 People</option>
+											<option value="10">10 People</option>
+										</select>
+									</td>
+								</tr>
+	<tr>
+										<td class="tg-s268">Common Room (Female)</td>
+										<td class="tg-s268">₹500</td>
+		<td class="tg-s268"> <select id="cb44a" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="1">11 April</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+										</select>
+									</td>
+										<td class="tg-s268"> <select id="cb44b" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="2">12 April</option>
+											<option value="3">13 April</option>
+											<option value="4">14 April</option>
+											<option value="5">15 April</option>
+										</select>
+									</td>										<td class="tg-s268"> <select id="cbcb44" onchange="updateFee()">
+											<option value="" disabled="" selected="">Select</option>
+											<option value="0">0 People</option>
+											<option value="1">1 People</option>
+											<option value="2">2 People</option>
+											<option value="3">3 People</option>
+											<option value="4">4 People</option>
+											<option value="5">5 People</option>
+											<option value="6">6 People</option>
+											<option value="7">7 People</option>
+											<option value="8">8 People</option>
+											<option value="9">9 People</option>
+											<option value="10">10 People</option>
+										</select>
+									</td>
+								</tr>
+
+	</table>
+</div>
+
 
 	<div class="wrapper">
+		<div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input id="check1" type="checkbox" name="agree" value="agree" /> I agree with the terms and conditions above.
+                </label>
+            </div>
+        </div>
+    </div>
 		<div class="tab">
 			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch', '50%')">Previous</button></a>
 			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial', '84%')">Skip</button></a>
@@ -951,7 +1147,38 @@ function getMerchFee(){
 }
 
 function getAccoFee(){
-	return 0;
+	var acco_fee=0;
+	if(document.getElementById("cb40a").value!=="" && document.getElementById("cb40b").value !== "" && document.getElementById("cbcb40").value !== "") {
+		var diff=parseInt(document.getElementById("cb40b").value)-parseInt(document.getElementById("cb40a").value);
+		if (diff>0){
+		acco_fee = acco_fee + 3600*parseInt(document.getElementById("cbcb40").value)*(parseInt(document.getElementById("cb40b").value)-parseInt(document.getElementById("cb40a").value));
+	}
+	}
+	if(document.getElementById("cb41a").value!=="" && document.getElementById("cb41b").value !== "" && document.getElementById("cbcb41").value !== "") {
+			var diff=parseInt(document.getElementById("cb41b").value)-parseInt(document.getElementById("cb41a").value);
+		if (diff>0){
+		acco_fee = acco_fee + 2700*parseInt(document.getElementById("cbcb41").value)*(parseInt(document.getElementById("cb41b").value)-parseInt(document.getElementById("cb41a").value));
+	}
+	}
+	if(document.getElementById("cb42a").value!=="" && document.getElementById("cb42b").value !== "" && document.getElementById("cbcb42").value !== "") {
+		var diff=parseInt(document.getElementById("cb42b").value)-parseInt(document.getElementById("cb42a").value);
+		if (diff>0){
+		acco_fee = acco_fee + 2000*parseInt(document.getElementById("cbcb42").value)*(parseInt(document.getElementById("cb42b").value)-parseInt(document.getElementById("cb42a").value));
+	}
+	}
+	if(document.getElementById("cb43a").value!=="" && document.getElementById("cb43b").value !== "" && document.getElementById("cbcb43").value !== "") {
+			var diff=parseInt(document.getElementById("cb43b").value)-parseInt(document.getElementById("cb43a").value);
+		if (diff>0){
+		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb43").value)*(parseInt(document.getElementById("cb43b").value)-parseInt(document.getElementById("cb43a").value));
+	}
+	}
+	if(document.getElementById("cb44a").value!=="" && document.getElementById("cb44b").value !== "" && document.getElementById("cbcb44").value !== "") {
+			var diff=parseInt(document.getElementById("cb44b").value)-parseInt(document.getElementById("cb44a").value);
+		if (diff>0){
+		acco_fee = acco_fee + 500*parseInt(document.getElementById("cbcb44").value)*(parseInt(document.getElementById("cb44b").value)-parseInt(document.getElementById("cb44a").value));
+	}
+}
+	return acco_fee;
 }
 
 
@@ -992,9 +1219,41 @@ function getAccoFee(){
                            document.getElementsByClassName("progress-bar")[0].style.width = progress;
                         } 
 
-		} else {
-               		 document.getElementsByClassName("progress-bar")[0].style.width = progress;
-                }
+		}
+		if(tabName=='Unofficial'){
+			var flagAlert1= true;
+			var flagAlert2= true;	
+			var flagAlert3 = true;
+			if (document.getElementById('check1').checked==false){
+				flagAlert3=false;
+			}		
+			for(var i = 40; i <= 44; i++) {
+				if(document.getElementById("cbcb"+i).value !== "" && document.getElementById("cbcb"+i).value !== "0" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "" ) {
+						if (document.getElementById("cb"+i+"a").value>=document.getElementById("cb"+i+"b").value){
+						flagAlert1=false;								
+					}
+				} 
+				if(document.getElementById("cbcb"+i).value !== "" && document.getElementById("cbcb"+i).value !== "0"){
+						if (document.getElementById("cb"+i+"a").value=="" || document.getElementById("cb"+i+"b").value==""){
+						flagAlert2=false;								
+					}
+				} 
+				}
+			if(flagAlert3==false) {
+				alert("You must agree to terms and conditions to select accommodation.");
+				return false;
+			} 
+			if(flagAlert1==false) {
+				alert("Check-out date must be after Check-in date");
+				return false;
+			} 
+			else if(flagAlert2==false) {
+				alert("Please select a valid check-in and check-out date");
+				return false;
+			} else {
+                           document.getElementsByClassName("progress-bar")[0].style.width = progress;
+                        } 
+                    }
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent");
 		for (i = 0; i < tabcontent.length; i++) {
@@ -1033,6 +1292,19 @@ document.getElementsByClassName("progress-bar")[0].style.width = progress;
 			document.getElementById("cbcb" + i).value = "";
 		}
 }
+
+		if(tabName=='Unofficial'){
+
+		//For acco page
+		for(var i = 40; i <=44; i++){
+			document.getElementById("cbcb" + i).value = "";
+			document.getElementById("cb" + i + "a").value = "";
+			document.getElementById("cb" + i + "b").value = "";
+		}
+}
+
+
+
 var i, tabcontent, tablinks;
 tabcontent = document.getElementsByClassName("tabcontent");
 for (i = 0; i < tabcontent.length; i++) {
@@ -1089,8 +1361,15 @@ $("#register-checkout").click(function() {
 
 	}
 
+	var acco = {};
+	for (var i=40;i<=44;i++){
+	if(document.getElementById("cbcb" +i).value!=="" && document.getElementById("cbcb" +i).value!=="0" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "") {
+		acco['cbcb'+i]=[parseInt(document.getElementById("cb"+i+"a").value),parseInt(document.getElementById("cb"+i+"b").value),parseInt(document.getElementById("cbcb"+i).value)];
+	}
+	}
 
-	$.post( "register.php",{travel: travel, events: events, merch: merch}, function( script ) {
+
+	$.post( "register.php",{travel: travel, events: events, merch: merch, acco : acco}, function( script ) {
 		var scriptTag = $(script).text();
 		eval(scriptTag);
 	});

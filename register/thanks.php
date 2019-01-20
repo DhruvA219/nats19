@@ -254,6 +254,41 @@ else{
         }
       }
 
+//update acco in DB
+      if(!is_null($_SESSION['acco'])){
+        foreach ($_SESSION['acco'] as $key => $value) {
+          $check_in="11 April";
+          if ($value[0]==1){
+            $check_in="11 April";
+          }
+          if ($value[0]==2){
+            $check_in="12 April";
+          }
+          if ($value[0]==3){
+            $check_in="13 April";
+          }
+          if ($value[0]==4){
+            $check_in="14 April";
+          }
+          $check_out="12 April";
+          if ($value[1]==2){
+            $check_out="12 April";
+          }
+          if ($value[1]==3){
+            $check_out="13 April";
+          }
+          if ($value[1]==4){
+            $check_out="14 April";
+          }
+          if ($value[1]==5){
+            $check_out="15 April";
+          }
+          $acco_sql="INSERT into `user_acco` (`payment_id`, `email_id`, `item_id`, `quantity`,`check_in`,`check_out`) VALUES ('$payment_id','$email_id', '$key',$value[2],'$check_in','$check_out')";
+          $conn->query($acco_sql);
+        }
+      }
+
+
 
     }
   }
