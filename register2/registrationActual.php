@@ -805,8 +805,10 @@ echo '</ul>';
 		<div class="col-11 col-lg-8">
 			<p align="middle"> Step 4/5</p>
 			<h3 align="middle"> Accommodation</h3>
-			<p align="middle">Coming soon </p>
-			<p align="middle">You will be able to pre-book campus accommodation options on this page from 20 January onwards. You can do this later independent of your registration.</p>
+			<p align="middle">You can pre-book on-campus accommodation options here. You can do this later independent of your registration too if you like. For facility details, please refer to our <a href="https://nats19.in/uploads/Accommodation_Campus.pdf" target="about_blank">Campus Accommodation Prospectus</a></p>
+			<h3 align="middle" style="font-size:0.6em;"> Please Read before Selecting</h3>
+			<p align="middle">For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. </p>
+			<p align="middle">For common rooms and hostel rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</p>
 		</div>
 	</div>
 
@@ -1213,17 +1215,18 @@ function getAccoFee(){
 		}
 		if(tabName=='Unofficial'){
 			var flagAlert1= true;
-				if(document.getElementById("cbcb40").value !== "" && document.getElementById("cbcb40").value !== "0" && document.getElementById("cb40a").value !== "" && document.getElementById("cb40b").value !== "" ) {
-						if (document.getElementById("cb40a").value>=document.getElementById("cb40b").value){
+			var flagAlert2= true;			
+			for(var i = 40; i <= 44; i++) {
+				if(document.getElementById("cbcb"+i).value !== "" && document.getElementById("cbcb"+i).value !== "0" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "" ) {
+						if (document.getElementById("cb"+i+"a").value>=document.getElementById("cb"+i+"b").value){
 						flagAlert1=false;								
 					}
 				} 
-				if(document.getElementById("cbcb40").value !== "" && document.getElementById("cbcb40").value !== "0"){
-						if (document.getElementById("cb40a").value=="" || document.getElementById("cb40a").value==""){
+				if(document.getElementById("cbcb"+i).value !== "" && document.getElementById("cbcb"+i).value !== "0"){
+						if (document.getElementById("cb"+i+"a").value=="" || document.getElementById("cb"+i+"b").value==""){
 						flagAlert2=false;								
 					}
 				} 
-
 
 			if(flagAlert1==false) {
 				alert("Check-out date must be after Check-in date");
