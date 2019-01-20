@@ -1227,7 +1227,7 @@ function getAccoFee(){
 						flagAlert2=false;								
 					}
 				} 
-
+		}
 			if(flagAlert1==false) {
 				alert("Check-out date must be after Check-in date");
 				return false;
@@ -1239,10 +1239,6 @@ function getAccoFee(){
                            document.getElementsByClassName("progress-bar")[0].style.width = progress;
                         } 
 
-		}
-		 else {
-               		 document.getElementsByClassName("progress-bar")[0].style.width = progress;
-                }
 		var i, tabcontent, tablinks;
 		tabcontent = document.getElementsByClassName("tabcontent");
 		for (i = 0; i < tabcontent.length; i++) {
