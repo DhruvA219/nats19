@@ -1222,7 +1222,11 @@ function getAccoFee(){
 		}
 		if(tabName=='Unofficial'){
 			var flagAlert1= true;
-			var flagAlert2= true;			
+			var flagAlert2= true;	
+			var flagAlert3 = true;
+			if (document.getElementById('check1').checked==false){
+				flagAlert3=false;
+			}		
 			for(var i = 40; i <= 44; i++) {
 				if(document.getElementById("cbcb"+i).value !== "" && document.getElementById("cbcb"+i).value !== "0" && document.getElementById("cb"+i+"a").value !== "" && document.getElementById("cb"+i+"b").value !== "" ) {
 						if (document.getElementById("cb"+i+"a").value>=document.getElementById("cb"+i+"b").value){
@@ -1235,6 +1239,10 @@ function getAccoFee(){
 					}
 				} 
 				}
+			if(flagAlert3==false) {
+				alert("You must agree to terms and conditions to select accommodation. Otherwise click on skip.");
+				return false;
+			} 
 			if(flagAlert1==false) {
 				alert("Check-out date must be after Check-in date");
 				return false;
