@@ -809,7 +809,7 @@ echo '</ul>';
 			<h3 align="middle" style="font-size:1.6rem;font-weight:bold;">Terms and Conditions</h3>
 			<ul style="list-style-type:disc !important;">
 			<li style="list-style-type:disc !important;">For 2BHK,1BHK and Studio apartments, only competitors below the age of 18 will be allowed entry with a parent/guardian/sibling. The presence of at least one parent/guardian is necessary for entry in any of these facilities. Parents of other competitors of any age can also stay here.</li>
-			<li style="list-style-type:disc !important;">For common rooms and hostel rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
+			<li style="list-style-type:disc !important;">For common rooms, only competitors aged 18 or more will be allowed. Parents are not allowed in hostels.</li>
 			<li style="list-style-type:disc !important;">All residents must carry an ID proof. <b>No refunds will be issued.</b></li>
 		</ul>
 		</div>
