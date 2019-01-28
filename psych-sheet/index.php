@@ -170,7 +170,8 @@ function formatCentiSecondsPart($value) {
                 if($single == 1) {
                     return $result;
                 } else {
-                return $result/100;
+                $result1=$result/100;
+                return number_format((float)$result1, 2, '.', '');
                 }
             }
           else if($eventId == '333mbf') {
