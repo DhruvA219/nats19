@@ -51,6 +51,7 @@ $travel_sql = "select sum(number_of_people) as total_people,source,destination,`
 (select number_of_people,source,destination,`time` from user_travel usertravel inner join
 travel_catalog ON travel_catalog.item_id=usertravel.item_id) userdetails group by source,destination,`time`";
 $travel_result = $conn->query($travel_sql);
+$travel_sum=0;
 if (mysqli_num_rows($travel_result)==0){
 echo '<p align="middle"> Nobody has reserved travel. </p>';
 }
@@ -62,7 +63,6 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">To</th>
 										<th class="tg-s268">Number of Tickets</th>
 									</tr>';
-		$travel_sum=0;
 		foreach($travel_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268">'.$row['time'].'</td>';	
@@ -87,6 +87,7 @@ $merch_sql = "select sum(quantity) as total_quantity,name,price from
 (select quantity,name,price from user_merch usermerch inner join
 merch_catalog ON merch_catalog.item_id=usermerch.item_id) userdetails group by name,price";
 $merch_result = $conn->query($merch_sql);
+$merch_sum=0;
 if (mysqli_num_rows($merch_result)==0){
 echo '<p align="middle"> Nobody has purchased any merchandise. </p>';
 }
@@ -97,7 +98,7 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Price </th>
 										<th class="tg-s268">Quantity</th>
 									</tr>';
-		$merch_sum=0;
+		
 		foreach($merch_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
@@ -121,6 +122,7 @@ $acco_sql = "select name,price,quantity,check_in,check_out from
 (select quantity,name,price,check_in,check_out from user_acco useracco inner join
 acco_catalog ON acco_catalog.item_id=useracco.item_id) userdetails ";
 $acco_result = $conn->query($acco_sql);
+$acco_sum=0;
 if (mysqli_num_rows($acco_result)==0){
 echo '<p align="middle"> Nobody has purchased any accommodation. </p>';
 }
@@ -134,7 +136,6 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Quantity</th>
 									</tr>';
 
-		$acco_sum=0;
 		foreach($acco_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['name'].'</td>';	
@@ -149,6 +150,31 @@ else{ echo'<div class="wrapper">
 		}
 echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$acco_sum.'</b></div> </div>' ;
 }
+
+echo' <div class="col-lg-12 venue-info">
+							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
+								<div class="col-11 col-lg-8">
+									<h4 align="middle"> registration</h4>
+								</div>
+							</div>
+						</div>';
+$regcnt_sql = "select count(*) as count from registrations" ;
+$regcnt_result = $conn->query($regcnt_sql);
+foreach($regcnt_result as $row){
+echo 'Total Number of registrations is '.$row['count'];
+}
+$paycnt_sql = "select * from payment" ;
+$paycnt_result = $conn->query($paycnt_sql);
+$total_collection=0;
+foreach($paycnt_result as $row){
+	$amount=$row['amount'];
+	$fee=(0.0236*$amount+3.54);
+	$total_collection=$total_collection+$amount-$fee;
+}
+echo 'Total Money collected assuming fixed Tax is '.$total_collection;
+$total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
+echo 'Total Money collected from Registrations is '.$total_reg;
+
 
 
 
