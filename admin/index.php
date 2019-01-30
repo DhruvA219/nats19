@@ -172,15 +172,14 @@ $total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
  	echo'<div class="wrapper">
 								<table>';
 								foreach($regcnt_result as $row){
-echo '<tr class="ts-s268"> Total Number of registrations </tr> <tr class="ts-s268">'  .$row['count'].'</tr>';
+echo '<tr> <td class="ts-s268"> Total Number of registrations </td> <td class="ts-s268">'  .$row['count'].'</td> </tr>';
 }
-echo '<tr>
-										<tr class="tg-s268">Approximate money collected (after Tax)</tr>
-										<tr class="tg-s268">'.$total_collection.'</tr>
+echo '<tr> <td class="tg-s268">Approximate money collected (after Tax)</td>
+										<td class="tg-s268">'.$total_collection.'</td>
 									</tr>
 									<tr>
-										<tr class="tg-s268">Total money from registrations (after Tax)</tr>
-										<tr class="tg-s268">'.$total_reg.'</tr>
+										<td class="tg-s268">Total money from registrations (after Tax)</td>
+										<td class="tg-s268">'.$total_reg.'</td>
 									</tr>
 									</table>
 									</div>';
