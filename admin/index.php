@@ -170,7 +170,7 @@ foreach($paycnt_result as $row){
 }
 $total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
  	echo'<div class="wrapper">
-								<table>'
+								<table>';
 								foreach($regcnt_result as $row){
 echo '<tr class="ts-s268"> Total Number of registrations </tr> <tr class="ts-s268">'  .$row['count'].'</tr>';
 }
