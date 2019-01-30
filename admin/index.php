@@ -174,8 +174,7 @@ $total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
 								foreach($regcnt_result as $row){
 echo '<tr class="ts-s268"> Total Number of registrations </tr> <tr class="ts-s268">'  .$row['count'].'</tr>';
 }
-
-									<tr>
+echo '<tr>
 										<tr class="tg-s268">Approximate money collected (after Tax)</tr>
 										<tr class="tg-s268">'.$total_collection.'</tr>
 									</tr>
