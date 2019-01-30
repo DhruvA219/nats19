@@ -160,9 +160,6 @@ echo' <div class="col-lg-12 venue-info">
 						</div>';
 $regcnt_sql = "select count(*) as count from registrations" ;
 $regcnt_result = $conn->query($regcnt_sql);
-foreach($regcnt_result as $row){
-echo 'Total Number of registrations is '.$row['count'];
-}
 $paycnt_sql = "select * from payment" ;
 $paycnt_result = $conn->query($paycnt_sql);
 $total_collection=0;
@@ -173,14 +170,18 @@ foreach($paycnt_result as $row){
 }
 $total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
  	echo'<div class="wrapper">
-								<table>
+								<table>'
+								foreach($regcnt_result as $row){
+echo '<tr class="ts-s268"> Total Number of registrations </tr> <tr class="ts-s268">'  .$row['count'].'</tr>';
+}
+
 									<tr>
-										<tr class="tg-s268">Approximate money collected (after Tax)</th>
-										<th class="tg-s268">'.$total_collection.'</th>
+										<tr class="tg-s268">Approximate money collected (after Tax)</tr>
+										<tr class="tg-s268">'.$total_collection.'</tr>
 									</tr>
 									<tr>
-										<tr class="tg-s268">Total money from registrations (after Tax)</th>
-										<th class="tg-s268">'.$total_reg.'</th>
+										<tr class="tg-s268">Total money from registrations (after Tax)</tr>
+										<tr class="tg-s268">'.$total_reg.'</tr>
 									</tr>
 									</table>
 									</div>';
