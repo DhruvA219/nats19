@@ -171,10 +171,19 @@ foreach($paycnt_result as $row){
 	$fee=(0.0236*$amount+3.54);
 	$total_collection=$total_collection+$amount-$fee;
 }
-echo 'Total Money collected assuming fixed Tax is '.$total_collection;
 $total_reg=$total_collection-$travel_sum-$merch_sum-$acco_sum;
-echo 'Total Money collected from Registrations is '.$total_reg;
-
+ 	echo'<div class="wrapper">
+								<table>
+									<tr>
+										<tr class="tg-s268">Approximate money collected (after Tax)</th>
+										<th class="tg-s268">'.$total_collection.'</th>
+									</tr>
+									<tr>
+										<tr class="tg-s268">Total money from registrations (after Tax)</th>
+										<th class="tg-s268">'.$total_reg.'</th>
+									</tr>
+									</table>
+									</div>';
 
 
 
