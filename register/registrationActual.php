@@ -1035,6 +1035,13 @@ echo '</ul>';
 					<td class="tg-s268"> To unwind after the competition, we are organizing an official trip on Monday, 15th April after the competition to Worlds of Wonder water park. </td>
 					<td class="tg-s268"> <a href="https://goo.gl/forms/E5NBXfad4BnO9H262" target="about_blank"> Link </a> </td>
 				</tr>
+                                <tr>
+                                        <td class="tg-s268"> States Cup </td>
+                                        <td class="tg-s268"> Inspired by the success of Nations Cup at World Championship 2017, teams from states all over India will compete in a knockout format. You can apply in teams of 3. Please refer to the registration link for detailed instructions.
+ </td>
+                                        <td class="tg-s268"> <a href="https://goo.gl/forms/oO81QuxLS8KSFEqj1" target="about_blank"> Link </a> </td>
+                                </tr>
+
 			</table>
 		</div>
 

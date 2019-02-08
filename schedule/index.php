@@ -776,7 +776,7 @@ include('../header.php')
                 </tr>
                 <tr>
                   <td class="tg-0pky">16:00</td>
-                  <td class="tg-0pky" colspan="4" rowspan="3" bgcolor="#ffe082">Unofficial Event</td>
+                  <td class="tg-0pky" colspan="4" rowspan="3" bgcolor="#ffe082">States Cup</td>
 
                 </tr>
                 <tr>

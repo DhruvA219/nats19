@@ -208,7 +208,7 @@ echo' <div class="col-lg-12 venue-info">
 		foreach($page_result as $row){
 			echo '<tr>';
 			echo '<td class="tg-s268 lefttd">'.$row['page'].'</td>';	
-			echo '<td class="tg-s268">₹'.$row['view_date'].'</td>';	
+			echo '<td class="tg-s268">'.$row['view_date'].'</td>';	
 			echo '<td class="tg-s268">'.$row['count'].'</td>';	
 			echo '</tr>';
 			$views_sum=$views_sum+$row['count'];
