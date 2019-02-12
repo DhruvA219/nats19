@@ -24,13 +24,13 @@ include('../header.php');
 				<div class>
 				</div>
 
-				<p> You can buy all the cool stuff on the <a href="https://nats19.in/register" target="about_blank">register page<a> after login. <p>
+				<p> You can buy all the cool stuff during <a href="https://nats19.in/register" target="about_blank">registration<a> after login. <p>
 				</div>
 
 				<section id="Regforevent" class="section-with-bg">
 <div id="Merch" class="tabcontent">
-	<div class="row justify-content-center">
-		<div class="col-11 col-lg-11">
+	<div class="row justify-content-center" style="width:100% !important">
+		<div class="col-12 col-lg-12">
 			<p align="middle"><b>Note : </b>All pictures shown are for illustration purpose only. Actual product may vary slightly.</p>
 			<div class="wrapper">
 				<div class="uldiv">
