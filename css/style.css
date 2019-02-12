@@ -125,6 +125,13 @@ h6 {
   position: relative;
   padding-bottom: 20px;
 }
+.section-header-2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 20px;
+}
+
 
 .section-header::before {
   content: '';
@@ -1209,6 +1216,10 @@ iframe{
 --------------------------------------------------------------*/
 
 #sponsors {
+  padding: 60px 0;
+}
+
+#sponsors2 {
   padding: 60px 0;
 }
 
