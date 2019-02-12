@@ -527,7 +527,7 @@ document.getElementById(tabName).style.display = "block";
 updateFee();
 }
 
-document.getElementById('Events').style.display = "block";
+document.getElementById('Merch').style.display = "block";
 //$("#defaultEvents")[0].className+=" active";
 
 
