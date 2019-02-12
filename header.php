@@ -133,7 +133,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
                 <li class="sub-nav-item events"><a class="sub-nav-link" href="../competitors">Competitors</a></li>
             </ul>
           </li>
-        <li class="<?php echo ($_SERVER['PHP_SELF'] == "/shop/index.php" ? "menu-active" : "");?>"><a href="../">Shop</a></li>
+        <li class="<?php echo ($_SERVER['PHP_SELF'] == "/shop/index.php" ? "menu-active" : "");?>"><a href="../shop">Shop</a></li>
 
           <li class="<?php echo (($_SERVER['PHP_SELF'] == "/transport/index.php" || $_SERVER['PHP_SELF'] == "/accommodation/index.php") ? "menu-active" : "");?>"><a href="#">Travel</a>
             <ul class="sub-nav">
