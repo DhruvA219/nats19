@@ -31,9 +31,6 @@ include('../header.php');
 <div id="Merch" class="tabcontent">
 	<div class="row justify-content-center">
 		<div class="col-11 col-lg-11">
-			<p align="middle"> Step 3/5</p>
-			<h3 align="middle"> Merchandise</h3>
-			<p align="middle">Make your Indian Nationals experience amazing by buying our amazing t-shirts and other stuff.</p>
 			<p align="middle"><b>Note : </b>All pictures shown are for illustration purpose only. Actual product may vary slightly.</p>
 			<div class="wrapper">
 				<div class="uldiv">
@@ -42,50 +39,11 @@ include('../header.php');
 							<img src="../img/merchandise/tshirt.png" alt="">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
-						<select id="cbcb27" onchange="updateFee()">
-							<option value="" disabled selected>Size</option>
-							<option value="S">S</option>
-							<option value="M">M</option>
-							<option value="L">L</option>
-							<option value="XL">XL</option>
-						</select>
-
-
-						<select id="cbcb28" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
-						</li>
-
 
 						<li>
 							<img src="../img/merchandise/mug.png" alt="">
 							<h3>Mug</h3>
 							<p> ₹299</p>
-						<select id="cbcb29" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 
 						<li>
@@ -93,20 +51,6 @@ include('../header.php');
 							<img src="../img/merchandise/wristband.png" alt="">
 							<h3>Wrist Band</h3>
 							<p> ₹99</p>
-						<select id="cbcb30" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 
 						<li>
@@ -114,146 +58,46 @@ include('../header.php');
 							<img src="../img/merchandise/caps.png" alt="">
 							<h3>Cap</h3>
 							<p> ₹249</p>
-						<select id="cbcb31" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 
 						<li>
 							<img src="../img/merchandise/badge.png" alt="">
 							<h3>Pin Badge</h3>
 							<p> ₹49</p>
-						<select id="cbcb32" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 
 						<li>
 							<img src="../img/merchandise/magnetbadge.png" alt="">
 							<h3>Magnetic Badge</h3>
 							<p> ₹99</p>
-						<select id="cbcb33" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 
 						<li>
 							<img src="../img/merchandise/notebook.png" alt="">
 							<h3>Writing Pad</h3>
 							<p> ₹49</p>
-						<select id="cbcb34" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 						<li>
 							<img src="../img/merchandise/keychain.png" alt="">
 							<h3>Keychain</h3>
 							<p> ₹199</p>
-						<select id="cbcb35" onchange="updateFee()" >
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 						<li>
 							<img src="../img/merchandise/logo2.png" alt="">
 							<h3>Nats Logo Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb36" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 						<li>
 							<img src="../img/merchandise/logo1.png" alt="">
 							<h3>Cuber Soul Sticker</h3>
 							<p> ₹19</p>
-						<select id="cbcb37" onchange="updateFee()">
-							<option value="" disabled selected>Quantity</option>
-							<option value="0">0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						</select>
 						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="wrapper">
 				<div class="tab">
-					<a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel', '24%')">Previous</button></a>
-					<a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation', '75%')">Skip</button></a>
-					<a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '75%')">Save and Proceed</button></a>
+					<a href="../register"><button class="tablinks" onclick="">Buy Now </button></a>
 				</div>
 			</div>
 		</div>
