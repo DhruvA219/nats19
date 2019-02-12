@@ -20,49 +20,15 @@ include('../header.php');
 	<section id="buy-tickets" class="section-with-bg wow fadeInUp">
 		<div class="container">
 			<div class="section-header">
-				<h2>Registration</h2>
+				<h2>Shop</h2>
 				<div class>
 				</div>
 
-				<p> You can register for everything related to Indian Nationals here. All steps are optional. <p>
+				<p> You can buy all the cool stuff on the <a href="https://nats19.in/register" target="about_blank">register page<a> after login. <p>
 				</div>
 
 				<section id="Regforevent" class="section-with-bg">
-                                                <div class="regprogressbar">
-            <table >
-              <tr >
-                <td >Events</td>
-                <td >Merchandise</td>
-                <td >Unofficial Events</td>
-              </tr>
-              <tr >
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-              </tr>
-            </table>
-            <div class="progressouter">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                aria-valuemin="0" aria-valuemax="100" style="width:16%">
-                </div>
-                <img src="../img/progress.svg" alt="" class="progressbarimg">
-                <img src="../img/progress-done.svg" alt="" class="progressbarimgend" >
-              </div>
-            </div>
-
-              <table style="display: table; width: 100%; margin: -8px;">
-                <tr >
-                  <td ><img src="../img/progress-marker.svg" alt="" class="bottompointer"></td>
-                  <td ><img src="../img/progress-marker.svg" alt="" class="bottompointer"></td>
-                </tr>
-                <tr >
-                  <td >Travel</td>
-                  <td >Accomodation</td>
-                </tr>
-              </table>
-            </div>
-					<div id="Events" class="tabcontent">
+             		<div id="Events" class="tabcontent">
 						<div class="col-lg-12 venue-info">
 							<div class="row justify-content-center">
                                                                         <div class="col-11 col-lg-8">
