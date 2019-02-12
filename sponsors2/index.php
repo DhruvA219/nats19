@@ -20,7 +20,7 @@ height: auto;
     ============================-->
     <section id="sponsors2" class="section-with-bg wow fadeInUp">
          <div class="container">
-        <div class="section-header-2">
+        <div class="section-header">
           <h2>Sponsors</h2>
         </div>
 
