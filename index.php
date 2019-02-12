@@ -152,7 +152,6 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
 
           <nav id="nav-menu-container">
             <ul class="nav-menu">
-              <li class="<?php echo ($_SERVER['PHP_SELF'] == "/index.php" ? "menu-active" : "");?>"><a href="">Home</a></li>
               <li class="<?php echo (($_SERVER['PHP_SELF'] == "/venue/index.php" || $_SERVER['PHP_SELF'] == "/team/index.php") ? "menu-active" : "");?>"><a href="#">About</a>
                 <ul class="sub-nav">
                   <li class="sub-nav-item programs"><a class="sub-nav-link" href="venue">Venue</a></li>
@@ -167,6 +166,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
                   <li class="sub-nav-item events"><a class="sub-nav-link" href="competitors">Competitors</a></li>
                 </ul>
               </li>
+              <li class="<?php echo ($_SERVER['PHP_SELF'] == "/shop/index.php" ? "menu-active" : "");?>"><a href="">Shop</a></li>
 
               <li class="<?php echo (($_SERVER['PHP_SELF'] == "/transport/index.php" || $_SERVER['PHP_SELF'] == "/accommodation/index.php") ? "menu-active" : "");?>"><a href="#">Travel</a>
                 <ul class="sub-nav">
