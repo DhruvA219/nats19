@@ -5,16 +5,27 @@
 //
 session_start();
 
-if(!isset($_SESSION['email'])) {
+if (!isset($_SESSION['email'])) {
 	header('location:login-to-continue.php');
 }
+        $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+	$level_check_sql = "select * from `leaderboard` where email_id='".$_SESSION['email']."'";
+	$result=$conn->query($level_check_sql);
+       	if(mysqli_num_rows($result)>0)
+	{
+	foreach($result as $row){
+	$_SESSION['question_id']=(string)$row['question_id'];
+	}
+	}
+	
+
 
 include('../header.php');
 
 
 if(isset($_SESSION['success'])) {
 	if($_SESSION['success'] === '1'){
-	
+   echo "a";	
 	}
 	unset($_SESSION['success']);
 }
@@ -35,7 +46,12 @@ if(isset($_SESSION['success'])) {
           <h2> Treasure Hunt Bro! </h2>
         </div>
 <?php
+if(!isset($_SESSION['question_id'])){
 include('1.php');
+}
+else{
+include($_SESSION['question_id'].'.php');
+}
 ?>
 
 	<form action="evaluate.php" method="POST">

@@ -14,12 +14,18 @@ if(isset($_POST['btn'])) {
 	$answer_check_sql = "select * from `treasures` where question_id=".$questionId." and answer='".$answer."'";
 	$result=$conn->query($answer_check_sql);
 	$success=0;
+	$email_id=$_SESSION['email'];
        	if(mysqli_num_rows($result)>0)
        	{
 		$success=1;
 		$questionId=(int)$questionId;
 		$questionId+=1;
 		$questionId=(string)$questionId;
+		$remove_sql = "delete from leaderboard where email_id='".$email_id."'";
+	        $conn->query($remove_sql);
+          	$insert_sql = "insert into `leaderboard` (`email_id`, `question_id`) VALUES ('".$email_id."',".(int)$questionId.")"; 
+	       $conn->query($insert_sql);
+
 	}
 	$_SESSION['success'] = $success;
 	$_SESSION['question_id']=$questionId;
