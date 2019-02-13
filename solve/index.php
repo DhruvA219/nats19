@@ -5,6 +5,11 @@ include('../header.php');
 // Based on success or failure show a green or red banner with appropriate message.
 //
 session_start();
+session_start();
+if(!isset($_SESSION['email'])) {
+	header('location:../register/login-to-continue.php');
+}
+
 if(isset($_SESSION['success'])) {
 	if($_SESSION['success'] === '1'){
 	
@@ -25,7 +30,7 @@ if(isset($_SESSION['success'])) {
         </div>
 
 	<form action="evaluate.php" method="POST">
-	  <input type="text" id="answer" name="answer" />
+	  <input type="text" id="answer" name="answer" maxlength="60" />
           <!-- Here put php code to get the questionId and echo the tag in the next line. -->
 <?php
 if(isset($_SESSION['question_id'])) {
