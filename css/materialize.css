@@ -5247,8 +5247,8 @@ small {
 .btn-large[disabled]:hover,
 .btn-small[disabled]:hover,
 .btn-flat[disabled]:hover {
-  background-color: #DFDFDF !important;
-  color: #9F9F9F !important;
+  background-color: #656978 !important;
+  color: #656978 !important;
 }
 
 .btn, .btn-large, .btn-small,
@@ -5271,13 +5271,13 @@ small {
 
 .btn:focus, .btn-large:focus, .btn-small:focus,
 .btn-floating:focus {
-  background-color: #1d7d74;
+  background-color: #656978;
 }
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: #2f3138;
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: background-color .2s ease-out;
@@ -5286,7 +5286,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #2bbbad;
+  background-color: #121316;;
 }
 
 .btn-floating {
@@ -5299,7 +5299,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #656978;
   border-radius: 50%;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
@@ -5308,7 +5308,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #656978  ;
 }
 
 .btn-floating:before {

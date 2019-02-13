@@ -29,6 +29,65 @@ include('../header.php')
           </div>
         </div>
 
+        <div class="row justify-content-center">
+          <div class="treasurehunt question">
+            <h1> Level 0 </h1>
+            <img src="../img/placeholder.png">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <div class="row">
+              <div class="input-field col s6">
+                <input placeholder="Your Answer" id="answer" type="text" class="validate">
+
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+          <div class="treasurehunt rank">
+              <div class="addborder">
+              <h1> Top Rankers </h1>
+              <table>
+                <tr>
+                  <th> Rank </th>
+                  <th> Name </th>
+                  <th> Level </th>
+                </tr>
+                <tr>
+                  <td> 1 </td>
+                  <td> Kamaal Khan </td>
+                  <td> 69 </td>
+                </tr>
+                <tr>
+                  <td> 2 </td>
+                  <td> Kamaal Khan </td>
+                  <td> 69 </td>
+                </tr>
+                <tr>
+                  <td> 3 </td>
+                  <td> Kamaal Khan </td>
+                  <td> 69 </td>
+                </tr>
+                <tr class="personalrank">
+                  <td> 10 </td>
+                  <td> Kamaal Khan </td>
+                  <td> 69 </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td><a href = "#">See All</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="instructions">
+              <p> <a href="#">Click here</a> to access instructions </p>
+          </div>
+          </div>
+
+
+      </div>
+
       </div>
 
     </section>
