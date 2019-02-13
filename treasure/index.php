@@ -23,7 +23,7 @@ include('../header.php')
               <li>The answers are not case sensitive or whitespace sensitive. If the answer is CFOP, you can enter “CFOP” or “Cfop” or “cfop” or “C F O P” and the system will accept all of them. You have to enter the answer without quotes.</li>
               <li>For any queries, contact us at contact@nats19.in, our <a href="https://www.facebook.com/IndianNationals2019">Facebook page</a> or <a href="https://www.instagram.com/indiannationals19/">Instagram</a></li>
             </ol>
-            <a href="www.nats19.in/solve"><button class="tablinks">Start Tresure Hunt</button></a>
+            <button class="tablinks">Start Tresure Hunt</button>
           </div>
          
         </div>
