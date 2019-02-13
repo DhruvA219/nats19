@@ -35,13 +35,13 @@
 
 
                     <div class="contact-info">
-                      <a href="mailto:contact@nats19.in"><i class="fas fa-envelope-square fa-2x"></i></a> contact@nats19.in 
+                      <a href="mailto:contact@nats19.in"><i class="fas fa-envelope-square fa-2x" style="color:#f82249;"></i></a> contact@nats19.in 
                     </div>
                     <div class="contact-info">
-                      <a href="tel:+918447852838"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a> (+91) 8447852838
+                      <a href="tel:+918447852838"><i class="fas fa-phone-square fa-2x" aria-hidden="true" style="color:#f82249;"></i></a> (+91) 8447852838
                     </div>
                     <div class="contact-info">
-                      <a href="tel:+919818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true"></i></a> (+91) 9818616737
+                      <a href="tel:+919818616737"><i class="fas fa-phone-square fa-2x" aria-hidden="true" style="color:#f82249;"></i></a> (+91) 9818616737
                     </div>
                 </div>
               </div>
