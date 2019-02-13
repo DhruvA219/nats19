@@ -26,7 +26,28 @@ include('../header.php')
               <li>For any queries, contact us at contact@nats19.in, our <a href="https://www.facebook.com/IndianNationals2019" target=_blank>Facebook page</a> or <a href="https://www.instagram.com/indiannationals19/" target=_blank>Instagram</a></li>
             </ol>
             <div class="tab">
-              <a href="../solve/"><center><button class="tablinks">Start Tresure Hunt</button></center></a>
+<?php
+
+session_start();
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+if(!isset($_SESSION['email'])) {
+	echo " <a href='../solve/login-to-continue.php'><center><button class='tablinks'>";
+echo "Login to play";
+}
+else{
+echo " <a href='../solve'><center><button class='tablinks'>";
+
+	$level_check_sql = "select * from `leaderboard` where email_id='".$_SESSION['email']."'";
+	$result=$conn->query($level_check_sql);
+       	if(mysqli_num_rows($result)>0){
+	echo "Resume your journey";
+}
+else{
+echo "Begin your journey";
+}
+}
+?>
+	</button></center></a>
           </div>
           </div>
         </div>
