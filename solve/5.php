@@ -1,5 +1,4 @@
-<p> Add an image of a +2 cube (2 is the offset) 
-ZCJJNWPYKGLV
- </p>
+<p> <img src="abc.png">  </p>
+<p>ZCJJNWPYKGLV</p>
 
 
