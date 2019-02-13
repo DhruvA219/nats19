@@ -1,14 +1,15 @@
 <?php
-include('../header.php');
 // Add sql query here to get the last question solved by the participant.
 // Use post params here to see if evaluate returned success or failure. 
 // Based on success or failure show a green or red banner with appropriate message.
 //
 session_start();
-session_start();
+
 if(!isset($_SESSION['email'])) {
-	header('location:../register/login-to-continue.php');
+	header('location:login-to-continue.php');
 }
+
+include('../header.php');
 
 if(isset($_SESSION['success'])) {
 	if($_SESSION['success'] === '1'){
