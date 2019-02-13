@@ -34,7 +34,7 @@ height: auto;
     <div class="col-xs-12 col-sm-9">
         <h2>Cubelelo: Cubestore partner</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Founded by two cubing enthusiasts in their hostel room, cubelelo.com is the largest puzzle store in India today. Cubelelo.com is an initiative that endeavours to create a starting point for online shopping of almost all types of cubes and cube accessories featuring various brands. They offer puzzles of various categories including official cubic, non-cubic, unofficial puzzles, cube accessories and merchandise.  Their custom line of Elite cubes is preferred by many speedcubers across the country. ​ It's run by technocrats who are themselves speedcubers and always there to help you in need.
         </p>
         <p>
             <a href="https://www.cubelelo.com/" target="_blank">Visit your Rubik's cube online store</a>!
