@@ -24,7 +24,7 @@ include('../header.php')
               <li>For any queries, contact us at contact@nats19.in, our <a href="https://www.facebook.com/IndianNationals2019" target=_blank>Facebook page</a> or <a href="https://www.instagram.com/indiannationals19/" target=_blank>Instagram</a></li>
             </ol>
             <div class="tab">
-              <a href="www.nats19.in/solve/"><center><button class="tablinks">Start Tresure Hunt</button></center></a>
+              <a href="../solve/"><center><button class="tablinks">Start Tresure Hunt</button></center></a>
           </div>
           </div>
         </div>
