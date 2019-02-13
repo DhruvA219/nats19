@@ -6,6 +6,8 @@ include('../header.php')
       F.A.Q Section
     ============================-->
     <section id="faq" class="wow fadeInUp">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
       <div class="container">
 
