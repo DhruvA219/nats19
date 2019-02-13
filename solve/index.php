@@ -11,6 +11,7 @@ if(!isset($_SESSION['email'])) {
 
 include('../header.php');
 
+
 if(isset($_SESSION['success'])) {
 	if($_SESSION['success'] === '1'){
 	
@@ -18,17 +19,24 @@ if(isset($_SESSION['success'])) {
 	unset($_SESSION['success']);
 }
 ?>
+<head>
+  <title>HTML Reference</title>
+</head>
+
   <main id="main">
     <!--==========================
       F.A.Q Section
     ============================-->
     <section id="faq" class="wow fadeInUp">
 
-      <div class="container">
+      <div class="container" style="text-align: center;">
 
         <div class="section-header">
           <h2> Treasure Hunt Bro! </h2>
         </div>
+<?php
+include('1.php');
+?>
 
 	<form action="evaluate.php" method="POST">
 	  <input type="text" id="answer" name="answer" maxlength="60" />
