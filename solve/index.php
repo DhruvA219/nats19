@@ -47,28 +47,6 @@ if(isset($_SESSION['success'])) {
         <div class="section-header">
           <h2> Treasure Hunt Bro! </h2>
         </div>
-<?php
-if(!isset($_SESSION['question_id'])){
-include('1.php');
-}
-else{
-include($_SESSION['question_id'].'.php');
-}
-?>
-
-	<form action="evaluate.php" method="POST">
-	  <input type="text" id="answer" name="answer" maxlength="60" />
-          <!-- Here put php code to get the questionId and echo the tag in the next line. -->
-<?php
-if(isset($_SESSION['question_id'])) {
-echo '<input type="hidden" id="questionId" name="questionId" value="' . $_SESSION['question_id'] . '"/>';
-} else {
-echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
-}
-//unset($_SESSION['question_id']);
-?>
-          <input type="submit" id="btn" name = "btn" value="Submit" />
-        </form>	
 
 
 
@@ -82,7 +60,7 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
             <!-- <img src="../img/placeholder.png"> -->
 	    <p> <?php include($_SESSION['question_id'].'.php'); ?> </p>
 	    <div class="row">
-             <form action="evaluate.php" method="POST">
+             <form action="evaluate.php" method="POST" style="margin: 0 auto;">
 	      <div class="input-field col s6">
                
 	       <?php
@@ -94,12 +72,8 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
 //unset($_SESSION['question_id']);
 ?>      
          	<input type="text" id="answer" name="answer" placeholder="Your Answer" class="validate"  maxlength="60" />
-
+ <input type="submit" class="btn waves-effect waves-light"  id="btn" name = "btn" value="Submit" />
 	      </div>
-             <input type="submit" class="btn waves-effect waves-light"  id="btn" name = "btn" value="Submit" />
-              <!--<button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                
-              </button> -->
 	</form>   
 	 </div>
            
