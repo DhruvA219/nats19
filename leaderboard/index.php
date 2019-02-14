@@ -10,101 +10,164 @@ include('../header.php')
       <div class="container">
 
         <div class="section-header">
-          <h2>Frequently Asked Questions </h2>
+          <h2>Leaderboard </h2>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-              <ul id="faq-list">
+           <div class="tab-content row justify-content-center">
+            <!-- Competitors Table -->
+            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="comp">
+              <div class="wrapper">
+              <table class = "striped">
+                <thead>
+                  <tr>
+    <th> # </th>    
+    <th> Name </th>
+        <th> Country </th>
+     <th> Average </th>
+    <th> WR </th>
+    <th> Single </th>
+    <th> WR </th> 
+                  </tr>
+                </thead>
+                <tbody>
+<?php
+function formatCentiSecondsPart($value) {
+            $x = $value%100;
 
-                <li>
-                  <a data-toggle="collapse" class="collapsed" href="#faq1" aria-expanded="false">Who can register for the competition?
-                      <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq1" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Anyone can register for the competition regardless of their age, gender or country. You need a WCA account to sign up for this competition. If you do not have a WCA account, get one <a href="https://www.worldcubeassociation.org/users/sign_up" target="about_blank" class="faq-hyperlink">here</a>.
-                    </p>
-                  </div>
-                </li>
+            if($x <= 9) {
+                return '0' . $x;
+            } else {
+                return $x;
+            }
+        }
+        
+        function convertToMinutesSeconds($iSeconds){
+           $min = intval($iSeconds / 60);
+           return $min . ':' . str_pad(($iSeconds % 60), 2, '0', STR_PAD_LEFT);
+        }
 
-                <li>
-                  <a data-toggle="collapse" class="collapsed" href="#faq2" aria-expanded="false">Can I add more events after my registration is approved?
-                      <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq2" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes, one can add more events after completing the registration and payment process. Just visit the register page and add more events.<br>
-NOTE - Addition of events facility is available only before the registration period ends, no requests will be entertained under any circumstance after 31st March 2019.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-toggle="collapse" href="#faq3" class="collapsed" aria-expanded="false"> Can I change/remove the events I've registered for? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq3" class="collapse" data-parent="#faq-list">
-                    <p>
-                      No, changing/removing existing events is not allowed. Only new events can be added, before registration ends.
+         function formatCentiSeconds( $centi_seconds ) {
+              $hours = 0;
+              $initial = $centi_seconds;
+  
+              if ( $centi_seconds > 360000 )
+              {
+                $hours = floor( $centi_seconds / 360000 );
+              }
+              $centi_seconds = $centi_seconds % 360000;
 
 
-                    </p>
-                  </div>
-                </li>
+              $result =  str_pad( $hours, 2, '0', STR_PAD_LEFT )
+                   . gmdate( ':i:s', $centi_seconds/100 )
+                   . ('.' . formatCentiSecondsPart($initial))
+                   ;
+                   
+              if($result[0] == '0' && $result[1] != '0') {
+                  return substr($result, 1);
+              }
+              
+              
+              if($result[0] == '0' && $result[1] == '0'
+              && $result[3] == '0' && $result[4] != '0') {
+                  return substr($result, 4);
+              }
+              
+               if($result[0] == '0' && $result[1] == '0'
+              && $result[3] == '0' && $result[4] == '0'
+              && $result[6] == '0') {
+                  return substr($result, 7);
+              }
+              
+              
+              if($result[0] == '0' && $result[1] == '0'
+              && $result[3] == '0' && $result[4] == '0') {
+                  return substr($result, 6);
+              }
 
-                <li>
-                  <a data-toggle="collapse" href="#faq4" class="collapsed" aria-expanded="false">What are the rules of this event? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq4" class="collapse" data-parent="#faq-list">
-                    <p>
-                      The competition follows the <a class="faq-hyperlink" href="https://www.worldcubeassociation.org/regulations" target="about_blank">WCA Regulations</a>. <a class="faq-hyperlink" href="https://www.youtube.com/watch?v=dPL3eV-A0ww&" target="about_blank"> Here</a> is a video summarizing the important ones. There will be an official competitor tutorial on Saturday at 10:15 A.M. where all important rules will be explained.
-                    </p>
-                  </div>
-                </li>
+              if($result[0] == '0' && $result[1] == '0') {
+                  return substr($result, 3);
+              }
+            
+              
 
-                <li>
-                  <a data-toggle="collapse" href="#faq5" class="collapsed" aria-expanded="false"> Do I have to use my own cube to compete? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq5" class="collapse" data-parent="#faq-list">
-                    <p>
-                      Yes! You are responsible for your own hardware in order to compete. This means you should bring your own puzzles.
-                    </p>
-                  </div>
-                </li>
 
-                <li>
-                  <a data-toggle="collapse" href="#faq6" class="collapsed" aria-expanded="false">What is the normal age of competitors at these events? Are there age divisions?<i class="fa fa-minus-circle"></i></a>
-                  <div id="faq6" class="collapse" data-parent="#faq-list">
-                    <p>
-                      The competition is open to competitors of all age and gender. There will be only one combined ranking.
-                    </p>
-                  </div>
-                </li>
+            }
+        
 
-                <li>
-                  <a data-toggle="collapse" href="#faq7" class="collapsed" aria-expanded="false">How do I find the results? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq7" class="collapse" data-parent="#faq-list">
-                    <p>
-                    All results are posted on the WCA website within a week after the competition finishes. However, for the day of competing, go to <a href="https://www.cubecomps.com" class="faq-hyperlink">Cubecomps</a> to find information about current events. This is also where you will find information about upcoming rounds of events. Remember, the results are entered by a human so please be patient if you do not see your results immediately.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <a data-toggle="collapse" href="#faq8" class="collapsed" aria-expanded="false">Can I attend the competition without competing? Do guests of competitors need to pay for the competition?
- <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq8" class="collapse" data-parent="#faq-list">
-                    <p>
-                    Yes, you can attend the competition as a spectator. <br>
-All spectators are free to attend the competition at no cost. There is payment only to compete. However, if you require any other facilities such as travel and accommodation, that will be paid for.
-                    </p>
-                  </div>
-                </li>
-                <li>
-                  <a data-toggle="collapse" href="#faq9" class="collapsed" aria-expanded="false">Can I have fun at this event? <i class="fa fa-minus-circle"></i></a>
-                  <div id="faq9" class="collapse" data-parent="#faq-list">
-                    <p>
-                    More than you can imagine! Solving is just one part of the competition. There are also many unofficial events and seminars for you to have a wholesome experience.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-          </div>
+         function convertResult($result, $eventId, $single) {
+          if (is_null($result)) return "";
+           if($eventId != '333mbf' && $eventId != '333fm') {
+                return formatCentiSeconds($result);
+           }
+           else if($eventId == '333fm') {
+                if($single == 1) {
+                    return $result;
+                } else {
+                $result1=$result/100;
+                return number_format((float)$result1, 2, '.', '');
+                }
+            }
+          else if($eventId == '333mbf') {
+                $points = 99 - (int)substr($result, 0, 2);
+                $wrong = (int)substr($result, strlen($result)-2, 2); 
+                $solved = $points + $wrong;
+                $attempted = $solved + $wrong;
+                return $solved . '/' . $attempted . " " . 
+                
+                convertToMinutesSeconds((int)substr($result, 3, 4));
+          }
+
+        }
+$eventId=$_GET['eventId'];
+
+
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+$sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,country_name as country  FROM
+(select * from 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_name from registrations 
+  LEFT JOIN (select * from RanksSingle2 where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
+LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='%s') averageRanks 
+ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
+order by -averageRank desc, -singleRank desc, psychRanks.name asc;"; 
+if ($eventId=='333bf'){
+  $sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,country_name as country  FROM
+(select * from 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_name from registrations 
+  LEFT JOIN (select * from RanksSingle2 where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
+LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='%s') averageRanks 
+ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
+order by -singleRank desc, -averageRank desc, psychRanks.name asc;";
+}
+
+
+
+$sql=sprintf($sqlTemplate,$eventId,$eventId,$eventId,$eventId);
+$result = $conn->query($sql);
+$rank=0;
+foreach($result as $row){
+  $rank+=1;
+  echo "<tr>";
+  echo "<td>".$rank."</td>";
+  echo "<td class='lefttd'>";
+    if(!is_null($row['WCAID']) && $row['WCAID']!=""){
+            echo "<a href='https://www.worldcubeassociation.org/persons/".$row['WCAID']."' target='_blank'>";
+        }       
+  echo $row['name']."</a></td>";
+  echo "<td class='lefttd'>".$row['country']."</td>";
+  echo "<td>".convertResult($row['averageResult'],$eventId,0)."</td>";
+  echo "<td>".$row['averageRank']."</td>";
+  echo "<td>".convertResult($row['singleResult'],$eventId,1)."</td>";
+   echo "<td>".$row['singleRank']."</td>";
+  echo "</tr>";
+}
+?>
+                                   </tbody>
+              </table>
+          <!-- 3x3 Psych Sheet Table -->
         </div>
+      </div>
+      </div>
 
       </div>
 
