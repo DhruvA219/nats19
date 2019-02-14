@@ -33,12 +33,7 @@ if (!isset($_SESSION['email'])) {
 include('../header.php');
 
 
-if(isset($_SESSION['success'])) {
-	if($_SESSION['success'] === '1'){
-   echo "a";	
-	}
-	unset($_SESSION['success']);
-}
+
 ?>
 <head>
   <title>HTML Reference</title>
@@ -56,8 +51,17 @@ if(isset($_SESSION['success'])) {
           <h2> Treasure Hunt Bro! </h2>
         </div>
 
-
-
+<?php
+if(isset($_SESSION['success'])) {
+	if($_SESSION['success'] === 0){
+		echo '<div class="alert alert-danger alert-dismissible">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Wrong answer!</strong> Try again.
+</div>';
+	}
+	unset($_SESSION['success']);
+}
+?>
 
 
 
@@ -89,7 +93,7 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
           </div>
           <div class="treasurehunt rank" style="padding-top: 0px;">
               <div class="addborder">
-              <h1> Top Rankers </h1>
+              <h1> Leaderboard </h1>
               <table class = "striped">
                   <tr>
     <th> Rank </th>
