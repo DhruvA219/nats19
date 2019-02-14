@@ -79,7 +79,7 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
            
 
           </div>
-          <div class="treasurehunt rank">
+          <div class="treasurehunt rank" style="padding-top: 0px;">
               <div class="addborder">
               <h1> Top Rankers </h1>
               <table>
