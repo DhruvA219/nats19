@@ -37,7 +37,7 @@ include('../header.php')
                 <tbody>
 <?php
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sqlTemplate ="select name,question_id,email_id,CONVERT_TZ(timestamp,'+00:00','+05:30') as timestamp from `leaderboard` order by question_id desc, timestamp asc;";
+$sqlTemplate ="select name,question_id -1 as question_id,email_id,CONVERT_TZ(timestamp,'+00:00','+05:30') as timestamp from `leaderboard` order by question_id desc, timestamp asc;";
 $result = $conn->query($sqlTemplate);
 $rank=0;
 foreach($result as $row){
@@ -57,10 +57,11 @@ foreach($result as $row){
         </div>
       </div>
       </div>
-
       </div>
-
-    </section>
+     <div class="tab">
+     <a href='https://nats19.in/solve'><center>  <button class='tablinks'> Resume your journey</button> </center> </a>
+</div>   
+ </section>
   </main>
 
 

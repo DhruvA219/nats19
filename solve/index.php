@@ -3,6 +3,14 @@
 // Use post params here to see if evaluate returned success or failure. 
 // Based on success or failure show a green or red banner with appropriate message.
 //
+$current_time=time();
+//$basetime_1=1550773800;
+$basetime_1=15507738;
+$basetime_2=1551033000;
+if ($current_time<$basetime_1 || $current_time>$basetime_2){
+        header('location:https://nats19.in/solve/treasure-hunt-time-window.php');
+
+}
 session_start();
 
 if (!isset($_SESSION['email'])) {
@@ -82,36 +90,31 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
           <div class="treasurehunt rank" style="padding-top: 0px;">
               <div class="addborder">
               <h1> Top Rankers </h1>
-              <table>
-                <tr>
-                  <th> Rank </th>
-                  <th> Name </th>
-                  <th> Level </th>
-                </tr>
-                <tr>
-                  <td> 1 </td>
-                  <td> Kamaal Khan </td>
-                  <td> 69 </td>
-                </tr>
-                <tr>
-                  <td> 2 </td>
-                  <td> Kamaal Khan </td>
-                  <td> 69 </td>
-                </tr>
-                <tr>
-                  <td> 3 </td>
-                  <td> Kamaal Khan </td>
-                  <td> 69 </td>
-                </tr>
-                <tr class="personalrank">
-                  <td> 10 </td>
-                  <td> Kamaal Khan </td>
-                  <td> 69 </td>
-                </tr>
-                <tr>
+              <table class = "striped">
+                  <tr>
+    <th> Rank </th>
+    <th> Name </th>
+        <th> Level </th>
+                  </tr>
+<?php
+$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
+$sqlTemplate ="select name,question_id - 1 as question_id,email_id,timestamp from `leaderboard` order by question_id desc, timestamp asc limit 4;";
+$result = $conn->query($sqlTemplate);
+$rank=0;
+foreach($result as $row){
+  $rank+=1;
+  echo "<tr>";
+  echo "<td>".$rank."</td>";
+  echo "<td class='lefttd'>";
+  echo $row['name']."</td>";
+  echo "<td>".$row['question_id']."</td>";
+  echo "</tr>";
+}
+?>
+		  <tr>
                   <td></td>
-                  <td></td>
-                  <td><a href = "#">See All</a></td>
+<td> </td>		  
+<td><a href = "../leaderboard">See All</a></td>
                 </tr>
               </table>
             </div>

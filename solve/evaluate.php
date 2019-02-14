@@ -15,6 +15,7 @@ if(isset($_POST['btn'])) {
 	$result=$conn->query($answer_check_sql);
 	$success=0;
 	$email_id=$_SESSION['email'];
+	$name=$_SESSION['name'];
        	if(mysqli_num_rows($result)>0)
        	{
 		$success=1;
@@ -23,7 +24,7 @@ if(isset($_POST['btn'])) {
 		$questionId=(string)$questionId;
 		$remove_sql = "delete from leaderboard where email_id='".$email_id."'";
 	        $conn->query($remove_sql);
-          	$insert_sql = "insert into `leaderboard` (`email_id`, `question_id`) VALUES ('".$email_id."',".(int)$questionId.")"; 
+          	$insert_sql = "insert into `leaderboard` (`email_id`, `question_id`,`name`) VALUES ('".$email_id."',".(int)$questionId.",'".$name."')"; 
 	       $conn->query($insert_sql);
 
 	}
