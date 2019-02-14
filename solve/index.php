@@ -102,7 +102,7 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
                   </tr>
 <?php
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sqlTemplate ="select name,question_id - 1 as question_id,email_id,timestamp from `leaderboard` order by question_id desc, timestamp asc limit 4;";
+$sqlTemplate ="select name,question_id - 1 as question_id,email_id,timestamp from `leaderboard` order by question_id desc, timestamp asc limit 5;";
 $result = $conn->query($sqlTemplate);
 $rank=0;
 foreach($result as $row){
