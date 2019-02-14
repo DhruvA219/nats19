@@ -71,7 +71,7 @@ echo '<input type="hidden" id="questionId" name="questionId" value="1"/>';
 }
 //unset($_SESSION['question_id']);
 ?>      
-         	<input type="text" id="answer" name="answer" placeholder="Your Answer" class="validate"  maxlength="60" />
+         	<input type="text" id="answer" name="answer" placeholder="Your Answer" style="text-align: center;" class="validate"  maxlength="60" />
  <input type="submit" class="btn waves-effect waves-light"  id="btn" name = "btn" value="Submit" />
 	      </div>
 	</form>   
