@@ -140,6 +140,7 @@ else{ echo'<div class="wrapper">
 		}
 echo '</table> </div>';
 
+
 }
 
 echo' <div class="col-lg-12 venue-info">
@@ -207,7 +208,15 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['quantity'].'</td>';	
 			echo '</tr>';
 		}
-echo '</table> </div>' ;
+echo '</table> ';
+$1bhk_room_sql = "select room from user_acco WHERE email_id='nitinnathan7@gmail.com' and room IS NOT NULL and item_id='cbcb41'";
+$1bhk_room_result = $conn->query($1bhk_room_sql);
+if (mysqli_num_rows($1bhk_room_result)==0){
+	foreach($row in $1bhk_room_result){
+	echo "1BHK Room Number: ".$row['room'];
+}
+}
+echo '</div>' ;
 
 }
 
