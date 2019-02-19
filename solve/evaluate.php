@@ -26,8 +26,14 @@ if(isset($_POST['btn'])) {
 	        $conn->query($remove_sql);
           	$insert_sql = "insert into `leaderboard` (`email_id`, `question_id`,`name`) VALUES ('".$email_id."',".(int)$questionId.",'".$name."')"; 
 	       $conn->query($insert_sql);
+ 		}
+ 		else{
+		$questionId=(int)$questionId;
+		$insert_sql = "insert into `treasure_logs` (`email_id`,`question_id','answer') VALUES ('".$email_id."',".questionId.",'".$answer."') ";
+	        $conn->query($insert_sql);
+		$questionId=(string)$questionId;
 
-	}
+ 		}
 	$_SESSION['success'] = $success;
 	$_SESSION['question_id']=$questionId;
 	 header('Location:/solve');
