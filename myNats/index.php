@@ -182,12 +182,12 @@ echo' <div class="col-lg-12 venue-info">
 								</div>
 							</div>
 						</div>';
-$acco_sql = "select name,price,quantity,check_in,check_out from 
-(select quantity,name,price,check_in,check_out from user_acco useracco inner join
+$acco_sql = "select name,price,quantity,check_in,check_out,room from 
+(select quantity,name,price,check_in,check_out,room from user_acco useracco inner join
 acco_catalog ON acco_catalog.item_id=useracco.item_id where email_id='$email') userdetails ";
 $acco_result = $conn->query($acco_sql);
 if (mysqli_num_rows($acco_result)==0){
-echo '<p align="middle"> You have not purchased any campus Accommodation. </p>';
+echo '<p align="middle"> You have not purchased any campus Accommodation </p>';
 }
 else{ echo'<div class="wrapper">
 								<table>
@@ -197,6 +197,7 @@ else{ echo'<div class="wrapper">
 										<th class="tg-s268">Check-In </th>
 										<th class="tg-s268">Check-Out </th>
 										<th class="tg-s268">Quantity</th>
+<th class="tg-s268">Room Number </th>
 									</tr>';
 
 		foreach($acco_result as $row){
@@ -206,16 +207,30 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['check_in'].'</td>';	
 			echo '<td class="tg-s268">'.$row['check_out'].'</td>';	
 			echo '<td class="tg-s268">'.$row['quantity'].'</td>';	
+			if($row['room']===NULL){
+			  echo '<td class="tg-s268">To Be Updated</td>';
+			}
+			else{
+				echo '<td class="tg-s268">'.$row['room'].'</td>';  
+			}
 			echo '</tr>';
 		}
 echo '</table> ';
-$1bhk_room_sql = "select room from user_acco WHERE email_id='nitinnathan7@gmail.com' and room IS NOT NULL and item_id='cbcb41'";
-$1bhk_room_result = $conn->query($1bhk_room_sql);
-if (mysqli_num_rows($1bhk_room_result)==0){
-	foreach($row in $1bhk_room_result){
-	echo "1BHK Room Number: ".$row['room'];
-}
-}
+echo'
+<div>
+<h4 align="middle" style="margin-top:20px;"> Accommodation Instructions </h4>
+<p> Common rooms will be in boys/girls hostels. 2BHK, 1BHK and Studio will be in the Visitors Hostel(VH). Important contact numbers for VH are given below:</p> 
+<ol>
+<li style="float:none">630: VH Reception </li>
+<li style="float:none">604: Front Desk </li>
+<li style="float:none">6628: Dining Hall 1 </li>
+<li style="float:none">6627: Dining Hall 2 </li>
+<li style="float:none">100: Security </li>
+<li style="float:none">6621: Mini Mart </li>
+<li style="float:none">655: Laundry </li>
+</ol>
+<p> For visitors hostel, the default check-in time will be 3 PM and the default check-out time will be 12 PM. Please contact the organizers or above numbers for any exceptions to the same.
+	</div>';
 echo '</div>' ;
 
 }
