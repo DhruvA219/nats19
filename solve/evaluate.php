@@ -29,8 +29,8 @@ if(isset($_POST['btn'])) {
  		}
  		else{
 		$questionId=(int)$questionId;
-		$insert_sql = "insert into `treasure_logs` (`email_id`,`question_id`,`answer`) VALUES ('".$email_id."',".questionId.",'".$answer."') ";
-	        $conn->query($insert_sql);
+		$insert_sql = "insert into `treasure_logs` (`email_id`,`question_id`,`answer`) VALUES ('".$email_id."',".$questionId.",'".$answer."') ";
+	    $conn->query($insert_sql);
 		$questionId=(string)$questionId;
 
  		}
