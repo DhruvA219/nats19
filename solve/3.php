@@ -1,3 +1,3 @@
-<p>Who is missing?</p>
-
-<p>Feliks, Max, Cornelius, Patrick , Tanzer </p>
+<p>
+A,B,C,D,E,H,_
+</p>

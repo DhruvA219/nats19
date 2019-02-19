@@ -1,5 +1,4 @@
 <p> 
-You already know the answer.  
-</p>
-
+This is something all cubers are familiar wi..
+ </p>
 
