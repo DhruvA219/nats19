@@ -1,4 +1,4 @@
-<p> Broadcast yourself (means youtube). </p>
+<p> Broadcast yourself </p>
 
 <p> <i> You matter only if you are the first at something. </i> - Anonynmous 
 </p>
