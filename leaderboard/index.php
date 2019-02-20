@@ -19,6 +19,7 @@ include('../header.php')
 
         <div class="section-header">
           <h2>Leaderboard </h2>
+		<p><a href="../solve">Click here </a> to resume your journey.</p>
         </div>
 
            <div class="tab-content row justify-content-center">
