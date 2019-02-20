@@ -48,7 +48,7 @@ include('../header.php');
       <div class="container" style="text-align: center;">
 
         <div class="section-header">
-          <h2> Treasure Hunt Bro! </h2>
+          <h2> Treasure Hunt </h2>
         </div>
 
 <?php

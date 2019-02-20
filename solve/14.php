@@ -1,7 +1,7 @@
 <p> 
 Six times is enough <br>
 Enough to return your Cube back<br>
-X to Y and X' to 'Y'<br>
+X to Y and X' to Y'<br>
 You know what I mean </p>
 
 <p>
