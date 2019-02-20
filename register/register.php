@@ -84,6 +84,9 @@ foreach ($_POST['merch'] as $key => $value) {
                 if ($key=="cbcb37"){
                 $total_cost_of_merch_reg += $value*19;
               }
+                if ($key=="cbcb38"){
+                $total_cost_of_merch_reg += $value*399;
+              }
         }
 }
 

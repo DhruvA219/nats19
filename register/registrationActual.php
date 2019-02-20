@@ -579,6 +579,28 @@ echo '</ul>';
 				<div class="uldiv">
 					<ul>
 						<li>
+							<img src="../img/merchandise/cards.png" alt="">
+							<h3>Cuber Cards</h3>
+							<p> ₹399</p>
+						<select id="cbcb38" onchange="updateFee()">
+							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						</li>
+
+
+
+						<li>
 							<img src="../img/merchandise/tshirt.png" alt="">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
@@ -1150,6 +1172,9 @@ function getMerchFee(){
 	if(document.getElementById("cbcb37").value!=="" && document.getElementById("cbcb37").value!=="0"){
 		merch_fee = merch_fee + 19*parseInt(document.getElementById("cbcb37").value);
 	}
+	if(document.getElementById("cbcb38").value!=="" && document.getElementById("cbcb38").value!=="0"){
+		merch_fee = merch_fee + 399*parseInt(document.getElementById("cbcb38").value);
+	}
 	return merch_fee;
 }
 
@@ -1295,7 +1320,7 @@ document.getElementsByClassName("progress-bar")[0].style.width = progress;
 		if(tabName=='Accommodation'){
 
 		//For travel page
-		for(var i = 27; i <=37; i++){
+		for(var i = 27; i <=38; i++){
 			document.getElementById("cbcb" + i).value = "";
 		}
 }
@@ -1361,7 +1386,7 @@ $("#register-checkout").click(function() {
 	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 		merch['cbcb28-'+document.getElementById("cbcb27").value]=parseInt(document.getElementById("cbcb28").value);
 	}
-	for (var i=29;i<=37;i++){
+	for (var i=29;i<=38;i++){
 		if(document.getElementById("cbcb"+i).value!=="" && document.getElementById("cbcb"+i).value!=="0"){
 			merch['cbcb'+i]= parseInt(document.getElementById("cbcb"+i).value);
 		}

@@ -36,9 +36,17 @@ include('../header.php');
 				<div class="uldiv">
 					<ul>
 						<li>
+
+							<img src="../img/merchandise/cards.png" alt="">
+							<h3>Cuber Cards</h3>
+							<p> ₹399</p>
+						</li>
+
+						<li>
 							<img src="../img/merchandise/tshirt.png" alt="">
 							<h3>T-shirt</h3>
 							<p> ₹499</p>
+
 
 						<li>
 							<img src="../img/merchandise/mug.png" alt="">
