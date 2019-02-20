@@ -4,8 +4,8 @@
 // Based on success or failure show a green or red banner with appropriate message.
 //
 $current_time=time();
-//$basetime_1=1550773800;
-$basetime_1=15507738;
+$basetime_1=1550773800;
+//$basetime_1=15507738;
 $basetime_2=1551033000;
 if ($current_time<$basetime_1 || $current_time>$basetime_2){
         header('location:https://nats19.in/solve/treasure-hunt-time-window.php');
