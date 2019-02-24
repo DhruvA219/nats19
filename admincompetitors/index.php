@@ -6,7 +6,7 @@ if(!isset($_SESSION['email'])) {
 }
 
 else{
-  $admins = array("arupela@worldcubeassociation.org", "upabreja@worldcubeassociation.org","sp422@snu.edu.in"); 
+  $admins = array("arupela@worldcubeassociation.org", "upabreja@worldcubeassociation.org","sp422@snu.edu.in","aroradhruv10@gmail.com"); 
   if (!in_array($_SESSION['email'],$admins)){
   header('location:../');
   }
