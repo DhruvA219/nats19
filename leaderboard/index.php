@@ -55,11 +55,11 @@ foreach($result as $row){
                                    </tbody>
               </table>
           <!-- 3x3 Psych Sheet Table -->
-        </div>
+	</div>
+<b> Note: </b> If you find yourself at level -1, you may be suspected of unfair gameplay. Please contact us by Phone/Facebook/Instagram to dispute this 
       </div>
-      </div>
-      </div>
-     <div class="tab">
+</div>
+</div><div class="tab">
      <a href='https://nats19.in/solve'><center>  <button class='tablinks'> Resume your journey</button> </center> </a>
 </div>   
  </section>
