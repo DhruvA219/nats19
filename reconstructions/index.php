@@ -57,6 +57,7 @@ echo '<p>
 echo '</div>
 </div><div class="tab">
  <a href="../reconstructions?question_id='.($question_id-1).'"><center><button class="tablinks">Previous </button></center></a>
+ <a href="../reconstructions?question_id='.($question_id+1).'"><center><button class="tablinks">Next </button></center></a>
 
           </div>';
 ?>
