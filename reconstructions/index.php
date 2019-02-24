@@ -56,8 +56,8 @@ echo '<p>
   include($question_id.'a.php'); 
 echo '</div>
 </div><div class="tab">
- <a href="../reconstructions?question_id='.($question_id-1).'"><center><button class="tablinks">Previous </button></center></a>
- <a href="../reconstructions?question_id='.($question_id+1).'"><center><button class="tablinks">Next </button></center></a>
+ <a href="../reconstructions?question_id='.($question_id-1).'"><button class="tablinks">Previous </button></a>
+ <a href="../reconstructions?question_id='.($question_id+1).'"><button class="tablinks">Next </button></a>
 
           </div>';
 ?>
