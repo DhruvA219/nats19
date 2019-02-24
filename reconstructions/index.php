@@ -46,8 +46,7 @@ echo '</h1>
       include($question_id.'hint.php'); ?>
 	         
 
-          </div>
-          <div>
+       
 <p>
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
