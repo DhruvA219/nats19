@@ -130,6 +130,10 @@ INSERT into `user_travel` (`item_id`, `email_id`, `number_of_people`) VALUES
 INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
 ('cb21','434@gmail.com', 3 );
 
+INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
+('MOJO9223H05D71957476','msaiyamjain05@gmail.com', 1250 );
+
+
 CREATE TABLE IF NOT EXISTS `user_travel` (
   `item_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `email_id` varchar(70) COLLATE utf8_unicode_ci NOT NULL,
@@ -177,8 +181,14 @@ INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb35','Keychain',199 ),
 ('cbcb36','Nats Logo Sticker',19 ),
 ('cbcb37','Cuber Soul Sticker',19 );
+('cbcb38','Cuber Cards',399 );
+
+INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
+('cbcb38','Cuber Cards',399 );
 
 
+INSERT into `user_merch` (`item_id`, `email_id`,`quantity`, `payment_id`) VALUES
+('cbcb38','sarvind@worldcubeassociation.org',1,'MOJO9221G05D02441553' );
 
 CREATE TABLE IF NOT EXISTS `pageviews` (
   `page` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
@@ -254,6 +264,9 @@ INSERT into `user_acco` (`payment_id`, `email_id`, `item_id`, `quantity`,`check_
 INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
 ('MOJO9119805W64409004','raosahibji@gmail.com', 500 );
 
+INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
+('MOJO9221G05D02441553','sarvind@worldcubeassociation.org', 399 );
+
 MOJO9119805W64409004 | raosahibji@gmail.com                 |    500
 
 CREATE TABLE IF NOT EXISTS `acco_catalog` (
@@ -277,63 +290,96 @@ INSERT into `user_acco` (`payment_id`, `email_id`, `item_id`, `quantity`,`check_
 INSERT into `payment` (`payment_id`, `email_id`, `amount`) VALUES
 ('MOJO9119805W64409004','raosahibji@gmail.com', 500 );
 
+CREATE TABLE IF NOT EXISTS `treasure_logs` (
+  `email_id` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `question_id` int COLLATE utf8_unicode_ci NOT NULL,
+  `answer` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+    `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+
 CREATE TABLE IF NOT EXISTS `treasures` (
   `question_id` int COLLATE utf8_unicode_ci NOT NULL,
   `answer` varchar(40) COLLATE utf8_unicode_ci NOT NULL
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
 INSERT into `treasures` (`question_id`, `answer`) VALUES
+(4,'kunaalparekh'),
+(4,'kunaal'),
+(4,'pranavprabhu'),
+(4,'pranav'),
+(4,'priyanshukumar'),
+(4,'priyanshu');
+
+
+INSERT into `treasures` (`question_id`, `answer`) VALUES
 (1,'white'),
 (2,'matsvalk'),
 (2,'valk'),
-(3,'seung'),
-(3,'seunghyuknahm'),
+(3,'z'),
 (4,'hariharan'),
 (4,'hariharansachidanandam'),
-(5,'bellpyraminx'),
-(6,'12'),
-(7,'dnf'),
-(8,'z'),
-(9,'cfop'),
-(10,'ujjawalpabreja'),
-(10,'ujjawal'),
-(11,'awards'),
-(11,'prizes'),
-(11,'honors'),
-(11,'honours'),
-(11,'awards/prizes/honors'),
-(11,'awards/prizes/honours'),
-(12,'0.49'),
-(12,'.49'),
-(13,'guhong'),
-(13,'dayanguhong'),
-(14,'israel'),
-(14,'telaviv'),
-(14,'telavivisrael'),
-(14,'israelchampionship'),
-(14,'israelchampionship2015'),
-(14,'dizengoffcenter'),
-(14,'dizengoff'),
-(14,'israel'),
-(15,'melbourneconventionandexhibitioncentre'),
-(15,'melbourne'),
-(15,'melbourneaustralia'),
-(15,'melbourne,australia'),
-(15,'worldchampionship2019'),
-(15,'worldchampionship'),
-(15,'worlds2019'),
-(15,'worlds'),
-(15,'wcaworldchampionship2019'),
-(15,'wcaworldchampionship');
+(5,'12'),
+(6,'seung'),
+(6,'seunghyuknahm'),
+(6,'seunghyuk'),
+(7,'bellpyraminx'),
+(8,'erno'),
+(8,'ernorubik'),
+(9,'dnf'),
+(10,'mt'),
+(10,'marketingteam'),
+(10,'wcamarketingteam'),
+(10,'wmt'),
+(11,'cfop'),
+(12,'awards'),
+(12,'prizes'),
+(12,'honors'),
+(12,'honours'),
+(12,'awards/prizes/honors'),
+(12,'awards/prizes/honours'),
+(13,'ujjawalpabreja'),
+(13,'ujjawal'),
+(14,'sexy'),
+(14,'sexymove'),
+(14,"RUR'U'"),
+(15,'0.49'),
+(15,'.49'),
+(16,'campos20'),
+(17,'clock'),
+(18,'petersample'),
+(19,'guhong'),
+(19,'dayanguhong'),
+(20,'israel'),
+(20,'telaviv'),
+(20,'telavivisrael'),
+(20,'israelchampionship'),
+(20,'israelchampionship2015'),
+(20,'dizengoffcenter'),
+(20,'dizengoff'),
+(20,'israel'),
+(21,'melbourneconventionandexhibitioncentre'),
+(21,'melbourne'),
+(21,'melbourneaustralia'),
+(21,'melbourne,australia'),
+(21,'worldchampionship2019'),
+(21,'worldchampionship'),
+(21,'worlds2019'),
+(21,'worlds'),
+(21,'wcaworldchampionship2019'),
+(21,'wcaworldchampionship'),
+(22,'bearer');
 
 CREATE TABLE IF NOT EXISTS `leaderboard` (
   `question_id` int COLLATE utf8_unicode_ci NOT NULL,
   `email_id` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(75) COLLATE utf8_unicode_ci NOT NULL,
   `timestamp` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`email_id`)
   ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
 
-INSERT into `leaderboard` (`question_id`, `email_id`) VALUES
-(3,'hemangsarkar@gmail.com'),
+  INSERT into `leaderboard` (`question_id`, `email_id`,`name`) VALUES
+  (6,'piyush@gmail.com','Piyush Passi'),
+  (8,'newsh@gmail.com','Newkant Koul'),
 
 

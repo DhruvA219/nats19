@@ -71,6 +71,7 @@ if(isset($_SESSION['success'])) {
 	  <h1> Level <?php echo (int)$_SESSION['question_id'] - 1 ?> </h1>
             <!-- <img src="../img/placeholder.png"> -->
 	    <p> <?php include($_SESSION['question_id'].'.php'); ?> </p>
+      <?php include($_SESSION['question_id'].'hint.php'); ?>
 	    <div class="row">
              <form action="evaluate.php" method="POST" style="margin: 0 auto;">
 	      <div class="input-field col s6">
