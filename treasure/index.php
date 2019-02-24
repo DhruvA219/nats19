@@ -31,11 +31,11 @@ include('../header.php')
 session_start();
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 if(!isset($_SESSION['email'])) {
-	echo " <a href='../solve/login-to-continue.php'><center><button class='tablinks'>";
+	echo " <a href='../solve/login-to-continue.php'><button class='tablinks'>";
 echo "Login to play";
 }
 else{
-echo " <a href='../solve'><center><button class='tablinks'>";
+echo " <a href='../solve'><button class='tablinks'>";
 
 	$level_check_sql = "select * from `leaderboard` where email_id='".$_SESSION['email']."'";
 	$result=$conn->query($level_check_sql);
@@ -47,7 +47,8 @@ echo "Begin your journey";
 }
 }
 ?>
-	</button></center></a>
+	</button></a>
+<a href='../reconstructions'><button class='tablinks'> View Solutions </a>";
           </div>
           </div>
         </div>
