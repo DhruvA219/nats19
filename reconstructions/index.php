@@ -55,11 +55,10 @@ echo '<p>
   <div class="card card-body">';
   include($question_id.'a.php'); 
 echo '</div>
-<div class="tab">
+</div><div class="tab">
  <a href="../reconstructions?question_id='.($question_id-1).'"><center><button class="tablinks">Previous </button></center></a>
 
-          </div>
-</div>';
+          </div>';
 ?>
 
           </div>
