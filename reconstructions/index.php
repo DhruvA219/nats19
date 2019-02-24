@@ -37,13 +37,13 @@ echo '<head>
  <div class="row justify-content-center">
           <div class="treasurehunt question">
 	  <h1> Level ' ;
-    echo (int)$_GET['question_id'] - 1 ;
+    echo $question_id - 1 ;
 echo '</h1>
             <!-- <img src="../img/placeholder.png"> -->
 	    <p> ';
-         include($_GET['question_id'].'.php');
+         include($question_id.'.php');
      echo '</p>';    
-      include($_GET['question_id'].'hint.php'); ?>
+      include($question_id.'hint.php'); ?>
 	         
 
           </div>
