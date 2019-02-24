@@ -55,12 +55,15 @@ echo '<p>
   <div class="card card-body">';
   include($question_id.'a.php'); 
 echo '</div>
-</div><div class="tab">
- <a href="../reconstructions?question_id='.($question_id-1).'"><button class="tablinks">Previous </button></a>
- <a href="../reconstructions?question_id='.($question_id+1).'"><button class="tablinks">Next </button></a>
-
-          </div>';
+</div><div class="tab">';
+if ($question_id>1){
+echo '<a href="../reconstructions?question_id='.($question_id-1).'"><button class="tablinks">Previous </button></a>';
+}
+if ($question_id<22){
+echo '<a href="../reconstructions?question_id='.($question_id+1).'"><button class="tablinks">Next </button></a>';
+}
 ?>
+</div>
 
           </div>
           <div class="treasurehunt rank" style="padding-top: 0px;">
