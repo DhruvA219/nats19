@@ -48,7 +48,7 @@ echo "Begin your journey";
 }
 ?>
 	</button></a>
-<a href='../reconstructions'><button class='tablinks'> View Solutions </a>";
+<a href='../reconstructions'><button class='tablinks'> View Solutions </button></a>
           </div>
           </div>
         </div>
