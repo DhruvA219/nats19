@@ -9,5 +9,4 @@ Ultimate - rubiks cube Presented At south Yamunanagar 5 before Years. </p>
 <p>What is the time? </p>
 <br>
 <p> HINT: You must construct the URL </p>
-<p> NOTE: This question was last updated on 23-02-2019 19:32 IST  </p>
 

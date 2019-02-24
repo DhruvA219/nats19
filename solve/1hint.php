@@ -1,3 +1,3 @@
-<p> Level 0: Hint Coming soon </p>
+<p> Hint: Look at a 3x3 Cube! </p>
 
 
