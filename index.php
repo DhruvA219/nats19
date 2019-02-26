@@ -205,10 +205,10 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
     ============================-->
     <section id="intro">f
       <div class="intro-container wow fadeIn custom-intro">
-<!--	<h1 class="mb-4 pb-0">Indian Nationals <br><span>2019</span> </h1> -->
- <a href="https://nats19.in/treasure"><img src ="img/1.png" style="height: 30em"></a>
+	<h1 class="mb-4 pb-0">Indian Nationals <br><span>2019</span> </h1> 
+ <!-- <a href="https://nats19.in/treasure"><img src ="img/1.png" style="height: 30em"></a> -->
         <!-- <h1 class="mb-4 pb-0">Indian Nationals 2019<br><span style="font-size:0.6em; text-transform: none;">The ultimate cubing experience</span> </h1> -->
-     <!--   <h3 class="mb-4 pb-0" style="color:#f82249; font-size:2em;">The ultimate cubing experience </h1>
+       <h3 class="mb-4 pb-0" style="color:#f82249; font-size:2em;">The ultimate cubing experience </h1>
         <p class="mb-4 pb-0">12-14 April, Shiv Nadar University</p>
         <div id="clockdiv">
           <div>
@@ -227,7 +227,7 @@ if($_GET['code'] && !isset($_SESSION['email'])) {
             <span class="seconds"></span>
             <div class="smalltext">Seconds</div>
           </div>
-        </div> -->
+        </div> 
 
 <!-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
   data-autoplay="true"></a>-->

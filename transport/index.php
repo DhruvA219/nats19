@@ -132,7 +132,7 @@ a.label:focus {
             <h2 class="smallhead">Reaching the Venue</h2>
             <h3 align="center"> By Car </h3>
             <p style="margin-bottom:2px">You can drive to the venue from Delhi NCR or book a cab (Ola recommended). </p>
-            <p> A video with driving directions will be added here by February.</p>
+            <p> A video with driving directions will be added here by 28 March.</p>
 
             <h3 align="center"> By Public Transport </h3>
             <p style="margin-bottom:2px">Metro Train is available from all popular places till Pari Chowk Metro Station. </p>
