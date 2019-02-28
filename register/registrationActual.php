@@ -598,11 +598,49 @@ echo '</ul>';
 						</select>
 						</li>
 
+						<li>
+							<img src="../img/merchandise/slingbag.jpeg" alt="">
+							<h3>Travel Sling Bag</h3>
+							<p> ₹699</p>
+						<select id="cbcb69" onchange="updateFee()">
+							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						</li>
+						<li>
+							<img src="../img/merchandise/bottle.jpeg" alt="">
+							<h3>Bottle</h3>
+							<p> ₹449</p>
+						<select id="cbcb70" onchange="updateFee()">
+							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						</li>
 
 
 						<li>
 							<img src="../img/merchandise/tshirt.png" alt="">
-							<h3>T-shirt</h3>
+							<h3>Nats T-shirt</h3>
 							<p> ₹499</p>
 						<select id="cbcb27" onchange="updateFee()">
 							<option value="" disabled selected>Size</option>
@@ -614,6 +652,62 @@ echo '</ul>';
 
 
 						<select id="cbcb28" onchange="updateFee()">
+							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						</li>
+						<li>
+							<img src="../img/merchandise/ocd.jpeg" alt="">
+							<h3>OCD T-shirt</h3>
+							<p> ₹499</p>
+						<select id="cbcb57" onchange="updateFee()">
+							<option value="" disabled selected>Size</option>
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+
+
+						<select id="cbcb58" onchange="updateFee()">
+							<option value="" disabled selected>Quantity</option>
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						</li>
+						<li>
+							<img src="../img/merchandise/cloud.jpeg" alt="">
+							<h3>Cubing Universe T-shirt</h3>
+							<p> ₹499</p>
+						<select id="cbcb59" onchange="updateFee()">
+							<option value="" disabled selected>Size</option>
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+
+
+						<select id="cbcb60" onchange="updateFee()">
 							<option value="" disabled selected>Quantity</option>
 							<option value="0">0</option>
 							<option value="1">1</option>
@@ -1145,6 +1239,12 @@ function getMerchFee(){
 	if(document.getElementById("cbcb27").value!=="" && document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 		merch_fee = merch_fee + 499*parseInt(document.getElementById("cbcb28").value);
 	}
+	if(document.getElementById("cbcb57").value!=="" && document.getElementById("cbcb58").value !== "" && document.getElementById("cbcb58").value !== "0") {
+		merch_fee = merch_fee + 499*parseInt(document.getElementById("cbcb58").value);
+	}
+	if(document.getElementById("cbcb59").value!=="" && document.getElementById("cbcb60").value !== "" && document.getElementById("cbcb60").value !== "0") {
+		merch_fee = merch_fee + 499*parseInt(document.getElementById("cbcb60").value);
+	}
 	if(document.getElementById("cbcb29").value!=="" && document.getElementById("cbcb29").value!=="0"){
 		merch_fee = merch_fee + 299*parseInt(document.getElementById("cbcb29").value);
 	}
@@ -1174,6 +1274,12 @@ function getMerchFee(){
 	}
 	if(document.getElementById("cbcb38").value!=="" && document.getElementById("cbcb38").value!=="0"){
 		merch_fee = merch_fee + 399*parseInt(document.getElementById("cbcb38").value);
+	}
+	if(document.getElementById("cbcb69").value!=="" && document.getElementById("cbcb69").value!=="0"){
+		merch_fee = merch_fee + 699*parseInt(document.getElementById("cbcb69").value);
+	}
+	if(document.getElementById("cbcb70").value!=="" && document.getElementById("cbcb70").value!=="0"){
+		merch_fee = merch_fee + 449*parseInt(document.getElementById("cbcb70").value);
 	}
 	return merch_fee;
 }
@@ -1241,6 +1347,16 @@ function getAccoFee(){
 			var flagAlert= true;
 				if(document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 					if(document.getElementById("cbcb27").value === ""){
+						flagAlert=false;	
+					}
+				} 
+				if(document.getElementById("cbcb58").value !== "" && document.getElementById("cbcb58").value !== "0") {
+					if(document.getElementById("cbcb57").value === ""){
+						flagAlert=false;	
+					}
+				} 
+				if(document.getElementById("cbcb60").value !== "" && document.getElementById("cbcb60").value !== "0") {
+					if(document.getElementById("cbcb59").value === ""){
 						flagAlert=false;	
 					}
 				} 
@@ -1323,6 +1439,13 @@ document.getElementsByClassName("progress-bar")[0].style.width = progress;
 		for(var i = 27; i <=38; i++){
 			document.getElementById("cbcb" + i).value = "";
 		}
+		for(var i = 57; i <=60; i++){
+			document.getElementById("cbcb" + i).value = "";
+		}
+		for(var i = 69; i <=70; i++){
+			document.getElementById("cbcb" + i).value = "";
+		}
+
 }
 
 		if(tabName=='Unofficial'){
@@ -1387,6 +1510,18 @@ $("#register-checkout").click(function() {
 		merch['cbcb28-'+document.getElementById("cbcb27").value]=parseInt(document.getElementById("cbcb28").value);
 	}
 	for (var i=29;i<=38;i++){
+		if(document.getElementById("cbcb"+i).value!=="" && document.getElementById("cbcb"+i).value!=="0"){
+			merch['cbcb'+i]= parseInt(document.getElementById("cbcb"+i).value);
+		}
+
+	}
+	if(document.getElementById("cbcb57").value!=="" && document.getElementById("cbcb58").value !== "" && document.getElementById("cbcb58").value !== "0") {
+		merch['cbcb58-'+document.getElementById("cbcb57").value]=parseInt(document.getElementById("cbcb58").value);
+	}
+	if(document.getElementById("cbcb59").value!=="" && document.getElementById("cbcb60").value !== "" && document.getElementById("cbcb60").value !== "0") {
+		merch['cbcb60-'+document.getElementById("cbcb59").value]=parseInt(document.getElementById("cbcb60").value);
+	}
+	for (var i=69;i<=70;i++){
 		if(document.getElementById("cbcb"+i).value!=="" && document.getElementById("cbcb"+i).value!=="0"){
 			merch['cbcb'+i]= parseInt(document.getElementById("cbcb"+i).value);
 		}

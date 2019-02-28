@@ -184,6 +184,17 @@ INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb38','Cuber Cards',399 );
 
 INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
+('cbcb58-S','OCD T-Shirt (S)',499 ),
+('cbcb58-M','OCD T-Shirt (M)',499 ),
+('cbcb58-L','OCD T-Shirt (L)',499 ),
+('cbcb58-XL','OCD T-Shirt (XL)',499 ),
+('cbcb60-S','Cubing Universe (S)',499 ),
+('cbcb60-M','Cubing Universe (M)',499 ),
+('cbcb60-L','Cubing Universe (L)',499 ),
+('cbcb60-XL','Cubing Universe T-Shirt (XL)',499 );
+
+
+INSERT into `merch_catalog` (`item_id`, `name`, `price`) VALUES
 ('cbcb38','Cuber Cards',399 );
 
 
@@ -311,6 +322,12 @@ INSERT into `treasures` (`question_id`, `answer`) VALUES
 (4,'priyanshukumar'),
 (4,'priyanshu');
 
+INSERT into `treasures` (`question_id`, `answer`) VALUES
+(16,'alexandrehenriqueafonsocampos'),
+(16,'alexandrehenrique'),
+(16,'afonsocampos');
+(16,'alexandrecampos');
+(16,'campos');
 
 INSERT into `treasures` (`question_id`, `answer`) VALUES
 (1,'white'),

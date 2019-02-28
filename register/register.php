@@ -57,6 +57,31 @@ foreach ($_POST['merch'] as $key => $value) {
                 if ($key=="cbcb28-XL"){
                 $total_cost_of_merch_reg += $value*499;
               }
+                if ($key=="cbcb58-S"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb58-M"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb58-L"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb58-XL"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb60-S"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb60-M"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb60-L"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+                if ($key=="cbcb60-XL"){
+                $total_cost_of_merch_reg += $value*499;
+              }
+
                 if ($key=="cbcb29"){
                 $total_cost_of_merch_reg += $value*299;
               }
@@ -86,6 +111,12 @@ foreach ($_POST['merch'] as $key => $value) {
               }
                 if ($key=="cbcb38"){
                 $total_cost_of_merch_reg += $value*399;
+              }
+                if ($key=="cbcb69"){
+                $total_cost_of_merch_reg += $value*699;
+              }
+                if ($key=="cbcb70"){
+                $total_cost_of_merch_reg += $value*449;
               }
         }
 }

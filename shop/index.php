@@ -41,6 +41,30 @@ include('../header.php');
 							<h3>Cuber Cards</h3>
 							<p> ₹399</p>
 						</li>
+						<li>
+
+							<img src="../img/merchandise/slingbag.jpeg" alt="">
+							<h3>Travel Sling Bag</h3>
+							<p> ₹699</p>
+						</li>
+						<li>
+
+							<img src="../img/merchandise/bottle.jpeg" alt="">
+							<h3>Bottle</h3>
+							<p> ₹449</p>
+						</li>
+						<li>
+
+							<img src="../img/merchandise/ocd.jpeg" alt="">
+							<h3>OCD T-shirt</h3>
+							<p> ₹499</p>
+						</li>
+						<li>
+
+							<img src="../img/merchandise/cloud.png" alt="">
+							<h3>Cubing Universe T-shirt</h3>
+							<p> ₹499</p>
+						</li>
 
 						<li>
 							<img src="../img/merchandise/tshirt.png" alt="">
