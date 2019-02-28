@@ -37,7 +37,13 @@ height: auto;
   <div class="col-xs-12 col-sm-9">
         <h2>QiYi MoFangGe: Title Sponsor</h2>
         <p>
-            Guangdong Fantastic Arts and Science and Education Co. Ltd. is a collective design, sales, research and development company of professional cubes, and has been committed to independent innovation, research and development design, cube culture promotion and public welfare sponsorship. "X-Man Design" and "The Valk" cover the entry-level, racing level, collection level and other innovative products. The company is one of the leading puzzle designing and manufacturing companies in the world, with a huge number of world records set using their puzzles. This is also the third year in a row that Qiyi MoFangGe has partnered with Indian Nationals as a Title Sponsor.
+            Guangdong Fantastic Arts and Science and Education Co. Ltd. is a collective design, sales, research and development company of professional cubes, and has been committed to independent innovation, research and development design, cube culture promotion and public welfare sponsorship. The company is one of the leading puzzle designing and manufacturing companies in the world, manufacturing some of the more popular cubes used amongst top level speedsolvers across all events, with a huge number of world records set using their puzzles. 
+        </p>
+        <p>
+            Their "Qi" line of cubes covers entry level speedcubes at a very affordable cost, and "X-Man Design" and "The Valk" cover their high end, collection level and other innovative products.
+        </p>
+        <p>
+        This is also the third year in a row that Qiyi MoFangGe has partnered with Indian Nationals as a Title Sponsor.
         </p>
         <p>
             <a href="http://en.qiyitoys.net/" target="_blank">Click here to visit QiYi MoFangGe</a>!
