@@ -92,8 +92,10 @@ include('../header.php')
         <th> Country </th>
      <th> Average </th>
     <th> WR </th>
+    <th> NR </th>
     <th> Single </th>
     <th> WR </th> 
+    <th> NR </th>
                   </tr>
                 </thead>
                 <tbody>
