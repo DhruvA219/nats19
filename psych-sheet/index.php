@@ -190,11 +190,11 @@ $eventId=$_GET['eventId'];
 
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
 $conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-$sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,country_name as country  FROM
+$sqlTemplate ="select psychRanks.name,psychRanks.WCAID,singleResult,singleRank,averageResult,averageRank,singleNRank,averageNRank,country_name as country  FROM
 (select * from 
-(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,country_name from registrations 
+(select * from (select name,WCAID,best as singleResult,`%s`,worldRank as singleRank,countryRank as singleNRank,country_name from registrations 
   LEFT JOIN (select * from RanksSingle2 where eventId='%s') eventRank on WCAID=personId) singleRanks where `%s`='Y') eventSolvers
-LEFT JOIN (select personId,best as averageResult, worldRank as averageRank FROM RanksAverage2 where eventId='%s') averageRanks 
+LEFT JOIN (select personId,best as averageResult, worldRank as averageRank,countryRank as averageNRank FROM RanksAverage2 where eventId='%s') averageRanks 
 ON averageRanks.personId=eventSolvers.WCAID)  psychRanks
 order by -averageRank desc, -singleRank desc, psychRanks.name asc;"; 
 if ($eventId=='333bf'){
@@ -224,8 +224,10 @@ foreach($result as $row){
   echo "<td class='lefttd'>".$row['country']."</td>";
   echo "<td>".convertResult($row['averageResult'],$eventId,0)."</td>";
   echo "<td>".$row['averageRank']."</td>";
+  echo "<td>".$row['averageNRank']."</td>";
   echo "<td>".convertResult($row['singleResult'],$eventId,1)."</td>";
    echo "<td>".$row['singleRank']."</td>";
+   echo "<td>".$row['singleNRank']."</td>";
   echo "</tr>";
 }
 ?>
