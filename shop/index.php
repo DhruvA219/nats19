@@ -61,7 +61,7 @@ include('../header.php');
 						</li>
 						<li>
 
-							<img src="../img/merchandise/cloud.png" alt="">
+							<img src="../img/merchandise/cloud.jpeg" alt="">
 							<h3>Cubing Universe T-shirt</h3>
 							<p> ₹499</p>
 						</li>
