@@ -32,7 +32,7 @@ height: auto;
 
 <div class="row justify-content-center">
   <div class="col-xs-12 col-sm-3">
-        <a href="https://www.cubelelo.com/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/qiyi.png"></a>
+        <a href="http://en.qiyitoys.net/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/qiyi.png"></a>
   </div>
   <div class="col-xs-12 col-sm-9">
         <h2>QiYi MoFangGe: Title Sponsor</h2>
@@ -66,7 +66,7 @@ height: auto;
 </div>
 <div class="row justify-content-center">
   <div class="col-xs-12 col-sm-3">
-        <a href="https://www.cubelelo.com/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/DUExpress.png"></a>
+        <a href="https://www.duexpress.in/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/DUExpress.png"></a>
   </div>
   <div class="col-xs-12 col-sm-9">
         <h2>DU Express: Media partner</h2>
