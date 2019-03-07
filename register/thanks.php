@@ -224,8 +224,8 @@ else{
           $values.="'";
           $sql = "insert into `registrations` (`email_id`, `name`, `WCAID`, `birth_date`,`gender`, `country_name`, `222`, `333`, `444`, `555`, `666`, `777`, `333oh`, `333ft`, `333bf`, `333mbf`, `444bf`, `555bf`, `skewb`, `sq1`, `minx`, `pyram`, `clock`, `333fm` ) VALUES ($values)";
           $conn->query($sql);
-          $average_sql="insert into RanksAverage2 select personId,eventId,best,worldRank from RanksAverage inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
-          $single_sql="insert into RanksSingle2 select personId,eventId,best,worldRank from RanksSingle inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
+          $average_sql="insert into RanksAverage2 select personId,eventId,best,worldRank,countryRank from RanksAverage inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
+          $single_sql="insert into RanksSingle2 select personId,eventId,best,worldRank,countryRank from RanksSingle inner join (select * from registrations where email_id='".$email_id."') registration1  where personId=WCAID";
           $conn->query($average_sql);
           $conn->query($single_sql);
 
