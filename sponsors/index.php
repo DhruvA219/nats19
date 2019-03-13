@@ -64,7 +64,7 @@ height: auto;
         </p>
   </div>
 </div>
-<!--<div class="row justify-content-center">
+<<div class="row justify-content-center">
   <div class="col-xs-12 col-sm-3">
         <a href="https://www.duexpress.in/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/DUExpress.png"></a>
   </div>
@@ -76,7 +76,7 @@ height: auto;
         <p>
             <a href="https://www.duexpress.in/" target="_blank">Click here to visit DU Express</a>!
         </p>
-  </div>-->
+  </div>
 </div>
 
 <?php
