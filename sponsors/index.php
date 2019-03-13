@@ -66,16 +66,16 @@ height: auto;
 </div>
 <<div class="row justify-content-center">
   <div class="col-xs-12 col-sm-3">
-        <a href="https://www.duexpress.in/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/DUExpress.png"></a>
+      <!--  <a href="https://www.duexpress.in/" target="_blank"><img class="img-responsive" style="margin-bottom: 3em; margin-top: 2em; margin-left: 2em;  height: 16em;"  src="../img/sponsors/DUExpress.png"></a>-->
   </div>
   <div class="col-xs-12 col-sm-9">
-        <h2>DU Express: Media partner</h2>
+        <!--<h2>DU Express: Media partner</h2>
         <p>
             DU Express is Delhi University's leading digital media house with a wide reach throughout the campus.The platform covers all the latest news,events happening in and around the campus along with publication of views,reviews & gossip which concerns the student teacher community of University of Delhi. It is one of the fastest growing college media portal and is also one of the most trusted platform of Delhi University students for their daily dose of news.
         </p>
         <p>
             <a href="https://www.duexpress.in/" target="_blank">Click here to visit DU Express</a>!
-        </p>
+        </p>-->
   </div>
 </div>
 
