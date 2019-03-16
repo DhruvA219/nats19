@@ -24,12 +24,13 @@
             <table >
               <tr >
                 <td >Events</td>
-                <td >Merchandise</td>
-                <td >Unofficial Events</td>
+               <td> </td> 
+		
+                <td> Unofficial Event </td>
               </tr>
               <tr >
                 <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
-                <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
+                <td> </td>
                 <td ><img src="../img/progress-marker.svg" alt="" class="rotateimg"></td>
               </tr>
             </table>
@@ -59,7 +60,7 @@
 							<div class="row justify-content-center">
                                                                         <div class="col-11 col-lg-8">
                                                                         <h3 align="middle"> Events</h3>
-                                                                        <p align="middle"> Step 1/5</p>
+                                                                        <p align="middle"> Step 1/4</p>
                                                                       </div>
                                                                     </div>
 
@@ -309,7 +310,7 @@ echo '</ul>';
 						<div id="Travel" class="tabcontent">
 							<div class="row justify-content-center">
 								<div class="col-11 col-lg-8">
-									<p align="middle"> Step 2/5</p>
+									<p align="middle"> Step 2/4</p>
 									<h3 align="middle"> Bus Service</h3>
 									<p align="middle">A prepaid bus service to commute between the nearest Metro Station and the Venue will be available at ₹100 per person per trip. Please select when will you be needing this bus service. </p>
 									<p align="middle"><b> Note: </b>The nearest metro station is Pari Chowk and scheduled to be inaugrated by February. If there are delays, the bus service will be available for Noida Sector 16 Metro Station instead. </p>
@@ -561,9 +562,9 @@ echo '</ul>';
 </div>
 <div class="tab">
 	<div class="wrapper">
-		<a href="#Events"><button class="tablinks" onclick="openCity(event, 'Events', '16%')">Previous</button></a>
-		<a href="#Merch"><button class="tablinks" onclick="skipCity(event, 'Merch', '50%')">Skip</button></a>
-		<a href="#Merch"><button class="tablinks" id="travel-Save and Proceed-button" onclick="openCity(event, 'Merch', '50%')">Save and Proceed</button></a>
+		 <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Events', '16%')">Previous</button></a>
+                                        <a href="#Accommodation"><button class="tablinks" onclick="skipCity(event, 'Accommodation', '75%')">Skip</button></a>
+                                        <a href="#Accommodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '75%')">Save and Proceed</button></a>
 
 	</div>
 </div>
@@ -919,7 +920,7 @@ echo '</ul>';
 <div id="Accommodation" class="tabcontent">
 	<div class="row justify-content-center">
 		<div class="col-11 col-lg-8">
-			<p align="middle"> Step 4/5</p>
+			<p align="middle"> Step 3/4</p>
 			<h3 align="middle"> Accommodation</h3>
 			<p align="middle">You can pre-book on-campus accommodation options here. For facility details, please refer to our <a href="https://nats19.in/uploads/Accommodation_Campus.pdf" target="about_blank">Campus Accommodation Prospectus</a>.</p>
 			<h3 align="middle" style="font-size:1.6rem;font-weight:bold;">Terms and Conditions</h3>
@@ -1125,7 +1126,7 @@ echo '</ul>';
         </div>
     </div>
 		<div class="tab">
-			<a href="#Merch"><button class="tablinks" onclick="openCity(event, 'Merch', '50%')">Previous</button></a>
+			 <a href="#Travel"><button class="tablinks" onclick="openCity(event, 'Travel', '24%')">Previous</button></a>
 			<a href="#Unofficial"><button class="tablinks" onclick="skipCity(event, 'Unofficial', '84%')">Skip</button></a>
 			<a href="#Unofficial"><button class="tablinks" onclick="openCity(event, 'Unofficial', '84%')">Save and Proceed</button></a>
 
@@ -1136,7 +1137,7 @@ echo '</ul>';
 <div id="Unofficial" class="tabcontent">
 	<div class="row justify-content-center">
 		<div class="col-11 col-lg-8">
-			<p align="middle"> Step 5/5</p>
+			<p align="middle"> Step 4/4</p>
 			<h3 align="middle"> Unofficial Events</h3>
 			<p align="middle">You can register for unofficial events here as they are announced. You can do this later independent of your registration and will receive an email whenever a new event is available. The following events are available right now:</p>
 			<div class="wrapper">
@@ -1166,7 +1167,7 @@ echo '</ul>';
 
 	<div class="wrapper">
 		<div class="tab">
-			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '80%')">Previous</button></a>
+			<a href="#Accomodation"><button class="tablinks" onclick="openCity(event, 'Accommodation', '75%')">Previous</button></a>
 			<a id="register-checkout"><button class="tablinks">Checkout</button></a>
 		</div>
 	</div>
@@ -1323,7 +1324,7 @@ function getAccoFee(){
 
 	function openCity(evt, tabName, progress) {
                
-		if(tabName=='Merch'){
+		if(tabName=='Accommodation'){
 			var flagAlert1 = true, flagAlert2 = true;
 			for(var i = 19; i <= 26; i++) {
 				if((document.getElementById("cb" + i).checked && document.getElementById("cbcb" + i).value === "")) {
@@ -1343,7 +1344,7 @@ function getAccoFee(){
                         }
 
 		}
-		if(tabName=='Accommodation'){
+		if(tabName=='xyzzgz'){
 			var flagAlert= true;
 				if(document.getElementById("cbcb28").value !== "" && document.getElementById("cbcb28").value !== "0") {
 					if(document.getElementById("cbcb27").value === ""){
@@ -1411,6 +1412,8 @@ function getAccoFee(){
 		//for (i = 0; i < tablinks.length; i++) {
 		//	tablinks[i].className = tablinks[i].className.replace(" active", "");
 		//}
+		if(tabName == "Events" || tabName == "Travel"){
+                      document.getElementsByClassName("progress-bar")[0].style.width = progress; }
 		document.getElementById(tabName).style.display = "block";
 	//	$('#default'+tabName)[0].className+=" active";
 	updateFee();
@@ -1425,7 +1428,7 @@ document.getElementsByClassName("progress-bar")[0].style.width = progress;
 			}
 		}
 
-		if(tabName=='Merch'){
+		if(tabName=='Accommodation'){
 
 		//For travel page
 		for(var i = 19; i <= 26; i++){
