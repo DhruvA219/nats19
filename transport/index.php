@@ -132,7 +132,8 @@ a.label:focus {
             <h2 class="smallhead">Reaching the Venue</h2>
             <h3 align="center"> By Car </h3>
             <p style="margin-bottom:2px">You can drive to the venue from Delhi NCR or book a cab (Ola recommended). </p>
-            <p> A video with driving directions will be added here by 28 March.</p>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/Ct2ufPpBJr0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
             <h3 align="center"> By Public Transport </h3>
             <p style="margin-bottom:2px">Metro Train is available from all popular places till Pari Chowk Metro Station. </p>
@@ -142,11 +143,14 @@ a.label:focus {
                 <tr>
                   <th class="tg-s268">Source</th>
                   <th class="tg-s268">Route</th>
-                </tr>
+<th class="tg-s268"></th>	   
+	</tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 1)</th>
                   <td class="tg-s268 lefttd bigtd"> <span class="label label-magenta">T-1 IGI Airport</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-blue">Botanical Garden</span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
-                </tr>
+<td class="tg-s268"><a href="https://www.youtube.com/watch?v=Yj9CpikKS6U&t=1s" target="about_blank">Video</a>
+  </td> 
+		</tr>
                 <tr>   
                   <th class="tg-s268 lefttd"><i class="fa fa-plane" aria-hidden="true"></i> DEL (Terminal 2/3)</th>
                   <td class="tg-s268 lefttd bigtd"> <span class="label label-orange">IGI Airport</span> <i class="fa fa-arrow-right" aria-hidden="true"></i> <span class="label label-yellow">New Delhi </span> <i class="fa fa-arrow-right" aria-hidden="true"></i>  <span class="label label-blue">Rajiv Chowk </span><i class="fa fa-arrow-right" aria-hidden="true"></i>   <span class="label label-aqua">Noida Sector 52</span><i class="fa fa-arrow-right" aria-hidden="true"></i><span class="label label-green">Pari Chowk</span></td> 
