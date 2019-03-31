@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fantasy League Nats</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container" style="margin-left: 22%;">
+  <h2>Fantasy League</h2>
+  <form id="fantasy-table" class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2">3X3 participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="3x3p">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3w">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3s">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3t">
+      </div>
+    </div>
+
+    <br><br>
+    
+    <div class="form-group">
+      <label class="control-label col-sm-2">4x4 participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="4x4p">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">4x4 winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="4x4w">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">4x4 second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="4x4s">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">4x4 third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="4x4t">
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">3X3 OH participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="3x3ohp">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 OH winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3ohw">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 OH second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3ohs">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">3x3 OH third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="3x3oht">
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Skewb participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="skewbp">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Skewb winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="skewbw">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Skewb second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="skewbs">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Skewb third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="skewbt">
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">Pyraminx participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="pyrap">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Pyraminx winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="pyraw">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Pyraminx second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="pyras">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">Pyraminx third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="pyrat">
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="form-group">
+      <label class="control-label col-sm-2">2x2 participants:</label>
+      <div class="col-sm-5">
+        <input type="number" class="form-control" id="2x2p">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">2x2 winner:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="2x2w">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">2x2 second place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="2x2s">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2">2x2 third place:</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="2x2t">
+      </div>
+    </div>
+  </form>
+
+  <button id ="record-save-fantasy" type="submit" class="btn btn-default" style="margin-left: 30%;">Save And Proceed</button>
+
+  <br><br><br><br><br><br>
+
+</div>
+
+</body>
+
+<script>
+	$("#record-save-fantasy").click(function(){
+	  var fantasyPodiumInfo = {};
+	  var idsOfForm = ["3x3p", "3x3w", "3x3s", "3x3t", "4x4p", "4x4w", "4x4s", "4x4t", "3x3ohp", "3x3ohw", "3x3ohs", "3x3oht", "skewbp", "skewbw", "skewbs", "skewbt", "pyrap", "pyraw", "pyras", "pyrat", "2x2p", "2x2w", "2x2s", "2x2t"];
+	  $.each(idsOfForm, function( index, value ) {
+		  fantasyPodiumInfo[value] = document.getElementById(value).value.trim();
+	  });
+	  console.log(fantasyPodiumInfo);
+	  localStorage["fantasyPodiumInfo"] = JSON.stringify(fantasyPodiumInfo);
+		
+	  window.location.replace("add-participants.html");
+	});
+</script>
+
+</html>
