@@ -181,6 +181,22 @@
   var finalList = {};
   var currentName;
 
+  if("finalRankList" in localStorage) {
+    var finalList = JSON.parse(localStorage['finalRankList']);
+    var sortable = [];
+    for (var players in finalList) {
+        sortable.push([players, finalList[players]]);
+    }
+
+    sortable.sort(function(a, b) {
+        return b[1] - a[1];
+    });
+
+    for (var key in sortable){
+        $('#final-table tr:last').after('<tr><td>' + sortable[key][0] + '</td>' + '<td>' + sortable[key][1] + '</td></tr>');
+    }
+  }
+
   function calculatePointsForOneEvent(t, a, b, c, x, y, z) {
     var points = 0;
     var numberOfParticipants = parseInt(t);
