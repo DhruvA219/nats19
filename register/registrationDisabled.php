@@ -11,7 +11,7 @@
 				<div class>
 				</div>
 
-				<p align="middle"> Registration is not open right now. Come back after 31 December 2018, 00:00 Hrs.<p>
+				<p align="middle"> Registration is closed now. See you at Indian Nationals 2019.<p>
 				</div>
 
 
