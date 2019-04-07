@@ -294,7 +294,7 @@ include('../header.php')
                                               <td > 18:30 </td>
                                               <td rowspan="2" bgcolor="#ffe082">
 
-                                                Unofficial Event</td>
+                                                Unofficial Event - Cube-o-mania</td>
                                             </tr>
                                             <tr>
                                               <td > 18:45 </td>
@@ -549,7 +549,7 @@ include('../header.php')
                 <tr>
                   <td class="tg-0pky">19:15</td>
                   <td class="tg-0pky" bgcolor="#f6f7fd"></td>
-                  <td class="tg-0pky" rowspan="3" bgcolor="#ffe082">Unofficial Event</td>
+                  <td class="tg-0pky" rowspan="3" bgcolor="#ffe082">Unofficial Event - Cuber Tambola</td>
 
                 </tr>
                 <tr>

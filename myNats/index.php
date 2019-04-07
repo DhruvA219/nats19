@@ -27,21 +27,42 @@ include('../header.php');
 
 					<section id="Regforevent">	
 
-						<div class="col-lg-12 venue-info">
-							<div class="row justify-content-center">
-								<div class="col-11 col-lg-8">
-									<h4 align="middle"> Events</h4>
-								</div>
-							</div>
-						</div>
 
 						<?php
 						$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-						session_start();
-						$email=$_SESSION['email'];
-						$sql = "SELECT * FROM registrations where email_id='$email'";
-						$result = $conn->query($sql);
-						if (mysqli_num_rows($result)==0){
+
+session_start();
+$email=$_SESSION['email'];
+echo '<div class="col-lg-12 venue-info">
+	<div class="row justify-content-center">
+        <div class="col-11 col-lg-8">
+                <h4 align="middle"> Groups</h4>
+        </div>
+</div>
+</div>';
+$group_sql = "SELECT * from groups where email_id='$email'";
+$group_result=$conn->query($group_sql);
+ echo'<div class="wrapper">
+	                                                                 <table> <tr>                                                                             <th class="tg-s268">Event</th>									          										                                                                                 <th class="tg-s268">Group</th>	
+                                                                        </tr>';
+
+                foreach($group_result as $row){
+                        echo '<tr>';
+                        echo '<td class="tg-s268">'.$row['event'].'</td>';
+                        echo '<td class="tg-s268">'.$row['group'].'</td>';
+                        echo '</tr>';
+                }
+echo '</table> </div>';
+echo '<div class="col-lg-12 venue-info" style="margin-top:20px;">
+<div class="row justify-content-center">
+	<div class="col-11 col-lg-8">
+		<h4 align="middle"> Events</h4>
+	</div>
+</div>
+</div>';
+$sql = "SELECT * FROM registrations where email_id='$email'";
+$result = $conn->query($sql);
+if (mysqli_num_rows($result)==0){
 							echo '<p align="middle"> You have not registered for any event. </p>';
 						}
 
@@ -107,7 +128,11 @@ include('../header.php');
 																			}
 																			echo '</ul>';
 
-echo' <div class="col-lg-12 venue-info">
+
+
+																			
+
+																			echo' <div class="col-lg-12 venue-info">
 							<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;">
 								<div class="col-11 col-lg-8">
 									<h4 align="middle"> Travel</h4>
@@ -138,7 +163,16 @@ else{ echo'<div class="wrapper">
 			echo '<td class="tg-s268">'.$row['total_people'].'</td>';	
 			echo '</tr>';
 		}
-echo '</table> </div>';
+echo '</table>'; 
+	echo '<div>
+<h4 align="middle" style="margin-top:20px;"> Travel Instructions </h4>
+<p> Pickup from Pari Chowk metro station will be from gate number 2. The bus will start <b> strictly as per schedule </b>. Please be on time. For departure from SNU, the bus will depart from Indoor Sports Complex Gate. Contact numbers for assistance regarding bus number and pickup are given below:</p>
+<ol>
+<li style="float:none">Prabhath: 9908260874 </li>
+<li style="float:none">Santhosh: 8130486610 </li>
+<li style="float:none">Siddharth: 8939296044</li>
+</ol>
+        </div>';
 
 
 }

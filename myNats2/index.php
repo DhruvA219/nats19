@@ -30,33 +30,30 @@ include('../header.php');
 
 						<?php
 						$conn = new mysqli("localhost", "root", "n@ts2019", "nats19");
-						session_start();
-						$email=$_SESSION['email'];
-						echo' <div class="col-lg-12 venue-info">
-						<div class="row justify-content-center" style="margin-bottom:0px; margin-top:20px;"">
-							<div class="col-11 col-lg-8">
-								<h4 align="middle"> Groups</h4>
-							</div>
-						</div>
-					</div>';
-					
-					$groups_sql = "select event,group from groups where where email_id='$email'";
-$group_result = $conn->query($group_sql);
-echo'<div class="wrapper">
-								<table>
-									<tr>
-										<th class="tg-s268">Event </th>
-										<th class="tg-s268">Group</th>
-									</tr>';
 
-		foreach($group_result as $row){
-			echo '<tr>';
-			echo '<td class="tg-s268 lefttd">'.$row['event'].'</td>';	
-			echo '<td class="tg-s268">₹'.$row['Group'].'</td>';	
-			echo '</tr>';
-echo '</table> </div>' ;
+session_start();
+$email=$_SESSION['email'];
+echo '<div class="col-lg-12 venue-info">
+	<div class="row justify-content-center">
+        <div class="col-11 col-lg-8">
+                <h4 align="middle"> Groups</h4>
+        </div>
+</div>
+</div>';
+$group_sql = "SELECT * from groups where email_id='$email'";
+$group_result=$conn->query($group_sql);
+ echo'<div class="wrapper">
+	                                                                 <table> <tr>                                                                             <th class="tg-s268">Event</th>									          										                                                                                 <th class="tg-s268">Group</th>	
+                                                                        </tr>';
 
-						echo '<div class="col-lg-12 venue-info">
+                foreach($group_result as $row){
+                        echo '<tr>';
+                        echo '<td class="tg-s268">'.$row['event'].'</td>';
+                        echo '<td class="tg-s268">'.$row['group'].'</td>';
+                        echo '</tr>';
+                }
+echo '</table> </div>';
+echo '<div class="col-lg-12 venue-info" style="margin-top:20px;">
 <div class="row justify-content-center">
 	<div class="col-11 col-lg-8">
 		<h4 align="middle"> Events</h4>
