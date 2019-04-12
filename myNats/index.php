@@ -253,7 +253,12 @@ echo '</table> ';
 echo'
 <div>
 <h4 align="middle" style="margin-top:20px;"> Accommodation Instructions </h4>
-<p> Common rooms will be in boys/girls hostels. 2BHK, 1BHK and Studio will be in the Visitors Hostel(VH). Important contact numbers for VH are given below:</p> 
+<p> Common rooms will be in the hostels (Male:2C and Female:2A). You should already have received communication regarding the same.. 2BHK, 1BHK and Studio will be in the Visitors Hostel(VH). <b> If you are staying in VH, please confirm your arrival time to our team at least one day in advance </b>if not done so already: </p>
+<ol>
+<li style="float:none"> Siddharth: 8939296044 </li>
+<li style="float:none"> Prabhnoor: 9319659042 </li>
+</ol>
+<p>Important contact numbers(Intercom) for those staying in VH are given below:</p> 
 <ol>
 <li style="float:none">630: VH Reception </li>
 <li style="float:none">604: Front Desk </li>
@@ -263,7 +268,7 @@ echo'
 <li style="float:none">6621: Mini Mart </li>
 <li style="float:none">655: Laundry </li>
 </ol>
-<p> For visitors hostel, the default check-in time will be 3 PM and the default check-out time will be 12 PM. Please contact the organizers or above numbers for any exceptions to the same.
+<p> For visitors hostel(VH), the default check-in time will be 3 PM and the default check-out time will be 12 PM. Please contact the organizers or above numbers for any exceptions to the same.
 	</div>';
 echo '</div>' ;
 
