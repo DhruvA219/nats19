@@ -53,9 +53,10 @@ travel_catalog ON travel_catalog.item_id=usertravel.item_id) userdetails group b
 $travel_result = $conn->query($travel_sql);
 $travel_sum=0;
 if (mysqli_num_rows($travel_result)==0){
-echo '<p align="middle"> Nobody has reserved travel. </p>';
+	echo '<p align="middle"> Nobody has reserved travel. </p>';
 }
-else{ echo'<div class="wrapper">
+else{ 
+	echo'<div class="wrapper">
 								<table>
 									<tr>
 										<th class="tg-s268">Timing</th>
@@ -72,7 +73,7 @@ else{ echo'<div class="wrapper">
 			echo '</tr>';
 			$travel_sum=$travel_sum+(100*$row['total_people']);
 		}
-echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$travel_sum.'</b></div></div>';
+	echo '</table> <div align="center"><b>Total amount (before gateway fee): ₹'.$travel_sum.'</b></div></div>';
 
 }
 
@@ -89,7 +90,7 @@ merch_catalog ON merch_catalog.item_id=usermerch.item_id) userdetails group by n
 $merch_result = $conn->query($merch_sql);
 $merch_sum=0;
 if (mysqli_num_rows($merch_result)==0){
-echo '<p align="middle"> Nobody has purchased any merchandise. </p>';
+	echo '<p align="middle"> Nobody has purchased any merchandise. </p>';
 }
 else{ echo'<div class="wrapper">
 								<table>
@@ -273,10 +274,6 @@ echo '</table> <div align="center"><b>Total Page views (Lifetime): '.$views_sum.
                 
 
 ?>
-
-
-
-
 							</section>
 		</div>
 </section>
